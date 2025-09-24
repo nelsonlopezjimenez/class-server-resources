@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Gitea",
+        "url": "http://localhost:3000/",
+        "description": "Description of content"
+    },
+    {
+        "name": "CA Cafe",
+        "url": "https://192.168.1.28:3001/",
+        "description": "Description of content"
+    }
+]

@@ -1,0 +1,63 @@
+[
+  
+    {
+      "url": "developer.mozilla.org",
+      "nonStandard": true,
+      "nonStandardPath": "developer.mozilla.org/en-US/",
+      "urlEnding": ".html"
+    },
+    {
+      "url": "esbuild.github.io",
+      "nonStandard": true,
+      "nonStandardPath": "esbuild.github.io/getting-started/",
+      "urlEnding": null
+    },
+    {
+      "url": "krita.org",
+      "nonStandard": true,
+      "nonStandardPath": "krita.org/en/",
+      "urlEnding": null
+    },
+    {
+      "url": "docs.astro.build",
+      "nonStandard": true,
+      "nonStandardPath": "docs.astro.build/en/getting-started/",
+      "urlEnding": null
+    },
+    {
+      "url": "fullstackopen.com",
+      "nonStandard": true,
+      "nonStandardPath": "fullstackopen.com/en/",
+      "urlEnding": null
+    },
+    {
+      "url": "socket.io",
+      "nonStandard": true,
+      "nonStandardPath": "socket.io/docs/v4/",
+      "urlEnding": null
+    },
+    {
+      "url": "vite.dev",
+      "nonStandard": true,
+      "nonStandardPath": "vite.dev/guide/",
+      "urlEnding": null  
+    },
+    {
+      "url": "go.dev",
+      "nonStandard": true,
+      "nonStandardPath": "go.dev/doc/",
+      "urlEnding": null 
+    },
+    {
+      "url": "gin-gonic.com",
+      "nonStandard": true,
+      "nonStandardPath": "gin-gonic.com/en/docs/",
+      "urlEnding": null 
+    },
+    {
+      "url": "learn.microsoft.com",
+      "nonStandard": true,
+      "nonStandardPath": "learn.microsoft.com/en-us/dotnet/",
+      "urlEnding": null  
+    }
+  ]
