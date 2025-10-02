@@ -188,15 +188,15 @@ As your teacher, I will work hard to:
 
 #### Day 2 🔧 🎥
 1. Click to open 🔧 [▶️ **course server** ](http://localhost:22022/offline-links)
-1. [Learning Tips](http://localhost:22022/websites/gcfglobal-learning-tips)
+1. [Learning Tips](http://localhost:22022/websites/gcfglobal-learning-tips/tutrial.html)
    1.  [🧠 Discover your learning style](http://localhost:22022/websites/gcfglobal-learning-tips/discover-your-learning-style/lesson.html)
    1.  [🔄 The study cycle](http://localhost:22022/websites/gcfglobal-learning-tips/the-study-cycle/lesson.html)
 1. [Problem Solving And Decision Making](http://localhost:22022/websites/gcfglobal-problem-solving-and-decision-making/tutorial.html)
 1.  [📄 Resume Writing](http://localhost:22022/websites/gcfglobal-resumewriting/tutorial.html)
-   1.  [🖼️ Resume Writing Gallery](http://localhost:22022/websites/gcfglobal-resume-writing/gallery-of-sample-resumes/lesson.html)
+   1.  [🖼️ Resume Writing Gallery](http://localhost:22022/websites/gcfglobal-resumewriting/gallery-of-sample-resumes/lesson.html)
 1. [Windows 10 ⚙️](http://localhost:22022/websites/gcfglobal-windows10/tutorial.html)
    1. [Windows 10 Features](http://localhost:22022/websites/gcfglobal-windows-10/windows-10-features/lesson.html)
-1. [Basic Computer Skills]((http://localhost:22022/websites/gcfglobal-basic-computer-skills/tutorial.html)
+1. [Basic Computer Skills](http://localhost:22022/websites/gcfglobal-basic-computer-skills/tutorial.html)
    1. [🖥️ Your First Computer](http://localhost:22022/websites/gcfglobal-basic-computer-skills/getting-started-with-your-first-computer/lesson.html)
 1. [Computer Basics](http://localhost:22022/websites/gcfglobal-computer-basics/tutorial.html)
    1. [Computer Basics Parts](http://localhost:22022/websites/gcfglobal-computer-basics/basic-parts-of-a-computer/lesson.html)
