@@ -177,16 +177,6 @@ As your teacher, I will work hard to:
 
 ## Additional Resources
 
-## Click to open 🔧 [▶️ **computer basics.exe** ](http://localhost:4200)
-1. Location: in the Downloads folder or in the canvas_file_cache folder
-1. Double click or right click on "computer-basics.exe" file and select open
-1. It should automatically open a browser, maybe Edge, maybe Chrome.
-1. If not click [HERE ▶️](http://localhost:4200)
-1. or open a browser (Edge, Chrome), go to the navigation bar and type
-```
-http://localhost:4200
-```
-
 
 [↑ Back to Top](#table-of-contents)
 <hr id="recommendation" />
@@ -198,18 +188,17 @@ http://localhost:4200
 
 #### Day 2 🔧 🎥
 1. Click to open 🔧 [▶️ **course server** ](http://localhost:22022/offline-links)
-1. [Learning Tips](http://localhost:4200)
-1. [Learning Tips](http://localhost:22022)
+1. [Learning Tips](http://localhost:22022/websites/gcfglobal-learning-tips)
    1.  [🧠 Discover your learning style](http://localhost:22022/websites/gcfglobal-learning-tips/discover-your-learning-style/lesson.html)
    1.  [🔄 The study cycle](http://localhost:22022/websites/gcfglobal-learning-tips/the-study-cycle/lesson.html)
-1. [Problem Solving And Decision Making](http://localhost:4200)
-1.  [📄 Resume Writing](http://localhost:4200)
+1. [Problem Solving And Decision Making](http://localhost:22022/websites/gcfglobal-problem-solving-and-decision-making/tutorial.html)
+1.  [📄 Resume Writing](http://localhost:22022/websites/gcfglobal-resumewriting/tutorial.html)
    1.  [🖼️ Resume Writing Gallery](http://localhost:22022/websites/gcfglobal-resume-writing/gallery-of-sample-resumes/lesson.html)
-1. [Windows 10 ⚙️](http://localhost:4200)
+1. [Windows 10 ⚙️](http://localhost:22022/websites/gcfglobal-windows10/tutorial.html)
    1. [Windows 10 Features](http://localhost:22022/websites/gcfglobal-windows-10/windows-10-features/lesson.html)
-1. [Basic Computer Skills](http://localhost:4200)
+1. [Basic Computer Skills]((http://localhost:22022/websites/gcfglobal-basic-computer-skills/tutorial.html)
    1. [🖥️ Your First Computer](http://localhost:22022/websites/gcfglobal-basic-computer-skills/getting-started-with-your-first-computer/lesson.html)
-1. [Computer Basics](http://localhost:4200)
+1. [Computer Basics](http://localhost:22022/websites/gcfglobal-computer-basics/tutorial.html)
    1. [Computer Basics Parts](http://localhost:22022/websites/gcfglobal-computer-basics/basic-parts-of-a-computer/lesson.html)
    1. [🌐 Connecting to the Internet](http://localhost:22022/websites/gcfglobal-computer-basics/connecting-to-the-internet/lesson.html)
    1. [💾 The Operating System](http://localhost:22022/websites/gcfglobal-computer-basics/getting-to-know-the-os/lesson.html)
