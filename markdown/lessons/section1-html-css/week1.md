@@ -187,7 +187,7 @@ As your teacher, I will work hard to:
 <hr id="day2" />
 
 #### Day 2 🔧 🎥
-1. Click to open 🔧 [▶️ **course server** ](http://localhost:22022/offline-links)
+1. Click to open 🔧 [▶️ **course server** ](http://localhost:22022)
 1. [Learning Tips](http://localhost:22022/websites/gcfglobal-learning-tips/tutrial.html)
    1.  [🧠 Discover your learning style](http://localhost:22022/websites/gcfglobal-learning-tips/discover-your-learning-style/lesson.html)
    1.  [🔄 The study cycle](http://localhost:22022/websites/gcfglobal-learning-tips/the-study-cycle/lesson.html)
