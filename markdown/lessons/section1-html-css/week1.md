@@ -135,7 +135,7 @@ As your teacher, I will work hard to:
 1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011  (Links to an external site.)
 1. copy/paste the following link into the navigation bar in chrome browser
 1. If you do not know how to do it, I'll explain in class
-1. [http://localhost:22022/Public/Documents/duckett.pdf](http://localhost:22022/Public/Documents/duckett.pdf)
+1. [Textbook HTML/CSS duckett.pdf](http://localhost:22022/static/CANVAS_FILE_CACHES/duckett.pdf)
 1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 <img src="/week1/duckett.png" alt="HTML-CSS" width="100" height="80" />
 1. ISBN: 978-1-118-00818-8
 
