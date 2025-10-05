@@ -65,7 +65,7 @@ C:\USERS\sXXXXXX\DESKTOP
 └───quarter4
 ```
 - Install VS Code and extensions (Live Server, HTML Snippets, Auto Rename Tag)
-- Introduction to Canvas and submission process: [video canvas](http://localhost:22022/youtube.nel/)
+- Introduction to Canvas and submission process: [video canvas](/youtube.nel/)
 - What is a browser?
 <video width="640" height="360" controls autoplay loop muted>
   <source src="/websites/images/videos/What is a browser[BrXPcaRlBqo].mp4" type="video/mp4">
@@ -133,29 +133,29 @@ Create your first HTML document:
 
 ## Final Project Planning
 
-Look at some [examples](http://localhost:22022/websites/w3schools.com/howto/howto_css_example_website.html) of web sites  and read about how to [create a web site](http://localhost:22022/websites/w3schools.com/howto/howto_website_create_free.html). Start thinking about your final project options:
+Look at some [examples](/websites/w3schools.com/howto/howto_css_example_website.html) of web sites  and read about how to [create a web site](/websites/w3schools.com/howto/howto_website_create_free.html). Start thinking about your final project options:
 
 ### Option 1: Personal Portfolio Website
-A multi-page portfolio showcasing your work and skills: [create a portfolio](http://localhost:22022/websites/w3schools.com/howto/howto_website_create_portfolio.html)
+A multi-page portfolio showcasing your work and skills: [create a portfolio](/websites/w3schools.com/howto/howto_website_create_portfolio.html)
 
 ### Option 2: Small Business Website  
-Design for a local business with services, about, and contact [pages](http://localhost:22022/websites/w3schools.com/howto/howto_website_business.html)
+Design for a local business with services, about, and contact [pages](/websites/w3schools.com/howto/howto_website_business.html)
 
 ### Option 3: Educational Resource Site
 Create an educational website on a topic of interest
 
 ### Option 4: Convert your resume.docx into your resume.html
-Convert the resume you wrote in MD Word to a resume in HTML [create  a resume](http://localhost:22022/websites/w3schools.com/howto/howto_website_create_resume.html)
+Convert the resume you wrote in MD Word to a resume in HTML [create  a resume](/websites/w3schools.com/howto/howto_website_create_resume.html)
 
 ## Hands-On Exercise
 
-Create a simple "About Me" HTML page with proper document structure, including headings, paragraphs, and basic formatting. [Follow the instruction](http://localhost:22022/websites/w3schools.com/howto/howto_make_a_website.html)
+Create a simple "About Me" HTML page with proper document structure, including headings, paragraphs, and basic formatting. [Follow the instruction](/websites/w3schools.com/howto/howto_make_a_website.html)
 
 <hr id="resources" />
 
 ## Resources
-- [W3Schools HTML Introduction](http://localhost:22022/websites/w3schools.com/html/html_intro.html)
-- [HTML References](http://localhost:22022/websites/w3schools.com/tags/default.html)
+- [W3Schools HTML Introduction](/websites/w3schools.com/html/html_intro.html)
+- [HTML References](/websites/w3schools.com/tags/default.html)
 
 ## Extra Resources
 - [MDN HTML Basics](/websites/developer.mozilla.org/en-US/)
