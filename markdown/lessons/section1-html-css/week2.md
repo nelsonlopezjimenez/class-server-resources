@@ -6,12 +6,15 @@ week: 2
 
 # Week 2: Markup Language and Site Development Essentials
 
-# 📚 Table of Contents
-- [Day 1](#day-1-course-introduction)
-- [Day 2](#day-2-web-technology-overview)
-- [Day 3](#day-2-web-technology-overview)
-- [Day 4](#day-4-first-html-document)
-- [Day 5](#day-5-web-standards-and-best-practices)
+<!-- Solution 4: Use explicit HTML anchors (most reliable) -->
+<h2 id="-table-of-contents"> 📚 Table of Contents </h2>
+
+- [Day 1](#day1)
+- [Day 2](#day2)
+- [Day 3](#day3)
+- [Day 4](#day4) 
+- [Day 5](#day5)
+- [Final Projects](#final-project)
 - [Extra Resources](#resources)
 
 ## Learning Objectives
@@ -33,6 +36,8 @@ This is the **first section** of a comprehensive **4-section full-stack web deve
 [↑ Back to Top](#-table-of-contents)
 
 ## Daily Activities
+
+<hr id="day1" />
 
 ### Day 1: Course Introduction
 - Download/update course-server from [http://192.168.1.28:3000](http://192.168.1.28:3000/s888888/node_modules_executables.git)
@@ -67,11 +72,15 @@ C:\USERS\sXXXXXX\DESKTOP
 
 [↑ Back to Top](#-table-of-contents)
 
+<hr id="day2" />
+
 ### Day 2: Web Technology Overview
 - Understanding client-server architecture
 - Web browsers and rendering engines
 - Domain names, hosting, and file paths
 - Introduction to HTML, CSS, and JavaScript roles
+
+<hr id="day3" />
 
 ### Day 3: Development Environment Setup
 - File and folder organization best practices
@@ -80,6 +89,8 @@ C:\USERS\sXXXXXX\DESKTOP
 - Browser developer tools overview
 
 [↑ Back to Top](#-table-of-contents)
+
+<hr id="day4" />
 
 ### Day 4: First HTML Document
 
@@ -106,32 +117,45 @@ Create your first HTML document:
 - Accessibility basics
 - Code organization and commenting
 
+<hr id="day5" />
+
 ### Day 5: Web Standards and Best Practices
 
 - Planning your final project
 
 [↑ Back to Top](#-table-of-contents)
 
+<hr id="final-project" />
+
 ## Final Project Planning
 
-Start thinking about your final project options:
+Look at some [examples](http://localhost:22022/websites/w3schools.com/howto/howto_css_example_website.html) of web sites  and read about how to [create a web site](http://localhost:22022/websites/w3schools.com/howto/howto_website_create_free.html). Start thinking about your final project options:
 
 ### Option 1: Personal Portfolio Website
-A multi-page portfolio showcasing your work and skills
+A multi-page portfolio showcasing your work and skills: [create a portfolio](http://localhost:22022/websites/w3schools.com/howto/howto_website_create_portfolio.html)
 
 ### Option 2: Small Business Website  
-Design for a local business with services, about, and contact pages
+Design for a local business with services, about, and contact [pages](http://localhost:22022/websites/w3schools.com/howto/howto_website_business.html)
 
 ### Option 3: Educational Resource Site
 Create an educational website on a topic of interest
 
+### Option 4: Convert your resume.docx into your resume.html
+Convert the resume you wrote in MD Word to a resume in HTML [create  a resume](http://localhost:22022/websites/w3schools.com/howto/howto_website_create_resume.html)
+
 ## Hands-On Exercise
 
-Create a simple "About Me" HTML page with proper document structure, including headings, paragraphs, and basic formatting.
+Create a simple "About Me" HTML page with proper document structure, including headings, paragraphs, and basic formatting. [Follow the instruction](http://localhost:22022/websites/w3schools.com/howto/howto_make_a_website.html)
+
+<hr id="resources" />
 
 ## Resources
+- [W3Schools HTML Introduction](http://localhost:22022/websites/w3schools.com/html/html_intro.html)
+- [HTML References](http://localhost:22022/websites/w3schools.com/tags/default.html)
+
+## Extra Resources
 - [MDN HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
-- [W3Schools HTML Introduction](https://www.w3schools.com/html/html_intro.asp)
+
 
 ## Assignment Checklist
 - [ ] Install VS Code and required extensions
