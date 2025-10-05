@@ -42,8 +42,6 @@ This is the **first section** of a comprehensive **4-section full-stack web deve
 ### Day 1: Course Introduction
 - Download/update course-server from [http://192.168.1.28:3000](http://192.168.1.28:3000/s888888/node_modules_executables.git)
 - Review syllabus and course expectations
-- Assignment week2 - [Lab2.1 Build a Dream Computer](./assign-dream-computer-with-prices)
-- Assignment week2 - [Lab2.1 Build a Dream Computer](./assign-dream-computer-with-prices.md)
 - Assignment week2 - [Lab2.1 Build a Dream Computer](assign-dream-computer-with-prices)
 - Configure individual laptops: Zeal, Desktop's shortcuts.
 - Set up folder structure for course projects
@@ -67,8 +65,14 @@ C:\USERS\sXXXXXX\DESKTOP
 └───quarter4
 ```
 - Install VS Code and extensions (Live Server, HTML Snippets, Auto Rename Tag)
-- Introduction to Canvas and submission process: [video canvas](http://localhost:22022/youtube.nel/public_html/RAW-VIDEOS/canvas-git-vscode/200-20-20Canvas 20Overview for Students-74677642.mp4)
-- Introduction to Canvas and submission process: [video canvas](http://localhost:22022/static/Videos/youtube.nel/public_html/RAW-VIDEOS/canvas-git-vscode/)
+- Introduction to Canvas and submission process: [video canvas](http://localhost:22022/youtube.nel/)
+- What is a browser?
+<video width="640" height="360" controls autoplay loop muted>
+  <source src="/websites/images/videos/What is a browser[BrXPcaRlBqo].mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
 
 [↑ Back to Top](#-table-of-contents)
 
@@ -154,7 +158,11 @@ Create a simple "About Me" HTML page with proper document structure, including h
 - [HTML References](http://localhost:22022/websites/w3schools.com/tags/default.html)
 
 ## Extra Resources
-- [MDN HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [MDN HTML Basics](/websites/developer.mozilla.org/en-US/)
+- [curriculum getting started](/websites/developer.mozilla.org/en-US/curriculum/getting-started/index.html)
+- [Getting started with HTML](/websites/developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started.html)
+- [Getting started with HTML](file:///C:/websites/developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started.html)
+
 
 
 ## Assignment Checklist
