@@ -44,7 +44,10 @@ This is the **first section** of a comprehensive **4-section full-stack web deve
 - Review syllabus and course expectations
 - Assignment week2 - [Lab2.1 Build a Dream Computer](./assign-dream-computer-with-prices)
 - Assignment week2 - [Lab2.1 Build a Dream Computer](./assign-dream-computer-with-prices.md)
-- Assignment week2 - [Lab2.1 Build a Dream Computer](assign-dream-computer-with-prices)
+- Assignment week2 - [Lab2.1 Build a Dream Computer](/markdown/lessons/docs/assign-dream-computer.md)
+- Assignment week2 - [Lab2.1 Build a Dream Computer](/websites/images/md/assign-dream-computer.md)
+- Assignment week2 - [Lab2 viewer](/websites/images/md/viewer.html)
+- Assignment week2 - [drag and drop](/websites/images/md/viewer-drag-n-drop.html)
 - Configure individual laptops: Zeal, Desktop's shortcuts.
 - Set up folder structure for course projects
 ```bash
