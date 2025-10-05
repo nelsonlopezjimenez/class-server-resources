@@ -166,7 +166,7 @@ git push origin --force --all
 
 
 ## Clean up local repository
-    ```sh
+```sh
 git reflog expire --expire=now --all
 git gc --prune=now --aggressive
 ```
@@ -176,7 +176,7 @@ git push origin --force --all
 git push origin --force --tags
 
 
- ![development branch](/week38/image-1.png)
+![development branch](/week38/image-1.png)
 <img src="/week38/image-1.png" alt="development branch" width="500" height="600">
 ![weeknavigation start branch](/week38/image.png)
 <img src="/week38/image.png" alt="weeknavigation branch" width="500" height="600">
@@ -186,3 +186,10 @@ git push origin --force --tags
 <img src="/week38/image-3.png" alt="alt pics rendering branch" width="500" height="600">
 ![with img tags](/week38/image-4.png)
 <img src="/week38/image-4.png" alt="alt with img tags" width="500" height="600">
+
+
+![development branch](/websites/images/image.png)
+<img src="/websites/images/image.png" alt="file tree" width="500" height="600">
+
+![development branch](/websites/images/vscode.png)
+<img src="/websites/images/vscode.png" alt="vscode icon" width="500" height="600">
