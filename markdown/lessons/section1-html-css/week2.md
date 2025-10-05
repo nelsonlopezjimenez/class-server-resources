@@ -161,7 +161,7 @@ Create a simple "About Me" HTML page with proper document structure, including h
 - [MDN HTML Basics](/websites/developer.mozilla.org/en-US/)
 - [curriculum getting started](/websites/developer.mozilla.org/en-US/curriculum/getting-started/index.html)
 - [Getting started with HTML](/websites/developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started.html)
-- [Getting started with HTML](file:///C:/websites/developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started.html)
+
 
 
 
