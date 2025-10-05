@@ -6,6 +6,14 @@ week: 2
 
 # Week 2: Markup Language and Site Development Essentials
 
+# 📚 Table of Contents
+- [Day 1](#day-1-course-introduction)
+- [Day 2](#day-2-web-technology-overview)
+- [Day 3](#day-2-web-technology-overview)
+- [Day 4](#day-4-first-html-document)
+- [Day 5](#day-5-web-standards-and-best-practices)
+- [Extra Resources](#resources)
+
 ## Learning Objectives
 - Understand the structure of the full-stack development program
 - Set up development environment and tools
@@ -22,12 +30,16 @@ This is the **first section** of a comprehensive **4-section full-stack web deve
 3. **Section 3 (Weeks 25-36)**: Backend Development with MERN Stack
 4. **Section 4 (Weeks 37-48)**: React and Advanced Frontend Development
 
+[↑ Back to Top](#-table-of-contents)
+
 ## Daily Activities
 
 ### Day 1: Course Introduction
 - Download/update course-server from [http://192.168.1.28:3000](http://192.168.1.28:3000/s888888/node_modules_executables.git)
 - Review syllabus and course expectations
-- Assignment week2 - [Lab2.1 Build a Dream Computer](http://localhost:22022/course-content/section/section1-html-css/lesson/assign-dream-computer-with-prices)
+- Assignment week2 - [Lab2.1 Build a Dream Computer](./assign-dream-computer-with-prices)
+- Assignment week2 - [Lab2.1 Build a Dream Computer](./assign-dream-computer-with-prices.md)
+- Assignment week2 - [Lab2.1 Build a Dream Computer](assign-dream-computer-with-prices)
 - Configure individual laptops: Zeal, Desktop's shortcuts.
 - Set up folder structure for course projects
 ```bash
@@ -53,6 +65,8 @@ C:\USERS\sXXXXXX\DESKTOP
 - Introduction to Canvas and submission process: [video canvas](http://localhost:22022/youtube.nel/public_html/RAW-VIDEOS/canvas-git-vscode/200-20-20Canvas 20Overview for Students-74677642.mp4)
 - Introduction to Canvas and submission process: [video canvas](http://localhost:22022/static/Videos/youtube.nel/public_html/RAW-VIDEOS/canvas-git-vscode/)
 
+[↑ Back to Top](#-table-of-contents)
+
 ### Day 2: Web Technology Overview
 - Understanding client-server architecture
 - Web browsers and rendering engines
@@ -64,6 +78,8 @@ C:\USERS\sXXXXXX\DESKTOP
 - Introduction to version control concepts
 - Setting up local development server
 - Browser developer tools overview
+
+[↑ Back to Top](#-table-of-contents)
 
 ### Day 4: First HTML Document
 
@@ -94,6 +110,8 @@ Create your first HTML document:
 
 - Planning your final project
 
+[↑ Back to Top](#-table-of-contents)
+
 ## Final Project Planning
 
 Start thinking about your final project options:
@@ -122,5 +140,7 @@ Create a simple "About Me" HTML page with proper document structure, including h
 - [ ] Begin planning final project concept
 
 ---
+
+[↑ Back to Top](#-table-of-contents)
 
 **Next Week**: HTML5 Fundamentals and Document Structure
