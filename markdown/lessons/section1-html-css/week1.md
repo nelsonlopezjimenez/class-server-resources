@@ -135,34 +135,32 @@ As your teacher, I will work hard to:
 1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011  (Links to an external site.)
 1. copy/paste the following link into the navigation bar in chrome browser
 1. If you do not know how to do it, I'll explain in class
-1. [Textbook HTML/CSS duckett.pdf](/websites/go-public/pdf/duckett.pdf)
-1. [Textbook HTML/CSS duckett.pdf](/websites/P/Documents/duckett.pdf)
-1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 ![HTML/CSS](/websites/go-public/week1/duckett.png)
-1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 <img src="/websites/go-public/week1/duckett.png" alt="HTML-CSS" width="100" height="80" />
+1. [Textbook HTML/CSS duckett.pdf](/static/CANVAS_FILE_CACHES/duckett.pdf)
+1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 ![HTML/CSS](/images/week1/duckett.png)
+1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 <img src="/images/week1/duckett.png" alt="HTML-CSS" width="100" height="80" />
 1. ISBN: 978-1-118-00818-8
 - [duckett textbook source code](/websites/P/Documents/duckett-textbook-src-code)
+- [duckett textbook source code](/static//P/Documents/duckett-textbook-src-code)
 
 
 ## Setting Up Your Environment
 
 ### Required Software
 
-1. **Browser**
-   - Chrome <img src="/websites/go-public/week1/chrome.svg" alt="SVG chrome" width="40" height="30">
-   - Chrome <img src="/images/week1/chrome.svg" alt="SVG chrome" width="40" height="30">
+1. **Browser**   - Chrome <img src="/images/week1/chrome.svg" alt="SVG chrome" width="40" height="30">
    <!-- - Chrome <img src="/image-folder/week1/chrone.svg" alt="not in dist" width="40" height="30"> -->
 
 1. **Text Editor or IDE**
    <!-- - VS Code (/image-folder) ![VS Code](/image-folder/week1/vscode.png)-->
 <!-- <img src="/image-folder/week1/vscode.png" alt="not in dist" width="50" height="40" />  -->
-   - VS Code (recommended)<img src="/websites/go-public/week1/vscode.png" alt="" width="50" height="40" />
+   - VS Code (recommended)<img src="/images/week1/vscode.png" alt="" width="50" height="40" />
 
 2. **Programming Language**
-   - JavaScript (and the other two HTML/CSS)<img src="/websites/go-public/week1/html-css-js.png" alt="HTML-CSS-JS" width="100" height="80" />
+   - JavaScript (and the other two HTML/CSS)<img src="/images/week1/html-css-js.png" alt="HTML-CSS-JS" width="100" height="80" />
 
 
 3. **Terminal/Command Prompt**
-   - Built into your operating system: vim, vi, nano (not favorite)<img src="/websites/go-public/week1/terminal.png" alt="terminal" width="50" height="40" />
+   - Built into your operating system: vim, vi, nano (not favorite)<img src="/images/week1/terminal.png" alt="terminal" width="50" height="40" />
 
   
 
