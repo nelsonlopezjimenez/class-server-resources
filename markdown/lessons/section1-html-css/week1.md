@@ -139,8 +139,7 @@ As your teacher, I will work hard to:
 1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 ![HTML/CSS](/images/week1/duckett.png)
 1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 <img src="/images/week1/duckett.png" alt="HTML-CSS" width="100" height="80" />
 1. ISBN: 978-1-118-00818-8
-- [duckett textbook source code](/websites/P/Documents/duckett-textbook-src-code)
-- [duckett textbook source code](/static//P/Documents/duckett-textbook-src-code)
+- [duckett textbook source code](/static/CANVAS_FILE_CACHES/quarter1/example.nel/public_html/textbook/index.html)
 
 
 ## Setting Up Your Environment
