@@ -68,7 +68,7 @@ C:\USERS\sXXXXXX\DESKTOP
 - Install VS Code and extensions (Live Server, HTML Snippets, Auto Rename Tag)
 - Introduction to Canvas and submission process: [video canvas](/websites/P/RAW-VIDEOS/200 - Canvas Overview for Students-74677642.mp4)
 - Video Canvas<video width="640" height="360" controls autoplay loop muted>
-  <source src="/websites/P/RAW-VIDEOS/200 - Canvas Overview for Students-74677642.mp4" type="video/mp4">
+  <source src="/websites/P/Videos/RAW-VIDEOS/canvas-git-vscode/200 - Canvas Overview for Students-74677642.mp4" type="video/mp4">
   <source src="/websites/go-public/videos/What is a browser[BrXPcaRlBqo].mp4" type="video/mp4">
   <source src="video.webm" type="video/webm">
   Your browser does not support the video tag.
