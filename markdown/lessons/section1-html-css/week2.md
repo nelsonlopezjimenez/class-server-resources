@@ -42,8 +42,9 @@ This is the **first section** of a comprehensive **4-section full-stack web deve
 ### Day 1: Course Introduction
 - Download/update course-server from [http://192.168.1.28:3000](http://192.168.1.28:3000/s888888/node_modules_executables.git)
 - Review syllabus and course expectations
-- Assignment week2 - [Lab2.1 Build a Dream Computer](assign-dream-computer-with-prices)
-- Assignment week2 - [Lab2.1 Build a Dream Computer](/websites/go-public/md/assign-dream-computer-with-prices)
+- Assignment week2 - [Lab2.1 Build a Dream Computer](/markdown/lessons/section1-html-css/assign-dream-computer-with-prices.md)
+- Assignment week2 - [Lab2.1 Build a Dream Computer](/markdown/lessons/section1-html-css/assign-dream-computer-with-prices)
+assign-dream-computer-with-prices)
 - Configure individual laptops: Zeal, Desktop's shortcuts.
 - Set up folder structure for course projects
 ```bash
@@ -66,10 +67,9 @@ C:\USERS\sXXXXXX\DESKTOP
 └───quarter4
 ```
 - Install VS Code and extensions (Live Server, HTML Snippets, Auto Rename Tag)
-- Introduction to Canvas and submission process: [video canvas](/websites/P/RAW-VIDEOS/200 - Canvas Overview for Students-74677642.mp4)
+- Introduction to Canvas and submission process: [video canvas](/static/RAW-VIDEOS/canvas-git-vscode/200 - Canvas Overview for Students-74677642.mp4)
 - Video Canvas<video width="640" height="360" controls autoplay loop muted>
-  <source src="/websites/P/Videos/RAW-VIDEOS/canvas-git-vscode/200 - Canvas Overview for Students-74677642.mp4" type="video/mp4">
-  <source src="/websites/go-public/videos/What is a browser[BrXPcaRlBqo].mp4" type="video/mp4">
+  <source src="/static/Videos/RAW-VIDEOS/canvas-git-vscode/200 - Canvas Overview for Students-74677642.mp4" type="video/mp4">
   <source src="video.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
@@ -96,7 +96,7 @@ C:\USERS\sXXXXXX\DESKTOP
 <hr id="day3" />
 
 ### Day 3: Development Environment Setup
-- [File and folder organization best practices](/websites/P/CANVAS_FILE_CACHES/quarter1/2023-week2-1z.pdf)
+- [File and folder organization best practices](/static/CANVAS_FILE_CACHES/quarter1/2023-week2-1z.pdf)
 - Introduction to version control concepts
 - Setting up local development server
 - Browser developer tools overview
