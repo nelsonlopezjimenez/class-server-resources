@@ -149,6 +149,7 @@ As your teacher, I will work hard to:
 
 1. **Browser**
    - Chrome <img src="/websites/go-public/week1/chrome.svg" alt="SVG chrome" width="40" height="30">
+   - Chrome <img src="/images/week1/chrome.svg" alt="SVG chrome" width="40" height="30">
    <!-- - Chrome <img src="/image-folder/week1/chrone.svg" alt="not in dist" width="40" height="30"> -->
 
 1. **Text Editor or IDE**
