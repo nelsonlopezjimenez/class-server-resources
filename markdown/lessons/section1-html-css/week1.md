@@ -135,10 +135,12 @@ As your teacher, I will work hard to:
 1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011  (Links to an external site.)
 1. copy/paste the following link into the navigation bar in chrome browser
 1. If you do not know how to do it, I'll explain in class
-1. [Textbook HTML/CSS duckett.pdf](/websites/images/pdf/duckett.pdf)
-1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 ![HTML/CSS](/websites/images/week1/duckett.png)
-1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 <img src="/websites/images/week1/duckett.png" alt="HTML-CSS" width="100" height="80" />
+1. [Textbook HTML/CSS duckett.pdf](/websites/go-public/pdf/duckett.pdf)
+1. [Textbook HTML/CSS duckett.pdf](/websites/P/Documents/duckett.pdf)
+1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 ![HTML/CSS](/websites/go-public/week1/duckett.png)
+1. HTML & CSS design and build websites, Jon Ducket, Wiley, 2011 <img src="/websites/go-public/week1/duckett.png" alt="HTML-CSS" width="100" height="80" />
 1. ISBN: 978-1-118-00818-8
+- [duckett textbook source code](/websites/P/Documents/duckett-textbook-src-code)
 
 
 ## Setting Up Your Environment
@@ -146,20 +148,20 @@ As your teacher, I will work hard to:
 ### Required Software
 
 1. **Browser**
-   - Chrome <img src="/websites/images/week1/chrome.svg" alt="SVG chrome" width="40" height="30">
+   - Chrome <img src="/websites/go-public/week1/chrome.svg" alt="SVG chrome" width="40" height="30">
    <!-- - Chrome <img src="/image-folder/week1/chrone.svg" alt="not in dist" width="40" height="30"> -->
 
 1. **Text Editor or IDE**
    <!-- - VS Code (/image-folder) ![VS Code](/image-folder/week1/vscode.png)-->
 <!-- <img src="/image-folder/week1/vscode.png" alt="not in dist" width="50" height="40" />  -->
-   - VS Code (recommended)<img src="/websites/images/week1/vscode.png" alt="" width="50" height="40" />
+   - VS Code (recommended)<img src="/websites/go-public/week1/vscode.png" alt="" width="50" height="40" />
 
 2. **Programming Language**
-   - JavaScript (and the other two HTML/CSS)<img src="/websites/images/week1/html-css-js.png" alt="HTML-CSS-JS" width="100" height="80" />
+   - JavaScript (and the other two HTML/CSS)<img src="/websites/go-public/week1/html-css-js.png" alt="HTML-CSS-JS" width="100" height="80" />
 
 
 3. **Terminal/Command Prompt**
-   - Built into your operating system: vim, vi, nano (not favorite)<img src="/websites/images/week1/terminal.png" alt="terminal" width="50" height="40" />
+   - Built into your operating system: vim, vi, nano (not favorite)<img src="/websites/go-public/week1/terminal.png" alt="terminal" width="50" height="40" />
 
   
 
@@ -188,47 +190,47 @@ As your teacher, I will work hard to:
 <hr id="day2" />
 
 #### Day 2 🔧 🎥
-1. Click to open 🔧 [▶️ **course server** ](http://localhost:22022)
-1. [Learning Tips](http://localhost:22022/websites/gcfglobal-learning-tips/tutrial.html)
-   1.  [🧠 Discover your learning style](http://localhost:22022/websites/gcfglobal-learning-tips/discover-your-learning-style/lesson.html)
-   1.  [🔄 The study cycle](http://localhost:22022/websites/gcfglobal-learning-tips/the-study-cycle/lesson.html)
-1. [Problem Solving And Decision Making](http://localhost:22022/websites/gcfglobal-problem-solving-and-decision-making/tutorial.html)
-1.  [📄 Resume Writing](http://localhost:22022/websites/gcfglobal-resumewriting/tutorial.html)
-   1.  [🖼️ Resume Writing Gallery](http://localhost:22022/websites/gcfglobal-resumewriting/gallery-of-sample-resumes/lesson.html)
-1. [Windows 10 ⚙️](http://localhost:22022/websites/gcfglobal-windows10/tutorial.html)
-   1. [Windows 10 Features](http://localhost:22022/websites/gcfglobal-windows-10/windows-10-features/lesson.html)
-1. [Basic Computer Skills](http://localhost:22022/websites/gcfglobal-basic-computer-skills/tutorial.html)
-   1. [🖥️ Your First Computer](http://localhost:22022/websites/gcfglobal-basic-computer-skills/getting-started-with-your-first-computer/lesson.html)
-1. [Computer Basics](http://localhost:22022/websites/gcfglobal-computer-basics/tutorial.html)
-   1. [Computer Basics Parts](http://localhost:22022/websites/gcfglobal-computer-basics/basic-parts-of-a-computer/lesson.html)
-   1. [🌐 Connecting to the Internet](http://localhost:22022/websites/gcfglobal-computer-basics/connecting-to-the-internet/lesson.html)
-   1. [💾 The Operating System](http://localhost:22022/websites/gcfglobal-computer-basics/getting-to-know-the-os/lesson.html)
-   1. [📚 Learning a new program](http://localhost:22022/websites/gcfglobal-computer-basics/learning-a-new-program/lesson.html)
+1. Click to open 🔧 [▶️ **course server** ]()
+1. [Learning Tips](/websites/gcfglobal-learning-tips/tutrial.html)
+   1.  [🧠 Discover your learning style](/websites/gcfglobal-learning-tips/discover-your-learning-style/lesson.html)
+   1.  [🔄 The study cycle](/websites/gcfglobal-learning-tips/the-study-cycle/lesson.html)
+1. [Problem Solving And Decision Making](/websites/gcfglobal-problem-solving-and-decision-making/tutorial.html)
+1.  [📄 Resume Writing](/websites/gcfglobal-resumewriting/tutorial.html)
+   1.  [🖼️ Resume Writing Gallery](/websites/gcfglobal-resumewriting/gallery-of-sample-resumes/lesson.html)
+1. [Windows 10 ⚙️](/websites/gcfglobal-windows10/tutorial.html)
+   1. [Windows 10 Features](/websites/gcfglobal-windows-10/windows-10-features/lesson.html)
+1. [Basic Computer Skills](/websites/gcfglobal-basic-computer-skills/tutorial.html)
+   1. [🖥️ Your First Computer](/websites/gcfglobal-basic-computer-skills/getting-started-with-your-first-computer/lesson.html)
+1. [Computer Basics](/websites/gcfglobal-computer-basics/tutorial.html)
+   1. [Computer Basics Parts](/websites/gcfglobal-computer-basics/basic-parts-of-a-computer/lesson.html)
+   1. [🌐 Connecting to the Internet](/websites/gcfglobal-computer-basics/connecting-to-the-internet/lesson.html)
+   1. [💾 The Operating System](/websites/gcfglobal-computer-basics/getting-to-know-the-os/lesson.html)
+   1. [📚 Learning a new program](/websites/gcfglobal-computer-basics/learning-a-new-program/lesson.html)
 
 <hr id="day3" />
 
 [↑ Back to Top](#table-of-contents)
 
 #### Day 3 🎥
-http://localhost:22022/websites/gcfglobal-internetbasics/what-is-the-internet/lesson.html
-1. [🌍 What is the internet](http://localhost:22022/websites/gcfglobal-internetbasics/what-is-the-internet/lesson.html)
-1. [🌍 What is the internet](http://localhost:22022/websites/gcfglobal-internetbasics/what-is-the-internet/lesson.html)
-1. [🔍 Using a web browser](http://localhost:22022/websites/gcfglobal-internetbasics/using-a-web-browser/lesson.html)
-1. [Understanding URL](http://localhost:22022/websites/gcfglobal-internetbasics/understanding-urls/lesson.html)
-1. [What is gif](http://localhost:22022/websites/gcfglobal-internet-tips/what-is-an-animated-gif/lesson.html)
+/websites/gcfglobal-internetbasics/what-is-the-internet/lesson.html
+1. [🌍 What is the internet](/websites/gcfglobal-internetbasics/what-is-the-internet/lesson.html)
+1. [🌍 What is the internet](/websites/gcfglobal-internetbasics/what-is-the-internet/lesson.html)
+1. [🔍 Using a web browser](/websites/gcfglobal-internetbasics/using-a-web-browser/lesson.html)
+1. [Understanding URL](/websites/gcfglobal-internetbasics/understanding-urls/lesson.html)
+1. [What is gif](/websites/gcfglobal-internet-tips/what-is-an-animated-gif/lesson.html)
 
 <hr id="day4" />
 
 #### Day 4
-1. [🤖 Automation impact](http://localhost:22022/websites/gcfglobal-thenow/how-will-automation-impact-our-lives/lesson.html)
-1. [Understanding login](http://localhost:22022/websites/gcfglobal-thenow/understanding-login-methods/lesson.html)
-1. [⚠️ What is plagiarism ](http://localhost:22022/websites/gcfglobal-usinginformationcorrectly/avoiding-plagiarism/lesson.html)
-1. [📸 Taking screenshots](http://localhost:22022/websites/gcfglobal-techsavvy/taking-screenshots/lesson.html)
-1. [📁 Finding your downloads](http://localhost:22022/websites/gcfglobal-techsavvy/finding-your-downloads/lesson.html)
-1. [🗜️ Working with zip files](http://localhost:22022/websites/gcfglobal-techsavvy/working-with-zip-files/lesson.html)
-1. [Common keyboard shortcuts](http://localhost:22022/websites/gcfglobal-techsavvy/keyboard-shortcuts/lesson.html)
-1. [⇥ tab key usage](http://localhost:22022/websites/gcfglobal-techsavvy/speed-up-your-workflow-with-the-tab-key/lesson.html)
-1. [🛒 Buying Computers](http://localhost:22022/websites/gcfglobal-buying-computers/computer-buying-guide/lesson.html)
+1. [🤖 Automation impact](/websites/gcfglobal-thenow/how-will-automation-impact-our-lives/lesson.html)
+1. [Understanding login](/websites/gcfglobal-thenow/understanding-login-methods/lesson.html)
+1. [⚠️ What is plagiarism ](/websites/gcfglobal-usinginformationcorrectly/avoiding-plagiarism/lesson.html)
+1. [📸 Taking screenshots](/websites/gcfglobal-techsavvy/taking-screenshots/lesson.html)
+1. [📁 Finding your downloads](/websites/gcfglobal-techsavvy/finding-your-downloads/lesson.html)
+1. [🗜️ Working with zip files](/websites/gcfglobal-techsavvy/working-with-zip-files/lesson.html)
+1. [Common keyboard shortcuts](/websites/gcfglobal-techsavvy/keyboard-shortcuts/lesson.html)
+1. [⇥ tab key usage](/websites/gcfglobal-techsavvy/speed-up-your-workflow-with-the-tab-key/lesson.html)
+1. [🛒 Buying Computers](/websites/gcfglobal-buying-computers/computer-buying-guide/lesson.html)
 1. You can select any other tutorial among the ones presented or watch them all.
 
 
