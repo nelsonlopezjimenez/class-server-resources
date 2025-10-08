@@ -157,6 +157,8 @@ function UserCard({ name, age, email, isActive }) {
   );
 }
 ```
+[↑ Back to Top](#table-of-contents)
+
 ### Component Composition:
 Learn how to build complex UIs by composing smaller, reusable components that accept props.
 Activities:
