@@ -186,11 +186,11 @@ Create a simple "About Me" HTML page with proper document structure, including h
 
 **Next Week**: HTML5 Fundamentals and Document Structure
 
----
-title: "HTML Fundamentals - Building Your First Resume"
-description: "Week 1 - Introduction to HTML: history of the web, HTML evolution, basic syntax and structure, semantic HTML5 elements, document structure, text formatting, lists, links, images, and building a complete resume. Assignments: create your personal resume in HTML, build a recipe page, develop a personal bio page with proper semantic structure"
-week: 1
----
+# Project: "HTML Fundamentals - Building Your First Resume"
+
+## description: 
+"Week 1 - Introduction to HTML: history of the web, HTML evolution, basic syntax and structure, semantic HTML5 elements, document structure, text formatting, lists, links, images, and building a complete resume. Assignments: create your personal resume in HTML, build a recipe page, develop a personal bio page with proper semantic structure"
+
 
 <h1 id="day1">Welcome to HTML - The Foundation of the Web!</h1>
 
@@ -280,8 +280,8 @@ HTML revolutionized communication and information sharing:
 
 3. **Folder Structure**: Create a folder on your computer for this course:
 ```
-web-development-course/
-├── week1/
+Desktop/quarter1/
+├── week2/
 │   ├── resume.html
 │   ├── practice.html
 │   └── images/
@@ -302,15 +302,16 @@ web-development-course/
 **Markdown** is a lightweight markup language created in 2004 by John Gruber. It's designed to be easy to read and write, and can be converted to HTML.
 
 **Markdown Example:**
-```markdown
+
 # This is a heading
+
 This is a paragraph with **bold text** and *italic text*.
 
 - Item 1
 - Item 2
 - Item 3
 
-Why Markdown is Better for Readers:
+### Why Markdown is Better for Readers:
 
 Plain text readability: You can read markdown files as-is without converting them
 Minimal syntax: Uses intuitive symbols like # for headings, * for emphasis
@@ -318,14 +319,14 @@ Quick to write: Much faster than typing HTML tags
 Clean and simple: No opening/closing tags cluttering the text
 Popular for documentation: Used in GitHub, Reddit, Discord, and many note-taking apps
 
-When to Use Markdown:
+### When to Use Markdown:
 
-Documentation and README files
-Note-taking and writing
-Blog posts (many platforms convert markdown to HTML)
-Quick formatting without complexity
+1. Documentation and README files
+1. Note-taking and writing
+1. Blog posts (many platforms convert markdown to HTML)
+1. Quick formatting without complexity
 
-What is XML?
+### What is XML?
 XML (Extensible Markup Language) is a markup language designed to store and transport data. It's similar to HTML but focuses on data structure rather than display.
 XML Example:
 
@@ -337,206 +338,40 @@ XML Example:
   <email>jane@example.com</email>
 </person>
 ```
-Key Differences:
+### Key Differences:
 
-HTML: Designed for displaying content in web browsers
+#### HTML: 
+Designed for displaying content in web browsers
 XML: Designed for storing and transporting data
 Markdown: Designed for easy writing and reading
 
-XML Characteristics:
+#### XML Characteristics:
 
 Stricter rules than HTML
 Custom tag names (you define your own tags)
 Used for data exchange between systems
 Must be well-formed (properly nested and closed)
 
-When to Use XML:
+#### When to Use XML:
 
 Configuration files
 Data exchange between different systems
 RSS feeds
 Storing structured data
 
-Comparison Table
-FeatureHTMLMarkdownXMLPurposeDisplay web pagesEasy writing/readingStore/transport dataReadabilityMedium (tags visible)High (plain text)Low (verbose)Learning CurveEasyVery EasyMediumFlexibilityPredefined tagsLimited syntaxCustom tagsBrowser SupportNativeNeeds conversionNeeds parser
+#### Comparison Table
+| Feature | HTML | Markdown | XML |
+|---------|------|----------|-----|
+| Purpose | Display web pages | Easy writing/reading | Store/transport data |
+| Readability | Medium (tags visible) | High (plain text) | Low (verbose) |
+| Learning Curve | Easy | Very Easy | Medium |
+| Flexibility | Predefined tags | Limited syntax | Custom tags |
+| Browser Support | Native | Needs conversion | Needs parser |
 
-Daily Activities
-<br id="day1">
-Day 1: HTML Basics and Document Structure
-Understanding HTML Syntax:
-HTML uses tags to mark up content. Tags are keywords enclosed in angle brackets.
-<tagname>Content goes here</tagname>
 
-```markdown
----
-title: "HTML Fundamentals - Building Your First Resume"
-description: "Week 1 - Introduction to HTML: history of the web, HTML evolution, basic syntax and structure, semantic HTML5 elements, document structure, text formatting, lists, links, images, and building a complete resume. Assignments: create your personal resume in HTML, build a recipe page, develop a personal bio page with proper semantic structure"
-week: 1
----
+
 
 <h1 id="day1">Welcome to HTML - The Foundation of the Web!</h1>
-
-<h2 id="table-of-contents">📚 Table of Contents</h2>
-
-- [Course Overview](#overview)
-- [What is HTML?](#whatishtml)
-- [Why Learn HTML?](#whylearn)
-- [Development Environment](#environment)
-- [HTML vs Markdown vs XML](#comparison)
-- [Day 1](#day1)
-- [Day 2](#day2)
-- [Day 3](#day3)
-- [Day 4](#day4)
-- [Day 5](#day5)
-- 🧪 [Assignments](#assignments)
-- [Next Week Preview](#nextweek)
-
-<br id="overview">
-
-## Course Overview
-
-This week introduces you to HTML (HyperText Markup Language), the fundamental building block of every website on the internet. You'll learn how to structure content, understand HTML's role in web development, and build a complete resume website from scratch. By the end of this week, you'll understand how the web works and have your own professional resume in HTML format.
-
-<br id="whatishtml">
-
-## What is HTML?
-
-**HTML** stands for **HyperText Markup Language**. Let's break that down:
-
-- **HyperText**: Text that contains links to other text. This is what makes the web "web-like" - documents connected to other documents
-- **Markup**: A system of annotating text to indicate how it should be structured or displayed
-- **Language**: A set of rules and syntax for creating documents
-
-**HTML is NOT a programming language** - it's a markup language. It doesn't have logic, loops, or conditions. Instead, it describes the structure and content of web pages.
-
-### A Brief History of HTML
-
-**1991**: Tim Berners-Lee creates HTML at CERN (European Organization for Nuclear Research) in Switzerland. The first version had only 18 tags.
-
-**1995**: HTML 2.0 becomes the first standard specification.
-
-**1997**: HTML 3.2 adds support for tables, applets, and text flow around images.
-
-**1999**: HTML 4.01 introduces better support for stylesheets and scripting.
-
-**2014**: HTML5 becomes the official standard, adding semantic elements, multimedia support, and modern web features.
-
-**Today**: HTML5 is the current standard, continuously evolving with new features.
-
-### HTML's Impact on the World
-
-HTML revolutionized communication and information sharing:
-- **Made information accessible**: Anyone can publish content to billions of people
-- **Created the digital economy**: E-commerce, social media, streaming services all built on HTML
-- **Democratized publishing**: No need for printing presses or distribution networks
-- **Connected the world**: Information flows instantly across continents
-- **Enabled innovation**: Billions of websites, apps, and services built on this foundation
-
-<br id="whylearn">
-
-## Why Learn HTML?
-
-1. **Foundation of the Web**: Every website uses HTML, even complex web applications
-2. **Career Opportunities**: Web development is one of the fastest-growing fields
-3. **Creative Expression**: Build your own websites, portfolios, and projects
-4. **Easy to Learn**: HTML is beginner-friendly with a gentle learning curve
-5. **Control Your Presence**: Create and maintain your own web content
-6. **Universal Skill**: Useful for marketers, designers, entrepreneurs, and developers
-
-<br id="environment">
-
-## Development Environment Setup
-
-**What You Need:**
-1. **Text Editor**: Choose one of these free options:
-   - **Visual Studio Code** (Recommended) - vscode.dev or download from code.visualstudio.com
-   - **Notepad++** (Windows)
-   - **Sublime Text**
-   - **Even basic Notepad works!**
-
-2. **Web Browser**: Any modern browser:
-   - Google Chrome (Recommended for development)
-   - Mozilla Firefox
-   - Microsoft Edge
-   - Safari
-
-3. **Folder Structure**: Create a folder on your computer for this course:
-   ```
-   web-development-course/
-   ├── week1/
-   │   ├── resume.html
-   │   ├── practice.html
-   │   └── images/
-   ```
-
-**How to View Your HTML Files:**
-1. Save your file with `.html` extension
-2. Right-click the file
-3. Choose "Open with" and select your browser
-4. Or simply drag and drop the file into an open browser window
-
-<br id="comparison">
-
-## HTML vs Markdown vs XML
-
-### What is Markdown?
-
-**Markdown** is a lightweight markup language created in 2004 by John Gruber. It's designed to be easy to read and write, and can be converted to HTML.
-
-**Markdown Example:**
-```markdown
-# This is a heading
-This is a paragraph with **bold text** and *italic text*.
-
-- Item 1
-- Item 2
-- Item 3
-```
-
-**Why Markdown is Better for Readers:**
-- **Plain text readability**: You can read markdown files as-is without converting them
-- **Minimal syntax**: Uses intuitive symbols like `#` for headings, `*` for emphasis
-- **Quick to write**: Much faster than typing HTML tags
-- **Clean and simple**: No opening/closing tags cluttering the text
-- **Popular for documentation**: Used in GitHub, Reddit, Discord, and many note-taking apps
-
-**When to Use Markdown:**
-- Documentation and README files
-- Note-taking and writing
-- Blog posts (many platforms convert markdown to HTML)
-- Quick formatting without complexity
-
-### What is XML?
-
-**XML** (Extensible Markup Language) is a markup language designed to store and transport data. It's similar to HTML but focuses on data structure rather than display.
-
-**XML Example:**
-```xml
-<?xml version="1.0"?>
-<person>
-  <name>Jane Doe</name>
-  <age>28</age>
-  <email>jane@example.com</email>
-</person>
-```
-
-**Key Differences:**
-- **HTML**: Designed for displaying content in web browsers
-- **XML**: Designed for storing and transporting data
-- **Markdown**: Designed for easy writing and reading
-
-**XML Characteristics:**
-- Stricter rules than HTML
-- Custom tag names (you define your own tags)
-- Used for data exchange between systems
-- Must be well-formed (properly nested and closed)
-
-**When to Use XML:**
-- Configuration files
-- Data exchange between different systems
-- RSS feeds
-- Storing structured data
-
 ### Comparison Table
 
 | Feature | HTML | Markdown | XML |
