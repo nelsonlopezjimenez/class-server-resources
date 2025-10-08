@@ -63,6 +63,8 @@ React Official Docs: react.dev
 Create React App Documentation
 React Developer Tools
 
+[↑ Back to Top](#table-of-contents)
+
 ## Additional Learning:
 
 MDN Web Docs for JavaScript review
@@ -233,6 +235,7 @@ const [formData, setFormData] = useState({
   email: ''
 });
 ```
+[↑ Back to Top](#table-of-contents)
 
 ## Activities:
 
@@ -319,6 +322,7 @@ function Timer() {
   return <p>Seconds: {seconds}</p>;
 }
 ```
+[↑ Back to Top](#table-of-contents)
 
 ### useEffect Dependency Array:
 
@@ -396,3 +400,5 @@ Completing all assignments from this week
 
 Happy Coding! 🚀
 Remember: React has a learning curve, but practice makes perfect. Don't hesitate to experiment, break things, and learn from errors. The React community is vast and supportive—use it!
+
+[↑ Back to Top](#table-of-contents)
