@@ -3,7 +3,6 @@ title: "Git Naming Conventions - Best Practices for Professional Development"
 description: "Week 1 - Git naming conventions and best practices: branch naming strategies, commit message standards, tag conventions, repository naming, file naming, and collaborative workflow patterns. Assignments: create a practice repository with proper naming, write 10 conventional commits, develop a team naming guide"
 week: 1
 ---
-<h1>To fix</h1>
 
 <h1 id="day1">Mastering Git Naming Conventions!</h1>
 
