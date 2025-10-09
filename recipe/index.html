@@ -1,0 +1,109 @@
+
+<!-- Author: [YOUR NAME HERE] -->
+<!-- Date: [TODAY'S DATE] -->
+<!-- Project: Mobile-First Recipe Card App -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The viewport meta tag is CRUCIAL for mobile-first design -->
+    <!-- It tells the browser to match the screen's width and set initial zoom to 100% -->
+    
+    <title>Delicious Recipe App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main container for our app -->
+    <div class="container">
+        
+        <!-- Header section -->
+        <header class="header">
+            <h1 class="header__title">My Recipe Collection</h1>
+            <p class="header__subtitle">Delicious meals made simple</p>
+        </header>
+
+        <!-- Main content area -->
+        <main class="main">
+            
+            <!-- Single recipe card - we'll start with one -->
+            <article class="recipe-card">
+                
+                <!-- Recipe image with multiple resolutions for different devices -->
+                <!-- The browser will choose the best image based on screen size -->
+                <picture class="recipe-card__picture">
+                    <source 
+                        media="(min-width: 1024px)" 
+                        srcset="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop">
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=450&fit=crop">
+                    <img 
+                        src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" 
+                        alt="Delicious vegetable salad bowl"
+                        class="recipe-card__image">
+                    <!-- Smallest image as default for mobile -->
+                    <!-- Larger images load only on bigger screens = faster mobile performance -->
+                </picture>
+
+                <!-- Recipe content -->
+                <div class="recipe-card__content">
+                    
+                    <!-- Title and quick info -->
+                    <h2 class="recipe-card__title">Mediterranean Salad Bowl</h2>
+                    
+                    <div class="recipe-card__meta">
+                        <span class="meta__item">⏱️ 15 min</span>
+                        <span class="meta__item">👥 4 servings</span>
+                        <span class="meta__item">🔥 Easy</span>
+                    </div>
+
+                    <!-- Short description -->
+                    <p class="recipe-card__description">
+                        Fresh and vibrant salad packed with Mediterranean flavors. 
+                        Perfect for a quick lunch or light dinner.
+                    </p>
+
+                    <!-- Ingredients list -->
+                    <div class="recipe-card__section">
+                        <h3 class="section__title">Ingredients</h3>
+                        <ul class="ingredients-list">
+                            <li class="ingredients-list__item">2 cups mixed greens</li>
+                            <li class="ingredients-list__item">1 cucumber, diced</li>
+                            <li class="ingredients-list__item">1 cup cherry tomatoes</li>
+                            <li class="ingredients-list__item">1/2 red onion, sliced</li>
+                            <li class="ingredients-list__item">1/2 cup feta cheese</li>
+                            <li class="ingredients-list__item">1/4 cup olives</li>
+                            <li class="ingredients-list__item">3 tbsp olive oil</li>
+                            <li class="ingredients-list__item">2 tbsp lemon juice</li>
+                        </ul>
+                    </div>
+
+                    <!-- Instructions -->
+                    <div class="recipe-card__section">
+                        <h3 class="section__title">Instructions</h3>
+                        <ol class="instructions-list">
+                            <li class="instructions-list__item">Wash and chop all vegetables into bite-sized pieces.</li>
+                            <li class="instructions-list__item">Combine greens, cucumber, tomatoes, and onion in a large bowl.</li>
+                            <li class="instructions-list__item">Add feta cheese and olives on top.</li>
+                            <li class="instructions-list__item">Drizzle with olive oil and lemon juice.</li>
+                            <li class="instructions-list__item">Toss gently and serve immediately.</li>
+                        </ol>
+                    </div>
+
+                    <!-- Action button -->
+                    <button class="recipe-card__button">Save Recipe</button>
+                </div>
+            </article>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer__text">&copy; 2025 My Recipe Collection</p>
+        </footer>
+
+    </div>
+</body>
+</html>
