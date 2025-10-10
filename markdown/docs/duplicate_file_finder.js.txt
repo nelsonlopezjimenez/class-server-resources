@@ -1,0 +1,381 @@
+#!/usr/bin/env node
+/**
+ * Duplicate File Finder and Remover
+ * Compares two folders and identifies duplicates based on:
+ * - File names
+ * - File hashes (MD5)
+ * - Metadata (for images/videos)
+ * - Creation/modification dates
+ */
+
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
+
+// Configuration
+const CONFIG = {
+  folder1: '/Users/lopefield/Pictures',
+  folder2: '/Volumes/MacintoshHD2/lopefield_data/Pictures',
+  outputFile: 'duplicates_report.json',
+  removeScript: 'remove_duplicates.sh'
+};
+
+/**
+ * Calculate MD5 hash of a file
+ */
+function calculateHash(filePath) {
+  return new Promise((resolve, reject) => {
+    const hash = crypto.createHash('md5');
+    const stream = fs.createReadStream(filePath);
+    
+    stream.on('data', data => hash.update(data));
+    stream.on('end', () => resolve(hash.digest('hex')));
+    stream.on('error', reject);
+  });
+}
+
+/**
+ * Get file metadata
+ */
+function getFileMetadata(filePath) {
+  try {
+    const stats = fs.statSync(filePath);
+    return {
+      size: stats.size,
+      created: stats.birthtime,
+      modified: stats.mtime,
+      accessed: stats.atime
+    };
+  } catch (err) {
+    return null;
+  }
+}
+
+/**
+ * Get file extension
+ */
+function getExtension(filePath) {
+  return path.extname(filePath).toLowerCase();
+}
+
+/**
+ * Check if file is an image
+ */
+function isImage(filePath) {
+  const imageExts = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp', '.heic'];
+  return imageExts.includes(getExtension(filePath));
+}
+
+/**
+ * Check if file is a video
+ */
+function isVideo(filePath) {
+  const videoExts = ['.mp4', '.mov', '.avi', '.mkv', '.wmv', '.flv', '.webm', '.m4v'];
+  return videoExts.includes(getExtension(filePath));
+}
+
+/**
+ * Recursively get all files in a directory
+ */
+function getAllFiles(dirPath, arrayOfFiles = []) {
+  try {
+    const files = fs.readdirSync(dirPath);
+    
+    files.forEach(file => {
+      const filePath = path.join(dirPath, file);
+      
+      try {
+        if (fs.statSync(filePath).isDirectory()) {
+          arrayOfFiles = getAllFiles(filePath, arrayOfFiles);
+        } else {
+          arrayOfFiles.push(filePath);
+        }
+      } catch (err) {
+        console.error(`Error accessing ${filePath}: ${err.message}`);
+      }
+    });
+    
+    return arrayOfFiles;
+  } catch (err) {
+    console.error(`Error reading directory ${dirPath}: ${err.message}`);
+    return arrayOfFiles;
+  }
+}
+
+/**
+ * Build file index with metadata
+ */
+async function buildFileIndex(folderPath, label) {
+  console.log(`\n📂 Scanning ${label}: ${folderPath}`);
+  
+  const files = getAllFiles(folderPath);
+  console.log(`   Found ${files.length} files`);
+  
+  const index = {
+    byName: new Map(),
+    byHash: new Map(),
+    bySizeAndDate: new Map()
+  };
+  
+  let processed = 0;
+  for (const filePath of files) {
+    processed++;
+    if (processed % 100 === 0) {
+      console.log(`   Processing: ${processed}/${files.length}`);
+    }
+    
+    const fileName = path.basename(filePath);
+    const metadata = getFileMetadata(filePath);
+    
+    if (!metadata) continue;
+    
+    // Index by name
+    if (!index.byName.has(fileName)) {
+      index.byName.set(fileName, []);
+    }
+    index.byName.get(fileName).push({ path: filePath, metadata });
+    
+    // Index by size and date (for quick comparison)
+    const sizeKey = `${metadata.size}_${metadata.modified.getTime()}`;
+    if (!index.bySizeAndDate.has(sizeKey)) {
+      index.bySizeAndDate.set(sizeKey, []);
+    }
+    index.bySizeAndDate.get(sizeKey).push({ path: filePath, metadata });
+    
+    // Calculate hash for files that might be duplicates
+    // (Only for files with same size to save time)
+    try {
+      if (metadata.size > 0 && metadata.size < 100 * 1024 * 1024) { // Skip files > 100MB for speed
+        const hash = await calculateHash(filePath);
+        if (!index.byHash.has(hash)) {
+          index.byHash.set(hash, []);
+        }
+        index.byHash.get(hash).push({ path: filePath, metadata, fileName });
+      }
+    } catch (err) {
+      console.error(`   Error hashing ${filePath}: ${err.message}`);
+    }
+  }
+  
+  console.log(`   ✓ Indexed ${files.length} files`);
+  return index;
+}
+
+/**
+ * Compare two indexes and find duplicates
+ */
+function findDuplicates(index1, index2) {
+  const duplicates = {
+    exactNameMatch: [],
+    hashMatch: [],
+    sizeDateMatch: [],
+    possibleMatches: []
+  };
+  
+  console.log('\n🔍 Finding duplicates...');
+  
+  // 1. Exact name matches
+  console.log('   Checking name matches...');
+  for (const [name, files1] of index1.byName) {
+    if (index2.byName.has(name)) {
+      const files2 = index2.byName.get(name);
+      files1.forEach(f1 => {
+        files2.forEach(f2 => {
+          duplicates.exactNameMatch.push({
+            file1: f1.path,
+            file2: f2.path,
+            name: name,
+            size1: f1.metadata.size,
+            size2: f2.metadata.size,
+            modified1: f1.metadata.modified,
+            modified2: f2.metadata.modified
+          });
+        });
+      });
+    }
+  }
+  
+  // 2. Hash matches (content identical)
+  console.log('   Checking hash matches...');
+  for (const [hash, files1] of index1.byHash) {
+    if (index2.byHash.has(hash)) {
+      const files2 = index2.byHash.get(hash);
+      files1.forEach(f1 => {
+        files2.forEach(f2 => {
+          duplicates.hashMatch.push({
+            file1: f1.path,
+            file2: f2.path,
+            hash: hash,
+            name1: f1.fileName,
+            name2: f2.fileName,
+            size: f1.metadata.size
+          });
+        });
+      });
+    }
+  }
+  
+  // 3. Size and date matches
+  console.log('   Checking size/date matches...');
+  for (const [key, files1] of index1.bySizeAndDate) {
+    if (index2.bySizeAndDate.has(key)) {
+      const files2 = index2.bySizeAndDate.get(key);
+      files1.forEach(f1 => {
+        files2.forEach(f2 => {
+          const name1 = path.basename(f1.path);
+          const name2 = path.basename(f2.path);
+          
+          // Skip if already found by name or hash
+          const alreadyFound = 
+            duplicates.exactNameMatch.some(d => d.file1 === f1.path && d.file2 === f2.path) ||
+            duplicates.hashMatch.some(d => d.file1 === f1.path && d.file2 === f2.path);
+          
+          if (!alreadyFound) {
+            duplicates.sizeDateMatch.push({
+              file1: f1.path,
+              file2: f2.path,
+              name1: name1,
+              name2: name2,
+              size: f1.metadata.size,
+              modified: f1.metadata.modified
+            });
+          }
+        });
+      });
+    }
+  }
+  
+  console.log(`\n📊 Results:`);
+  console.log(`   Exact name matches: ${duplicates.exactNameMatch.length}`);
+  console.log(`   Hash matches (identical content): ${duplicates.hashMatch.length}`);
+  console.log(`   Size/date matches: ${duplicates.sizeDateMatch.length}`);
+  
+  return duplicates;
+}
+
+/**
+ * Generate removal script
+ */
+function generateRemovalScript(duplicates, scriptPath) {
+  console.log(`\n📝 Generating removal script: ${scriptPath}`);
+  
+  let script = '#!/bin/bash\n';
+  script += '# Duplicate File Removal Script\n';
+  script += '# Generated: ' + new Date().toISOString() + '\n';
+  script += '# WARNING: Review this script before running!\n\n';
+  script += 'set -e\n\n';
+  
+  script += '# Exact name matches (likely same files)\n';
+  duplicates.exactNameMatch.forEach((dup, idx) => {
+    script += `# Match ${idx + 1}: ${path.basename(dup.name)}\n`;
+    script += `# File 1: ${dup.file1} (${dup.size1} bytes, ${dup.modified1})\n`;
+    script += `# File 2: ${dup.file2} (${dup.size2} bytes, ${dup.modified2})\n`;
+    
+    // Remove from folder 1 (internal drive) if sizes match
+    if (dup.size1 === dup.size2) {
+      script += `rm "${dup.file1}"\n`;
+    } else {
+      script += `# Size mismatch - review manually\n`;
+      script += `# rm "${dup.file1}"\n`;
+    }
+    script += '\n';
+  });
+  
+  script += '\n# Hash matches (identical content, different names)\n';
+  duplicates.hashMatch.forEach((dup, idx) => {
+    script += `# Match ${idx + 1}: ${dup.name1} == ${dup.name2}\n`;
+    script += `# File 1: ${dup.file1}\n`;
+    script += `# File 2: ${dup.file2}\n`;
+    script += `# Hash: ${dup.hash}\n`;
+    script += `rm "${dup.file1}"\n\n`;
+  });
+  
+  script += '\n# Size/date matches (review before uncommenting)\n';
+  duplicates.sizeDateMatch.forEach((dup, idx) => {
+    script += `# Possible match ${idx + 1}:\n`;
+    script += `# File 1: ${dup.file1}\n`;
+    script += `# File 2: ${dup.file2}\n`;
+    script += `# Size: ${dup.size}, Modified: ${dup.modified}\n`;
+    script += `# rm "${dup.file1}"\n\n`;
+  });
+  
+  script += 'echo "Duplicate removal complete!"\n';
+  script += 'echo "Freed space:"\n';
+  script += 'df -h /\n';
+  
+  fs.writeFileSync(scriptPath, script);
+  fs.chmodSync(scriptPath, '755');
+  
+  console.log(`   ✓ Script generated: ${scriptPath}`);
+  console.log(`   Review the script before running: cat ${scriptPath}`);
+  console.log(`   To execute: ./${scriptPath}`);
+}
+
+/**
+ * Main function
+ */
+async function main() {
+  console.log('╔════════════════════════════════════════════════╗');
+  console.log('║     Duplicate File Finder & Remover           ║');
+  console.log('╚════════════════════════════════════════════════╝');
+  
+  // Check if folders exist
+  if (!fs.existsSync(CONFIG.folder1)) {
+    console.error(`❌ Folder 1 not found: ${CONFIG.folder1}`);
+    process.exit(1);
+  }
+  
+  if (!fs.existsSync(CONFIG.folder2)) {
+    console.error(`❌ Folder 2 not found: ${CONFIG.folder2}`);
+    process.exit(1);
+  }
+  
+  try {
+    // Build indexes
+    const index1 = await buildFileIndex(CONFIG.folder1, 'Folder 1 (Source)');
+    const index2 = await buildFileIndex(CONFIG.folder2, 'Folder 2 (Backup)');
+    
+    // Find duplicates
+    const duplicates = findDuplicates(index1, index2);
+    
+    // Save report
+    const report = {
+      timestamp: new Date().toISOString(),
+      folder1: CONFIG.folder1,
+      folder2: CONFIG.folder2,
+      duplicates: duplicates
+    };
+    
+    fs.writeFileSync(CONFIG.outputFile, JSON.stringify(report, null, 2));
+    console.log(`\n💾 Report saved: ${CONFIG.outputFile}`);
+    
+    // Generate removal script
+    generateRemovalScript(duplicates, CONFIG.removeScript);
+    
+    console.log('\n✅ Done!');
+    console.log('\nNext steps:');
+    console.log(`1. Review the report: cat ${CONFIG.outputFile}`);
+    console.log(`2. Review the removal script: cat ${CONFIG.removeScript}`);
+    console.log(`3. Run the script: ./${CONFIG.removeScript}`);
+    
+  } catch (err) {
+    console.error('\n❌ Error:', err.message);
+    console.error(err.stack);
+    process.exit(1);
+  }
+}
+
+// Run if executed directly
+if (require.main === module) {
+  // Parse command line arguments
+  if (process.argv.length > 2) {
+    CONFIG.folder1 = process.argv[2];
+  }
+  if (process.argv.length > 3) {
+    CONFIG.folder2 = process.argv[3];
+  }
+  
+  main();
+}
+
+module.exports = { calculateHash, getFileMetadata, getAllFiles, buildFileIndex, findDuplicates };
