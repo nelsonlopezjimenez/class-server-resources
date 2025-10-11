@@ -1,0 +1,31 @@
+HTML Website Frame
+For this assignment, you will be creating a website frame using the HTML you have learned so far. For this assignment specifically, you must make a website about your favorite animal.
+
+Your HTML Frame should incorporate details about your animal:
+
+what kind of animal it is
+where it is located
+what sort of biological features it has
+the kind of habitat it lives in
+an image of the animal
+Your code should include:
+
+Headings
+Divs
+Attributes
+Text
+Unordered/Ordered Lists
+An image
+
+Purpose
+Please do all the exercises on HTML/CSS provided in w3schools web site
+
+Task
+Please finish the following steps and submit your completed assignment to Canvas. 
+
+Open the exercisesLinks to an external site. and do all the exercises from HTML Attributes through HTML Lists about 50 in total.
+NOTE that a wrong answer will prompt you to try again. A correct answer won't show anything. You move to the next exercise
+NOTE: the size of the empty box for your response is a hint of the response: if it is two characters wide, it is expecting two characters. If it is bigger, then it is expecting a different word or expression bigger than 2 characters
+NOTE: under each question group you will see a link to a tutorial. MAKE SURE YOU CLICK ON EACH ONE!!!
+Criteria for Success
+The criteria for success will correlate with the results on the 10-15 minutes quiz at the beginning of each Monday class. You will be able to retake the quiz multiple times during class, but it will depend on the lecture time. If the lecture time is short, you will have more time to complete your assignments, work on your labs, or redo the quizzes.
