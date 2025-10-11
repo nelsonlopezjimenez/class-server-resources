@@ -1,0 +1,379 @@
+/*
+  Student Name: Solution Example (Reference Only)
+  Date: 2025
+  File: journal_responsive.css - COMPLETE SOLUTION
+  Description: This is a complete reference solution.
+               Students should attempt the exercises first!
+*/
+
+/* ==========================================
+   CSS VARIABLES
+   ========================================== */
+:root {
+  --color-primary: #A8F0F0;
+  --color-secondary: #E8FBFB;
+  --color-accent: #C2E9E9;
+  --color-border-main: blue;
+  --color-background: white;
+  --color-text: #333333;
+  --color-hover: lightyellow;
+  
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 15px;
+  --spacing-lg: 20px;
+  
+  --border-thin: 2px;
+  --border-medium: 4px;
+  --border-thick: 5px;
+  --border-extra-thick: 10px;
+}
+
+/* ==========================================
+   RESET & BASE STYLES
+   ========================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ==========================================
+   MOBILE STYLES (320px+)
+   ========================================== */
+
+.page-container {
+  width: 100%;
+  padding: var(--spacing-sm);
+  background-color: var(--color-background);
+}
+
+/* ----- EXERCISE 1 & 4: Header ----- */
+.page-header {
+  /* EXERCISE 4: Background color, no border */
+  background-color: var(--color-primary);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  /* EXERCISE 1: Started with 5px solid red border */
+  /* EXERCISE 4: Border removed */
+  border: none;
+}
+
+.page-header__title {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__subtitle {
+  margin: var(--spacing-xs) 0 0 0;
+  /* EXERCISE 1: Started with 5px solid purple border */
+  /* EXERCISE 4: Changed to bottom border only, 2px dashed blue, font 14pt */
+  border: none;
+  border-bottom: var(--border-thin) dashed blue;
+  padding-bottom: var(--spacing-xs);
+  font-size: 14pt;
+}
+
+/* ----- EXERCISE 1, 2, 4: Journal Entries ----- */
+.journal-main {
+  width: 100%;
+}
+
+.journal-entry {
+  /* EXERCISE 2: Background color */
+  background-color: var(--color-secondary);
+  
+  /* EXERCISE 2: 5px padding, 10px top margin */
+  padding: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  
+  /* EXERCISE 1: Started with 5px solid blue border */
+  /* EXERCISE 4: Changed to 4px solid #C2E9E9 */
+  border: var(--border-medium) solid var(--color-accent);
+}
+
+/* Clearfix for floated images */
+.journal-entry::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.journal-entry__title {
+  margin-top: 0;
+  color: var(--color-text);
+}
+
+.journal-entry__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-sm);
+}
+
+.journal-entry__content {
+  margin: var(--spacing-sm) 0;
+}
+
+/* ----- EXERCISE 1, 2, 4: Friends Sidebar ----- */
+.friends-sidebar {
+  width: 100%;
+  margin-top: var(--spacing-lg);
+  
+  /* EXERCISE 2: White background */
+  background-color: var(--color-background);
+  
+  padding: var(--spacing-sm);
+  
+  /* EXERCISE 1: Started with 5px solid green border */
+  /* EXERCISE 4: Changed to 10px solid white */
+  border: var(--border-extra-thick) solid white;
+}
+
+.friends-sidebar__title {
+  margin-top: 0;
+}
+
+.friends-sidebar__list {
+  padding-left: var(--spacing-md);
+}
+
+.friends-sidebar__item {
+  margin-bottom: var(--spacing-xs);
+  list-style-type: disc;
+  margin-left: var(--spacing-md);
+}
+
+/* ==========================================
+   TABLET STYLES (768px+)
+   ========================================== */
+@media screen and (min-width: 768px) {
+  
+  /* ----- EXERCISE 2: Container with margins ----- */
+  .page-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  
+  /* ----- EXERCISE 3: Float images ----- */
+  .journal-entry__image {
+    float: right;
+    width: 45%;
+    margin-left: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  /* ----- EXERCISE 3: Align header text right ----- */
+  .page-header__title {
+    text-align: right;
+  }
+  
+  /* Increase padding on entries for better spacing */
+  .journal-entry {
+    padding: var(--spacing-sm);
+  }
+}
+
+/* ==========================================
+   DESKTOP STYLES (1024px+)
+   ========================================== */
+@media screen and (min-width: 1024px) {
+  
+  /* ----- EXERCISE 5: Two-column grid layout ----- */
+  .page-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas:
+      "header header"
+      "sidebar main";
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    
+    /* EXERCISE 2: Background image */
+    background-image: url('background.gif');
+    background-repeat: repeat;
+  }
+  
+  .page-header {
+    grid-area: header;
+  }
+  
+  .friends-sidebar {
+    grid-area: sidebar;
+    margin-top: 0;
+    align-self: start;
+  }
+  
+  .journal-main {
+    grid-area: main;
+  }
+  
+  /* Adjust image size for desktop */
+  .journal-entry__image {
+    width: 35%;
+  }
+}
+
+/* ==========================================
+   LARGE DESKTOP STYLES (1440px+)
+   ========================================== */
+@media screen and (min-width: 1440px) {
+  
+  .page-container {
+    max-width: 1400px;
+    grid-template-columns: 300px 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .journal-entry {
+    padding: var(--spacing-lg);
+  }
+}
+
+/* ==========================================
+   EXERCISE 6: HOVER EFFECTS
+   ========================================== */
+
+/* Method 1: Multiple specific selectors */
+.journal-entry,
+.friends-sidebar,
+.page-header,
+.page-header__subtitle {
+  transition: background-color 0.3s ease;
+}
+
+.journal-entry:hover,
+.friends-sidebar:hover,
+.page-header:hover,
+.page-header__subtitle:hover {
+  background-color: var(--color-hover);
+}
+
+/* Method 2: ONE SELECTOR SOLUTION (uncomment to use)
+   This is the challenge answer for Exercise 6
+
+* {
+  transition: background-color 0.3s ease;
+}
+
+*:hover {
+  background-color: var(--color-hover);
+}
+
+*/
+
+/* ==========================================
+   ACCESSIBILITY ENHANCEMENTS
+   ========================================== */
+
+a:focus,
+button:focus {
+  outline: 3px solid var(--color-border-main);
+  outline-offset: 2px;
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: var(--color-text);
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ==========================================
+   PRINT STYLES
+   ========================================== */
+@media print {
+  
+  .friends-sidebar {
+    display: none;
+  }
+  
+  .journal-entry {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  .page-header,
+  .journal-entry {
+    background: white !important;
+  }
+  
+  .journal-entry {
+    border: 1px solid #000 !important;
+  }
+  
+  .journal-entry__image {
+    max-width: 50%;
+    float: right;
+  }
+}
+
+/* ==========================================
+   EXERCISE COMPLETION SUMMARY
+   ==========================================
+   
+   ✓ Exercise 1: Semantic HTML + Initial Borders
+     - Header: 5px solid red → Changed in Ex 4
+     - Entries: 5px solid blue → Changed in Ex 4
+     - Sidebar: 5px solid green → Changed in Ex 4
+     - Subtitle: 5px solid purple → Changed in Ex 4
+   
+   ✓ Exercise 2: Spacing & Backgrounds
+     - Sidebar: white background
+     - Entries: #E8FBFB background
+     - Entries: 5px padding, 10px top margin
+     - Container: 10% margins (tablet+)
+     - Container: background image (desktop+)
+   
+   ✓ Exercise 3: Float, Alignment, Clear
+     - Images float right (tablet+)
+     - Header title aligns right (tablet+)
+     - Clearfix prevents overflow
+   
+   ✓ Exercise 4: Finishing Touches
+     - Sidebar: 10px solid white border
+     - Entries: 4px solid #C2E9E9 border
+     - Subtitle: bottom border only, 2px dashed blue, 14pt
+     - Header: #A8F0F0 background, no border
+   
+   ✓ Exercise 5: Two-Column Layout
+     - CSS Grid on desktop (1024px+)
+     - Sidebar 250px, content fills remaining
+     - Liquid/responsive layout
+   
+   ✓ Exercise 6: Hover Effects
+     - Elements highlight yellow on hover
+     - Can be done with one selector using *
+     - Smooth transitions
+   
+   ========================================== */

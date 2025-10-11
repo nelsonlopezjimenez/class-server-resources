@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- 
+  Student Name: [Your Name Here]
+  Date: [Today's Date]
+  Project: Responsive Victoria's Journal
+  Description: A mobile-first responsive journal page demonstrating 
+               modern HTML/CSS layout techniques
+-->
+<html lang="en">
+<head>
+  <!-- Character encoding and viewport settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Victoria's personal journal - A responsive web design project">
+  
+  <title>Victoria's Journal | Responsive Web Design</title>
+  
+  <!-- Stylesheets: basic styles provided, responsive styles you create -->
+  <link rel="stylesheet" href="basic.css">
+  <link rel="stylesheet" href="journal_responsive.css">
+</head>
+
+<body>
+  <!-- 
+    MAIN CONTAINER
+    This wraps all page content for layout control
+  -->
+  <div class="page-container">
+    
+    <!-- 
+      HEADER SECTION
+      Contains the main page title and subtitle
+      Uses semantic <header> element
+    -->
+    <header class="page-header">
+      <h1 class="page-header__title">Victoria's Journal</h1>
+      <p class="page-header__subtitle">So fresh and so clean</p>
+    </header>
+
+    <!-- 
+      MAIN CONTENT AREA
+      Contains all journal entries
+      Uses semantic <main> element to indicate primary content
+    -->
+    <main class="journal-main">
+      
+      <!-- 
+        JOURNAL ENTRY 1
+        Each entry is an <article> - a self-contained composition
+        BEM naming: journal-entry is the block, __title, __image, etc. are elements
+      -->
+      <article class="journal-entry">
+        <h2 class="journal-entry__title">11/12/08: Best Day Ever</h2>
+        
+        <!-- 
+          Image with proper alt text for accessibility
+          CSS will handle responsive sizing and positioning
+        -->
+        <img class="journal-entry__image" 
+             src="images/victoria_with_patrick.jpg" 
+             alt="Victoria posing with Patrick the golden retriever">
+        
+        <p class="journal-entry__content">
+          Today was the best day ever! I got to meet Patrick, the most adorable 
+          golden retriever puppy. He was so fluffy and playful. We spent the whole 
+          afternoon at the dog park, and he even learned to fetch! I can't wait to 
+          see him again next week. Life is good when you have furry friends.
+        </p>
+        
+        <p class="journal-entry__content">
+          Later in the evening, I tried that new cafe downtown. The atmosphere was 
+          perfect - cozy lighting, smooth jazz playing in the background, and the 
+          best latte I've ever had. I brought my sketchbook and spent two hours 
+          just drawing and people-watching. These are the moments I live for.
+        </p>
+      </article>
+
+      <!-- 
+        JOURNAL ENTRY 2
+        Following the same structure for consistency
+      -->
+      <article class="journal-entry">
+        <h2 class="journal-entry__title">11/11/08: Sunny Day at the Beach</h2>
+        
+        <img class="journal-entry__image" 
+             src="images/sunny_beach.jpg" 
+             alt="Sunny beach with clear blue water and golden sand">
+        
+        <p class="journal-entry__content">
+          Woke up early and drove to the coast. The weather was absolutely perfect - 
+          not a cloud in the sky! I walked along the shore for hours, collecting 
+          seashells and watching the waves crash against the rocks. Found a beautiful 
+          piece of sea glass that I'm going to turn into a pendant.
+        </p>
+        
+        <p class="journal-entry__content">
+          The sunset was breathtaking. I sat on the beach with my camera and captured 
+          some amazing photos. The sky turned brilliant shades of orange, pink, and 
+          purple. Sometimes I forget how therapeutic nature can be. Definitely need 
+          to make these beach trips a regular thing.
+        </p>
+      </article>
+
+      <!-- 
+        JOURNAL ENTRY 3
+      -->
+      <article class="journal-entry">
+        <h2 class="journal-entry__title">11/10/08: Lazy Sunday</h2>
+        
+        <img class="journal-entry__image" 
+             src="images/cozy_reading.jpg" 
+             alt="Cozy reading nook with books and a warm blanket">
+        
+        <p class="journal-entry__content">
+          Sometimes the best days are the ones where you do absolutely nothing 
+          productive. Spent the entire day in my pajamas, reading that mystery 
+          novel I've been putting off. Made myself hot chocolate with extra 
+          marshmallows and just relaxed.
+        </p>
+        
+        <p class="journal-entry__content">
+          In the afternoon, I FaceTimed with my college roommate. We laughed about 
+          old memories and made plans to meet up next month. It's crazy how time 
+          flies, but true friendships never fade. Feeling grateful for the simple 
+          things today.
+        </p>
+      </article>
+
+      <!-- 
+        JOURNAL ENTRY 4
+      -->
+      <article class="journal-entry">
+        <h2 class="journal-entry__title">11/09/08: Cooking Adventures</h2>
+        
+        <img class="journal-entry__image" 
+             src="images/homemade_pasta.jpg" 
+             alt="Fresh homemade pasta with tomato sauce">
+        
+        <p class="journal-entry__content">
+          Decided to challenge myself and make pasta from scratch. It was messier 
+          than I expected! Flour everywhere, dough sticking to my hands, but the 
+          end result was totally worth it. There's something satisfying about 
+          creating food with your own hands.
+        </p>
+        
+        <p class="journal-entry__content">
+          Had some friends over for dinner and they were all impressed. We had 
+          such a great time - good food, good wine, and lots of laughter. These 
+          are the memories I want to hold onto. Already planning next week's menu!
+        </p>
+      </article>
+
+    </main>
+    <!-- End of main content area -->
+
+    <!-- 
+      FRIENDS SIDEBAR (Exercise 5)
+      This will appear as a sidebar on larger screens
+      On mobile, it will stack below the main content
+      Uses semantic <aside> for tangentially related content
+    -->
+    <aside class="friends-sidebar">
+      <h2 class="friends-sidebar__title">Friends</h2>
+      
+      <ul class="friends-sidebar__list">
+        <li class="friends-sidebar__item">Unloop Buddies</li>
+        <li class="friends-sidebar__item">Jax the Maine Coon</li>
+        <li class="friends-sidebar__item">Freddie the Jack Russell</li>
+      </ul>
+    </aside>
+
+  </div>
+  <!-- End of page container -->
+
+  <!-- 
+    OPTIONAL: Add your JavaScript here or link to external file
+    <script src="journal.js"></script>
+  -->
+
+</body>
+</html>
