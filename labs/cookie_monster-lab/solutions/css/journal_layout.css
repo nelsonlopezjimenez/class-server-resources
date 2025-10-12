@@ -1,0 +1,9 @@
+.page-container{
+    border: green 5px solid;
+}
+header {
+    border: red 5px solid;
+}
+article {
+    border: blue 5px solid;
+}

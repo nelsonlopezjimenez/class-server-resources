@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- This is index.html file from Lab: CSS Design and Layout -->
+<html>
+<!-- 
+  Student Name: [Your Name Here]
+  Date: [Today's Date]
+  Project: Responsive Victoria's Journal
+  Description: A mobile-first responsive journal page demonstrating 
+               modern HTML/CSS layout techniques
+-->
+
+<head>
+	<!-- Character encoding and viewport settings -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Victoria's personal journal - A responsive web design project">
+
+	<title>Victoria's Journal | Responsive Web Design</title>
+
+	<!-- This links to a stylesheet that gives basic formatting to your page;
+	you do not need to modify this. -->
+	<link rel="stylesheet" type="text/css" href="css/basic.css" title="style" />
+
+	<!-- This is linking to your stylesheet, journal_layout.css -->
+	<link rel="stylesheet" type="text/css" href="css/journal_layout.css" title="style" />
+</head>
+
+<body>
+	<!-- 
+    MAIN CONTAINER
+    This wraps all page content for layout control
+  -->
+	<div class="page-container">
+
+		<!-- 
+			HEADER SECTION
+			Contains the main page title and subtitle
+			Uses semantic <header> element
+        -->
+
+		<h1>Victoria's Journal</h1>
+		<h2>So fresh and so clean</h2>
+
+		<!-- 
+		MAIN CONTENT AREA
+		Contains all journal entries
+		Uses semantic <main> element to indicate primary content
+		-->
+
+		<!-- main -->
+
+
+		<!-- 
+			JOURNAL ENTRY 1
+			Each entry is an <article> - a self-contained composition
+			BEM naming: journal-entry is the block, __title, __image, etc. are elements
+		-->
+
+		<h2>04/09/08: Spatulas</h2>
+
+		<!-- 
+          Image with proper alt text for accessibility
+          CSS will handle responsive sizing and positioning
+        -->
+		<img src="images/spatula.gif" alt="Much-needed spatula" />
+
+
+		<p>
+			Yesterday I went to the store and got some much-needed <a
+				href="http://edcc.edu/marksheet/index.html">spatulas</a>! (What better way to say I love myself than to
+			buy myself a spatula?)
+		</p>
+
+
+		<!-- 
+			JOURNAL ENTRY 2
+			Following the same structure for consistency
+		-->
+
+		<h2>04/08/08: Cookie Monster Cupcakes</h2>
+		<img src="images/cookiemonster.jpg" alt="Cookie Monster: in cupcake form!" />
+
+		<p>
+			My favorite cartoon character is Cookie Monster, and my favorite dessert is cupcakes, so Cookie Monster
+			cupcakes are the best of both worlds.
+		</p>
+
+		<p>
+			Did you know? Cookie Monster once said, <q>Sometimes me think what is love, and then me think love is what
+				last cookie is for. Me give up the last cookie for you.</q> I wonder if the same applies for cupcakes?
+			(If so, I don't think I can ever love ANYONE!)
+		</p>
+
+		<p>
+			<img src="images/validate-html.png" alt="Valid HTML5" />
+			<img src="images/validate-css.png" alt="Valid CSS" />
+		</p>
+
+	</div>
+
+</body>
+
+</html>
