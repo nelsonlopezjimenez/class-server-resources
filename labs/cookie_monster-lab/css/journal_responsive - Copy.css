@@ -1,0 +1,638 @@
+/*
+  Student Name: [Your Name Here]
+  Date: [Today's Date]
+  File: journal_responsive.css
+  Description: Responsive stylesheet for Victoria's Journal
+               Mobile-first approach with breakpoints for tablet, laptop, and desktop
+*/
+
+/* ==========================================
+   TABLE OF CONTENTS
+   ==========================================
+   1. CSS Variables (Custom Properties)
+   2. Reset & Base Styles
+   3. Mobile Styles (Default - 320px+)
+   4. Tablet Styles (768px+)
+   5. Desktop Styles (1024px+)
+   6. Large Desktop Styles (1440px+)
+   7. Interactive Elements
+   8. Utilities & Helper Classes
+   9. Print Styles
+   ========================================== */
+
+
+/* ==========================================
+   1. CSS VARIABLES (Custom Properties)
+   ==========================================
+   Using CSS variables makes it easy to maintain
+   consistent colors, spacing, and other values
+   throughout your stylesheet
+   ========================================== */
+:root {
+  /* Color Palette */
+  --color-primary: #A8F0F0;           /* Light turquoise - header background */
+  --color-secondary: #E8FBFB;         /* Very light cyan - entry backgrounds */
+  --color-accent: #C2E9E9;            /* Medium cyan - borders */
+  --color-border-main: blue;          /* Main border color */
+  --color-background: white;          /* Page background */
+  --color-text: #333333;              /* Main text color */
+  --color-hover: lightyellow;         /* Hover highlight color */
+  
+  /* Spacing Scale */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 15px;
+  --spacing-lg: 20px;
+  --spacing-xl: 30px;
+  
+  /* Border Widths */
+  --border-thin: 2px;
+  --border-medium: 4px;
+  --border-thick: 5px;
+  --border-extra-thick: 10px;
+  
+  /* Typography */
+  --font-size-base: 16px;
+  --font-size-large: 18px;
+  --font-size-heading: 1.5rem;
+  
+  /* Layout */
+  --container-max-width: 1200px;
+  --sidebar-width: 250px;
+  
+  /* Transitions */
+  --transition-speed: 0.3s;
+}
+
+
+/* ==========================================
+   2. RESET & BASE STYLES
+   ==========================================
+   These ensure consistent behavior across browsers
+   ========================================== */
+
+/* Box sizing reset - makes width/height include padding and border */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes extra space below images */
+}
+
+/* Remove list styling from friends list (we'll add our own) */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ==========================================
+   3. MOBILE STYLES (Default - 320px and up)
+   ==========================================
+   These are your BASE styles that apply to all screen sizes.
+   Mobile-first means we style for small screens first,
+   then enhance for larger screens using media queries.
+   ========================================== */
+
+/* ----- Page Container ----- */
+.page-container {
+  /* Full width on mobile */
+  width: 100%;
+  /* Small padding on sides so content doesn't touch edges */
+  padding: var(--spacing-sm);
+  /* Background applied here */
+  background-color: var(--color-background);
+  /* Optional: add background image here for larger screens */
+  /* background-image: url('background.gif'); */
+}
+
+
+/* ----- Header Section ----- */
+.page-header {
+  /* TODO: Add your header styles here */
+  /* Hints: 
+     - Background color: var(--color-primary)
+     - Padding for breathing room
+     - Consider text alignment
+     - Border on bottom? All sides?
+  */
+  background-color: var(--color-primary);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  /* EXERCISE 1: Add a 5px solid red border */
+  border: var(--border-thick) solid red;
+}
+
+.page-header__title {
+  /* Main heading styles */
+  margin: 0;
+  padding: 0;
+  /* EXERCISE 3: This should align to the right on larger screens */
+}
+
+.page-header__subtitle {
+  /* Subtitle styles */
+  margin: var(--spacing-xs) 0 0 0;
+  /* EXERCISE 1: Add a 5px solid purple border */
+  border: var(--border-thick) solid purple;
+  padding: var(--spacing-xs);
+  /* EXERCISE 4: Remove border, change font size to 14pt */
+}
+
+
+/* ----- Journal Entries ----- */
+.journal-main {
+  /* This contains all journal entries */
+  /* On mobile, entries stack vertically (default block behavior) */
+  width: 100%;
+}
+
+.journal-entry {
+  /* TODO: Style each journal entry */
+  /* Hints:
+     - Background color: var(--color-secondary)
+     - Padding for content spacing
+     - Margin-bottom to separate entries
+     - Border: 4px solid var(--color-accent)
+  */
+  background-color: var(--color-secondary);
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  /* EXERCISE 1: Add a 5px solid blue border */
+  border: var(--border-thick) solid blue;
+  /* EXERCISE 2: Add 5px padding, 10px top margin */
+  /* EXERCISE 3: You may need to add overflow or clearfix */
+}
+
+.journal-entry__title {
+  /* Entry heading styles */
+  margin-top: 0;
+  color: var(--color-text);
+  /* Note: h2 styles might be defined in basic.css already */
+}
+
+.journal-entry__image {
+  /* On mobile, images are full-width and stack above text */
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-sm);
+  /* EXERCISE 3: On larger screens, these will float right */
+}
+
+.journal-entry__content {
+  /* Paragraph styles within entries */
+  margin: var(--spacing-sm) 0;
+}
+
+
+/* ----- Friends Sidebar ----- */
+.friends-sidebar {
+  /* On mobile, this appears BELOW the journal entries */
+  width: 100%;
+  margin-top: var(--spacing-lg);
+  /* TODO: Add styling similar to journal entries */
+  /* EXERCISE 1: Add a 5px solid green border */
+  border: var(--border-thick) solid green;
+  padding: var(--spacing-sm);
+  background-color: var(--color-background);
+  /* EXERCISE 2: White background */
+  /* EXERCISE 4: Change to 10px white solid border */
+}
+
+.friends-sidebar__title {
+  margin-top: 0;
+}
+
+.friends-sidebar__list {
+  /* Unordered list styles */
+  padding-left: var(--spacing-md);
+}
+
+.friends-sidebar__item {
+  /* Individual friend list items */
+  margin-bottom: var(--spacing-xs);
+  /* Optional: add custom bullet points or styling */
+}
+
+
+/* ==========================================
+   4. TABLET STYLES (768px and up)
+   ==========================================
+   Tablets have more screen real estate.
+   We can start to show content side-by-side
+   and adjust spacing/sizing.
+   ========================================== */
+@media screen and (min-width: 768px) {
+  
+  /* ----- Container adjustments ----- */
+  .page-container {
+    /* Add margins on left and right */
+    /* EXERCISE 2: 10% margins left and right */
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%; /* 100% - 10% - 10% */
+  }
+  
+  /* ----- Journal Entry Images ----- */
+  .journal-entry__image {
+    /* EXERCISE 3: Float images to the right on tablets */
+    /* Hints:
+       - float: right;
+       - Width: 40-50% so text wraps beside it
+       - Add margin-left and margin-bottom for spacing
+    */
+    /* TODO: Uncomment and complete:
+    float: right;
+    width: 45%;
+    margin-left: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    */
+  }
+  
+  /* ----- Clearfix for floated images ----- */
+  /* When images float, they can "escape" their container.
+     Use clearfix or overflow to contain them. */
+  .journal-entry {
+    /* Option 1: overflow method */
+    /* overflow: auto; */
+    
+    /* Option 2: clearfix with ::after pseudo-element */
+    /* More robust solution */
+  }
+  
+  .journal-entry::after {
+    /* Clearfix technique */
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* ----- Header text alignment ----- */
+  .page-header__title {
+    /* EXERCISE 3: Align to the right on tablets and up */
+    /* text-align: right; */
+  }
+  
+}
+
+
+/* ==========================================
+   5. DESKTOP STYLES (1024px and up)
+   ==========================================
+   Desktop screens can display full two-column layout.
+   This is where we implement the friends sidebar
+   as an actual sidebar on the left.
+   ========================================== */
+@media screen and (min-width: 1024px) {
+  
+  /* ----- Two-Column Grid Layout ----- */
+  .page-container {
+    /* Use CSS Grid for layout */
+    display: grid;
+    
+    /* Define columns: sidebar (250px) and main content (remaining space) */
+    grid-template-columns: var(--sidebar-width) 1fr;
+    
+    /* Define named grid areas for easy placement */
+    grid-template-areas:
+      "header header"    /* Header spans both columns */
+      "sidebar main";    /* Sidebar and main content side-by-side */
+    
+    /* Gap between grid items */
+    gap: var(--spacing-lg);
+    
+    /* Maximum width to prevent content from getting too wide */
+    max-width: var(--container-max-width);
+    
+    /* Center the container */
+    margin: 0 auto;
+    
+    /* Padding around the whole container */
+    padding: var(--spacing-lg);
+    
+    /* EXERCISE 2: Add background image */
+    background-image: url('background.gif');
+    background-repeat: repeat;
+  }
+  
+  /* ----- Assign Grid Areas ----- */
+  .page-header {
+    /* Place header in the "header" grid area */
+    grid-area: header;
+  }
+  
+  .friends-sidebar {
+    /* Place sidebar in the "sidebar" grid area */
+    grid-area: sidebar;
+    
+    /* Reset margin since grid handles spacing */
+    margin-top: 0;
+    
+    /* Sidebar stays at the top (not sticky, but you could make it so) */
+    align-self: start;
+  }
+  
+  .journal-main {
+    /* Place main content in the "main" grid area */
+    grid-area: main;
+  }
+  
+  /* ----- Adjust Image Sizing for Desktop ----- */
+  .journal-entry__image {
+    /* Slightly smaller on desktop so more text is visible */
+    width: 35%;
+  }
+  
+}
+
+
+/* ==========================================
+   6. LARGE DESKTOP STYLES (1440px and up)
+   ==========================================
+   Extra-large screens benefit from increased spacing
+   and potentially larger typography.
+   ========================================== */
+@media screen and (min-width: 1440px) {
+  
+  .page-container {
+    /* Increase max width for large displays */
+    max-width: 1400px;
+    
+    /* Wider sidebar for better proportions */
+    grid-template-columns: 300px 1fr;
+    
+    /* Increase gap between columns */
+    gap: var(--spacing-xl);
+  }
+  
+  /* ----- Increase spacing in entries ----- */
+  .journal-entry {
+    padding: var(--spacing-lg);
+  }
+  
+  /* ----- Optional: Slightly larger text ----- */
+  body {
+    font-size: var(--font-size-large);
+  }
+  
+}
+
+
+/* ==========================================
+   7. INTERACTIVE ELEMENTS
+   ==========================================
+   Hover states, focus states, and transitions
+   make the page feel more responsive and polished.
+   ========================================== */
+
+/* ----- Smooth Transitions ----- */
+/* Add transitions to elements that will change on hover */
+.journal-entry,
+.friends-sidebar,
+.page-header,
+.page-header__subtitle {
+  transition: background-color var(--transition-speed) ease,
+              border-color var(--transition-speed) ease;
+}
+
+/* ----- Hover Effects ----- */
+/* EXERCISE 6: Make elements highlight on hover */
+/* Method 1: Specific selectors (more control) */
+.journal-entry:hover {
+  background-color: var(--color-hover);
+}
+
+.friends-sidebar:hover {
+  background-color: var(--color-hover);
+}
+
+.page-header:hover {
+  background-color: var(--color-hover);
+}
+
+/* CHALLENGE: Can you do this with ONE selector? */
+/* Hint: Universal selector with :hover */
+/* Uncomment below for the one-selector solution:
+
+* {
+  transition: background-color var(--transition-speed) ease;
+}
+
+*:hover {
+  background-color: var(--color-hover);
+}
+
+*/
+
+/* ----- Focus States (Accessibility) ----- */
+/* Important for keyboard navigation */
+a:focus,
+button:focus {
+  outline: 3px solid var(--color-border-main);
+  outline-offset: 2px;
+}
+
+/* ----- Image Hover Effect (Optional Enhancement) ----- */
+.journal-entry__image:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+/* ==========================================
+   8. UTILITIES & HELPER CLASSES
+   ==========================================
+   Reusable classes for common patterns
+   ========================================== */
+
+/* ----- Clearfix ----- */
+/* Use this class if you need clearfix without ::after */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ----- Screen Reader Only ----- */
+/* Hide content visually but keep it accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ----- Text Alignment Utilities ----- */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+
+/* ==========================================
+   9. PRINT STYLES
+   ==========================================
+   Optimize the page for printing
+   ========================================== */
+@media print {
+  
+  /* Hide non-essential elements when printing */
+  .friends-sidebar {
+    display: none;
+  }
+  
+  /* Ensure entries don't break across pages */
+  .journal-entry {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Remove backgrounds to save ink */
+  .page-header,
+  .journal-entry {
+    background: white !important;
+  }
+  
+  /* Simplify borders for printing */
+  .journal-entry {
+    border: 1px solid #000 !important;
+  }
+  
+  /* Ensure images fit on page */
+  .journal-entry__image {
+    max-width: 50%;
+    float: right;
+  }
+  
+}
+
+
+/* ==========================================
+   EXERCISE COMPLETION CHECKLIST
+   ==========================================
+   
+   EXERCISE 1: Arrange Page into Sections ✓
+   - [ ] Added 5px solid red border to .page-header
+   - [ ] Added 5px solid blue border to .journal-entry
+   - [ ] Added 5px solid green border to .friends-sidebar
+   - [ ] Added 5px solid purple border to .page-header__subtitle
+   
+   EXERCISE 2: Spacing, Padding, Margins, Backgrounds
+   - [ ] White background on .friends-sidebar
+   - [ ] #E8FBFB background on .journal-entry
+   - [ ] 5px padding on .journal-entry
+   - [ ] 10px top margin on .journal-entry
+   - [ ] 10% left/right margins on .page-container (tablet+)
+   - [ ] Background image on .page-container (desktop+)
+   
+   EXERCISE 3: Float, Alignment, Clear
+   - [ ] .page-header__title aligned right (tablet+)
+   - [ ] .journal-entry__image floats right (tablet+)
+   - [ ] Clearfix applied to .journal-entry
+   - [ ] Images stay within blue box boundaries
+   
+   EXERCISE 4: Cosmetic Finishing Touches
+   - [ ] .friends-sidebar border: 10px solid white
+   - [ ] .journal-entry border: 4px solid #C2E9E9
+   - [ ] .page-header__subtitle: bottom border only, 2px dashed blue
+   - [ ] .page-header background: #A8F0F0, no border
+   - [ ] .page-header__subtitle: 14pt font, no border
+   
+   EXERCISE 5: Add 2nd Column - Friends List
+   - [ ] Friends sidebar appears on left (desktop+)
+   - [ ] Uses CSS Grid or Flexbox
+   - [ ] Layout is "liquid" (responsive)
+   - [ ] Sidebar is 250px wide on desktop
+   
+   EXERCISE 6: Hover Effects
+   - [ ] Elements highlight yellow on hover
+   - [ ] Implemented with ONE selector (advanced)
+   - [ ] Smooth transitions applied
+   
+   ========================================== */
+
+
+/* ==========================================
+   YOUR CUSTOM STYLES
+   ==========================================
+   Add your own creative touches below!
+   ========================================== */
+
+/* Example: Custom scrollbar (Webkit browsers only)
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 5px;
+}
+*/
+
+/* Example: Fade-in animation on page load
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.journal-entry {
+  animation: fadeIn 0.6s ease-out;
+}
+*/
+
+
+/* ==========================================
+   RESPONSIVE DESIGN BREAKPOINTS SUMMARY
+   ==========================================
+   
+   Mobile First (320px+): Base styles, single column
+   Tablet (768px+): Floating images, wider margins
+   Desktop (1024px+): Two-column grid layout
+   Large Desktop (1440px+): Optimized spacing
+   
+   Testing checklist:
+   - iPhone SE (375px)
+   - iPad (768px)
+   - Laptop (1024px)
+   - Desktop (1440px)
+   - 4K Display (2560px)
+   
+   ========================================== */
