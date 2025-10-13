@@ -87,7 +87,7 @@ week: 38
 |-- yarn.lock
 ```
 #### Setting up the app
-![bethany-griggs](/week38/bethany-griggs.png)
+![bethany-griggs](/images/week38/bethany-griggs.png)
 1. Page 154: 
 ```sh
 mkdir express-unique-app
