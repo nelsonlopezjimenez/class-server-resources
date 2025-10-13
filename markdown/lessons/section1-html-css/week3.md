@@ -8,6 +8,7 @@ week: 3
 ## In-class Assignment
 1. [In-class assignment lab4.1 download](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/first-html-page/students/lab4.1.docx)
 1. [In-class assignment lab4.2 download](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/first-html-page/students/lab4.2.docx)
+1. Download [summer.jpg](/images/summer.jpg)
 1. Download the files. Open them with MS Word program (or just find them in your Downloads folder and click/open).
 1. Once you finish your assignment, you will submit on canvas.
 
