@@ -3,6 +3,14 @@ title: "Lesson 2: HTML5 Fundamentals and Document Structure"
 description: "Master HTML5 semantic elements and attributes, proper document structure, and create well-structured web pages"
 week: 3
 ---
+# Important Update
+
+## In-class Assignment
+1. [In-class assignment lab4.1 download](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/first-html-page/students/lab4.1.docx)
+1. [In-class assignment lab4.2 download](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/first-html-page/students/lab4.2.docx)
+1. Download the files. Open them with MS Word program (or just find them in your Downloads folder and click/open).
+1. Once you finish your assignment, you will submit on canvas.
+
 
 # Week 2: HTML5 Fundamentals and Document Structure
 
