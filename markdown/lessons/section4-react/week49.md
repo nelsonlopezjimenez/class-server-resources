@@ -6,8 +6,6 @@ week: 49
 
 # Lesson  49 Content Here
 
-<!-- Alternative: Use anchor tags for section markers -->
-## Alternative Method with Anchor Tags
 
 <a name="section-1"></a>
 ### Section 1: Getting Started

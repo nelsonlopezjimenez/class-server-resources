@@ -1,7 +1,7 @@
 ---
 title: "Introduction to React - Components, JSX, and State Management"
-description: "Week 1 - React fundamentals: understanding components, JSX syntax, props and state management, hooks (useState, useEffect), component lifecycle, event handling, conditional rendering, and list rendering. Assignments: build a counter app, create a todo list component, develop a user profile card with props"
-week: 1
+description: "Week 2 - React fundamentals: understanding components, JSX syntax, props and state management, hooks (useState, useEffect), component lifecycle, event handling, conditional rendering, and list rendering. Assignments: build a counter app, create a todo list component, develop a user profile card with props"
+week: 40
 ---
 
 <h1 id="day1">Welcome to React Development!</h1>
