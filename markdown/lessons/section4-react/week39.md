@@ -1,6 +1,17 @@
 ---
-title: "CIS 241 - Web Development I"
-description: "WEEK 1 as 39 - Website development using current HTML languages, approached from a source code perspective. Covers tags, forms, linked objects, current CSS, frames, tables, and an introduction to scripting. Students will build multi-page websites using GUI editors, Git and GitHub."
+title: "CIS 244 - Web Development IV"
+description: ["React fundamentals: components, JSX, props",
+				"State management with hooks (useState, useEffect, useContext)",
+				"Component lifecycle and side effects",
+				"Event handling and forms in React",
+				"React Router for single-page applications",
+				"State management with Redux or Context API",
+				"API integration and data fetching",
+				"Testing React components",
+				"Performance optimization techniques",
+				"Deployment and build optimization",
+				"Modern React patterns and best practices",
+				"Capstone project: Production-ready React application",]
 week: 39
 ---
 # Welcome to Web Development!
