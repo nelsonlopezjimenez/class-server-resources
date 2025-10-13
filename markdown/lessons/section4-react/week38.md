@@ -20,7 +20,7 @@ week: 38
 ## Full-Stack React Projects: Learn MERN stack development by building modern web apps using MongoDB, Express, React, and Node.js 2nd ed. Edition
 ### by Shama Hoque (Author)
 
-![shama_hoque](/week38/shama_hoque.png)
+![shama_hoque](/images/week38/shama_hoque.png)
 
 ### Chapter 05: Building a Backend with MongoDB, Express, and Node
 
