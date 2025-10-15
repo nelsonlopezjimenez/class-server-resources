@@ -154,4 +154,51 @@ git branch  # should show * main now
 
 Are you planning to make changes to this submodule, or just push the existing code?
 
+Perfect! Here's what you need to do to push the existing submodule:
 
+## Step 1: Stay in the submodule directory
+
+You're already there, so you're good.
+
+## Step 2: Add your Gitea remote (if not already added)
+
+```bash
+git remote add gitea https://your-gitea-instance.com/username/submodule-repo.git
+```
+
+Or if you want to add it as origin:
+```bash
+git remote add origin https://your-gitea-instance.com/username/submodule-repo.git
+```
+
+## Step 3: Push the commit that's currently checked out
+
+Even though you're in detached HEAD state, you can still push that specific commit:
+
+```bash
+git push origin 4d0ae6f:main
+```
+
+This pushes commit `4d0ae6f` to the `main` branch on your remote.
+
+Or if you want to push all branches:
+```bash
+git push origin --all
+```
+
+## Step 4: Verify
+
+```bash
+git remote -v  # check your remotes are configured
+```
+
+## Step 5: Go back to parent repo and push (if needed)
+
+```bash
+cd ../..
+git push
+```
+
+That's it! The existing submodule code at commit 4d0ae6f will be pushed to your Gitea instance.
+
+**Note:** You don't need to checkout main just to push the existing code. The detached HEAD state is fine for this operation.
