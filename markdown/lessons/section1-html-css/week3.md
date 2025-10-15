@@ -12,6 +12,12 @@ week: 3
 1. Download the files. Open them with MS Word program (or just find them in your Downloads folder and click/open).
 1. Once you finish your assignment, you will submit on canvas.
 
+## In-class exercises
+
+1. Navigate to [HTML Exercises](http://w3schools.com/html/exercise.html)
+1. Answer all the questions from HTML Attributes down to HTML Comments.
+1. Take the [quiz4.1](https://canvas.ed/courses/49921000000105/quizzes/49921000000595?module_item_id=49921000004626)
+
 
 # Week 2: HTML5 Fundamentals and Document Structure
 
