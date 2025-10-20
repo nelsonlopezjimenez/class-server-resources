@@ -1,10 +1,10 @@
 ---
-title: "Week 4: Introduction to CSS3"
+title: "Lesson 4: Introduction to CSS3"
 description: "Learn CSS syntax, selectors, box model, colors, fonts, and basic styling techniques"
 week: 5
 ---
 
-# Week 4: Introduction to CSS3
+# Lesson 4: Introduction to CSS3
 
 ## Learning Objectives
 - Understand CSS syntax and selectors

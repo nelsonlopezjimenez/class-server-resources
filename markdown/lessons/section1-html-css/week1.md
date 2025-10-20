@@ -1,4 +1,8 @@
 ---
+description: "Brief_description_Fildsfe_adfdf_adsfdsf"
+publishDate: 2025-09-21
+tags: ["tutorial", "guide", "test"]
+draft: false
 title: "Introduction to the course. Syllabus content. Introduce Yourself"
 description: "Week 1 - Setting your environment, gcfglobal resources: learning tips, problem solving and decision making, resume writing, windows 10, computer basics, connecting to the Internet, what is the Internet, using internet browsers, plagiarism, buying computers. Assignments: write your Resume, write what you did not know, build your dream computer"
 week: 1
