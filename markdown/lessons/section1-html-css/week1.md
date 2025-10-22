@@ -2,16 +2,16 @@
 publishDate: 2025-09-21
 tags: ["tutorial", "guide", "test"]
 draft: false
-title: "Introduction to the course. Syllabus content. Introduce Yourself"
+title: "Introduction"
 description: "Week 1 - Setting your environment, gcfglobal resources: learning tips, problem solving and decision making, resume writing, windows 10, computer basics, connecting to the Internet, what is the Internet, using internet browsers, plagiarism, buying computers. Assignments: write your Resume, write what you did not know, build your dream computer"
 week: 1
 ---
 <h1 id="day1">Welcome to Web Development!</h1>
 
 <!-- Solution 4: Use explicit HTML anchors (most reliable) -->
-<h2 id="table-of-contents"> 📚 Table of Contents </h2>
+<!-- <h2 id="table-of-contents"> 📚 Table of Contents </h2> -->
 
-- [grades](#grades)
+<!-- - [grades](#grades)
 - [expectations](#expectations)
 - [environment](#environment)
 - [additional](#additional)
@@ -21,7 +21,7 @@ week: 1
 - [Day 3](#day3)
 - [Day 4](#day4)
 - 🧪 [Assignments](#assigday)
-- [next week preview](#nextweek)
+- [next week preview](#nextweek) -->
 
 ## Daily Activities
 
