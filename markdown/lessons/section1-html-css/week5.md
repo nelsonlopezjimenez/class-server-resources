@@ -10,6 +10,8 @@ week: 5
 1. Answer "keep" when the download process starts.
 1. [Submission Instructions](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/submission_instructions.docx)
 1. [Initial code](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/Peach_Recipe_Website.zip)
+1. Open the [HTML validator](http://192.168.1.47:8888) when you are in class
+1. Alternatively, click on the icon ![alt text](image-1.png)
 
 #### **Due on Monday 27th at 9 AM.**
 
