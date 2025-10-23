@@ -9,7 +9,7 @@ week: 1
 <h1 id="day1">Welcome to Web Development!</h1>
 
 <!-- Solution 4: Use explicit HTML anchors (most reliable) -->
-<!-- <h2 id="table-of-contents"> 📚 Table of Contents </h2> -->
+<h3 id="table-of-contents"> </h2>
 
 <!-- - [grades](#grades)
 - [expectations](#expectations)
