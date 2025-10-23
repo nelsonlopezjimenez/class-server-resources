@@ -4,7 +4,7 @@ description: "Learn CSS syntax, selectors, box model, colors, fonts, and basic s
 week: 5
 ---
 # Important Update
-## Lab6.1 Assingment: Peach Cobbler Recipe App.
+## Lab6.1 Assignment: Peach Cobbler Recipe App.
 
 1. [Instructions](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/Peach_Recipes_Instructions.docx)
 1. [Submission Instructions](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/submission_instructions.docx)
