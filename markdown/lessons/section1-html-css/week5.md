@@ -6,7 +6,7 @@ week: 5
 # Important Update
 ## Lab6.1 Assignment: Peach Cobbler Recipe App.
 
-1. [Instructions](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/Peach_Recipes_Instructions.docx)
+1. [Instructions](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/Peach_Recipes_Instructions.docx) download by clicking on the "down-arrow  to the right as indicated in the following pic: ![alt text](image.png)
 1. [Submission Instructions](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/submission_instructions.docx)
 1. [Initial code](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/Peach_Recipe_Website.zip)
 
