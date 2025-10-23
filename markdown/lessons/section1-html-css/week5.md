@@ -3,6 +3,13 @@ title: "Lesson 4: Introduction to CSS3"
 description: "Learn CSS syntax, selectors, box model, colors, fonts, and basic styling techniques"
 week: 5
 ---
+# Important Update
+1. Lab6.1 Assingment: Peach Cobbler Recipe App.
+1. [Downlad the instructions](https://github.com/nelsonlopezjimenez/class-server-resources/blob/main/labs/Peach_Recipe_Website-A34/students/Peach_Recipes_Instructions.docx)
+1. [Read the submission Instructions](https://github.com/nelsonlopezjimenez/class-server-resources/blob/main/labs/Peach_Recipe_Website-A34/students/submission_instructions.docx).
+1. [Download the code](https://github.com/nelsonlopezjimenez/class-server-resources/blob/main/labs/Peach_Recipe_Website-A34/students/Peach_Recipe_Website.zip)
+1. Due on Monday 27th at 9 AM.
+
 
 # Lesson 4: Introduction to CSS3
 
