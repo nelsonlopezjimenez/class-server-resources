@@ -4,7 +4,7 @@ description: "HTML Tables - Identifying HTML table elements and attributes"
 week: 6
 ---
 ## Lab6.1 Assignment: Peach Cobbler Recipe App part B
-1.[Intructions Peach Recipe Part B](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/Part%20B%20-%20Styling%20for%20Mobile-w43.docx)
+1. [Intructions Peach Recipe Part B](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/Part%20B%20-%20Styling%20for%20Mobile-w43.docx)
 1. [Instructions Peach Recipe Part C](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/Peach_Recipe_Website-A34/students/Part%20C%20-%20Styling%20for%20Mobile-w43.docx)
 
 ## Lab6.1 Assignment: Peach Cobbler Recipe App Part A
