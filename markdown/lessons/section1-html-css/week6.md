@@ -10,7 +10,7 @@ week: 6
 ## Web Graphics
 
 1. [Web Graphics Basics](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/markdown/lessons/pdf/Web_Graphics_Basics.pdf)
-1. [Web Graphics Basics](http://localhost:22022/images/pdf/Web_Graphics_Basics.pdf)
+1. [Web Graphics Basics local host](/images/pdf/Web_Graphics_Basics.pdf)
 1. ![Hot Reload svg](/images/week6/HotReload.16.16.svg)
 1. ![Hot Reload 100 png](/images/week6/hot-reload-100.png)
 1. ![Hot Reload png](/images/week6/hot-reload-smaller.png)
