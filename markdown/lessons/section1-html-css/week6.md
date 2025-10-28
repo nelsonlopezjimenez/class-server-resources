@@ -11,8 +11,9 @@ week: 6
 
 1. [Web Graphics Basics]()
 1. ![Hot Reload svg](/images/week6/HotReload.16.16.svg)
+1. ![Hot Reload 100 png](/images/week6/hot-reload-100.png)
+1. ![Hot Reload png](/images/week6/hot-reload-smaller.png)
 1. ![Leaf](/images/week6/leaf.svg)
-1. ![Leaf](/images/week6/Leaf.png)
 
 ## Lab6.1 Assignment: Peach Cobbler Recipe App Part A
 
