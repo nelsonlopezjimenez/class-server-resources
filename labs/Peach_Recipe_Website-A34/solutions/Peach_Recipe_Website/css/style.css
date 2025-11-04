@@ -1,0 +1,55 @@
+* { 
+    box-sizing: border-box;
+}
+body {
+    width: 98%;
+    margin:auto;
+    background-color: #aaa;
+}
+#recipe  {
+    float: left;
+}
+#about {
+    float:left;
+    width: 60%;
+}
+#main_content {
+    border: 3px red solid;
+    margin: auto;
+    background-color: white;
+    width: 80%;
+}
+video {
+    float: left;
+    width: 40%;
+}
+header {
+    background-color: rgba(226,225,225,0.42);
+}
+hr {
+    border-color: orange;
+}
+ul li {
+    width: 50%;
+    float: left; 
+    list-style: none;
+}
+ul li:before{
+		content: url('../images/plus-icon.png');
+}
+#save {
+    background-color: orange;
+    border-radius: 2%;
+    border-width: 0;
+}
+#share img {
+    width: 100px;
+}
+#one, #two, #three {
+    float:left;
+    border: 5px dotted orange;
+    width: 32%;
+}
+#number-reviews {
+    background-color: gray;
+}
