@@ -1,4 +1,10 @@
-> > > In React, if I have created a React controlled variable, say const [recipes, setRecipes] = useState([]) and I want to create a new function to delete a recipe. What is the best practice. Create the handleDelete function that calls the setRecipes(recipes.filter(...)) and pass the handleDelete func down through the components to where it is envoked, or pass the setRecipe() down through the components to where it can be envoked in a handleDelete func at the lowest possible component?
+# Lifting up state
+
+## Prompt
+
+> In React, if I have created a React controlled variable, say const [recipes, setRecipes] = useState([]) and I want to create a new function to delete a recipe. What is the best practice. Create the handleDelete function that calls the setRecipes(recipes.filter(...)) and pass the handleDelete func down through the components to where it is envoked, or pass the setRecipe() down through the components to where it can be envoked in a handleDelete func at the lowest possible component?
+
+## Response
 
 Okay, let's break down the best practice for handling state updates and deleting data in a React controlled component.
 
