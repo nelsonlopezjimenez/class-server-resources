@@ -64,6 +64,10 @@ ol li {
     /* height: 65vh; */
     overflow: auto;
 }
+#one , #two , #three  {
+    width: 5vh;
+    height: 65vh;
+}
 #one div img, #two div img, #three div img {
     width: 5vh;
 }
