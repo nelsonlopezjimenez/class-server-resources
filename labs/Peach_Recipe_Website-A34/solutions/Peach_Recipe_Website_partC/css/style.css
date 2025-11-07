@@ -66,7 +66,7 @@ ul li::before{
     border-radius: 100%;
     width: 10%;
 }
-#one span, #two span, #three span {
+.username{
     font-size: 0.2em;
 }
 #one div img, #two div img, #three div img {
