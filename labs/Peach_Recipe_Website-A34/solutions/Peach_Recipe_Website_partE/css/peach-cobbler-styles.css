@@ -1,0 +1,517 @@
+/* ========================================
+   PEACH COBBLER RECIPE - MODERN CSS
+   Mobile-First Responsive Design
+   Using Flexbox & Grid
+   ======================================== */
+
+/* ===== CSS RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* display: block; */
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+/* ===== LAYOUT CONTAINER ===== */
+#main_content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 1.5rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header img {
+    width: clamp(120px, 30vw, 180px);
+}
+
+/* ===== RECIPE SECTION ===== */
+#recipe {
+    padding: 1rem;
+}
+
+#recipe h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+/* ===== ABOUT SECTION (Rating & Author) ===== */
+#about {
+    padding: 1.5rem;
+    background-color: #fafafa;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* Star Rating - Flexbox */
+#about > img {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.25rem;
+}
+
+#about h3 {
+    font-size: 0.875rem;
+    color: #666;
+    margin: 0.75rem 0 0.5rem 0;
+    font-weight: 600;
+}
+
+#about p {
+    font-size: 0.875rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Save Button */
+#save {
+    background-color: #ff8c00;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+    min-height: 44px; /* iOS touch target */
+}
+
+#save:hover {
+    background-color: #e67e00;
+}
+
+/* ===== VIDEO ===== */
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+/* ===== INGREDIENTS SECTION ===== */
+#ingredients {
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+#ingredients h2 {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+#ingredients hr {
+    border: none;
+    border-top: 3px solid #ff8c00;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* Grid Layout for Ingredients List */
+#ingredients ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0;
+}
+
+#ingredients li {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+#ingredients li:hover {
+    background-color: #f0f0f0;
+}
+
+#ingredients li::before {
+    content: '';
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('../images/plus-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* ===== DIRECTIONS SECTION ===== */
+#recipe > section:not(#ingredients):not(#about):not(#reviews):not(#share) {
+    padding: 1.5rem;
+}
+
+#recipe > section h2 {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+#recipe > section hr {
+    border: none;
+    border-top: 3px solid #ff8c00;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+#recipe ol {
+    padding-left: 1.5rem;
+    counter-reset: step-counter;
+}
+
+#recipe ol li {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+/* ===== REVIEWS SECTION ===== */
+#reviews {
+    padding: 1.5rem;
+    background-color: #fafafa;
+}
+
+#reviews h2 {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+#reviews #number-reviews {
+    color: #999;
+    font-weight: normal;
+}
+
+#reviews hr {
+    border: none;
+    border-top: 3px solid #ff8c00;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* Grid Layout for Reviews */
+#reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Reviews Header spans full width */
+#reviews h2,
+#reviews hr {
+    grid-column: 1 / -1;
+}
+
+/* Individual Review Cards */
+#reviews > div {
+    background-color: #fff;
+    border: 2px dashed #ff8c00;
+    border-radius: 8px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* Flexbox for User Info Row */
+#reviews > div > img[alt*="user"] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+/* Username */
+#reviews > div {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Star Rating Container */
+#reviews > div > div {
+    display: flex;
+    gap: 0.25rem;
+    margin: 0.5rem 0;
+}
+
+#reviews > div img[alt="star"],
+#reviews > div img[src*="star"] {
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+/* Review Text */
+#reviews > div p,
+#reviews > div > *:last-child {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* ===== SHARE SECTION ===== */
+#share {
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+#share h2 {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+/* Flexbox for Share Icons */
+#share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#share img {
+    width: 50px;
+    height: 50px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#share img:hover {
+    transform: scale(1.1);
+}
+
+/* Better approach: wrap icons in a flex container */
+#share h2 {
+    width: 100%;
+}
+
+/* ===== TABLET (≥768px) ===== */
+@media (min-width: 768px) {
+    html {
+        font-size: 17px;
+    }
+
+    #main_content {
+        width: 95%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    #recipe {
+        padding: 1.5rem 2rem;
+    }
+
+    /* 2-Column Ingredients Grid */
+    #ingredients ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    #ingredients,
+    #recipe > section {
+        padding: 2rem;
+    }
+
+    /* 2-Column Reviews Grid */
+    #reviews {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    #reviews > div {
+        padding: 1.5rem;
+    }
+
+    /* Flex row for share icons */
+    #share {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* ===== DESKTOP (≥1024px) ===== */
+@media (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    #main_content {
+        width: 90%;
+    }
+
+    header {
+        padding: 2.5rem;
+    }
+
+    #recipe {
+        padding: 2rem 3rem;
+    }
+
+    /* 3-Column Reviews Grid */
+    #reviews {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    #ingredients,
+    #recipe > section {
+        padding: 2.5rem 3rem;
+    }
+
+    #share img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* ===== LARGE DESKTOP (≥1440px) ===== */
+@media (min-width: 1440px) {
+    html {
+        font-size: 19px;
+    }
+
+    #recipe {
+        padding: 2.5rem 4rem;
+    }
+
+    #ingredients ul {
+        gap: 1.5rem;
+    }
+
+    #reviews {
+        gap: 2.5rem;
+    }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+
+/* Focus styles for keyboard navigation */
+button:focus,
+a:focus {
+    outline: 3px solid #ff8c00;
+    outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    #about,
+    #ingredients li,
+    #reviews > div {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    #main_content {
+        background-color: #2d2d2d;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #recipe h1,
+    #recipe h2,
+    #reviews h2 {
+        color: #f0f0f0;
+    }
+
+    #about,
+    #ingredients li,
+    #reviews {
+        background-color: #333;
+    }
+
+    #reviews > div {
+        background-color: #2d2d2d;
+        border-color: #ff8c00;
+    }
+
+    #about p,
+    #reviews p {
+        color: #c0c0c0;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    #save,
+    #share,
+    video {
+        display: none;
+    }
+
+    #main_content {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    * {
+        background: white !important;
+        color: black !important;
+    }
+}
