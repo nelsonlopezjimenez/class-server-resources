@@ -1,9 +1,25 @@
 ---
-title: "WEEK 7 - Web Forms"
-description: "WEEK 7 - Identifying HTML forms and elementes and attributes."
+title: "WEEK 7 - "
+description: "Lesson week 7 - Identifying HTML forms and elementes and attributes."
 week: 7
 ---
 # Week 7
+
+## Peach Cobbler Recipe updated
+
+### Please look at the following pictures:
+1. ![Peach cobbler 1a](/images/week8/peach-cobbler-partF-1a.png)
+1. ![Peach cobbler 1a](/images/week8/peach-cobbler-partF-1aa.png)
+1. ![Peach cobbler 1a](/images/week8/peach-cobbler-partF-1aaa.png)
+1. ![Peach cobbler 1a](/images/week8/peach-cobbler-partF-1aaaa.png)
+1. ![Peach cobbler 1a](/images/week8/peach-cobbler-partF-1aaaaa.png)
+1. ![Peach cobbler 1a](/images/week8/peach-cobbler-partF-1ab.png)
+
+### [quiz filter method](/images/week50/javascript-filter-quiz.html)
+### [quiz map method](/images/week50/javascript-map-quiz.html)
+### [quiz forof method](/images/week50/javascript-forof-quiz.html)
+
+
 Week 7 - Lesson 6 Web Forms
     Assignments:
     Discussion -- Lesson 6 Web Forms due by 11:59pm
