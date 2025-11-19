@@ -1,14 +1,10 @@
 ---
-title: "WEEK 8 - React" 
-description: "Week 8 :  "
-week: 50
+title: "Week 10 - React" 
+description: "Week 10 : Final Project Instructions to submit. Edited on 11/19/2025 "
+week: 44
 ---
 
-# Quiz
-
-### [quiz filter method](/images/week50/javascript-filter-quiz.html)
-### [quiz map method](/images/week50/javascript-map-quiz.html)
-### [quiz forof method](/images/week50/javascript-forof-quiz.html)
+# Final Project
 
 ## To turn in your Full Stack Recipe App: 
 
@@ -17,7 +13,8 @@ week: 50
 1. [     ] Web page looks similar to the provided screenshots.
 1. [     ] Code is indented correctly (to show parent-child relationships)
 1. [     ] Comment with student and assignment information at top of EVERY file you edit.
-1. _________________________________________________________________________________________
+
+<hr>
 
 ### Readying your app files for submission
 
@@ -84,3 +81,6 @@ To view the website, open any of the HTML files in the Google Chrome browser.
 Make sure you have saved your README.md file into your website folder.
 ```
 
+NOTE: in our environment we are unable to install reliably the node_modules folder. In general, the node_modules folder content should not be tracked (.gitignore file content should include a "node_modules" entry). If you created a repository with the node_modules, you are going to compress it without the node_modules folder.
+
+Also, if you created two separate repositories corresponding to backend/frontend, you should create a new repository the would include the content of both. If you want your project (as well as your data) saved and transferred to you or anyone on your visitors list, make sure to save it, compress it and add your full name to the file's name. DO NOT INCLUDE MATERIALS THAT YOU MIGHT BE ABLE TO ACCESS ON THE PUBLIC INTERNET LIKE VIDEOS, REPOSITORIES, FILES, DOCUMENTS THAT YOU DID NOT EDIT. 
