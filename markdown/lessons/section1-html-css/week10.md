@@ -55,9 +55,12 @@ Your completed website must demonstrate proficiency in all major course topics:
 ```
 my-website/
 ├── index.html
-├── about.html
-├── portfolio.html (or services.html/resources.html)
-├── contact.html
+├── html/
+│   ├── about.html
+│   ├── portfolio.html
+│   ├── services.html
+│   ├── resources.html
+│   └── contact.html
 ├── css/
 │   ├── styles.css
 │   └── normalize.css
