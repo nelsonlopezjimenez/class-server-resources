@@ -260,12 +260,13 @@ Your final project will be evaluated on:
 - **Search Functionality**: Easy content discovery
 - **Resource Library**: Downloadable materials and links
 - **Interactive Elements**: Quizzes, calculators, or tools
-- **Web page look at least similar to the provided "example project" 
+- **Web page**: look at least similar to the provided "example project" in the freeCodeCamp projects 
 
 ## Success Checklist
 
 **Before Submission:**
 - [ ] All links work correctly (no 404 errors)
+- [ ] Your name, date, title project at the top of all your files
 - [ ] Forms validate properly with helpful error messages
 - [ ] Content is proofread and professional
 - [ ] Images have alt text for accessibility
