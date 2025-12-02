@@ -192,7 +192,7 @@ As your teacher, I will work hard to:
 
 #### Day 2 🔧 🎥
 1. Click to open 🔧 [▶️ **course server** ]()
-1. [Learning Tips](/websites/gcfglobal-learning-tips/tutrial.html)
+1. [Learning Tips](/websites/gcfglobal-learning-tips/tutorial.html)
    1.  [🧠 Discover your learning style](/websites/gcfglobal-learning-tips/discover-your-learning-style/lesson.html)
    1.  [🔄 The study cycle](/websites/gcfglobal-learning-tips/the-study-cycle/lesson.html)
 1. [Problem Solving And Decision Making](/websites/gcfglobal-problem-solving-and-decision-making/tutorial.html)
