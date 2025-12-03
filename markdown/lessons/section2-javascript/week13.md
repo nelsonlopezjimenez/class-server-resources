@@ -18,7 +18,7 @@ objectives:
 
 Javascript can be overwhelming to new students. Here are some keys to help you get the most out of this quarter:
 
-- **<u>Practice, Practice, Practice:</u>** THroughout this quarter the key to learning JavaScript is consistent practice. Don't just do the assignment; you should experiment, try different approaches, and build small projects on your own.
+- **<u>Practice, Practice, Practice:</u>** Throughout this quarter the key to learning JavaScript is consistent practice. Don't just do the assignment; you should experiment, try different approaches, and build small projects on your own.
 - **<u>Debugging:</u>** Learn to use your browser's developer tools (Console, Elements) to debug your code. This is a crucial skill and can help save many hours of headache tracking down bugs.
 - **<u>Double Check Spelling and Casing:</u>** Many issues are due to typing errors. myName and myname are two different variables. and cosnole.log() doesn't exist with in javascript. VSCode will help you catch some of these bugs but not all. Carefully and patiently review your code if you have errors.
 - **<u>Don't Get Stuck:</u>** If you’re struggling with a particular concept, don’t spend _too_ long on it, this means 10-15 minutes max. If you are struggling for longer than this review the mandatory and optional readings, and if you are still struggling, write the issue down in your notebook then move on. When you come into class you can ask a classroom assistant or Dr. Lopez for assistance.
