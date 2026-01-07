@@ -9,32 +9,6 @@ objectives:
 
 # HTML Attributes
 
-## Quarter Information
-
-### Assignment\Labs Expectations:
-
-When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a - followed by the lab or assignment. I.E. John Doe turning in a file for Lab 1.1 would name the file doej-lab1.1.js, for the week 1 assignment would be doej-assignment1.js. If uploading multiple files you need to zip the folder and follow same naming convention.
-
-Each html assignment you turn in this quarter needs to have your name and a brief description of what the page does at the top as a comment:
-
-```html
-<!-- John Doe
-This page renders my resume as an an HTML document -->
-```
-
-It will then need to have code that meets the requirements of the assignment, with comments explaining what the code does. As your skill in coding HTML increases you will be able to use less comments but for now over commenting is expected, this allows the instructor and classroom assistants to better understand what you are doing, or attempting to do.
-
-```html
-<!-- Code for a clickable nav bar -->
-<nav>
-  <ul>
-    <li>
-      <a href="#">Home</a>
-    </li>
-  </ul>
-</nav>
-```
-
 ### freeCodeCamp
 
 Make sure your freeCodeCamp server is up and running to be able to do the required readings, labs, and assignments.

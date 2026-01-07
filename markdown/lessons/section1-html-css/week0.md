@@ -11,16 +11,6 @@ week: 0
 
 Welcome to the CIS Fullstack web Development certificate program. This is a 12 month course consisting of 40'ish weeks of course work to do. You will learn the necessary skills to develop, create, and deploy a fully functional web based application.
 
-## Classroom Community Expectations
-
-As your teacher, I will work hard to:
-
-1. provide a safe, comfortable place to learn--where everyone is welcome and respected.
-1. prepare challenging/interesting lessons that help you learn.
-1. give clear instructions and reasonable time for you to complete assignments
-1. give you timely feedback on how you’re doing.
-1. be available to help you when you have questions or problems.
-
 ### To be successful in this class, you should plan to:
 
 1. arrive on time and prepared for class
@@ -56,6 +46,30 @@ During this course, you will keep a journal of reflections on what you are learn
 Each week, we’ll have a short review section to help you consolidate your knowledge. After reading the review, you'll take a quiz. These quizzes primarily consist of multiple-choice questions, typically ranging from 10 to 20 questions, and they're based directly on the review material.
 
 Each week will have an assignment that is due the first day of the next week (typically a Monday). Each assignment will have a detailed list of criteria that must be meet to receive a full grade.
+
+### Assignment\Labs Expectations:
+
+When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a - followed by the lab or assignment. I.E. John Doe turning in a file for Lab 1.1 would name the file doej-lab1.1.js, for the week 1 assignment would be doej-assignment1.js. If uploading multiple files you need to zip the folder and follow same naming convention.
+
+Each html assignment you turn in this quarter needs to have your name and a brief description of what the page does at the top as a comment:
+
+```html
+<!-- John Doe
+This page renders my resume as an an HTML document -->
+```
+
+It will then need to have code that meets the requirements of the assignment, with comments explaining what the code does. As your skill in coding HTML increases you will be able to use less comments but for now over commenting is expected, this allows the instructor and classroom assistants to better understand what you are doing, or attempting to do.
+
+```html
+<!-- Code for a clickable nav bar -->
+<nav>
+  <ul>
+    <li>
+      <a href="#">Home</a>
+    </li>
+  </ul>
+</nav>
+```
 
 ### Midterm and Finals
 
