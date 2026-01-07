@@ -12,7 +12,7 @@ objectives:
   - "Combine multiple conditions using logical operators"
 ---
 
-# Week 14: Booleans and Numbers
+# Booleans and Numbers
 
 ## Learning Objectives
 

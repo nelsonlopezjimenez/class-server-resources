@@ -4,10 +4,10 @@ tags: ["HTML"]
 draft: false
 title: "Introduction to HTML"
 description: ""
-week: 1
+week: 0
 ---
 
-# Week 0: Getting Started with CIS Fullstack Web Development
+# Getting Started with CIS Fullstack Web Development
 
 Welcome to the CIS Fullstack web Development certificate program. This is a 12 month course consisting of 40'ish weeks of course work to do. You will learn the necessary skills to develop, create, and deploy a fully functional web based application.
 

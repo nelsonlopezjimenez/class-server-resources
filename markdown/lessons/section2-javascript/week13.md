@@ -7,7 +7,7 @@ prerequisites: ["None"]
 objectives:
 ---
 
-# Week 13: JavaScript Fundamentals and Strings
+# JavaScript Fundamentals and Strings
 
 ## Keys to learning Javascript:
 
