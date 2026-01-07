@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Filter() Quiz - 5 Tasks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .task-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .task-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .task-difficulty {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .easy { background: #d4edda; color: #155724; }
+        .medium { background: #fff3cd; color: #856404; }
+        .hard { background: #f8d7da; color: #721c24; }
+
+        .task-description {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .task-description h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .task-description p {
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .data-display {
+            background: #263238;
+            color: #aed581;
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        .code-editor {
+            width: 100%;
+            min-height: 120px;
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            resize: vertical;
+            background: #f8f9fa;
+        }
+
+        .code-editor:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-run {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-run:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .btn-reset {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-reset:hover {
+            background: #5a6268;
+        }
+
+        .btn-hint {
+            background: #ffc107;
+            color: #000;
+        }
+
+        .btn-hint:hover {
+            background: #e0a800;
+        }
+
+        .result {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            display: none;
+        }
+
+        .result.show {
+            display: block;
+        }
+
+        .result.success {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+
+        .result.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+
+        .hint {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .hint.show {
+            display: block;
+        }
+
+        .hint h4 {
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+
+        .hint p {
+            color: #856404;
+            font-size: 0.9rem;
+        }
+
+        .expected-output {
+            background: #e7f3ff;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            border-left: 4px solid #2196F3;
+        }
+
+        .expected-output h4 {
+            color: #1976D2;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .expected-output code {
+            background: #263238;
+            color: #aed581;
+            padding: 0.5rem;
+            border-radius: 4px;
+            display: block;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+        }
+
+        .progress {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .progress-bar {
+            height: 30px;
+            background: #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stat {
+            flex: 1;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 1.75rem;
+            }
+
+            .task-card {
+                padding: 1.5rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>🎯 JavaScript Filter() Quiz</h1>
+            <p>Master the Array.filter() method with 5 progressive challenges</p>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill">0%</div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number" id="completedCount">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="attemptsCount">0</div>
+                    <div class="stat-label">Attempts</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="successRate">0%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TASK 1: Filter Even Numbers -->
+        <div class="task-card" data-task="1">
+            <div class="task-header">
+                <div class="task-number">1</div>
+                <div class="task-difficulty easy">Easy</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Filter Even Numbers</h3>
+                <p>Given an array of numbers, use the <code>filter()</code> method to return only the even numbers.</p>
+                
+                <div class="data-display">
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+                </div>
+
+                <p><strong>Your task:</strong> Write code that filters and returns only even numbers: [2, 4, 6, 8, 10]</p>
+            </div>
+
+            <textarea class="code-editor" id="code1" placeholder="// Write your filter code here
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const evenNumbers = numbers.filter( /* your code here */ );
+console.log(evenNumbers);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask1()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(1)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(1)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint1">
+                <h4>💡 Hint:</h4>
+                <p>Use the modulo operator (%) to check if a number is even. A number is even if <code>number % 2 === 0</code></p>
+                <p>Remember: <code>array.filter(item => condition)</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[2, 4, 6, 8, 10]</code>
+            </div>
+
+            <div class="result" id="result1"></div>
+        </div>
+
+        <!-- TASK 2: Filter Strings by Length -->
+        <div class="task-card" data-task="2">
+            <div class="task-header">
+                <div class="task-number">2</div>
+                <div class="task-difficulty easy">Easy</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Filter Strings by Length</h3>
+                <p>Given an array of words, filter and return only words that have more than 5 characters.</p>
+                
+                <div class="data-display">
+const words = ["apple", "banana", "cat", "dog", "elephant", "fish", "giraffe"];
+                </div>
+
+                <p><strong>Your task:</strong> Return only words with length > 5: ["banana", "elephant", "giraffe"]</p>
+            </div>
+
+            <textarea class="code-editor" id="code2" placeholder="// Write your filter code here
+const words = ['apple', 'banana', 'cat', 'dog', 'elephant', 'fish', 'giraffe'];
+const longWords = words.filter( /* your code here */ );
+console.log(longWords);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask2()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(2)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(2)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint2">
+                <h4>💡 Hint:</h4>
+                <p>Access the length of a string using <code>.length</code> property</p>
+                <p>Example: <code>words.filter(word => word.length > 5)</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>["banana", "elephant", "giraffe"]</code>
+            </div>
+
+            <div class="result" id="result2"></div>
+        </div>
+
+        <!-- TASK 3: Filter Objects by Property -->
+        <div class="task-card" data-task="3">
+            <div class="task-header">
+                <div class="task-number">3</div>
+                <div class="task-difficulty medium">Medium</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Filter Students by Grade</h3>
+                <p>Given an array of student objects, filter and return only students who have a grade of 85 or higher.</p>
+                
+                <div class="data-display">
+const students = [
+    { name: "Alice", grade: 92 },
+    { name: "Bob", grade: 78 },
+    { name: "Charlie", grade: 85 },
+    { name: "Diana", grade: 95 },
+    { name: "Eve", grade: 72 }
+];
+                </div>
+
+                <p><strong>Your task:</strong> Return students with grade >= 85</p>
+            </div>
+
+            <textarea class="code-editor" id="code3" placeholder="// Write your filter code here
+const students = [
+    { name: 'Alice', grade: 92 },
+    { name: 'Bob', grade: 78 },
+    { name: 'Charlie', grade: 85 },
+    { name: 'Diana', grade: 95 },
+    { name: 'Eve', grade: 72 }
+];
+const topStudents = students.filter( /* your code here */ );
+console.log(topStudents);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask3()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(3)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(3)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint3">
+                <h4>💡 Hint:</h4>
+                <p>Access object properties using dot notation: <code>student.grade</code></p>
+                <p>Example: <code>students.filter(student => student.grade >= 85)</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[
+  { name: "Alice", grade: 92 },
+  { name: "Charlie", grade: 85 },
+  { name: "Diana", grade: 95 }
+]</code>
+            </div>
+
+            <div class="result" id="result3"></div>
+        </div>
+
+        <!-- TASK 4: Filter Products by Multiple Conditions -->
+        <div class="task-card" data-task="4">
+            <div class="task-header">
+                <div class="task-number">4</div>
+                <div class="task-difficulty medium">Medium</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Filter Products by Price and Availability</h3>
+                <p>Filter products that are both in stock AND cost less than $50.</p>
+                
+                <div class="data-display">
+const products = [
+    { name: "Laptop", price: 999, inStock: true },
+    { name: "Mouse", price: 25, inStock: true },
+    { name: "Keyboard", price: 45, inStock: false },
+    { name: "Monitor", price: 200, inStock: true },
+    { name: "USB Cable", price: 10, inStock: true },
+    { name: "Headphones", price: 60, inStock: true }
+];
+                </div>
+
+                <p><strong>Your task:</strong> Return products where <code>inStock === true</code> AND <code>price < 50</code></p>
+            </div>
+
+            <textarea class="code-editor" id="code4" placeholder="// Write your filter code here
+const products = [
+    { name: 'Laptop', price: 999, inStock: true },
+    { name: 'Mouse', price: 25, inStock: true },
+    { name: 'Keyboard', price: 45, inStock: false },
+    { name: 'Monitor', price: 200, inStock: true },
+    { name: 'USB Cable', price: 10, inStock: true },
+    { name: 'Headphones', price: 60, inStock: true }
+];
+const affordableInStock = products.filter( /* your code here */ );
+console.log(affordableInStock);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask4()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(4)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(4)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint4">
+                <h4>💡 Hint:</h4>
+                <p>Use the AND operator (&&) to combine multiple conditions</p>
+                <p>Example: <code>products.filter(product => product.inStock && product.price < 50)</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[
+  { name: "Mouse", price: 25, inStock: true },
+  { name: "USB Cable", price: 10, inStock: true }
+]</code>
+            </div>
+
+            <div class="result" id="result4"></div>
+        </div>
+
+        <!-- TASK 5: Filter Nested Object Properties -->
+        <div class="task-card" data-task="5">
+            <div class="task-header">
+                <div class="task-number">5</div>
+                <div class="task-difficulty hard">Hard</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Filter Users by Age and Location</h3>
+                <p>Filter users who are 18 or older AND live in "USA".</p>
+                
+                <div class="data-display">
+const users = [
+    { name: "John", age: 25, address: { city: "New York", country: "USA" } },
+    { name: "Maria", age: 17, address: { city: "Miami", country: "USA" } },
+    { name: "Chen", age: 30, address: { city: "Beijing", country: "China" } },
+    { name: "Sarah", age: 22, address: { city: "Los Angeles", country: "USA" } },
+    { name: "Ahmed", age: 19, address: { city: "Dubai", country: "UAE" } }
+];
+                </div>
+
+                <p><strong>Your task:</strong> Return users where <code>age >= 18</code> AND <code>address.country === "USA"</code></p>
+            </div>
+
+            <textarea class="code-editor" id="code5" placeholder="// Write your filter code here
+const users = [
+    { name: 'John', age: 25, address: { city: 'New York', country: 'USA' } },
+    { name: 'Maria', age: 17, address: { city: 'Miami', country: 'USA' } },
+    { name: 'Chen', age: 30, address: { city: 'Beijing', country: 'China' } },
+    { name: 'Sarah', age: 22, address: { city: 'Los Angeles', country: 'USA' } },
+    { name: 'Ahmed', age: 19, address: { city: 'Dubai', country: 'UAE' } }
+];
+const adultUSUsers = users.filter(/* your code here */ );
+console.log(adultUSUsers);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask5()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(5)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(5)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint5">
+                <h4>💡 Hint:</h4>
+                <p>Access nested object properties: <code>user.address.country</code></p>
+                <p>Example: <code>users.filter(user => user.age >= 18 && user.address.country === "USA")</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[
+  { name: "John", age: 25, address: { city: "New York", country: "USA" } },
+  { name: "Sarah", age: 22, address: { city: "Los Angeles", country: "USA" } }
+]</code>
+            </div>
+
+            <div class="result" id="result5"></div>
+        </div>
+
+    </div>
+
+    <script>
+        // Progress tracking
+        let completedTasks = new Set();
+        let totalAttempts = 0;
+
+        function updateProgress() {
+            const completed = completedTasks.size;
+            const percentage = (completed / 5) * 100;
+            
+            document.getElementById('progressFill').style.width = percentage + '%';
+            document.getElementById('progressFill').textContent = Math.round(percentage) + '%';
+            document.getElementById('completedCount').textContent = completed;
+            document.getElementById('attemptsCount').textContent = totalAttempts;
+            
+            const successRate = totalAttempts > 0 ? Math.round((completed / totalAttempts) * 100) : 0;
+            document.getElementById('successRate').textContent = successRate + '%';
+        }
+
+        function showResult(taskNum, success, message) {
+            const resultDiv = document.getElementById('result' + taskNum);
+            resultDiv.className = 'result show ' + (success ? 'success' : 'error');
+            resultDiv.textContent = message;
+            
+            totalAttempts++;
+            if (success) {
+                completedTasks.add(taskNum);
+            }
+            updateProgress();
+        }
+
+        function toggleHint(taskNum) {
+            const hint = document.getElementById('hint' + taskNum);
+            hint.classList.toggle('show');
+        }
+
+        function resetTask(taskNum) {
+            document.getElementById('code' + taskNum).value = '';
+            document.getElementById('result' + taskNum).className = 'result';
+            document.getElementById('hint' + taskNum).classList.remove('show');
+        }
+
+        // TASK 1: Filter Even Numbers
+        function runTask1() {
+            try {
+                const code = document.getElementById('code1').value;
+                
+                if (!code.trim()) {
+                    showResult(1, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                // Execute user code in isolated scope
+                let result;
+                try {
+                    result = new Function(code + '\nreturn evenNumbers;')();
+                } catch (e) {
+                    // If that fails, try with eval in a way that captures the variable
+                    let evenNumbers;
+                    eval(code);
+                    result = evenNumbers;
+                }
+                
+                // Check result
+                const expected = [2, 4, 6, 8, 10];
+                
+                if (!result) {
+                    showResult(1, false, '✗ Make sure to assign the result to a variable named "evenNumbers". Example: const evenNumbers = numbers.filter(...)');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(1, true, '✓ Correct! You successfully filtered even numbers: ' + JSON.stringify(result));
+                } else {
+                    showResult(1, false, '✗ Not quite right. Expected: ' + JSON.stringify(expected) + ' but got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(1, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 2: Filter Strings by Length
+        function runTask2() {
+            try {
+                const code = document.getElementById('code2').value;
+                
+                if (!code.trim()) {
+                    showResult(2, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                // Execute user code in isolated scope
+                let result;
+                try {
+                    result = new Function(code + '\nreturn longWords;')();
+                } catch (e) {
+                    let longWords;
+                    eval(code);
+                    result = longWords;
+                }
+                
+                const expected = ["banana", "elephant", "giraffe"];
+                
+                if (!result) {
+                    showResult(2, false, '✗ Make sure to assign the result to a variable named "longWords". Example: const longWords = words.filter(...)');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(2, true, '✓ Excellent! You filtered words longer than 5 characters: ' + JSON.stringify(result));
+                } else {
+                    showResult(2, false, '✗ Not quite right. Expected: ' + JSON.stringify(expected) + ' but got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(2, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 3: Filter Objects by Property
+        function runTask3() {
+            try {
+                const code = document.getElementById('code3').value;
+                
+                if (!code.trim()) {
+                    showResult(3, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                // Execute user code in isolated scope
+                let result;
+                try {
+                    result = new Function(code + '\nreturn topStudents;')();
+                } catch (e) {
+                    let topStudents;
+                    eval(code);
+                    result = topStudents;
+                }
+                
+                const expected = [
+                    { name: "Alice", grade: 92 },
+                    { name: "Charlie", grade: 85 },
+                    { name: "Diana", grade: 95 }
+                ];
+                
+                if (!result) {
+                    showResult(3, false, '✗ Make sure to assign the result to a variable named "topStudents". Example: const topStudents = students.filter(...)');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(3, true, '✓ Perfect! You filtered students with grades >= 85: ' + JSON.stringify(result.map(s => s.name)));
+                } else {
+                    showResult(3, false, '✗ Not quite right. Check that you\'re filtering for grade >= 85. Got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(3, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 4: Filter Products by Multiple Conditions
+        function runTask4() {
+            try {
+                const code = document.getElementById('code4').value;
+                
+                if (!code.trim()) {
+                    showResult(4, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                // Execute user code in isolated scope
+                let result;
+                try {
+                    result = new Function(code + '\nreturn affordableInStock;')();
+                } catch (e) {
+                    let affordableInStock;
+                    eval(code);
+                    result = affordableInStock;
+                }
+                
+                const expected = [
+                    { name: "Mouse", price: 25, inStock: true },
+                    { name: "USB Cable", price: 10, inStock: true }
+                ];
+                
+                if (!result) {
+                    showResult(4, false, '✗ Make sure to assign the result to a variable named "affordableInStock". Example: const affordableInStock = products.filter(...)');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(4, true, '✓ Great work! You filtered products that are in stock AND under $50: ' + JSON.stringify(result.map(p => p.name)));
+                } else {
+                    showResult(4, false, '✗ Not quite right. Remember both conditions must be true (inStock AND price < 50). Got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(4, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 5: Filter Nested Object Properties
+        function runTask5() {
+            try {
+                const code = document.getElementById('code5').value;
+                
+                if (!code.trim()) {
+                    showResult(5, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                // Execute user code in isolated scope
+                let result;
+                try {
+                    result = new Function(code + '\nreturn adultUSUsers;')();
+                } catch (e) {
+                    let adultUSUsers;
+                    eval(code);
+                    result = adultUSUsers;
+                }
+                
+                const expected = [
+                    { name: "John", age: 25, address: { city: "New York", country: "USA" } },
+                    { name: "Sarah", age: 22, address: { city: "Los Angeles", country: "USA" } }
+                ];
+                
+                if (!result) {
+                    showResult(5, false, '✗ Make sure to assign the result to a variable named "adultUSUsers". Example: const adultUSUsers = users.filter(...)');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(5, true, '✓ Outstanding! You filtered adult USA users with nested properties: ' + JSON.stringify(result.map(u => u.name)));
+                } else {
+                    showResult(5, false, '✗ Not quite right. Check age >= 18 AND address.country === "USA". Got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(5, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // Initialize progress
+        updateProgress();
+    </script>
+
+</body>
+</html>

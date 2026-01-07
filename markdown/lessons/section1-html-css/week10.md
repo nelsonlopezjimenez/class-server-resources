@@ -1,10 +1,10 @@
 ---
-title: "Week 12: Final Project - Building Your Complete Website"
+title: "Week 10: Final Project - Building Your Complete Website"
 description: "Complete and deploy your comprehensive website project demonstrating all HTML5 and CSS3 skills learned throughout the course"
 week: 10
 ---
 
-# Week 12: Final Project - Building Your Complete Website
+# Week 10: Final Project - Building Your Complete Website
 
 ## Project Overview
 
@@ -20,16 +20,12 @@ Your completed website must demonstrate proficiency in all major course topics:
 - [ ] Semantic HTML5 elements (header, nav, main, section, article, aside, footer)
 - [ ] Proper document structure and heading hierarchy
 - [ ] Valid HTML5 markup (passes W3C validator)
-- [ ] SEO-friendly meta tags and descriptions
-- [ ] Accessible markup with proper ARIA attributes
 
 **CSS3 Styling:**
 - [ ] External stylesheet with organized, well-commented code
-- [ ] CSS custom properties (variables) for consistent theming
 - [ ] Responsive design with mobile-first approach
 - [ ] Flexbox and/or CSS Grid for layout
 - [ ] CSS transitions and/or animations
-- [ ] Cross-browser compatibility
 
 **Content and Features:**
 - [ ] Minimum 4 interconnected pages with consistent navigation
@@ -37,17 +33,17 @@ Your completed website must demonstrate proficiency in all major course topics:
 - [ ] Image gallery or multimedia content
 - [ ] Interactive elements (modals, accordions, or similar)
 - [ ] Professional typography and color scheme
-- [ ] Optimized images and media files
+
 
 ## Daily Activities
 
 ### Day 1: Project Planning and Architecture
 
 **Morning: Project Review and Planning**
-- Review your chosen project type (Portfolio, Business Site, or Educational Resource)
+- Review your chosen project type (Portfolio, Business Site, or Educational Resource: from the projects in freeCodeCamp offline web site)
 - Create a detailed site map and content outline
 - Plan your information architecture and user flow
-- Sketch wireframes for key pages
+- Sketch wireframes for key pages: hand made is OK (no need to to computer draw the wireframes).
 
 **Afternoon: Content Preparation**
 - Write all text content for your website
@@ -59,9 +55,12 @@ Your completed website must demonstrate proficiency in all major course topics:
 ```
 my-website/
 ├── index.html
-├── about.html
-├── portfolio.html (or services.html/resources.html)
-├── contact.html
+├── html/
+│   ├── about.html
+│   ├── portfolio.html
+│   ├── services.html
+│   ├── resources.html
+│   └── contact.html
 ├── css/
 │   ├── styles.css
 │   └── normalize.css
@@ -205,23 +204,16 @@ my-website/
 ### Day 5: Final Polish and Deployment
 
 **Morning: Testing and Optimization**
-- Test your website across different browsers and devices
+- Test your website 
 - Validate HTML and CSS code
-- Optimize images and check loading times
 - Test all forms and interactive features
-- Review accessibility with keyboard navigation
 
 **Afternoon: Final Touches and Documentation**
 - Add final content and polish typography
 - Implement any missing animations or transitions
-- Create a README file documenting your project
+- Create a **README file** documenting your project
 - Take screenshots for your portfolio
 
-**Deployment Options:**
-1. **GitHub Pages** (Free, great for portfolios)
-2. **Netlify** (Free tier with form handling)
-3. **Vercel** (Free tier with excellent performance)
-4. **Traditional web hosting** (Shared hosting providers)
 
 ## Project Evaluation Criteria
 
@@ -231,21 +223,16 @@ Your final project will be evaluated on:
 - Clean, semantic HTML5 code
 - Well-organized, maintainable CSS
 - Responsive design implementation
-- Cross-browser compatibility
-- Performance optimization
 
 ### Design and User Experience (30%)
 - Visual hierarchy and typography
 - Consistent color scheme and branding
 - Intuitive navigation and user flow
-- Accessibility considerations
 - Mobile-friendly interface
 
 ### Content and Functionality (20%)
 - Quality and relevance of content
 - Working forms and interactive features
-- Proper use of multimedia elements
-- SEO-friendly structure
 - Error-free functionality
 
 ### Code Quality and Documentation (10%)
@@ -276,29 +263,21 @@ Your final project will be evaluated on:
 - **Search Functionality**: Easy content discovery
 - **Resource Library**: Downloadable materials and links
 - **Interactive Elements**: Quizzes, calculators, or tools
-- **References**: Credible sources and further reading
+- **Web page**: look at least similar to the provided "example project" in the freeCodeCamp projects 
 
 ## Success Checklist
 
 **Before Submission:**
 - [ ] All links work correctly (no 404 errors)
+- [ ] Your name, date, title project at the top of all your files
 - [ ] Forms validate properly with helpful error messages
-- [ ] Site loads quickly on slow connections
 - [ ] Content is proofread and professional
 - [ ] Images have alt text for accessibility
-- [ ] Code validates with W3C validators
+- [ ] Code validates with W3C validators: our nu validator
 - [ ] Site works on mobile devices
 - [ ] Navigation is intuitive and consistent
 - [ ] Contact information is accurate and working
 
-## Presentation Preparation
-
-Prepare a 5-minute presentation covering:
-1. **Project Overview**: What you built and why
-2. **Technical Challenges**: Problems solved and lessons learned
-3. **Design Decisions**: Color choices, layout rationale, user experience focus
-4. **Future Enhancements**: What you'd add with more time
-5. **Demo**: Live walkthrough of key features
 
 ## Next Steps: Course Continuation
 
@@ -307,12 +286,6 @@ This website serves as your foundation for the remaining course sections:
 **Section 2 (JavaScript)**: Add interactivity, dynamic content, and client-side functionality
 **Section 3 (Backend)**: Connect forms to databases, add user accounts, implement server-side features
 **Section 4 (React)**: Rebuild with component-based architecture and modern frameworks
-
-## Resources for Continued Learning
-- [Can I Use](https://caniuse.com/) - Check browser support for features
-- [MDN Web Docs](https://developer.mozilla.org/) - Comprehensive web development documentation
-- [CSS Grid Generator](https://cssgrid-generator.netlify.app/) - Visual CSS Grid tool
-- [Accessibility Checker](https://wave.webaim.org/) - Test your site's accessibility
 
 ## Celebration and Reflection
 
@@ -324,7 +297,7 @@ Take time to appreciate what you've accomplished:
 
 **Congratulations on completing Web Development Fundamentals!** 
 
-Your journey into full-stack development continues next week with JavaScript programming, where you'll add dynamic behavior and interactivity to your websites.
+Your journey into full-stack development continues next quarter with JavaScript programming, where you'll add dynamic behavior and interactivity to your websites.
 
 ---
 

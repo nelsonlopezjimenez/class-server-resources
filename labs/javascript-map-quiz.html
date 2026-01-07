@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Map() Quiz - 10 Tasks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .task-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .task-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .task-difficulty {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .easy { background: #d4edda; color: #155724; }
+        .medium { background: #fff3cd; color: #856404; }
+        .hard { background: #f8d7da; color: #721c24; }
+
+        .task-description {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .task-description h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .task-description p {
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .data-display {
+            background: #263238;
+            color: #aed581;
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        .code-editor {
+            width: 100%;
+            min-height: 120px;
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            resize: vertical;
+            background: #f8f9fa;
+        }
+
+        .code-editor:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-run {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-run:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .btn-reset {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-reset:hover {
+            background: #5a6268;
+        }
+
+        .btn-hint {
+            background: #ffc107;
+            color: #000;
+        }
+
+        .btn-hint:hover {
+            background: #e0a800;
+        }
+
+        .result {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            display: none;
+        }
+
+        .result.show {
+            display: block;
+        }
+
+        .result.success {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+
+        .result.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+
+        .hint {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .hint.show {
+            display: block;
+        }
+
+        .hint h4 {
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+
+        .hint p {
+            color: #856404;
+            font-size: 0.9rem;
+        }
+
+        .expected-output {
+            background: #e7f3ff;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            border-left: 4px solid #2196F3;
+        }
+
+        .expected-output h4 {
+            color: #1976D2;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .expected-output code {
+            background: #263238;
+            color: #aed581;
+            padding: 0.5rem;
+            border-radius: 4px;
+            display: block;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+        }
+
+        .progress {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .progress-bar {
+            height: 30px;
+            background: #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stat {
+            flex: 1;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 1.75rem;
+            }
+
+            .task-card {
+                padding: 1.5rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>🗺️ JavaScript Map() Quiz</h1>
+            <p>Master the Array.map() method with 10 progressive challenges</p>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill">0%</div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number" id="completedCount">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="attemptsCount">0</div>
+                    <div class="stat-label">Attempts</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="successRate">0%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TASK 1: Double Numbers -->
+        <div class="task-card" data-task="1">
+            <div class="task-header">
+                <div class="task-number">1</div>
+                <div class="task-difficulty easy">Easy</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Double All Numbers</h3>
+                <p>Use <code>map()</code> to create a new array where each number is doubled (multiplied by 2).</p>
+                
+                <div class="data-display">
+const numbers = [1, 2, 3, 4, 5];
+                </div>
+
+                <p><strong>Your task:</strong> Return [2, 4, 6, 8, 10]</p>
+            </div>
+
+            <textarea class="code-editor" id="code1" placeholder="const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(/* your code here */ );
+console.log(doubled);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask1()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(1)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(1)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint1">
+                <h4>💡 Hint:</h4>
+                <p>Use <code>map()</code> to transform each element: <code>numbers.map(num => num * 2)</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[2, 4, 6, 8, 10]</code>
+            </div>
+
+            <div class="result" id="result1"></div>
+        </div>
+
+        <!-- TASK 2: Convert to Uppercase -->
+        <div class="task-card" data-task="2">
+            <div class="task-header">
+                <div class="task-number">2</div>
+                <div class="task-difficulty easy">Easy</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Convert Strings to Uppercase</h3>
+                <p>Use <code>map()</code> to convert all strings to uppercase.</p>
+                
+                <div class="data-display">
+const words = ["hello", "world", "javascript"];
+                </div>
+
+                <p><strong>Your task:</strong> Return ["HELLO", "WORLD", "JAVASCRIPT"]</p>
+            </div>
+
+            <textarea class="code-editor" id="code2" placeholder="const words = ['hello', 'world', 'javascript'];
+const uppercase = words.map(/* your code here */ );
+console.log(uppercase);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask2()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(2)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(2)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint2">
+                <h4>💡 Hint:</h4>
+                <p>Use the <code>.toUpperCase()</code> method on each string</p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>["HELLO", "WORLD", "JAVASCRIPT"]</code>
+            </div>
+
+            <div class="result" id="result2"></div>
+        </div>
+
+        <!-- TASK 3: Square Numbers -->
+        <div class="task-card" data-task="3">
+            <div class="task-header">
+                <div class="task-number">3</div>
+                <div class="task-difficulty easy">Easy</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Square All Numbers</h3>
+                <p>Use <code>map()</code> to create a new array where each number is squared.</p>
+                
+                <div class="data-display">
+const numbers = [1, 2, 3, 4, 5];
+                </div>
+
+                <p><strong>Your task:</strong> Return [1, 4, 9, 16, 25]</p>
+            </div>
+
+            <textarea class="code-editor" id="code3" placeholder="const numbers = [1, 2, 3, 4, 5];
+const squared = numbers.map(/* your code here */ );
+console.log(squared);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask3()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(3)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(3)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint3">
+                <h4>💡 Hint:</h4>
+                <p>Square a number by multiplying it by itself: <code>num * num</code> or <code>num ** 2</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[1, 4, 9, 16, 25]</code>
+            </div>
+
+            <div class="result" id="result3"></div>
+        </div>
+
+        <!-- TASK 4: Extract Property from Objects -->
+        <div class="task-card" data-task="4">
+            <div class="task-header">
+                <div class="task-number">4</div>
+                <div class="task-difficulty medium">Medium</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Extract Names from Objects</h3>
+                <p>Use <code>map()</code> to extract just the names from an array of user objects.</p>
+                
+                <div class="data-display">
+const users = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 35 }
+];
+                </div>
+
+                <p><strong>Your task:</strong> Return ["Alice", "Bob", "Charlie"]</p>
+            </div>
+
+            <textarea class="code-editor" id="code4" placeholder="const users = [
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 30 },
+    { name: 'Charlie', age: 35 }
+];
+const names = users.map(/* your code here */ );
+console.log(names);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask4()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(4)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(4)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint4">
+                <h4>💡 Hint:</h4>
+                <p>Access the name property: <code>users.map(user => user.name)</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>["Alice", "Bob", "Charlie"]</code>
+            </div>
+
+            <div class="result" id="result4"></div>
+        </div>
+
+        <!-- TASK 5: Add Property to Objects -->
+        <div class="task-card" data-task="5">
+            <div class="task-header">
+                <div class="task-number">5</div>
+                <div class="task-difficulty medium">Medium</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Add Full Name Property</h3>
+                <p>Use <code>map()</code> to create new objects with a <code>fullName</code> property combining first and last names.</p>
+                
+                <div class="data-display">
+const people = [
+    { firstName: "John", lastName: "Doe" },
+    { firstName: "Jane", lastName: "Smith" }
+];
+                </div>
+
+                <p><strong>Your task:</strong> Return objects with fullName: "John Doe", "Jane Smith"</p>
+            </div>
+
+            <textarea class="code-editor" id="code5" placeholder="const people = [
+    { firstName: 'John', lastName: 'Doe' },
+    { firstName: 'Jane', lastName: 'Smith' }
+];
+const withFullName = people.map(/* your code here */ );
+console.log(withFullName);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask5()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(5)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(5)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint5">
+                <h4>💡 Hint:</h4>
+                <p>Use spread operator to copy properties and add new one:</p>
+                <p><code>{ ...person, fullName: person.firstName + ' ' + person.lastName }</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[
+  { firstName: "John", lastName: "Doe", fullName: "John Doe" },
+  { firstName: "Jane", lastName: "Smith", fullName: "Jane Smith" }
+]</code>
+            </div>
+
+            <div class="result" id="result5"></div>
+        </div>
+
+        <!-- TASK 6: Calculate Total Prices -->
+        <div class="task-card" data-task="6">
+            <div class="task-header">
+                <div class="task-number">6</div>
+                <div class="task-difficulty medium">Medium</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Calculate Total Prices with Tax</h3>
+                <p>Use <code>map()</code> to create new objects with a <code>totalPrice</code> property (price + tax).</p>
+                
+                <div class="data-display">
+const products = [
+    { name: "Laptop", price: 1000, tax: 100 },
+    { name: "Mouse", price: 25, tax: 2.5 },
+    { name: "Keyboard", price: 50, tax: 5 }
+];
+                </div>
+
+                <p><strong>Your task:</strong> Add totalPrice property to each product</p>
+            </div>
+
+            <textarea class="code-editor" id="code6" placeholder="const products = [
+    { name: 'Laptop', price: 1000, tax: 100 },
+    { name: 'Mouse', price: 25, tax: 2.5 },
+    { name: 'Keyboard', price: 50, tax: 5 }
+];
+const withTotal = products.map(/* your code here */ );
+console.log(withTotal);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask6()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(6)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(6)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint6">
+                <h4>💡 Hint:</h4>
+                <p>Add price and tax: <code>totalPrice: product.price + product.tax</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[
+  { name: "Laptop", price: 1000, tax: 100, totalPrice: 1100 },
+  { name: "Mouse", price: 25, tax: 2.5, totalPrice: 27.5 },
+  { name: "Keyboard", price: 50, tax: 5, totalPrice: 55 }
+]</code>
+            </div>
+
+            <div class="result" id="result6"></div>
+        </div>
+
+        <!-- TASK 7: Format Dates -->
+        <div class="task-card" data-task="7">
+            <div class="task-header">
+                <div class="task-number">7</div>
+                <div class="task-difficulty hard">Hard</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Format Birth Years to Ages</h3>
+                <p>Use <code>map()</code> to transform birth years into ages (current year - birth year).</p>
+                
+                <div class="data-display">
+const users = [
+    { name: "Alice", birthYear: 1995 },
+    { name: "Bob", birthYear: 1988 },
+    { name: "Charlie", birthYear: 2000 }
+];
+// Assume current year is 2025
+                </div>
+
+                <p><strong>Your task:</strong> Add an <code>age</code> property calculated from birthYear</p>
+            </div>
+
+            <textarea class="code-editor" id="code7" placeholder="const users = [
+    { name: 'Alice', birthYear: 1995 },
+    { name: 'Bob', birthYear: 1988 },
+    { name: 'Charlie', birthYear: 2000 }
+];
+const currentYear = 2025;
+const withAge = users.map(/* your code here */ );
+console.log(withAge);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask7()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(7)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(7)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint7">
+                <h4>💡 Hint:</h4>
+                <p>Calculate age: <code>age: 2025 - user.birthYear</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[
+  { name: "Alice", birthYear: 1995, age: 30 },
+  { name: "Bob", birthYear: 1988, age: 37 },
+  { name: "Charlie", birthYear: 2000, age: 25 }
+]</code>
+            </div>
+
+            <div class="result" id="result7"></div>
+        </div>
+
+        <!-- TASK 8: Nested Object Transformation -->
+        <div class="task-card" data-task="8">
+            <div class="task-header">
+                <div class="task-number">8</div>
+                <div class="task-difficulty hard">Hard</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Extract Nested City Names</h3>
+                <p>Use <code>map()</code> to create an array of just the city names from nested address objects.</p>
+                
+                <div class="data-display">
+const users = [
+    { name: "Alice", address: { city: "New York", country: "USA" } },
+    { name: "Bob", address: { city: "London", country: "UK" } },
+    { name: "Charlie", address: { city: "Tokyo", country: "Japan" } }
+];
+                </div>
+
+                <p><strong>Your task:</strong> Return ["New York", "London", "Tokyo"]</p>
+            </div>
+
+            <textarea class="code-editor" id="code8" placeholder="const users = [
+    { name: 'Alice', address: { city: 'New York', country: 'USA' } },
+    { name: 'Bob', address: { city: 'London', country: 'UK' } },
+    { name: 'Charlie', address: { city: 'Tokyo', country: 'Japan' } }
+];
+const cities = users.map(/* your code here */ );
+console.log(cities);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask8()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(8)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(8)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint8">
+                <h4>💡 Hint:</h4>
+                <p>Access nested properties: <code>user.address.city</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>["New York", "London", "Tokyo"]</code>
+            </div>
+
+            <div class="result" id="result8"></div>
+        </div>
+
+        <!-- TASK 9: Complex Transformation with Multiple Operations -->
+        <div class="task-card" data-task="9">
+            <div class="task-header">
+                <div class="task-number">9</div>
+                <div class="task-difficulty hard">Hard</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Calculate Discounted Prices</h3>
+                <p>Use <code>map()</code> to create new objects with <code>discountedPrice</code> (price - price * discount).</p>
+                
+                <div class="data-display">
+const products = [
+    { name: "Laptop", price: 1000, discount: 0.1 },
+    { name: "Phone", price: 500, discount: 0.15 },
+    { name: "Tablet", price: 300, discount: 0.2 }
+];
+                </div>
+
+                <p><strong>Your task:</strong> Add discountedPrice property (10% off = 900, 15% off = 425, 20% off = 240)</p>
+            </div>
+
+            <textarea class="code-editor" id="code9" placeholder="const products = [
+    { name: 'Laptop', price: 1000, discount: 0.1 },
+    { name: 'Phone', price: 500, discount: 0.15 },
+    { name: 'Tablet', price: 300, discount: 0.2 }
+];
+const withDiscount = products.map(/* your code here */ );
+console.log(withDiscount);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask9()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(9)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(9)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint9">
+                <h4>💡 Hint:</h4>
+                <p>Calculate discount: <code>price - (price * discount)</code></p>
+                <p>Or: <code>price * (1 - discount)</code></p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[
+  { name: "Laptop", price: 1000, discount: 0.1, discountedPrice: 900 },
+  { name: "Phone", price: 500, discount: 0.15, discountedPrice: 425 },
+  { name: "Tablet", price: 300, discount: 0.2, discountedPrice: 240 }
+]</code>
+            </div>
+
+            <div class="result" id="result9"></div>
+        </div>
+
+        <!-- TASK 10: Chaining with Index -->
+        <div class="task-card" data-task="10">
+            <div class="task-header">
+                <div class="task-number">10</div>
+                <div class="task-difficulty hard">Hard</div>
+            </div>
+
+            <div class="task-description">
+                <h3>Create Indexed Objects</h3>
+                <p>Use <code>map()</code> with the index parameter to create objects with an ID based on position.</p>
+                
+                <div class="data-display">
+const names = ["Alice", "Bob", "Charlie", "Diana"];
+                </div>
+
+                <p><strong>Your task:</strong> Create objects like { id: 1, name: "Alice" }, { id: 2, name: "Bob" }, etc.</p>
+            </div>
+
+            <textarea class="code-editor" id="code10" placeholder="const names = ['Alice', 'Bob', 'Charlie', 'Diana'];
+const withIds = names.map(/* your code here */ );
+console.log(withIds);"></textarea>
+
+            <div class="button-group">
+                <button class="btn-run" onclick="runTask10()">▶ Run Code</button>
+                <button class="btn-reset" onclick="resetTask(10)">↺ Reset</button>
+                <button class="btn-hint" onclick="toggleHint(10)">💡 Hint</button>
+            </div>
+
+            <div class="hint" id="hint10">
+                <h4>💡 Hint:</h4>
+                <p>Use the index parameter: <code>map((name, index) => ...)</code></p>
+                <p>Remember index starts at 0, so add 1 for ID</p>
+            </div>
+
+            <div class="expected-output">
+                <h4>Expected Output:</h4>
+                <code>[
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Charlie" },
+  { id: 4, name: "Diana" }
+]</code>
+            </div>
+
+            <div class="result" id="result10"></div>
+        </div>
+
+    </div>
+
+    <script>
+        // Progress tracking
+        let completedTasks = new Set();
+        let totalAttempts = 0;
+
+        function updateProgress() {
+            const completed = completedTasks.size;
+            const percentage = (completed / 10) * 100;
+            
+            document.getElementById('progressFill').style.width = percentage + '%';
+            document.getElementById('progressFill').textContent = Math.round(percentage) + '%';
+            document.getElementById('completedCount').textContent = completed;
+            document.getElementById('attemptsCount').textContent = totalAttempts;
+            
+            const successRate = totalAttempts > 0 ? Math.round((completed / totalAttempts) * 100) : 0;
+            document.getElementById('successRate').textContent = successRate + '%';
+        }
+
+        function showResult(taskNum, success, message) {
+            const resultDiv = document.getElementById('result' + taskNum);
+            resultDiv.className = 'result show ' + (success ? 'success' : 'error');
+            resultDiv.textContent = message;
+            
+            totalAttempts++;
+            if (success) {
+                completedTasks.add(taskNum);
+            }
+            updateProgress();
+        }
+
+        function toggleHint(taskNum) {
+            const hint = document.getElementById('hint' + taskNum);
+            hint.classList.toggle('show');
+        }
+
+        function resetTask(taskNum) {
+            document.getElementById('code' + taskNum).value = '';
+            document.getElementById('result' + taskNum).className = 'result';
+            document.getElementById('hint' + taskNum).classList.remove('show');
+        }
+
+        // TASK 1: Double Numbers
+        function runTask1() {
+            try {
+                const code = document.getElementById('code1').value;
+                if (!code.trim()) {
+                    showResult(1, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                let result = new Function(code + '\nreturn doubled;')();
+                const expected = [2, 4, 6, 8, 10];
+                
+                if (!result) {
+                    showResult(1, false, '✗ Make sure to assign the result to a variable named "doubled"');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(1, true, '✓ Perfect! You doubled all numbers: ' + JSON.stringify(result));
+                } else {
+                    showResult(1, false, '✗ Not quite. Expected: ' + JSON.stringify(expected) + ' but got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(1, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 2: Convert to Uppercase
+        function runTask2() {
+            try {
+                const code = document.getElementById('code2').value;
+                if (!code.trim()) {
+                    showResult(2, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                let result = new Function(code + '\nreturn uppercase;')();
+                const expected = ["HELLO", "WORLD", "JAVASCRIPT"];
+                
+                if (!result) {
+                    showResult(2, false, '✗ Make sure to assign the result to a variable named "uppercase"');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(2, true, '✓ Excellent! All strings converted to uppercase: ' + JSON.stringify(result));
+                } else {
+                    showResult(2, false, '✗ Not quite. Expected: ' + JSON.stringify(expected) + ' but got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(2, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 3: Square Numbers
+        function runTask3() {
+            try {
+                const code = document.getElementById('code3').value;
+                if (!code.trim()) {
+                    showResult(3, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                let result = new Function(code + '\nreturn squared;')();
+                const expected = [1, 4, 9, 16, 25];
+                
+                if (!result) {
+                    showResult(3, false, '✗ Make sure to assign the result to a variable named "squared"');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(3, true, '✓ Great! All numbers squared: ' + JSON.stringify(result));
+                } else {
+                    showResult(3, false, '✗ Not quite. Expected: ' + JSON.stringify(expected) + ' but got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(3, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 4: Extract Names
+        function runTask4() {
+            try {
+                const code = document.getElementById('code4').value;
+                if (!code.trim()) {
+                    showResult(4, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                let result = new Function(code + '\nreturn names;')();
+                const expected = ["Alice", "Bob", "Charlie"];
+                
+                if (!result) {
+                    showResult(4, false, '✗ Make sure to assign the result to a variable named "names"');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(4, true, '✓ Perfect! Extracted names: ' + JSON.stringify(result));
+                } else {
+                    showResult(4, false, '✗ Not quite. Expected: ' + JSON.stringify(expected) + ' but got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(4, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 5: Add Full Name
+        function runTask5() {
+            try {
+                const code = document.getElementById('code5').value;
+                if (!code.trim()) {
+                    showResult(5, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                let result = new Function(code + '\nreturn withFullName;')();
+                const expected = [
+                    { firstName: "John", lastName: "Doe", fullName: "John Doe" },
+                    { firstName: "Jane", lastName: "Smith", fullName: "Jane Smith" }
+                ];
+                
+                if (!result) {
+                    showResult(5, false, '✗ Make sure to assign the result to a variable named "withFullName"');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(5, true, '✓ Excellent! Added fullName property to all objects');
+                } else {
+                    showResult(5, false, '✗ Not quite. Check that fullName combines firstName + " " + lastName. Got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(5, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 6: Calculate Total Prices
+        function runTask6() {
+            try {
+                const code = document.getElementById('code6').value;
+                if (!code.trim()) {
+                    showResult(6, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                let result = new Function(code + '\nreturn withTotal;')();
+                const expected = [
+                    { name: "Laptop", price: 1000, tax: 100, totalPrice: 1100 },
+                    { name: "Mouse", price: 25, tax: 2.5, totalPrice: 27.5 },
+                    { name: "Keyboard", price: 50, tax: 5, totalPrice: 55 }
+                ];
+                
+                if (!result) {
+                    showResult(6, false, '✗ Make sure to assign the result to a variable named "withTotal"');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(6, true, '✓ Great work! Total prices calculated correctly');
+                } else {
+                    showResult(6, false, '✗ Not quite. totalPrice should be price + tax. Got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(6, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 7: Calculate Ages
+        function runTask7() {
+            try {
+                const code = document.getElementById('code7').value;
+                if (!code.trim()) {
+                    showResult(7, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                let result = new Function(code + '\nreturn withAge;')();
+                const expected = [
+                    { name: "Alice", birthYear: 1995, age: 30 },
+                    { name: "Bob", birthYear: 1988, age: 37 },
+                    { name: "Charlie", birthYear: 2000, age: 25 }
+                ];
+                
+                if (!result) {
+                    showResult(7, false, '✗ Make sure to assign the result to a variable named "withAge"');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(7, true, '✓ Awesome! Ages calculated from birth years');
+                } else {
+                    showResult(7, false, '✗ Not quite. age should be 2025 - birthYear. Got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(7, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 8: Extract Nested Cities
+        function runTask8() {
+            try {
+                const code = document.getElementById('code8').value;
+                if (!code.trim()) {
+                    showResult(8, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                let result = new Function(code + '\nreturn cities;')();
+                const expected = ["New York", "London", "Tokyo"];
+                
+                if (!result) {
+                    showResult(8, false, '✗ Make sure to assign the result to a variable named "cities"');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(8, true, '✓ Perfect! Extracted nested city names: ' + JSON.stringify(result));
+                } else {
+                    showResult(8, false, '✗ Not quite. Expected: ' + JSON.stringify(expected) + ' but got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(8, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 9: Discounted Prices
+        function runTask9() {
+            try {
+                const code = document.getElementById('code9').value;
+                if (!code.trim()) {
+                    showResult(9, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                let result = new Function(code + '\nreturn withDiscount;')();
+                const expected = [
+                    { name: "Laptop", price: 1000, discount: 0.1, discountedPrice: 900 },
+                    { name: "Phone", price: 500, discount: 0.15, discountedPrice: 425 },
+                    { name: "Tablet", price: 300, discount: 0.2, discountedPrice: 240 }
+                ];
+                
+                if (!result) {
+                    showResult(9, false, '✗ Make sure to assign the result to a variable named "withDiscount"');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(9, true, '✓ Excellent! Discounted prices calculated correctly');
+                } else {
+                    showResult(9, false, '✗ Not quite. discountedPrice = price - (price * discount). Got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(9, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // TASK 10: Create Indexed Objects
+        function runTask10() {
+            try {
+                const code = document.getElementById('code10').value;
+                if (!code.trim()) {
+                    showResult(10, false, '✗ Please write some code first!');
+                    return;
+                }
+                
+                let result = new Function(code + '\nreturn withIds;')();
+                const expected = [
+                    { id: 1, name: "Alice" },
+                    { id: 2, name: "Bob" },
+                    { id: 3, name: "Charlie" },
+                    { id: 4, name: "Diana" }
+                ];
+                
+                if (!result) {
+                    showResult(10, false, '✗ Make sure to assign the result to a variable named "withIds"');
+                    return;
+                }
+                
+                if (JSON.stringify(result) === JSON.stringify(expected)) {
+                    showResult(10, true, '✓ Outstanding! Created indexed objects with IDs starting from 1');
+                } else {
+                    showResult(10, false, '✗ Not quite. Each object should have id (starting at 1) and name. Got: ' + JSON.stringify(result));
+                }
+            } catch (error) {
+                showResult(10, false, '✗ Error: ' + error.message);
+            }
+        }
+
+        // Initialize progress
+        updateProgress();
+    </script>
+
+</body>
+</html>
