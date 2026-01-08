@@ -1,9 +1,10 @@
 ---
+publishDate: 2026-01-07
 title: "HTML Fundamentals - Attributes and Boilerplate"
 description: "Introduction to HTML syntax, elements, attributes, meta tags, and more."
 week: 1
 section: 1
-prerequisites: ["None"]
+prerequisites: ["Resume Assignment"]
 objectives:
 ---
 
@@ -21,6 +22,7 @@ By the end of this week, you will be able to:
 - Recognize various HTML elements like `<h1>`, `<h3>`, and `<p>`
 - Identify and work with the HTML Boilerplate
 - Understand HTML Fundamentals
+- Be able to debug common errors
 
 ## Day 1: Introduction to HTML Attributes
 
@@ -137,7 +139,7 @@ and
 
 ## Assignment 1: Resume Website
 
-For this assignment you will create an HTML page out of your resume
+For this assignment you will create an HTML page out of your resume document
 
 1. Create a .html file in your quarter 1 assignment folder.
 1. Open that file in VSCode.

@@ -1,9 +1,8 @@
 ---
-publishDate: 2025-09-21
-tags: ["HTML"]
-draft: false
-title: "Introduction to HTML"
-description: ""
+publishDate: 2026-01-07
+tags: ["Introduction", "Grading", "Expectations", "Resume", "Labs/Assignments"]
+description: "Introduction to CIS Web Developer Certification course work"
+title: "Welcome to Web Development!"
 week: 0
 ---
 
@@ -49,7 +48,7 @@ Each week will have an assignment that is due the first day of the next week (ty
 
 ### Assignment\Labs Expectations:
 
-When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a - followed by the lab or assignment. I.E. John Doe turning in a file for Lab 1.1 would name the file doej-lab1.1.js, for the week 1 assignment would be doej-assignment1.js. If uploading multiple files you need to zip the folder and follow same naming convention.
+When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a - followed by the lab or assignment. I.E. John Doe turning in a file for Lab 1.1 would name the file doej-lab1.1.html, for the week 1 assignment would be doej-assignment1.html. If uploading multiple files you need to zip the folder and follow same naming convention (doej-lab1.1.zip).
 
 Each html assignment you turn in this quarter needs to have your name and a brief description of what the page does at the top as a comment:
 
@@ -179,7 +178,7 @@ Each quarter will have two exams: a midterm and a final. These exams must be tak
 
 Create a single-page resume highlighting your academic background and relevant experiences. Use one of the built in Resume templates for Word.
 
-Resume needs to include:
+Resume should include:
 
 - **Contact Information:** Name, Phone Number, and Email Address. If you don't have a number or email create a fake one.
 - **Education:** Any Degrees, Certificates, or diplomas you have.
