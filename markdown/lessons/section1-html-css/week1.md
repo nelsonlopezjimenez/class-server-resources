@@ -202,11 +202,11 @@ As your teacher, I will work hard to:
    1. [Windows 10 Features](/websites/gcfglobal-windows-10/windows-10-features/lesson.html)
 1. [Basic Computer Skills](/websites/gcfglobal-basic-computer-skills/tutorial.html)
    1. [🖥️ Your First Computer](/websites/gcfglobal-basic-computer-skills/getting-started-with-your-first-computer/lesson.html)
-1. [Computer Basics](/websites/gcfglobal-computer-basics/tutorial.html)
-   1. [Computer Basics Parts](/websites/gcfglobal-computer-basics/basic-parts-of-a-computer/lesson.html)
-   1. [🌐 Connecting to the Internet](/websites/gcfglobal-computer-basics/connecting-to-the-internet/lesson.html)
-   1. [💾 The Operating System](/websites/gcfglobal-computer-basics/getting-to-know-the-os/lesson.html)
-   1. [📚 Learning a new program](/websites/gcfglobal-computer-basics/learning-a-new-program/lesson.html)
+1. [Computer Basics](/websites/gcfglobal-computerbasics/tutorial.html)
+   1. [Computer Basics Parts](/websites/gcfglobal-computerbasics/basic-parts-of-a-computer/lesson.html)
+   1. [🌐 Connecting to the Internet](/websites/gcfglobal-computerbasics/connecting-to-the-internet/lesson.html)
+   1. [💾 The Operating System](/websites/gcfglobal-computerbasics/getting-to-know-the-os/lesson.html)
+   1. [📚 Learning a new program](/websites/gcfglobal-computerbasics/learning-a-new-program/lesson.html)
 
 <hr id="day3" />
 
