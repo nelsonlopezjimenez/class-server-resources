@@ -1,6 +1,6 @@
 ---
-title: "Week 1: Web Development IV: Introduction to JavaScript Frameworks" 
-description: "Quarter 4. Frontend development using react"
+title: "Week 1: Web Development IV: Introduction to JavaScript Frameworks"
+description: "section 4. Frontend development using react"
 week: 38
 ---
 
@@ -8,16 +8,17 @@ week: 38
 
 ## Daily Activities
 
-### Day 1: Quarter 4 Introduction
+### Day 1: section 4 Introduction
 
 - Review syllabus and course expectations
-- Introduction to quarter 4 
+- Introduction to section 4
 - Set up folder structure for course projects
 - Chapter 05 from Shama Hoque's React book
 - nvs: node version switch
 - Additional Resources.
 
 ## Full-Stack React Projects: Learn MERN stack development by building modern web apps using MongoDB, Express, React, and Node.js 2nd ed. Edition
+
 ### by Shama Hoque (Author)
 
 ![shama_hoque](/images/week38/shama_hoque.png)
@@ -41,25 +42,25 @@ week: 38
 
 #### User model
 
-| Field name | Type |
-| ------ | --------:|
-| name | String |
-| email | String |
-| password | String |
-| created | Date |
-| updated | Date |
+| Field name |   Type |
+| ---------- | -----: |
+| name       | String |
+| email      | String |
+| password   | String |
+| created    |   Date |
+| updated    |   Date |
 
 #### API endopoints for user CRUD
 
-| Operation | API route | HTTP method |
-| --------- | --------- | ----------- | 
-| Create a user | /api/users | POST |
-| List all users | /api/users | GET |
-| Fetch a user | /api/users/:userId | GET |
-| Update a user | /api/users/:userId | PUT |
-| Delete a user | /api/users/:userId | DELETE  |
-| User sign-in | /auth/signin | POST |
-| User signout (optional) | /auth/signout | GET |
+| Operation               | API route          | HTTP method |
+| ----------------------- | ------------------ | ----------- |
+| Create a user           | /api/users         | POST        |
+| List all users          | /api/users         | GET         |
+| Fetch a user            | /api/users/:userId | GET         |
+| Update a user           | /api/users/:userId | PUT         |
+| Delete a user           | /api/users/:userId | DELETE      |
+| User sign-in            | /auth/signin       | POST        |
+| User signout (optional) | /auth/signout      | GET         |
 
 #### Setting up the skeleton backend
 
@@ -86,9 +87,13 @@ week: 38
 |-- webpack.config.server.js
 |-- yarn.lock
 ```
+
 #### Setting up the app
+
 ![bethany-griggs](/images/week38/bethany-griggs.png)
-1. Page 154: 
+
+1. Page 154:
+
 ```sh
 mkdir express-unique-app
 cd express-unique-app
@@ -96,16 +101,16 @@ npm init -y
 npm install express
 touch app.js
 mkdir routes public
-touch routes/index.js 
+touch routes/index.js
 ```
-1. edit app.js file
 
+1. edit app.js file
 
 #### Steps to run mern social app
 
- 1. open cmd
- 1. run nvs
- 1. select 'm' or node v13.14.0
- 1. cd Documents/_QUARTER3/chapter-five-mern-social-yes-nm
- 1. run npm install or tar xvfz nm.tar.gz
- 1. npm run development
+1.  open cmd
+1.  run nvs
+1.  select 'm' or node v13.14.0
+1.  cd Documents/\_section3/chapter-five-mern-social-yes-nm
+1.  run npm install or tar xvfz nm.tar.gz
+1.  npm run development

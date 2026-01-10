@@ -1,193 +1,163 @@
 ---
-title: "Lesson 2: HTML5 Fundamentals and Document Structure"
-description: "Master HTML5 semantic elements and attributes, proper document structure, and create well-structured web pages"
+publishDate: 2026-01-07
+title: "What are Semantic Elements"
+description: "Introduction to semantic elements, time, and specialized elements"
 week: 3
----
-# Important Update
-
-## In-class Assignment
-1. [In-class assignment lab4.1 download](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/first-html-page/students/lab4.1.docx)
-1. [In-class assignment lab4.2 download](http://192.168.1.28:3000/ClassroomResources/ClassServerResources/src/branch/main/labs/first-html-page/students/lab4.2.docx)
-1. Download [summer.jpg](/images/summer.jpg)
-1. Download the files. Open them with MS Word program (or just find them in your Downloads folder and click/open).
-1. Once you finish your assignment, you will submit on canvas.
-
-## In-class exercises
-
-1. Navigate to [HTML Exercises](http://w3schools.com/html/exercise.html)
-1. Answer all the questions from HTML Attributes down to HTML Comments.
-1. Take the [quiz4.1](https://canvas.ed/courses/49921000000105/quizzes/49921000000595?module_item_id=49921000004626)
-
-
-# Week 2: HTML5 Fundamentals and Document Structure
-
-## Learning Objectives
-- Master HTML5 semantic elements and attributes
-- Understand proper document structure
-- Learn HTML5 form basics
-- Create well-structured web pages
-
-## Daily Activities
-
-### Day 1: HTML5 Semantic Elements
-
-HTML5 introduced semantic elements that give meaning to your content structure:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic HTML5 Structure</title>
-</head>
-<body>
-    <!-- Header contains site navigation and branding -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <!-- Main content area -->
-    <main>
-        <section id="home">
-            <h1>Welcome to My Site</h1>
-            <p>This is the main content area.</p>
-        </section>
-        
-        <aside>
-            <!-- Sidebar content like related links or ads -->
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-            </ul>
-        </aside>
-    </main>
-    
-    <!-- Footer contains copyright and additional links -->
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-```
-
-### Day 2: Text Content and Formatting
-
-Understanding the hierarchy and types of text content:
-
-```html
-<!-- Heading hierarchy is important for accessibility and SEO -->
-<h1>Main Page Title</h1>
-<h2>Section Title</h2>
-<h3>Subsection Title</h3>
-
-<!-- Different types of text content -->
-<p>Regular paragraph text with <strong>important content</strong> and <em>emphasized text</em>.</p>
-
-<!-- Lists for organized information -->
-<ul>
-    <li>Unordered list item 1</li>
-    <li>Unordered list item 2</li>
-</ul>
-
-<ol>
-    <li>Ordered list item 1</li>
-    <li>Ordered list item 2</li>
-</ol>
-
-<!-- Definition lists for terms and descriptions -->
-<dl>
-    <dt>HTML</dt>
-    <dd>HyperText Markup Language</dd>
-    <dt>CSS</dt>
-    <dd>Cascading Style Sheets</dd>
-</dl>
-```
-
-### Day 3: Block vs Inline Elements
-
-Understanding element behavior is crucial for layout:
-
-```html
-<!-- Block elements take full width and start new lines -->
-<div>This is a generic block container</div>
-<p>Paragraphs are block elements</p>
-<section>Sections are block elements</section>
-
-<!-- Inline elements only take necessary space -->
-<span>This is an inline container</span>
-<a href="#">Links are inline elements</a>
-<strong>Strong text is inline</strong>
-```
-
-### Day 4: HTML Validation and Best Practices
-
-**Key practices for clean HTML:**
-- Use W3C Markup Validator to check your code
-- Proper nesting of elements (no overlapping tags)
-- Include required attributes and accessibility features
-- Consistent code formatting and indentation
-- Meaningful class and ID names
-
-### Day 5: Document Metadata
-
-The `<head>` section contains important metadata:
-
-```html
-<head>
-    <!-- Essential meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A brief description of your page for search engines">
-    <meta name="keywords" content="web development, HTML, CSS">
-    <meta name="author" content="Your Name">
-    
-    <title>Descriptive Page Title - Site Name</title>
-    
-    <!-- Link to external stylesheets -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-```
-
-## Hands-On Exercise
-
-Build a structured "My Favorite Movies" page using semantic HTML5 elements. Include:
-- Proper document structure with header, main, and footer
-- At least 3 different heading levels
-- Multiple sections for different movie genres
-- Lists of movies with descriptions
-- Proper text formatting and emphasis
-
-## Assignment Requirements
-
-Create a complete HTML5 document that demonstrates:
-1. Semantic structure using header, nav, main, section, aside, footer
-2. Proper heading hierarchy (h1-h6)
-3. Various list types (ul, ol, dl)
-4. Text formatting elements (strong, em, mark, etc.)
-5. Valid HTML5 markup (test with W3C validator)
-
-## Resources
-- [MDN HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-- [W3Schools HTML5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
-- [W3C Markup Validator](https://validator.w3.org/)
-
-## Common Mistakes to Avoid
-- Using `<div>` and `<span>` when semantic elements are more appropriate
-- Skipping heading levels (going from h1 directly to h3)
-- Forgetting closing tags or improperly nesting elements
-- Not including required attributes like `alt` for images
-
+section: 1
+prerequisites: ["SEO, Images and Links"]
+objectives: "Learn how to structure your document using semantic tags, and how to work out the structure of a simple website."
 ---
 
-**Next Week**: Advanced HTML5 and Site Structure
+# Semantic Elements
+
+## Day 1: Introduction to Semantic Elements
+
+### Mandatory Reading:
+
+- [Why Should You Care About Semantic HTML?](http://localhost:8001/learn/responsive-web-design-v9/lecture-importance-of-semantic-html/why-should-you-care-about-semantic-html)
+- [Why is it Important to Have Good Structural Hierarchy?](http://localhost:8001/learn/responsive-web-design-v9/lecture-importance-of-semantic-html/why-is-it-important-to-have-good-structural-hierarchy)
+- [What Is the Difference Between Presentational and Semantic HTML?](http://localhost:8001/learn/responsive-web-design-v9/lecture-importance-of-semantic-html/what-is-the-difference-between-presentational-and-semantic-html)
+- [When Should You Use the Emphasis Element Over the Idiomatic Text Element?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-nuanced-semantic-elements/when-should-you-use-the-emphasis-element-over-the-idiomatic-text-element)
+- [When Should You Use the Strong Element Over the Bring Attention To Element?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-nuanced-semantic-elements/when-should-you-use-the-strong-element-over-the-bring-attention-to-element)
+- [What Are Description Lists, and When Should You Use Them?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-nuanced-semantic-elements/what-are-description-lists)
+
+### Optional Readings:
+
+[MDN - Semantic](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure.html)
+[MDN - Advanced Text Formatting](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting.html)
+[w3Schools - Semantics](http://localhost:22022/websites/w3schools.com/html/html5_semantic_elements.html)
+[w3Schools - HTML Formatting](http://localhost:22022/websites/w3schools.com/html/html_formatting.html)
+
+### Lab 3.1:
+
+- [List of Major Web Browsers](http://localhost:8001/learn/responsive-web-design-v9/workshop-major-browsers-list/step-1):
+
+1. Go through all 7 steps to Build a List of Major Websites.
+1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this file to canvas under assignment 3.1
+
+## Day 2: Working with Text and Time Semantic Elements
+
+### Mandatory Reading
+
+- [How Do Block and Inline Quotes Work in HTML?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-text-and-time-semantic-elements/how-do-block-and-inline-quotes-work-in-html)
+- [How Do You Display Abbreviations in HTML?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-text-and-time-semantic-elements/how-do-you-display-abbreviations-and-acronyms-in-html)
+- [How Do You Display Addresses in HTML?](http://localhost:8001/learn/responsive-web-design-v9/http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-text-and-time-semantic-elements/how-do-you-display-addresses-in-html)
+- [How Do You Display Times and Dates in HTML?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-text-and-time-semantic-elements/how-do-you-display-times-and-dates-in-html)
+
+### Optional Readings:
+
+- [MDN - Date/Time](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting.html#marking_up_times_and_dates)
+- [w3Schools - Quotation Elements](http://localhost:22022/websites/w3schools.com/html/html_quotation_elements.html)
+
+### Lab 3.2:
+
+- [Quincy's Job Tips](http://localhost:8001/learn/responsive-web-design-v9/workshop-quincys-job-tips/step-1)
+
+1. Go through all 13 steps of building Quincy's page.
+1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this file to canvas under lab 3.2
+
+## Day 3: Specialized Semantic Elements
+
+### Mandatory Readings:
+
+- [How Do You Display Mathematical Equations and Chemical Formulas in HTML?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-specialized-semantic-elements/how-do-you-display-mathematical-equations-and-chemical-formulas-in-html)
+- [How Do You Represent Computer Code in HTML?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-specialized-semantic-elements/how-do-you-represent-computer-code-in-html)
+- [What Are the U, S, and Ruby Elements Used For, and How Do They Work?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-specialized-semantic-elements/what-are-the-u-s-and-ruby-elements-used-for)
+
+### Optional Readings:
+
+- [w3Schools - Computer Code](http://localhost:22022/websites/w3schools.com/html/html_computercode_elements.html)
+
+### Lab 3.3:
+
+- [Cat Blog](http://localhost:8001/learn/responsive-web-design-v9/workshop-blog-page/step-1)
+
+1. Go through all 19 steps of building a Cat Blog.
+1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this file to canvas under lab 3.3
+
+## Day 4: Semantic HTML Quiz
+
+### Mandatory Reading
+
+- [Semantic HTML Review](http://localhost:8001/learn/responsive-web-design-v9/review-semantic-html/review-semantic-html)
+
+### Quiz:
+
+- Log into Canvas and navigate to this section's class page
+- Click on Quizzes
+  - Take the: HTML Semantic Quiz
+
+## Assignment 3: About Me Website
+
+For this assignment you will create 2-3 HTML pages that showcases favorites of yours. Page 1 should be your favorite movies (2-3 movies or actors/actresses), page 2 should be your favorite music (2-3 genres or bands), page 3 should be your favorite books (2-3 books or authors).
+
+1. Create a .html file in your section 1 assignment folder.
+1. Add Code to meet the criteria below.
+1. Don't forget to properly comment your code/file.
+1. Submit the file to lab 3 assignment.
+
+### Assignment Checklist
+
+- HTML needs to be structured properly (Use NU HTML Validator)
+- Must use these Semantic Elements with proper content
+
+  - Only 1 `<h1>` per page
+  - `<header>` - Must be same header on all three pages
+    - `<nav>`
+      - 3 `<a>` linking to other pages on your site
+  - `<main>`
+    - 2-3 `<article>`
+      - Must contain appropriate `h`, `p`, `img` etc tags to fit content
+    - `<section>`
+      - Used where appropriate with in your `article` elements
+  - `<aside>`
+    - Create a side menu with 3-5 external links to fake (or real sites) that are associated with your choice.
+    - I.E movie page could link to a movie schedule page, IMDB page etc. Link data can be fake but must be properly structured
+  - `<footer>`
+    - Needs to contain your name, a copyright entity and a year
+  - Layout should be similar to:
+
+  ```
+  ┌────────────────┬───────────────┐
+  │              HEADER            |
+  |               NAV              |
+  |  | Page 1 | Page 2 | Page 3 |  │
+  ├────────────────────────────────┤
+  │             Main               │
+  │ ┌───┬───┐ ┌──────────────────┐ |
+  │ | Aside | |     Article 1    | │
+  │ |[Link1]| |                  | |
+  | |[Link2]| ├──────────────────┤ │
+  │ |[Link3]| |     Article 2    | │
+  │ |[Link4]| |                  | |
+  | |[Link5]| ├──────────────────┤ │
+  │ |       | |     Article 3    | │
+  │ |       | |                  | |
+  | └───────┘ └──────────────────┘ |
+  ├────────────────────────────────┤
+  |            Footer              |
+  └────────────────────────────────┘
+  ```
+
+#### Assignment Criteria
+
+- **Semantic HTML (30%):** Correct use of semantic elements.
+- **Content & Formatting (30%):** Clarity of writing, appropriate use of HTML tags for text.
+- **Images & Links (20%):** Correct use of the `<img>` and `<a>` tags, with descriptive `alt` text and relevant URLs.
+- **Overall Structure & Presentation (20%):** Clean, readable HTML code, logical page structure.
+
+### Extra Credit:
+
+- Using inline styling add basic CSS
+  - The `<body>`, `<main>` and `<article>` should all have different background colors
+  - Your text should use at least three different colors
+    - I.E. `<h1>` could be Green, a `<p>` could be purple, and a `<strong>`could be yellow.
+  - Use borders where appropriate to separate different sections of the webpage from each other
+
+**Note**: Your CSS at this time doesn't have to look good. If your background is Chartreuse and your text is Yellow that is okay. Grade is not based on "How well your site looks" but on using the stylings properly.

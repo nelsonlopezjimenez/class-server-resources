@@ -8,7 +8,6 @@ objectives:
   - "Identify and work with Number data types"
   - "Write conditional statements to control program flow"
   - "Choose appropriate conditional structures for different scenarios"
-  - "Validate user input and provide appropriate feedback"
   - "Combine multiple conditions using logical operators"
 ---
 
@@ -47,16 +46,18 @@ By the end of this week, students will be able to:
 - [w3Schools - Assignment](http://localhost:22022/websites/w3schools.com/js/js_assignment.html)
 - [w3Schools - Operators](http://localhost:22022/websites/w3schools.com/js/js_operators.html)
 
-### Lab 2.1
+### Lab 12.1
 
 - [Fixing Bugs with Numbers](http://localhost:8001/learn/javascript-v9/lab-debug-type-coercion-errors/debug-type-coercion-errors-in-a-buggy-app)
 
 1. Go through all 16 steps of of this buggy app and resolve all issues.
-1. When you are finished copy and paste the code into a new .js file in your quarter 2 labs directory.
-1. Open that file in VSCode and add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 2.1.
+1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this file to canvas under lab 12.1.
 
-### Day 2: Boolean, Comparison, and Conditional Operators
+## Day 2: Boolean, Comparison, and Conditional Operators
+
+### Mandatory Reading:
 
 - [What are Booleans](http://localhost:8001/learn/javascript-v9/lecture-working-with-comparison-and-boolean-operators/what-are-booleans-and-how-do-they-work-with-equality-and-inequality-operators)
 - [What are Comparison Operators](http://localhost:8001/learn/javascript-v9/lecture-working-with-comparison-and-boolean-operators/what-are-comparison-operators-and-how-do-they-work)
@@ -73,14 +74,14 @@ By the end of this week, students will be able to:
 - [w3Schools - if/else](http://localhost:22022/websites/w3schools.com/js/js_if_else.html)
 - [w3Schools - Switch](http://localhost:22022/websites/w3schools.com/jsref/jsref_switch.html)
 
-### Lab 2.2
+### Lab 12.2
 
 - [Debug Increment and Decrement Operator App](http://localhost:8001/learn/javascript-v9/lab-debug-increment-and-decrement-operator-errors/debug-increment-and-decrement-operator-errors-in-a-buggy-app)
 
 1. Go through all 8 steps of this buggy app and resolve all issues.
-1. When you are finished copy and paste the code into a new .js file in your quarter 2 labs directory.
-1. Open that file in VSCode and add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 2.2.
+1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this file to canvas under lab 12.2.
 
 ### Day 3: Special Numbers, Converting Strings to Numbers, Null and Undefined
 
@@ -108,23 +109,23 @@ By the end of this week, students will be able to:
 - [w3Schools parseInt()](http://localhost:22022/websites/w3schools.com/jsref/jsref_parseint.html)
 - [w3Schools toFixed()](http://localhost:22022/websites/w3schools.com/jsref/jsref_tofixed.html)
 
-### Lab 2.3
+### Lab 12.3
 
 - [Build a Mathbot](http://localhost:8001/learn/javascript-v9/workshop-mathbot/step-1)
 
 1. Go through all 12 steps to build this Mathbot.
-1. When you are finished copy and paste the code into a new .js file in your quarter 2 labs directory.
-1. Open that file in VSCode and add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 2.3.A.
+1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this file to canvas under lab 12.3.A.
 
 and
 
 - [Build a Fortune Teller](http://localhost:8001/learn/javascript-v9/lab-fortune-teller/build-a-fortune-teller)
 
 1. Complete all 10 requirements to build this Fortune Teller application.
-1. When you are finished copy and paste the code into a new .js file in your quarter 2 labs directory.
-1. Open that file in VSCode and add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 2.3.B.
+1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this file to canvas under lab 12.3.B.
 
 ## Day 4:
 
@@ -135,21 +136,21 @@ and
 
 ### Quiz:
 
-- Log into Canvas and navigate to this quarter's class page
+- Log into Canvas and navigate to this section's class page
 - Click on Quizzes
   - Take the: Math Quiz
   - Take the: Comparisons and Conditionals Quiz
 
-## Assignment 13: Math Operations
+## Assignment 12: Math Operations
 
 For this Lab you will need to build a math app that uses string(s), number(s) and boolean(s) variables and outputs a value:
 
-1. Create a new .js file in your quarter 2 Assignment folder.
+1. Create a new .js file in your section 2 Assignment folder.
 1. Open that file in VSCode.
 1. Create pseudocode for your application before you start coding.
 1. Add Code to meet the criteria below.
 1. Don't forget to properly comment your code/file.
-1. Submit the file to lab 2 assignment.
+1. Submit the file to assignment 12.
 
 ### Assignment Checklist
 
@@ -170,19 +171,14 @@ For this Lab you will need to build a math app that uses string(s), number(s) an
 
 ### Extra Credit
 
-- Create an HTML page that has buttons for
-  - 0-9
-  - Math Operations +, -, /, \* (multiply),
-  - =
-  - Clear
-- Create a text box to show outputs
-- When a number button is pressed store that numbers value in a variable, i.e. pressing 1 stores the value in a variable, if 0 is then pressed that value changes to 10 and so on
-  - This value is shown in the text box
-- When a a operation button is clicked (+, -, / or \*) store that operation in a second variable
-  - This operation symbol is shown in text box
-- Store the new number in a second variable When a number is pressed after an operation is stored
-  - This value is shown in the text box
-- When the = button is pressed take the first number, and using the operation symbol, apply the second number, to get an answer.
-  - Hint use conditionals to check operation that needs to be performed. I.E. if operator is equal to + then take the first variable and add the second variable and store this in the result variable.
-- Display answer in the textbox
-- Use CSS Style to make it look like a calculator.
+- Create an HTML page with the following elements
+  - textbox for num 1
+  - select box for operation
+    - -
+    - -
+    - /
+    - -
+  - text box for num 2
+  - button for submit
+  - p for output
+- When 2 numbers are put in and an operation selected, clicking on submit should display the answer

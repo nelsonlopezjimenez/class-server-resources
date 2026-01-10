@@ -2,16 +2,57 @@ Brooks TODO - Jan. 7th, 2026
 
 Things to do in Canvas:
 
-1. Create and Upload quizzes for week 1: HTML Fundamentals
-1. Upload quizzes for week 11: Javascript Fundamentals, Strings
-1. Upload quizzes for week 12: Math, and Conditionals/Comparisons
-1. Upload Labs 11.1, 11.2, and 11.3 uploads
-1. Upload week 13 assignment upload
-1. Upload quizzes for week 1: Javascript Fundamentals, and Strings
-1. Upload week 0 assignment upload
-1. Upload new Week 1:
-1. Upload Labs 1.1.B, 1.1.B, 1.2.A, 1.2.B, 1.3.A, 1.3.B
-1. Upload Assignment 1 upload
-1. Upload Labs 12.1, 12.2, 12.3.A and 12.3.B uploads
-1. Upload week 12 assignment upload
-1. Create Week 14, 2, 15,3,16,4,17,8,
+1. Create quizzes
+
+   - week 3: Semantic
+   - week 12: Math
+   - week 12: Conditionals & Comparisons
+   - week 13: Functions
+
+1. Create Uploads for:
+
+   - Labs 1.1.B, 1.1.B, 1.2.A, 1.2.B, 1.3.A, 1.3.B
+   - Labs 2.1, 2.2, 2.3 (grade only)
+   - labs 3.1, 3.2
+   - Labs 11.1, 11.2, and 11.3
+   - Labs 12.1, 12.2, 12.3.A and 12.3.B
+   - Labs 13.1.A, 13.1.B, 13.1.C, 13.2.A, 13.2.B, 13.2.C, 13.3.A, 13.3.B, 13.3.C,
+   - Assignment 0
+   - Assignment 1
+   - Assignment 2
+   - Assignment 3
+   - Assignment 11
+   - Assignment 12
+   - Assignment 13
+
+1. Create Weeks
+
+   - 4
+   - 5
+   - 6
+   - 7
+   - 8
+   - 9
+   - 10
+   - 14
+   - 15
+   - 16
+   - 10
+   - 17
+   - 18
+   - 19
+   - 10
+   - 20
+
+1. Upload to Git Repo
+
+   - 0
+   - 1
+   - 2
+   - 3
+   - 11
+   - 12
+   - 13
+
+1. Upload quizzes to Canvas
+   1. Week 1: HTML Fundamentals

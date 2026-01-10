@@ -11,9 +11,9 @@ objectives:
 
 ## Keys to learning Javascript:
 
-Javascript can be overwhelming to new students. Here are some keys to help you get the most out of this quarter:
+Javascript can be overwhelming to new students. Here are some keys to help you get the most out of this section:
 
-- **<u>Practice, Practice, Practice:</u>** Throughout this quarter the key to learning JavaScript is consistent practice. Don't just do the assignment; you should experiment, try different approaches, and build small projects on your own.
+- **<u>Practice, Practice, Practice:</u>** Throughout this section the key to learning JavaScript is consistent practice. Don't just do the assignment; you should experiment, try different approaches, and build small projects on your own.
 - **<u>Debugging:</u>** Learn to use your browser's developer tools (Console, Elements) to debug your code. This is a crucial skill and can help save many hours of headache tracking down bugs.
 - **<u>Double Check Spelling and Casing:</u>** Many issues are due to typing errors. myName and myname are two different variables, and cosnole.log() doesn't exist with in javascript. VSCode will help you catch some of these bugs but not all. Carefully and patiently review your code if you have errors.
 - **<u>Don't Get Stuck:</u>** If you’re struggling with a particular concept, don’t spend "too" long on it, this means 11-15 minutes max. If you are struggling for longer than this review the mandatory and optional readings, and if you are still struggling, write the issue down in your notebook then move on. When you come into class you can ask a classroom assistant or Dr. Lopez for assistance.
@@ -24,7 +24,7 @@ Javascript can be overwhelming to new students. Here are some keys to help you g
 
 When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a - followed by the lab or assignment. I.E. John Doe turning in a file for Lab 11.1 would name the file doej-lab11.1.js, for the week 11 assignment would be doej-assignment11.js. If uploading multiple files you need to zip the folder and follow same naming convention.
 
-Each javascript assignment you turn in this quarter needs to have your name and a brief description of what the script does at the top as a comment:
+Each javascript assignment you turn in this section needs to have your name and a brief description of what the script does at the top as a comment:
 
 ```js
 // John Doe
@@ -100,8 +100,8 @@ By the end of this week, you will be able to:
 - [Build a Greeting Bot](http://localhost:8001/learn/javascript-v9/workshop-greeting-bot/step-1):
 
 1. Go through all 15 steps of building a simple greeting bot that uses strings and console.log() to communicate.
-1. When you are finished copy and paste the code into a new .js file in your quarter 2 labs directory.
-1. Open that file in VSCode and add appropriate comments to show understanding of the code.
+1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
+1. Add appropriate comments to show understanding of the code.
 1. Submit this file to canvas under lab 11.1.
 
 ## Day 2: Working with Data Types
@@ -135,8 +135,8 @@ and
 - [Build a Sentence Maker](http://localhost:8001/learn/javascript-v9/lab-sentence-maker/build-a-sentence-maker)
 
 1. Go through all steps of both of these labs.
-1. When you are finished copy and paste the code into a new .js file in your quarter 2 labs directory.
-1. Open that file in VSCode and add appropriate comments to show understanding of the code.
+1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
+1. Add appropriate comments to show understanding of the code.
 1. Submit this file to canvas under Lab 11.2.
 
 ## Day 3: Data Types - String Methods
@@ -167,9 +167,9 @@ and
 - [Build a String Transformer](http://localhost:8001/learn/javascript-v9/workshop-string-transformer/step-1)
 
 1. Go through all steps of all of these labs.
-1. When you are finished copy and paste the code into a new .js file in your quarter 2 labs directory.
-1. Open that file in VSCode and add appropriate comments to show understanding of the code.
-1. Submit this file to Canvas under lab 10.2.
+1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this file to Canvas under lab 11.2.
 
 ## Day 4: String Review and Quiz
 
@@ -180,7 +180,7 @@ and
 
 ### Quiz:
 
-- Log into Canvas and navigate to this quarter's class page
+- Log into Canvas and navigate to this section's class page
 - Click on Quizzes
   - Take the: Javascript Fundamentals Quiz
   - Take the: Strings Quiz
@@ -189,7 +189,7 @@ and
 
 For this assignment you will create a file that displays dynamic user information:
 
-1. Create a .js file in your quarter 2 assignment folder.
+1. Create a .js file in your section 2 assignment folder.
 1. Open that file in VSCode.
 1. Create pseudocode for your application before you start coding.
 1. Add Code to meet the criteria below.
@@ -206,7 +206,7 @@ For this assignment you will create a file that displays dynamic user informatio
 - At least one variable should be declared with a double quote (").
 - At least one variable should be declared with a single quote (').
 - For the variable declared without a value set its value before using it.
-- Using console.log and the string concatenation (+) method, output the sentence "[title] [name] works as a [occupation], and has [hobbies] interest."
+- Using console.log and the string concatenation, output the sentence "[title] [name] works as a [occupation], and has [hobbies] interest."
 - Assign the name variable value to something else.
 - Using console.log and the (+) method, output the same sentence above with the updated data.
 - Change the occupation variable value to something else.

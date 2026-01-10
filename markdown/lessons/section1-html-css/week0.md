@@ -8,13 +8,13 @@ week: 0
 
 # Getting Started with CIS Fullstack Web Development
 
-Welcome to the CIS Fullstack web Development certificate program. This is a 12 month course consisting of 40'ish weeks of course work to do. You will learn the necessary skills to develop, create, and deploy a fully functional web based application.
+Welcome to the CIS Fullstack web Development certificate program. This is a 12 month course consisting of 40 weeks of course work to do. You will learn the necessary skills to develop, create, and deploy a fully functional web based application.
 
 ### To be successful in this class, you should plan to:
 
-1. arrive on time and prepared for class
-1. take an active role in your own learning and understanding of the material
-1. commit twelve hours a week to homework and assignments outside of class.
+1. Arrive on time and prepared for class
+1. Take an active role in your own learning and understanding of the material
+1. Commit twelve hours a week to homework and assignments outside of class.
 1. Let me know if material is not clear or when its relevance to the student learning outcomes for the course is not apparent (or when you’re bored out of your mind!).
 1. It is also expected that you will treat classmates with respect, avoiding gratuitous arguments,
 1. I expect you to take the opportunity to learn from your peers through activities in lecture and section, and I expect you to be respectful and courteous to one another. Finally, I expect you to hold yourself to the highest standards for academic honesty and integrity in your work.
@@ -48,31 +48,15 @@ Each week will have an assignment that is due the first day of the next week (ty
 
 ### Assignment\Labs Expectations:
 
-When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a - followed by the lab or assignment. I.E. John Doe turning in a file for Lab 1.1 would name the file doej-lab1.1.html, for the week 1 assignment would be doej-assignment1.html. If uploading multiple files you need to zip the folder and follow same naming convention (doej-lab1.1.zip).
+When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a - followed by the lab or assignment.
 
-Each html assignment you turn in this quarter needs to have your name and a brief description of what the page does at the top as a comment:
-
-```html
-<!-- John Doe
-This page renders my resume as an an HTML document -->
-```
-
-It will then need to have code that meets the requirements of the assignment, with comments explaining what the code does. As your skill in coding HTML increases you will be able to use less comments but for now over commenting is expected, this allows the instructor and classroom assistants to better understand what you are doing, or attempting to do.
-
-```html
-<!-- Code for a clickable nav bar -->
-<nav>
-  <ul>
-    <li>
-      <a href="#">Home</a>
-    </li>
-  </ul>
-</nav>
-```
+I.E. John Doe turning in a file for Lab 1.1 would name the file doej-lab1.1.html, for the week 1 assignment would be doej-assignment1.html. If uploading multiple files you need to zip the folder and follow same naming convention (doej-lab1.1.zip).
 
 ### Midterm and Finals
 
-Each quarter will have two exams: a midterm and a final. These exams must be taken in class and are open book, allowing you to utilize websites, notes, and other resources. However, _you cannot_ ask other students, classroom assistants, or the instructor for answers. If you don’t understand a question, please ask the instructor or classroom assistants for clarification.
+Each section will have two exams: a midterm and a final.
+
+These exams must be taken in class and are open book, allowing you to utilize websites, notes, and other resources. However, _you cannot_ ask other students, classroom assistants, or the instructor for answers. If you don’t understand a question, please ask the instructor or classroom assistants for clarification.
 
 ### Grading Information
 
@@ -100,11 +84,11 @@ Each quarter will have two exams: a midterm and a final. These exams must be tak
 
 1. On your desktop right click.
    - In the menu that pops up hover over the `new >` and select folder
-1. Name this folder `Quarter 1`
-1. Double click the Quarter one folder and repeat step 1 to create a folders for
+1. Name this folder `section 1`
+1. Double click the section one folder and repeat step 1 to create a folders for
    - Labs - This is where your various daily labs will reside
    - Assignments - This is where the weekly assignment files/folders will be
-   - Practice - This is where you can put files/folders that your using to practice the various skills you will be learning through out the quarter.
+   - Practice - This is where you can put files/folders that your using to practice the various skills you will be learning through out the section.
 
 ## Day 2: Web Technology Overview
 
@@ -174,27 +158,6 @@ Each quarter will have two exams: a midterm and a final. These exams must be tak
 1. [Understanding URL](/websites/gcfglobal-internetbasics/understanding-urls/lesson.html)
 1. [What is gif](/websites/gcfglobal-internet-tips/what-is-an-animated-gif/lesson.html)
 
-### Assignment 0.2: Create a Basic Resume in Microsoft Word
-
-Create a single-page resume highlighting your academic background and relevant experiences. Use one of the built in Resume templates for Word.
-
-Resume should include:
-
-- **Contact Information:** Name, Phone Number, and Email Address. If you don't have a number or email create a fake one.
-- **Education:** Any Degrees, Certificates, or diplomas you have.
-- **Work Experience:** List any jobs (paid or unpaid), volunteer roles, internships, or significant projects. Focus on responsibilities and accomplishments, not just job duties.
-- **Skills:** List both hard skills (e.g., software proficiency, coding languages) and soft skills (e.g., teamwork, communication).
-- **Extracurricular Activities:** Clubs, organizations, sports teams – again, highlight any leadership roles or significant involvement.
-
-Formatting:
-
-- **Font:** Use a clear, professional font like Times New Roman, Arial, or Calibri (size 10-12).
-- **Consistency:** Ensure consistent formatting throughout (bullet point style, font size, spacing).
-
-Review & Refinement
-
-- **Proofread Carefully:** Check for typos, grammatical errors, and inconsistencies. Ask a friend or other student to review it too.
-
 ## Day 3: Automation, plagiarism, downloads, zip files
 
 ### Mandatory Readings
@@ -230,3 +193,24 @@ These should already be set up but if they are not and you don't know how to get
    - You wont be using these much as in terminal coding is not required but they are installed by default and are worth looking into how they function when you have the time.
 
 **LASTLY!**: Programming is a skill that improves with practice. Don't worry if everything doesn't make sense immediately – that's completely normal!
+
+### Assignment 0: Create a Basic Resume in Microsoft Word
+
+Create a single-page resume highlighting your academic background and relevant experiences. Use one of the built in Resume templates for Word.
+
+Resume should include:
+
+- **Contact Information:** Name, Phone Number, and Email Address. If you don't have a number or email create a fake one.
+- **Education:** Any Degrees, Certificates, or diplomas you have.
+- **Work Experience:** List any jobs (paid or unpaid), volunteer roles, internships, or significant projects. Focus on responsibilities and accomplishments, not just job duties.
+- **Skills:** List both hard skills (e.g., software proficiency, coding languages) and soft skills (e.g., teamwork, communication).
+- **Extracurricular Activities:** Clubs, organizations, sports teams – again, highlight any leadership roles or significant involvement.
+
+Formatting:
+
+- **Font:** Use a clear, professional font like Times New Roman, Arial, or Calibri (size 10-12).
+- **Consistency:** Ensure consistent formatting throughout (bullet point style, font size, spacing).
+
+Review & Refinement
+
+- **Proofread Carefully:** Check for typos, grammatical errors, and inconsistencies. Ask a friend or other student to review it too.

@@ -24,6 +24,28 @@ By the end of this week, you will be able to:
 - Understand HTML Fundamentals
 - Be able to debug common errors
 
+## Lab/Assignment Expectations
+
+Each html assignment you turn in this section needs to have your name and a brief description of what the page does at the top as a comment:
+
+```html
+<!-- John Doe
+This page renders my resume as an an HTML document -->
+```
+
+It will then need to have code that meets the requirements of the assignment, with comments explaining what the code does. As your skill in coding HTML increases you will be able to use less comments but for now over commenting is expected, this allows the instructor and classroom assistants to better understand what you are doing, or attempting to do.
+
+```html
+<!-- Code for a clickable nav bar -->
+<nav>
+  <ul>
+    <li>
+      <a href="#">Home</a>
+    </li>
+  </ul>
+</nav>
+```
+
 ## Day 1: Introduction to HTML Attributes
 
 ### Mandatory Reading:
@@ -45,18 +67,18 @@ By the end of this week, you will be able to:
 - [Build a Curriculum Outline](http://localhost:8001/learn/responsive-web-design-v9/workshop-curriculum-outline/step-1):
 
 1. Go through all 11 steps of building a simple webpage that uses h and p tags.
-1. When you are finished copy and paste the code into a new .html file in your quarter 1 labs directory.
+1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 1.1.A.
+1. Submit this file to canvas under lab 1.1.A.
 
 and
 
 - [Debug Camperbot's Profile Page](http://localhost:8001/learn/responsive-web-design-v9/lab-debug-camperbots-profile-page/lab-debug-camperbots-profile-page):
 
 1. Go through all 10 steps of debugging Camperbot's webpage
-1. When you are finished copy and paste the code into a new .html file in your quarter 1 labs directory.
+1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 1.1.B.
+1. Submit this file to canvas under lab 1.1.B.
 
 ## Day 2: Understanding HTML Boilerplate
 
@@ -79,18 +101,18 @@ and
 - [Debug a Pet Adoption Page](http://localhost:8001/learn/responsive-web-design-v9/lab-debug-pet-adoption-page/lab-debug-pet-adoption-page)
 
 1. Go through all 5 steps of debugging the Pet Adoption Page.
-1. When you are finished copy and paste the code into a new .html file in your quarter 1 labs directory.
+1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 1.2.A.
+1. Submit this file to canvas under lab 1.2.A.
 
 and
 
 - [Build a Cat Photo App ](http://localhost:8001/learn/responsive-web-design-v9/workshop-cat-photo-app/step-1)
 
 1. Go through all 42 steps of this workshop.
-1. When you are finished copy and paste the code into a new .html file in your quarter 1 labs directory.
+1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 1.2.A
+1. Submit this file to canvas under lab 1.2.A
 
 ## Day 3: HTML Fundamentals
 
@@ -116,24 +138,24 @@ and
 - [Build a Recipe App](http://localhost:8001/learn/responsive-web-design-v9/lab-recipe-page/build-a-recipe-page)
 
 1. Go through all 21 steps of this lab.
-1. When you are finished copy and paste the code into a new .html file in your quarter 1 labs directory.
+1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 1.3.A
+1. Submit this file to canvas under lab 1.3.A
 
 and
 
 - [Build a Bookstore Page](http://localhost:8001/learn/responsive-web-design-v9/workshop-bookstore-page/step-1)
 
 1. Go through all 16 steps of this lab.
-1. When you are finished copy and paste the code into a new .html file in your quarter 1 labs directory.
+1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 1.3.B
+1. Submit this file to canvas under lab 1.3.B
 
 ## Day 4: HTML Fundamentals Quiz
 
 ### Quiz:
 
-- Log into Canvas and navigate to this quarter's class page
+- Log into Canvas and navigate to this section's class page
 - Click on Quizzes
   - Take the: HTML Fundamentals Quiz
 
@@ -141,11 +163,11 @@ and
 
 For this assignment you will create an HTML page out of your resume document
 
-1. Create a .html file in your quarter 1 assignment folder.
+1. Create a .html file in your section 1 assignment folder.
 1. Open that file in VSCode.
 1. Add Code to meet the criteria below.
 1. Don't forget to properly comment your code/file.
-1. Submit the file to lab 1 assignment.
+1. Submit the file to assignment 1.
 
 ### Assignment Checklist
 
@@ -158,6 +180,13 @@ For this assignment you will create an HTML page out of your resume document
   - Objective
   - Experience
   - Skills
+
+#### Assignment Criteria
+
+- **HTML (30%):** Correct use of fundamental HTML elements.
+- **Content & Formatting (30%):** Clarity of writing, appropriate use of HTML tags for text.
+- **h and p tags (20%):** Correct use of the `<h#>` and `<p>` tags with proper content
+- **Overall Structure & Presentation (20%):** Clean, readable HTML code, logical page structure.
 
 ### Extra Credit:
 
