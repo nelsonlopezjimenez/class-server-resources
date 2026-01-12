@@ -20,7 +20,7 @@ Week 1: Understanding HTML Attributes, HTML Boilerplate, HTML Fundamentals
 Week 2: HTML SEO, Images, Links
 Week 3: Semantic HTML, Nuanced Text and Time, Specialized Semantic Elements
 Week 4: Working with Forms, Working with Tables, Working with HTML
-Week 5: Build a Survey Form and midterm Exam
+Week 5: HTML Midterm Assignment (no CSS) and midterm Exam
 
 Week 6-10 CSS
 
@@ -28,7 +28,7 @@ Week 6: Basic CSS, Design
 Week 7: Absolute and Relative Units, Pseudo Classes, Colors
 Week 8: Styling Forms, Box Model, Flexbox
 Week 9: Typography, Responsive Design, Grid
-Week 10: Build a Book Page, Build a Tech Doc Page, or Build a Product landing page and Final Exam
+Week 10: Peach Cobbler Responsive Website (day 1 mobile, day 2 tablet, day 3 desktop) and Final Exam
 
 Week 11-20 Javascript
 
@@ -59,3 +59,20 @@ Week 36-40: Final Project (Recipe Site from Scratch not from a pre made site tha
 # Quarter to Section
 
 I am changing all instances of the word "Quarter" to be "Section" to more closely align with vision moving forward.
+
+# Questions for Dr. Lopez
+
+I would like to make a "midterm/final" project that is continues through out each quarter.
+
+Here are my thoughts:
+
+1. Quarter 1 students will choose a type of website
+   - Recipe site
+   - Book/library site
+   - eCommerce site
+2. Each quarter students will grow their site
+   - week 5 basic HTML structure of site
+   - week 10 basic css
+   - week 20 basic JS functionality done
+   - week 30 back end of server done (api routes etc)
+   - week 40 front end done with React
