@@ -10,7 +10,7 @@ week: 0
 
 Welcome to the CIS Fullstack web Development certificate program. This is a 12 month course consisting of 40 weeks of course work to do. You will learn the necessary skills to develop, create, and deploy a fully functional web based application.
 
-### To be successful in this class, you should plan to:
+## To be successful in this class, you should plan to:
 
 1. Arrive on time and prepared for class
 1. Take an active role in your own learning and understanding of the material
@@ -144,14 +144,14 @@ These exams must be taken in class and are open book, allowing you to utilize we
 1. [🖼️ Resume Writing Gallery](/websites/gcfglobal-resumewriting/gallery-of-sample-resumes/lesson.html)
 1. [Windows 10 ⚙️](/websites/gcfglobal-windows10/tutorial.html)
    1. [Windows 10 Features](/websites/gcfglobal-windows-10/windows-10-features/lesson.html)
-1. [Basic Computer Skills](/websites/gcfglobal-basic-computer-skills/tutorial.html)
+1. [Computer Basics](/websites/gcfglobal-computerbasics/tutorial.html)
    1. [🖥️ Your First Computer](/websites/gcfglobal-basic-computer-skills/getting-started-with-your-first-computer/lesson.html)
-1. [Computer Basics](/websites/gcfglobal-computer-basics/tutorial.html)
+1. [Computer Basics](/websites/gcfglobal-computerbasics/tutorial.html)
 
-   1. [Computer Basics Parts](/websites/gcfglobal-computer-basics/basic-parts-of-a-computer/lesson.html)
-   1. [🌐 Connecting to the Internet](/websites/gcfglobal-computer-basics/connecting-to-the-internet/lesson.html)
-   1. [💾 The Operating System](/websites/gcfglobal-computer-basics/getting-to-know-the-os/lesson.html)
-   1. [📚 Learning a new program](/websites/gcfglobal-computer-basics/learning-a-new-program/lesson.html)
+   1. [Computer Basics Parts](/websites/gcfglobal-computerbasics/basic-parts-of-a-computer/lesson.html)
+   1. [🌐 Connecting to the Internet](/websites/gcfglobal-computerbasics/connecting-to-the-internet/lesson.html)
+   1. [💾 The Operating System](/websites/gcfglobal-computerbasics/getting-to-know-the-os/lesson.html)
+   1. [📚 Learning a new program](/websites/gcfglobal-computerbasics/learning-a-new-program/lesson.html)
 
 1. [🌍 What is the internet](/websites/gcfglobal-internetbasics/what-is-the-internet/lesson.html)
 1. [🔍 Using a web browser](/websites/gcfglobal-internetbasics/using-a-web-browser/lesson.html)
