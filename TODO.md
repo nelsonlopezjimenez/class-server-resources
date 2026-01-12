@@ -1,6 +1,8 @@
 Brooks TODO - Jan. 7th, 2026
 
-Things to do in Canvas:
+Things to do in Canvas
+
+1. Update GFC: links on week zero
 
 1. Create quizzes
 
@@ -52,6 +54,14 @@ Things to do in Canvas:
    - 13
 
 1. Upload quizzes to Canvas
+
+   - Week 1: HTML Fundamentals
+   - Week 2: HTML Basic
+   - Week 3: Semantic Elements
+   - week 12: Math
+   - week 12: Comparisons and Conditionals
+
+1. Verify Quizzes
    - Week 1: HTML Fundamentals
    - Week 2: HTML Basic
    - Week 3: Semantic Elements
