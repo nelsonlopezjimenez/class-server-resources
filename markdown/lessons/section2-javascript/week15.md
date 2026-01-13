@@ -41,7 +41,7 @@ By the end of this week, students will be able to:
 1. Go through all 19 steps of to build a basic calculator.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 15.1.A.
+1. Submit this to the "text box" in canvas under under lab 15.1.A.
 
 And
 
@@ -50,7 +50,7 @@ And
 1. Go through all 11 steps of to check boolean values.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 15.1.B.
+1. Submit this to the "text box" in canvas under under lab 15.1.B.
 
 And
 
@@ -59,7 +59,7 @@ And
 1. Go through all 10 steps of lab.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 15.1.C.
+1. Submit this to the "text box" in canvas under under lab 15.1.C.
 
 ## Day 2: More Functions
 
@@ -74,7 +74,7 @@ And
 1. Go through all 10 steps of lab.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 15.2.A.
+1. Submit this to the "text box" in canvas under under lab 15.2.A.
 
 And
 
@@ -83,7 +83,7 @@ And
 1. Go through all 8 steps of lab.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 15.2.B.
+1. Submit this to the "text box" in canvas under under lab 15.2.B.
 
 And
 
@@ -92,7 +92,7 @@ And
 1. Go through all 8 steps of lab.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 15.2.C.
+1. Submit this to the "text box" in canvas under under lab 15.2.C.
 
 ### Day 3: Even More Functions
 
@@ -107,7 +107,7 @@ And
 1. Go through all 11 steps for this lab.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 15.3.A.
+1. Submit this to the "text box" in canvas under under lab 15.3.A.
 
 and
 
@@ -116,7 +116,7 @@ and
 1. Complete all 6 requirements for this lab.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 15.3.B.
+1. Submit this to the "text box" in canvas under under lab 15.3.B.
 
 and
 
@@ -125,7 +125,7 @@ and
 1. Complete all 15 requirements for this lab.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 15.3.C.
+1. Submit this to the "text box" in canvas under under lab 15.3.C.
 
 ## Day 4:
 

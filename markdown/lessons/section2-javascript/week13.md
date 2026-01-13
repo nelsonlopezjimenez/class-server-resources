@@ -102,7 +102,7 @@ By the end of this week, you will be able to:
 1. Go through all 15 steps of building a simple greeting bot that uses strings and console.log() to communicate.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 13.1.
+1. Submit this to the "text box" in canvas under lab 13.1.
 
 ## Day 2: Working with Data Types
 
@@ -137,7 +137,7 @@ and
 1. Go through all steps of both of these labs.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under Lab 13.2.
+1. Submit this to the "text box" in canvas under under Lab 13.2.
 
 ## Day 3: Data Types - String Methods
 
@@ -169,7 +169,7 @@ and
 1. Go through all steps of all of these labs.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to Canvas under lab 13.2.
+1. Submit this to the "text box" in canvas under under lab 13.2.
 
 ## Day 4: String Review and Quiz
 

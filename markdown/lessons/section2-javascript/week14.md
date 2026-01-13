@@ -53,7 +53,7 @@ By the end of this week, students will be able to:
 1. Go through all 16 steps of of this buggy app and resolve all issues.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 14.1.
+1. Submit this to the "text box" in canvas under under lab 14.1.
 
 ## Day 2: Boolean, Comparison, and Conditional Operators
 
@@ -81,7 +81,7 @@ By the end of this week, students will be able to:
 1. Go through all 8 steps of this buggy app and resolve all issues.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 14.2.
+1. Submit this to the "text box" in canvas under under lab 14.2.
 
 ### Day 3: Special Numbers, Converting Strings to Numbers, Null and Undefined
 
@@ -116,7 +116,7 @@ By the end of this week, students will be able to:
 1. Go through all 14 steps to build this Mathbot.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 14.3.A.
+1. Submit this to the "text box" in canvas under under lab 14.3.A.
 
 and
 
@@ -125,7 +125,7 @@ and
 1. Complete all 10 requirements to build this Fortune Teller application.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 14.3.B.
+1. Submit this to the "text box" in canvas under under lab 14.3.B.
 
 ## Day 4:
 
