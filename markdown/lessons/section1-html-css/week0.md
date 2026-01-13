@@ -62,13 +62,14 @@ These exams must be taken in class and are open book, allowing you to utilize we
 
 #### ⭐ Grade Weights
 
-1.  Labs/Assignments: **30%**
-2.  Quizzes: **10%**
-3.  Participation: **10%**
-4.  Midterm Exam: **10% or 20%**
-5.  Final Exam: **10% or 20%**
-6.  Attendance: **10%**
-7.  Extra Credit: **1%**
+1.  Assignments: **30%**
+2.  Labs: **10%**
+3.  Quizzes: **10%**
+4.  Participation: **10%**
+5.  Midterm Exam: **10% or 20%**
+6.  Final Exam: **10% or 20%**
+7.  Attendance: **10%**
+8.  Extra Credit: **1%**
 
 - **Notes on Exams:**
   Exams are designed to assess your understanding of the material, not to induce anxiety. To alleviate concerns, exams will be graded on a curve. This means that the overall distribution of grades will be adjusted so that most students receive at least a C- passing grade, while a few students will achieve B’s, and the top performers will receive A’s. The higher of the two exams (midterm or final) will contribute 20% to your final grade, while the lower one contributes 10%.
