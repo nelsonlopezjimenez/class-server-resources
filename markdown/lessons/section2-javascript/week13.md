@@ -1,301 +1,223 @@
 ---
 title: "JavaScript Fundamentals - Variables, Data Types, and Basic Operations"
-description: "Introduction to JavaScript syntax, variables, primitive data types, and basic operations"
+description: "Introduction to JavaScript syntax, variables, primitive data types, console.log(), and string methods."
 week: 13
 section: 2
-prerequisites: ["HTML structure", "CSS styling", "Basic understanding of web pages"]
+prerequisites: ["None"]
 objectives:
-  - "Understand what JavaScript is and how it enhances web pages"
-  - "Declare and use variables with let, const, and var"
-  - "Work with primitive data types: strings, numbers, booleans"
-  - "Perform basic operations and type conversion"
-  - "Debug JavaScript using browser developer tools"
 ---
-# Week 13: JavaScript Fundamentals - Variables, Data Types, and Basic Operations
-[TOC]
 
-<!-- Or this: -->
-[[TOC]]
+# JavaScript Fundamentals and Strings
+
+## Keys to learning Javascript:
+
+Javascript can be overwhelming to new students. Here are some keys to help you get the most out of this section:
+
+- **<u>Practice, Practice, Practice:</u>** Throughout this section the key to learning JavaScript is consistent practice. Don't just do the assignment; you should experiment, try different approaches, and build small projects on your own.
+- **<u>Debugging:</u>** Learn to use your browser's developer tools (Console, Elements) to debug your code. This is a crucial skill and can help save many hours of headache tracking down bugs.
+- **<u>Double Check Spelling and Casing:</u>** Many issues are due to typing errors. myName and myname are two different variables, and cosnole.log() doesn't exist with in javascript. VSCode will help you catch some of these bugs but not all. Carefully and patiently review your code if you have errors.
+- **<u>Don't Get Stuck:</u>** If you’re struggling with a particular concept, don’t spend "too" long on it, this means 10-15 minutes max. If you are struggling for longer than this review the mandatory and optional readings, and if you are still struggling, write the issue down in your notebook then move on. When you come into class you can ask a classroom assistant or Dr. Lopez for assistance.
+
+## Class Information
+
+### Assignment\Labs Expectations:
+
+When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a - followed by the lab or assignment. I.E. John Doe turning in a file for Lab 13.1 would name the file doej-lab13.1.js, for the week 13 assignment would be doej-assignment13.js. If uploading multiple files you need to zip the folder and follow same naming convention.
+
+Each javascript assignment you turn in this section needs to have your name and a brief description of what the script does at the top as a comment:
+
+```js
+// John Doe
+// This code shows how to create variables
+```
+
+It will then need to have code that meets the requirements of the assignment, with comments explaining what the code does. As your skill in coding javascript applications increases you will be able to use less comments but for now over commenting is expected, this allows the instructor and classroom assistants to better understand what you are doing, or attempting to do.
+
+```js
+// John Doe
+// This code shows how to create variables
+
+// creates a let variable called person with no value.
+let person;
+
+// creates a let variable called "myName" with the string "John" that can change value.
+let myName = "John";
+
+// creates a const variable called myAge with the number 26, this can not change value
+const myAge = 26;
+
+// creates a var variable called legacy with the value "Legacy Code", this the old way of creating variables and should'n't be used in new applications.
+var legacy = "Legacy Code";
+```
+
+### freeCodeCamp
+
+Make sure your freeCodeCamp server is up and running to be able to do the required readings, labs, and assignments.
 
 ## Learning Objectives
 
-By the end of this week, students will be able to:
-- Explain JavaScript's role in web development and the DOM
-- Declare variables using appropriate keywords (let, const, var)
-- Identify and work with JavaScript's primitive data types
-- Perform arithmetic, string, and comparison operations
-- Use browser developer tools to debug and test JavaScript code
-- Write clean, commented JavaScript code following best practices
+By the end of this week, you will be able to:
 
-## Daily Activities
+- Write clean, commented JavaScript code following best practices.
+- Declare variables using appropriate keywords `let` and `const`, and why we don't use `var` anymore.
+- Identify and work with JavaScript's primitive data types.
+- Create, display, and manipulate strings
+- Use browser developer tools to debug and test JavaScript code.
 
-### Day 1: Introduction to JavaScript and Setting Up
-**Complexity: Beginner**
+## Day 1: Introduction to JavaScript and Learning How to Comment
 
-**Morning Session: What is JavaScript?**
-- JavaScript's role in web development (behavior layer)
-- Difference between client-side and server-side JavaScript
-- How JavaScript interacts with HTML and CSS
-- Setting up development environment
+### Mandatory Reading:
 
-**Code Example:**
-```javascript
-// Your first JavaScript program
-// This code adds interactivity to a webpage
+- [What is Javascript?](http://localhost:8001/learn/javascript-v9/#lecture-introduction-to-javascript):
 
-// Display a welcome message
-console.log("Welcome to JavaScript!"); // Beginner: console.log prints messages to browser console
+  - [What is Javascript?](http://localhost:8001/learn/javascript-v9/lecture-introduction-to-javascript/what-is-javascript)
+  - [What is a Data Type?](http://localhost:8001/learn/javascript-v9/lecture-introduction-to-javascript/what-is-a-data-type)
+  - [What are Variables?](http://localhost:8001/learn/javascript-v9/lecture-introduction-to-javascript/what-are-variables)
+  - [How do let and const Work?](http://localhost:8001/learn/javascript-v9/lecture-introduction-to-javascript/how-do-let-and-const-work)
 
-// Change webpage content (we'll learn more about this later)
-document.getElementById("welcome").textContent = "Hello from JavaScript!";
-/* 
-Advanced concept preview: document.getElementById() finds HTML elements
-This is called DOM manipulation - we'll cover this in detail in Week 15
-*/
-```
+- [Introduction to strings](http://localhost:8001/learn/javascript-v9/#lecture-introduction-to-strings):
 
-**Activity:** Create a simple HTML page with a `<p>` element, add a `<script>` tag, and make JavaScript change the paragraph text.
+  - [What is a string?](http://localhost:8001/learn/javascript-v9/lecture-introduction-to-strings/what-is-a-string)
+  - [What is string concatenation?](http://localhost:8001/learn/javascript-v9/lecture-introduction-to-strings/what-is-string-concatenation)
+  - [What is console.log()?](http://localhost:8001/learn/javascript-v9/lecture-introduction-to-strings/what-is-console-log)
 
-**Evening Session: Browser Developer Tools**
-- Opening and navigating Chrome/Firefox DevTools
-- Using the Console tab to run JavaScript
-- Understanding error messages
+- [Understanding Code Clarity](http://localhost:8001/learn/javascript-v9/#lecture-understanding-code-clarity):
 
-### Day 2: Variables and Declaration Keywords
-**Complexity: Beginner to Intermediate**
+  - [What is the role of Semicolons ( ; ) in javascript?](http://localhost:8001/learn/javascript-v9/lecture-understanding-code-clarity/what-is-the-role-of-semicolons)
+  - [What are comments in javascript?](http://localhost:8001/learn/javascript-v9/lecture-understanding-code-clarity/what-are-comments-in-javascript)
 
-**Morning Session: Understanding Variables**
-- What variables are and why we need them
-- Naming conventions and best practices
-- Introduction to let, const, and var
+### Optional Readings:
 
-**Code Example:**
-```javascript
-// Variable declarations - storing information for later use
+- [MDN - What is Javascript](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript.html)
+- [MDN - Comments](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript.html#comments)
+- [MDN - Variables](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables.html)
+- [w3Schools - Introduction to JS](http://localhost:22022/websites/w3schools.com/js/js_intro.html)
+- [w3Schools - Comments](http://localhost:22022/websites/w3schools.com/js/js_comments.html)
+- [w2Schools - Variables](http://localhost:22022/websites/w3schools.com/js/js_variables.html)
 
-// let - for values that can change
-let userName = "Alex";           // Beginner: let creates a variable that can be updated
-let userAge = 25;
-userName = "Jordan";             // This is allowed - we can change let variables
+### Lab 13.1:
 
-// const - for values that should never change  
-const PI = 3.14159;             // Beginner: const creates a variable that cannot be changed
-const siteName = "My Web App";
-// PI = 3.14;                   // This would cause an error!
+- [Build a Greeting Bot](http://localhost:8001/learn/javascript-v9/workshop-greeting-bot/step-1):
 
-// var - older way (we'll mostly use let and const)
-var oldVariable = "legacy code"; // Advanced: var has different scoping rules, prefer let/const
+1. Go through all 15 steps of building a simple greeting bot that uses strings and console.log() to communicate.
+1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this to the "text box" in canvas under lab 13.1.
 
-// Good variable naming examples
-let firstName = "Emma";          // camelCase for JavaScript
-let isLoggedIn = true;          // Boolean variables often start with "is" or "has"
-let totalItemCount = 0;         // Descriptive names help others understand your code
-```
+## Day 2: Working with Data Types
 
-**Activity:** Create variables for a user profile (name, age, email, isActive) and practice changing appropriate ones.
+### Mandatory Reading
 
-**Evening Session: Variable Scope Preview**
-- Brief introduction to block scope
-- Why we prefer let and const over var
+- [What is Dynamic Typing?](http://localhost:8001/learn/javascript-v9/lecture-working-with-data-types/what-is-dynamic-typing-in-javascript-and-how-does-it-differ-from-statically-typed-languages)
+- [How Does typeOf Operator Work?](http://localhost:8001/learn/javascript-v9/lecture-working-with-data-types/how-does-the-typeof-operator-work-and-what-is-the-typeof-null-bug-in-javascript)
 
-### Day 3: Data Types - Strings
-**Complexity: Beginner to Intermediate**
+- [Data Types Review](http://localhost:8001/learn/javascript-v9/review-javascript-variables-and-data-types/review-javascript-variables-and-data-types)
 
-**Morning Session: Working with Strings**
-- Creating strings with single, double, and template literals
-- Common string methods and properties
-- String concatenation vs template literals
+- [What is Bracket Notation?](http://localhost:8001/learn/javascript-v9/lecture-working-with-strings-in-javascript/what-is-bracket-notation-and-how-do-you-access-characters-from-a-string)
+- [How to Create Newline in Strings?](http://localhost:8001/learn/javascript-v9/lecture-working-with-strings-in-javascript/how-do-you-create-a-newline-in-strings-and-escape-strings)
+- [What are Template Literals?](http://localhost:8001/learn/javascript-v9/lecture-working-with-strings-in-javascript/what-are-template-literals-and-what-is-string-interpolation)
+- [Substrings](http://localhost:8001/learn/javascript-v9/lecture-working-with-strings-in-javascript/how-can-you-find-the-position-of-a-substring-in-a-string)
+- [prompt()](http://localhost:8001/learn/javascript-v9/lecture-working-with-strings-in-javascript/what-is-the-prompt-method-and-how-does-it-work)
 
-**Code Example:**
-```javascript
-// Different ways to create strings
-let singleQuote = 'Hello World';      // Beginner: Strings can use single quotes
-let doubleQuote = "Hello World";      // Or double quotes (choose one style and be consistent)
-let templateLiteral = `Hello World`;  // Template literals use backticks
+### Optional Readings:
 
-// String properties and methods
-let message = "JavaScript is awesome!";
-console.log(message.length);          // Beginner: .length tells us how many characters
-console.log(message.toUpperCase());   // Beginner: .toUpperCase() makes all letters capital
-console.log(message.toLowerCase());   // Beginner: .toLowerCase() makes all letters lowercase
+- [MDN - Handling Strings](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings.html)
+- [MDN - String Templates](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals.html)
+- [w3Schools - Strings](http://localhost:22022/websites/w3schools.com/js/js_strings.html)
+- [w3Schools - String Templates](http://localhost:22022/websites/w3schools.com/js/js_string_templates.html)
 
-// Template literals for dynamic strings
-let name = "Sarah";
-let age = 28;
-let greeting = `Hello, my name is ${name} and I'm ${age} years old.`;
-// Beginner: ${} lets us put variables inside strings with template literals
-console.log(greeting);
+### Lab 13.2:
 
-// String methods for manipulation
-let email = "  user@example.com  ";
-let cleanEmail = email.trim();        // Advanced: .trim() removes extra spaces
-let domain = email.split("@")[1];     // Advanced: .split() breaks string into array
-```
+- [Build a Javascript Trivia Bot](http://localhost:8001/learn/javascript-v9/lab-javascript-trivia-bot/lab-javascript-trivia-bot)
 
-**Activity:** Create a personal introduction using template literals that combines multiple variables.
+and
 
-**Evening Session: String Exercises**
-- Practice with string methods
-- Building dynamic messages
-- Introduction to escape characters
+- [Build a Sentence Maker](http://localhost:8001/learn/javascript-v9/lab-sentence-maker/build-a-sentence-maker)
 
-### Day 4: Data Types - Numbers and Booleans
-**Complexity: Beginner to Intermediate**
+1. Go through all steps of both of these labs.
+1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this to the "text box" in canvas under under Lab 13.2.
 
-**Morning Session: Working with Numbers**
-- Number types in JavaScript
-- Arithmetic operations
-- Math object basics
+## Day 3: Data Types - String Methods
 
-**Code Example:**
-```javascript
-// Numbers in JavaScript
-let wholeNumber = 42;              // Beginner: Integers (whole numbers)
-let decimal = 3.14159;             // Beginner: Floating-point numbers (decimals)
-let negative = -10;                // Negative numbers
+### Mandatory Readings:
 
-// Arithmetic operations
-let sum = 10 + 5;                  // Addition: 15
-let difference = 10 - 5;           // Subtraction: 5  
-let product = 10 * 5;              // Multiplication: 50
-let quotient = 10 / 5;             // Division: 2
-let remainder = 10 % 3;            // Modulus (remainder): 1
+- [What is ASCII?](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-character-methods/what-is-ascii-and-how-does-it-work-with-charcodeat-and-fromcharcode)
+- [Using includes()](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-search-and-slice-methods/how-can-you-test-if-a-string-contains-a-substring)
+- [Using slice()](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-search-and-slice-methods/how-can-you-extract-a-substring-from-a-string)
+- [Changing Casing](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-formatting-methods/how-can-you-change-the-casing-for-a-string)
+- [Remove WhiteSpace](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-formatting-methods/how-can-you-trim-whitespace-from-a-string)
 
-// Math object for complex operations
-let randomNumber = Math.random();   // Advanced: Random number between 0 and 1
-let rounded = Math.round(3.7);      // Advanced: Rounds to nearest integer: 4
-let maximum = Math.max(5, 10, 3);   // Advanced: Finds largest number: 10
+### Optional Readings:
 
-// Boolean values
-let isComplete = true;              // Beginner: true or false values
-let isVisible = false;
-let hasPermission = true;
+- [MDN - Useful String Methods](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods.html)
+- [w3Schools - String Methods](http://localhost:22022/websites/w3schools.com/js/js_string_methods.html)
 
-// Boolean operations
-let canEdit = isComplete && hasPermission;  // AND: both must be true
-let showWarning = !isVisible;               // NOT: opposite of isVisible
-let needsAttention = !isComplete || hasErrors; // OR: either can be true
-```
+### Lab 13.3:
 
-**Activity:** Create a simple calculator that performs basic arithmetic operations and displays results.
+- [Build a String Inspector](http://localhost:8001/learn/javascript-v9/workshop-string-inspector/step-1)
 
-**Evening Session: Type Coercion Preview**
-- How JavaScript converts between types
-- Common pitfalls with automatic conversion
+and
 
-### Day 5: Operations and Type Conversion
-**Complexity: Intermediate**
+- [Build a Sentence Formatter](http://localhost:8001/learn/javascript-v9/workshop-string-formatter/step-1)
 
-**Morning Session: Comparison and Logical Operations**
-- Comparison operators
-- Strict vs loose equality
-- Logical operators in depth
+and
 
-**Code Example:**
-```javascript
-// Comparison operators
-let a = 10;
-let b = "10";
-let c = 20;
+- [Build a String Transformer](http://localhost:8001/learn/javascript-v9/workshop-string-transformer/step-1)
 
-// Equality comparisons
-console.log(a == b);    // true - loose equality (converts types)
-console.log(a === b);   // false - strict equality (no type conversion)
-console.log(a != b);    // false - loose inequality  
-console.log(a !== b);   // true - strict inequality
+1. Go through all steps of all of these labs.
+1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
+1. Add appropriate comments to show understanding of the code.
+1. Submit this to the "text box" in canvas under under lab 13.2.
 
-// Beginner: Always use === and !== to avoid surprises!
+## Day 4: String Review and Quiz
 
-// Other comparisons
-console.log(a < c);     // true
-console.log(a >= 10);   // true
-console.log(b <= "5");  // false (string comparison)
+### Mandatory Readings:
 
-// Logical operators in detail
-let user = {
-  isLoggedIn: true,
-  hasSubscription: false,
-  credits: 5
-};
+- [Review JS Fundamentals](http://localhost:8001/learn/javascript-v9/review-javascript-variables-and-data-types/review-javascript-variables-and-data-types)
+- [Review Strings](http://localhost:8001/learn/javascript-v9/review-javascript-strings/review-javascript-strings)
 
-// AND (&&) - all conditions must be true
-let canAccessPremium = user.isLoggedIn && user.hasSubscription;
+### Quiz:
 
-// OR (||) - at least one condition must be true  
-let canViewContent = user.isLoggedIn || user.credits > 0;
+- Log into Canvas and navigate to this section's class page
+- Click on Quizzes
+  - Take the: Javascript Fundamentals Quiz
+  - Take the: Strings Quiz
 
-// NOT (!) - reverses the boolean value
-let needsLogin = !user.isLoggedIn;
+## Assignment 13: Personal Profile Creator
 
-// Type conversion examples
-let numberFromString = Number("123");      // Convert string to number: 123
-let stringFromNumber = String(456);        // Convert number to string: "456"
-let booleanFromString = Boolean("hello");  // Convert to boolean: true (non-empty strings are true)
+For this assignment you will create a file that displays dynamic user information:
 
-// Advanced: Falsy values in JavaScript
-let falsyExamples = [false, 0, "", null, undefined, NaN];
-// These all convert to false in boolean contexts
-```
+1. Create a .js file in your section 2 assignment folder.
+1. Open that file in VSCode.
+1. Create pseudocode for your application before you start coding.
+1. Add Code to meet the criteria below.
+1. Don't forget to properly comment your code/file.
+1. Submit the file to assignment 13.
 
-**Activity:** Build a user permission checker that uses logical operations to determine what a user can access.
+**<u>Notes:</u>** You will be learning more about Node.js in section 3. It is what allows Javascript code to be ran outside of a browser. To test your code open up a terminal in VSCode (`ctrl`+`shift`+`~`) and type `node doeJ-week1.js` and hit enter. You should see the output of your file in the terminal.
 
-**Evening Session: Debugging Practice**
-- Using console.log strategically
-- Understanding common error messages
-- Reading stack traces
+### Assignment Checklist
 
-## Hands-on Exercises
+- Declare 4 variables, one for a name, a title, an occupation, and a hobbies.
+- If the variable needs to change value declare with let, otherwise declare with const.
+- At least one variable should be declared without a value.
+- At least one variable should be declared with a double quote (").
+- At least one variable should be declared with a single quote (').
+- For the variable declared without a value set its value before using it.
+- Using console.log and the string concatenation, output the sentence "[title] [name] works as a [occupation], and has [hobbies] interest."
+- Assign the name variable value to something else.
+- Using console.log and the (+) method, output the same sentence above with the updated data.
+- Change the occupation variable value to something else.
+- Using console.log and a string template (`), output the same sentence as above with the updated data.
 
-### Exercise 1: Personal Profile Creator
-Create a webpage that uses JavaScript to display dynamic user information:
-- Declare variables for name, age, occupation, and hobbies
-- Use template literals to create formatted output
-- Include at least 3 different data types
+### Extra Credit:
 
-### Exercise 2: Simple Calculator Interface  
-Build on your HTML/CSS knowledge to create:
-- An HTML form with number inputs
-- JavaScript that performs calculations
-- Display results dynamically on the page
+- Create a HTML page that has elements for a person's title, name, occupation and hobbies. You may use any element you think is appropriate.
+- Using internal script tags insert the code you created above into the .html file
+- Using the Document Object Model (DOM) target the four elements you created in the HTML and set the appropriate data to it.
 
-### Exercise 3: Type Experiment Lab
-Create experiments to understand JavaScript types:
-- Test different variable declarations
-- Explore type conversion scenarios
-- Document surprising results with comments
-
-## Resources
-
-**MDN Documentation:**
-- [JavaScript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
-- [Variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Variables)
-- [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-- [Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
-
-**W3Schools References:**
-- [JavaScript Variables](https://www.w3schools.com/js/js_variables.asp)
-- [JavaScript Data Types](https://www.w3schools.com/js/js_datatypes.asp)
-- [JavaScript Operators](https://www.w3schools.com/js/js_operators.asp)
-
-## Assignment Checklist
-
-**Basic Requirements:**
-- [ ] Created variables using let, const, and var appropriately
-- [ ] Demonstrated understanding of strings, numbers, and booleans
-- [ ] Used template literals for dynamic string creation
-- [ ] Performed arithmetic and logical operations
-- [ ] Used console.log for debugging and output
-
-**Intermediate Challenges:**
-- [ ] Implemented proper variable naming conventions
-- [ ] Used strict equality (===) consistently
-- [ ] Handled type conversion explicitly
-- [ ] Created meaningful comments explaining code purpose
-
-**Advanced Extensions:**
-- [ ] Explored scope differences between let, const, and var
-- [ ] Implemented complex logical operations
-- [ ] Used Math object methods effectively
-- [ ] Debugged code using browser developer tools
-
-
+- You have not been taught about the DOM yet. Oftentimes when learning a new programming language, or when ask to complete a task at work you wont know how to do something. Where can you go to learn about it and how to use it?
+  - Tip freeCodeCamp, w3Schools, and MDN all have sections on the DOM.
+  - querySelector and getElementById are useful here.

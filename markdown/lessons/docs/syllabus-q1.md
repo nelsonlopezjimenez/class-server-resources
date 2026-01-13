@@ -1,12 +1,13 @@
 ---
 title: "Syllabus Q1"
-description: "Syllabus quarter 1"
+description: "Syllabus section 1"
 publishDate: 2025-09-17
-tags: ["syllabus", "quarter1", "test"]
+tags: ["syllabus", "section1", "test"]
 draft: false
 ---
+
 <pre>
-Quarter 1 Syllabus
+section 1 Syllabus
 Jan 6, 2025
 
 CIS 241 WEB DEVELOPMENT I
@@ -19,7 +20,7 @@ Website development using HTML5, approached from a source code perspective. Cove
 Course meeting information:
 Location: MCC, Voced building
 
-Final Exam: There is no final exam for this course, instead there is a final project which will be due on the last day of the quarter.
+Final Exam: There is no final exam for this course, instead there is a final project which will be due on the last day of the section.
 
 Instructor Information:
 Instructor: Nelson Lopez
@@ -68,16 +69,16 @@ Extra Credit -                 1%
 
 What are the rules about late work?
 
-With the exception of the final project/assignment, projects/assignments are due at the start of class on the date indicated in the Class Schedule. Projects/assignments received late will be marked 50% off if the assignment is not submitted by the stated date on the calendar. After the second week, no late assignment will be accepted. The final project will not be accepted late. No assignments will be accepted after the last class meeting of the quarter.
+With the exception of the final project/assignment, projects/assignments are due at the start of class on the date indicated in the Class Schedule. Projects/assignments received late will be marked 50% off if the assignment is not submitted by the stated date on the calendar. After the second week, no late assignment will be accepted. The final project will not be accepted late. No assignments will be accepted after the last class meeting of the section.
 
 No make-up tests or quizzes will be given unless prearranged. Prearranged is defined as: notifying the instructor of the inability to take the test or quiz before the scheduled time of the test or quiz.
 
 You must make up the missed test or quiz within an agreed upon amount of time, no more than one week.
 
 V grades and I Grades:
-V - An instructor-initiated withdrawal of a student. The final grade issued if an instructor initiates a class withdrawal before the end of the quarter, often in consultation with the student, or if a student enrolls in a class but never attends or stops attending class. A faculty member is under no obligation to grant an instructor initiated withdrawal.
+V - An instructor-initiated withdrawal of a student. The final grade issued if an instructor initiates a class withdrawal before the end of the section, often in consultation with the student, or if a student enrolls in a class but never attends or stops attending class. A faculty member is under no obligation to grant an instructor initiated withdrawal.
 
-I - The incomplete is given at the discretion of the instructor only when the student has done satisfactory work but could not, for some unavoidable reason, complete some part of the coursework or take the final examination. The student and instructor prepare and sign an “Incomplete Grade Contract” (located in division offices) specifying the work to be completed. The contract will include the date by which all work must be submitted and the grade that will be submitted if the work is not completed. Incompletes given prior to Fall Quarter of 1990 will be assigned letter grades.
+I - The incomplete is given at the discretion of the instructor only when the student has done satisfactory work but could not, for some unavoidable reason, complete some part of the coursework or take the final examination. The student and instructor prepare and sign an “Incomplete Grade Contract” (located in division offices) specifying the work to be completed. The contract will include the date by which all work must be submitted and the grade that will be submitted if the work is not completed. Incompletes given prior to Fall section of 1990 will be assigned letter grades.
 
 Grading Table:
 Grade Points: Letter Grades:
