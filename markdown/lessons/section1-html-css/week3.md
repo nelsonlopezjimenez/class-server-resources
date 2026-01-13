@@ -10,6 +10,15 @@ objectives: "Learn how to structure your document using semantic tags, and how t
 
 # Semantic Elements
 
+## Learning Objectives
+
+By the end of this week, you will be able to:
+
+- Identify Semantic tags.
+- Understand how to properly structure your HTML pages.
+- Properly use presentational HTML elements
+- Create both ordered and un-ordered list
+
 ## Day 1: Introduction to Semantic Elements
 
 ### Mandatory Reading:

@@ -10,6 +10,16 @@ objectives:
 
 # SEO, Images and Links
 
+## Learning Objectives
+
+By the end of this week, you will be able to:
+
+- Understand the purpose of meta descriptions and their role in providing concise summaries of web pages.
+- Craft effective meta descriptions that are short, informative, and relevant to the content of a page.
+- Recognize how meta descriptions appear in search engine results and contribute to user engagement.
+- Understand the fundamental differences between raster and vector images, with a focus on the scalability of SVGs.
+- Identify and manipulate SVG elements (like circles, paths, and the svg element itself) to create and modify simple graphics.
+
 ## Day 1: Introduction to HTML Attributes
 
 ### Mandatory Reading:

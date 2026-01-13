@@ -3,7 +3,7 @@ publishDate: 2026-01-07
 tags: ["Introduction", "Grading", "Expectations", "Resume", "Labs/Assignments"]
 description: "Introduction to CIS Web Developer Certification course work"
 title: "Welcome to Web Development!"
-week: 0
+week: 0.1
 ---
 
 # Getting Started with CIS Fullstack Web Development
