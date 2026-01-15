@@ -40,7 +40,7 @@ and its lab [Build an HTML Audio and Video Player](http://localhost:8001/learn/r
 1. Go through all 32 steps of this lab.
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 2.1
+1. Submit this to the "text box" in canvas under lab 2.1
 
 ## Day 2: Images
 
@@ -69,7 +69,7 @@ and Lab/Workshop [Build a Video Iframe](http://localhost:8001/learn/responsive-w
 1. Go through all 6 steps of building a Heart Icon.
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 2.2
+1. Submit this to the "text box" in canvas under lab 2.2
 
 ## Day 3: Links
 
@@ -102,7 +102,7 @@ and Lab/Workshop [Build a Video Iframe](http://localhost:8001/learn/responsive-w
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the: HTML Basics Quiz
+  - Take the Week 3: HTML Basics Quiz
 
 ## Assignment 2: About Me Website
 

@@ -9,51 +9,6 @@ objectives:
 
 # JavaScript Fundamentals and Strings
 
-## Keys to learning Javascript:
-
-Javascript can be overwhelming to new students. Here are some keys to help you get the most out of this section:
-
-- **<u>Practice, Practice, Practice:</u>** Throughout this section the key to learning JavaScript is consistent practice. Don't just do the assignment; you should experiment, try different approaches, and build small projects on your own.
-- **<u>Debugging:</u>** Learn to use your browser's developer tools (Console, Elements) to debug your code. This is a crucial skill and can help save many hours of headache tracking down bugs.
-- **<u>Double Check Spelling and Casing:</u>** Many issues are due to typing errors. myName and myname are two different variables, and cosnole.log() doesn't exist with in javascript. VSCode will help you catch some of these bugs but not all. Carefully and patiently review your code if you have errors.
-- **<u>Don't Get Stuck:</u>** If you’re struggling with a particular concept, don’t spend "too" long on it, this means 10-15 minutes max. If you are struggling for longer than this review the mandatory and optional readings, and if you are still struggling, write the issue down in your notebook then move on. When you come into class you can ask a classroom assistant or Dr. Lopez for assistance.
-
-## Class Information
-
-### Assignment\Labs Expectations:
-
-When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a - followed by the lab or assignment. I.E. John Doe turning in a file for Lab 13.1 would name the file doej-lab13.1.js, for the week 13 assignment would be doej-assignment13.js. If uploading multiple files you need to zip the folder and follow same naming convention.
-
-Each javascript assignment you turn in this section needs to have your name and a brief description of what the script does at the top as a comment:
-
-```js
-// John Doe
-// This code shows how to create variables
-```
-
-It will then need to have code that meets the requirements of the assignment, with comments explaining what the code does. As your skill in coding javascript applications increases you will be able to use less comments but for now over commenting is expected, this allows the instructor and classroom assistants to better understand what you are doing, or attempting to do.
-
-```js
-// John Doe
-// This code shows how to create variables
-
-// creates a let variable called person with no value.
-let person;
-
-// creates a let variable called "myName" with the string "John" that can change value.
-let myName = "John";
-
-// creates a const variable called myAge with the number 26, this can not change value
-const myAge = 26;
-
-// creates a var variable called legacy with the value "Legacy Code", this the old way of creating variables and should'n't be used in new applications.
-var legacy = "Legacy Code";
-```
-
-### freeCodeCamp
-
-Make sure your freeCodeCamp server is up and running to be able to do the required readings, labs, and assignments.
-
 ## Learning Objectives
 
 By the end of this week, you will be able to:
@@ -137,7 +92,7 @@ and
 1. Go through all steps of both of these labs.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under Lab 13.2.
+1. Submit this to the "text box" in canvas under Lab 13.2.
 
 ## Day 3: Data Types - String Methods
 
@@ -182,8 +137,8 @@ and
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the: Javascript Fundamentals Quiz
-  - Take the: Strings Quiz
+  - Take the Week 13: Javascript Fundamentals Quiz
+  - Take the Week 13: Strings Quiz
 
 ## Assignment 13: Personal Profile Creator
 
@@ -211,6 +166,16 @@ For this assignment you will create a file that displays dynamic user informatio
 - Using console.log and the (+) method, output the same sentence above with the updated data.
 - Change the occupation variable value to something else.
 - Using console.log and a string template (`), output the same sentence as above with the updated data.
+
+**Grading Rubric (100 Points)**
+
+- **Pseudocode & Planning (20%):** Demonstrates thoughtful planning before coding.
+- **Variable Declaration & Types (30%)** Correct use of variables and type declarations.
+- **String Concatenation Output (10%):** Correctly uses the (+) method to combine strings and display the initial sentence.
+- **Variable Updates & Output (10%):** Demonstrates the ability to update variable values and then output the same sentence with the modified data.
+- **String Template Literals (10%):** Successfully uses template literals `\`` to create and output the sentence with updated data.
+- **Code Quality & Best Practices (10%)** Readability, Comments, and adherence to coding standards.
+- **Execution & Verification (10%)** Demonstrates understanding of how to run and verify the code.
 
 ### Extra Credit:
 

@@ -67,7 +67,7 @@ And
 
 `NONE` - Review previous readings for assistance in finishing the labs
 
-### Lab 12.2
+### Lab 15.2
 
 - [Loan Qualification Checker](http://localhost:8001/learn/javascript-v9/workshop-loan-qualification-checker/step-1)
 
@@ -100,7 +100,7 @@ And
 
 `NONE` - Review previous readings for assistance in finishing the labs
 
-### Lab 12.3
+### Lab 15.3
 
 - [Build a Leap Year Calculator](http://localhost:8001/learn/javascript-v9/lab-leap-year-calculator/build-a-leap-year-calculator)
 
@@ -137,13 +137,13 @@ and
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the: Functions Quiz
+  - Take the Week 15: Functions Quiz
 
-## Assignment 15: Math Operations
+## Assignment 15: Function Frenzy
 
-For this Lab you will need to build a fully functioning math calculator that uses everything you have leaned so far, including functions.
+This assignment focuses on designing and implementing a suite of standalone JavaScript functions. You'll explore various function parameters, return values, and conditional logic to manipulate data using string, number, and math methods.
 
-1. Create a new .js file in your section 2 Assignment folder.
+1. Create a .js file in your section 2 assignment folder.
 1. Open that file in VSCode.
 1. Create pseudocode for your application before you start coding.
 1. Add Code to meet the criteria below.
@@ -152,33 +152,29 @@ For this Lab you will need to build a fully functioning math calculator that use
 
 ### Assignment Checklist
 
-- Your app must properly output the math operation of 2 numbers and an operation. I.E. 1 + 1 = 2
-- Your app must contain variables, conditionals, comparisons and functions where appropriate
-- Create an HTML page that has buttons for:
-  - 0-9
-  - Math Operations +, -, /, \* (multiply),
-  - =
-  - Clear
-- Create a text box to show outputs
-- When a number button is pressed store that numbers value in a variable, i.e. pressing 1 stores the value in a variable, if 0 is then pressed that value changes to 10 and so on
-  - This value is shown in the text box
-- When a a operation button is clicked (+, -, / or \*) store that operation in a second variable
-  - This operation symbol is shown in text box
-- Store the new number in a second variable When a number is pressed after an operation is stored
-  - This value is shown in the text box
-- When the = button is pressed take the first number, and using the operation symbol, apply the second number, to get an answer.
-  - Hint use conditionals to check operation that needs to be performed.
-  - Depending on condition call a function passing the two numbers
-  - i.e:
-  ```js
-  if (condition === "%") {
-    result = mod(num1, num2);
-  }
-  ```
-- Display result in the textbox
-- Use CSS Style to make it look like a calculator.
+- **Create the Following Functions**
 
-### Extra Credit
+  - **Add Two Numbers:** This function should take two numbers as parameters. It should add the numbers together and return the sum.
 
-- Use one variable to store the first number, second number and result.
-- Hint - Look on fCC, MDN, or w3Schools for a variable that allows you to store multiple values. There are two that can be used!
+  - **Calculate Discount:** This function should take a price (number) and a discount percentage (number) as parameters. It should calculate the discounted price and return the result. The discount percentage should be between 0 and 100. If the discount percentage is invalid, return `null`.
+
+  - **Even Number:** This function should take a number as a parameter. It should return `true` if the number is even, and `false` if it’s odd.
+
+  - **Calculate Area of a Circle:** This function should take a radius as a parameter (a number). Calculate the area of a circle (π \* radius^2) and return the result, rounded to two decimal places.
+
+  - **Generate a Random Number Between Two Values:** This function should take two numbers and return a random number between them. I.E if 1 and 10 are given, then 6 would be an acceptable return.
+
+- **Calculate the Ceiling of a Number:** This function should take a decimal number and give return the ceiling of that number.
+
+- **Calculate the Floor of a Number:** This function should take a decimal number and return it's floor.
+
+- **Calculate the Square Root of a Number** This function should take a number and find the square root of that number rounded to 2 decimal places.
+
+- Each Function should be piped into a console log with appropriate content. This means the console.log() call must be outside the function not in.
+  - Example: If you are console logging the add two numbers the console log should read "The sum of 1 and 1 is 2"
+
+**Grading Rubric (100 Points)**
+
+- **Function Definitions (40%)** Correctly defines and utilizes the specified functions with the correct parameter lists.
+- **Data Manipulation & Logic (30%)** Accurate use of data types (strings, numbers), math methods, and conditional logic within the functions.
+- **Code Clarity & Comments (30%)** Code is well-organized, readable, and includes clear and helpful comments.

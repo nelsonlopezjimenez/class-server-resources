@@ -3,7 +3,7 @@ publishDate: 2026-01-07
 tags: ["Introduction", "Grading", "Expectations", "Resume", "Labs/Assignments"]
 description: "Introduction to CIS Web Developer Certification course work"
 title: "Welcome to Web Development!"
-week: 0.1
+week: 1
 ---
 
 # Getting Started with CIS Fullstack Web Development
@@ -81,7 +81,7 @@ These exams must be taken in class and are open book, allowing you to utilize we
 1. [🔄 The study cycle](/websites/gcfglobal-learning-tips/the-study-cycle/lesson.html)
 1. [Problem Solving And Decision Making](/websites/gcfglobal-problem-solving-and-decision-making/tutorial.html)
 
-### Exercise 0.1: Set up folders
+### Exercise 1.1: Set up folders
 
 1. On your desktop right click.
    - In the menu that pops up hover over the `new >` and select folder
@@ -139,6 +139,11 @@ These exams must be taken in class and are open book, allowing you to utilize we
 
   This JavaScript code waits for the user to click a button with the ID "myButton" and, when the button is clicked, it displays an alert box.
 
+### Working with DevTools and Validators
+
+- [What Is an HTML Validator, and How Can It Help You Debug Your Code?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-html-tools/what-is-an-html-validator) - **Note**: We use NU Validator as we don't have access to w3's online validator. If a link is not on your desktop already you can find it here: C:\Users\Public\bin\Desktop-icons or ask an instructor/ca for assistance.
+- [How to Use the DOM Inspector and DevTools to Debug and Build Your Projects](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-html-tools/how-to-use-the-dom-inspector-and-devtools)
+
 ### Mandatory Readings
 
 1. [📄 Resume Writing](/websites/gcfglobal-resumewriting/tutorial.html)
@@ -195,9 +200,9 @@ These should already be set up but if they are not and you don't know how to get
 
 **LASTLY!**: Programming is a skill that improves with practice. Don't worry if everything doesn't make sense immediately – that's completely normal!
 
-### Assignment 0: Create a Basic Resume in Microsoft Word
+### Assignment 1: Create a Basic Resume
 
-Create a single-page resume highlighting your academic background and relevant experiences. Use one of the built in Resume templates for Word.
+In canvas under assignment 1 - copy or write a resume in the "text" submission box.
 
 Resume should include:
 
@@ -206,12 +211,3 @@ Resume should include:
 - **Work Experience:** List any jobs (paid or unpaid), volunteer roles, internships, or significant projects. Focus on responsibilities and accomplishments, not just job duties.
 - **Skills:** List both hard skills (e.g., software proficiency, coding languages) and soft skills (e.g., teamwork, communication).
 - **Extracurricular Activities:** Clubs, organizations, sports teams – again, highlight any leadership roles or significant involvement.
-
-Formatting:
-
-- **Font:** Use a clear, professional font like Times New Roman, Arial, or Calibri (size 10-12).
-- **Consistency:** Ensure consistent formatting throughout (bullet point style, font size, spacing).
-
-Review & Refinement
-
-- **Proofread Carefully:** Check for typos, grammatical errors, and inconsistencies. Ask a friend or other student to review it too.
