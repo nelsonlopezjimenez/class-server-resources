@@ -1,12 +1,12 @@
 # About this site  
-The CIS class webpage was written in [React][] utilizing [Redux][], [Mui][], [React Router][], and [TypeScript][] in a collaboration between Matt Wellington and Rocky Connor. The backend is written entirely in [Go][] by  Rocky Connor.
+The CIS class webpage was written in [React][] utilizing [Redux][], [Chakra][], [React Router][], and [TypeScript][] in a collaboration between Matt Wellington and Rocky Connor. The backend is written entirely in [Go][] by  Rocky Connor.
 
 [React]: http://localhost:22022/websites/react.dev
 [Redux]: http://localhost:22022/websites/redux-toolkit.js.com
-[Mui]: http://localhost:22022/websites/mui.com
+[Chakra]: http://localhost:22022/websites/chakra-ui.com
 [React Router]: http://localhost:22022/websites/reactrouter.com
-[Go]: http://localhost:22022/websites/www.w3schools.com/go/go_introduction.html
-[TypeScript]: http://localhost:22022/websites/www.typescriptlang.org
+[Go]: http://localhost:22022/websites/w3schools.com/go/go_introduction.html
+[TypeScript]: http://localhost:22022/websites/typescriptlang.org
 
 ## About the instructor  
 #### *Dr Lopez*  
@@ -68,6 +68,8 @@ Interests: Problem-Solving, Nature, Technology, Education, Travel, the Arts, Pri
 
 Randolph grew up in the Puget Sound region, loving nature, games, and the local arts scene. Ever a fan of technology, he enrolled in Edmonds’ Web Development course in order to add to his experience with computer programming (previously trained in limited Python and graphic design). Adam has a degree in Business Management and Paralegal Studies from Edmonds College as well as office administrative and team management experience. He is happy to be here to help others in their educational journey.  
 
+
+### Former Classroom Assistants
 #### Matt Wellington
 Languages: HTML, CSS, JavaScript, TypeScript, Markdown, Astro, JSX/TSX, VBA  
 Interests: UI/UX Design, Process Automation, CI/CD Pipelines, DevOps  
