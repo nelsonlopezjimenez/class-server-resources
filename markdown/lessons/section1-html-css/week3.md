@@ -44,7 +44,7 @@ By the end of this week, you will be able to:
 1. Go through all 7 steps to Build a List of Major Websites.
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under assignment 3.1
+1. Submit this to the "text box" in canvas under lab 3.1
 
 ## Day 2: Working with Text and Time Semantic Elements
 
@@ -67,7 +67,7 @@ By the end of this week, you will be able to:
 1. Go through all 13 steps of building Quincy's page.
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 3.2
+1. Submit this to the "text box" in canvas under lab 3.2
 
 ## Day 3: Specialized Semantic Elements
 
@@ -88,7 +88,7 @@ By the end of this week, you will be able to:
 1. Go through all 19 steps of building a Cat Blog.
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 3.3
+1. Submit this to the "text box" in canvas under lab 3.3
 
 ## Day 4: Semantic HTML Quiz
 
@@ -100,16 +100,16 @@ By the end of this week, you will be able to:
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the: HTML Semantic Quiz
+  - Take the: Week 4: HTML Semantic Quiz
 
 ## Assignment 3: About Me Website
 
-For this assignment you will create 2-3 HTML pages that showcases favorites of yours. Page 1 should be your favorite movies (2-3 movies or actors/actresses), page 2 should be your favorite music (2-3 genres or bands), page 3 should be your favorite books (2-3 books or authors).
+For this assignment you will create 3 HTML pages that showcases favorites of yours. Page 1 should be your favorite movies (2-3 movies or actors/actresses), page 2 should be your favorite music (2-3 genres or bands), page 3 should be your favorite books (2-3 books or authors).
 
 1. Create a .html file in your section 1 assignment folder.
 1. Add Code to meet the criteria below.
 1. Don't forget to properly comment your code/file.
-1. Submit the file to lab 3 assignment.
+1. Submit the file to assignment 3.
 
 ### Assignment Checklist
 

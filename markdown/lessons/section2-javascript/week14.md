@@ -138,36 +138,52 @@ and
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the: Math Quiz
-  - Take the: Comparisons and Conditionals Quiz
+  - Take the Week 14: Math Quiz
+  - Take the Week 14: Comparisons and Conditionals Quiz
 
-## Assignment 14: Math Operations
+## Assignment 14: Math Operations - Enhanced\*\*
 
-For this Lab you will need to build a math app that uses string(s), number(s) and boolean(s) variables and outputs a value:
+You will create a simple math application that demonstrates these concepts: reinforce understanding of JavaScript variables (string, number, boolean) and arithmetic operations while applying conditional statements.
 
-1. Create a new .js file in your section 2 Assignment folder.
+1. Create a .js file in your section 2 assignment folder.
 1. Open that file in VSCode.
 1. Create pseudocode for your application before you start coding.
 1. Add Code to meet the criteria below.
 1. Don't forget to properly comment your code/file.
 1. Submit the file to assignment 14.
 
-### Assignment Checklist
+**Requirements:**
 
-- Your app must declared at least one variable of each type you have learned so far:
-  - String
-  - Number
-  - Boolean
-- Your app must show at least one arithmetic operator for each of the following and use console.log to print out the result:
-  - Sum of two numbers
-  - Subtraction of two numbers
-  - Division of two numbers
-  - Multiplication of two numbers
-  - Using at least 3 different math operators in one problem
-- Have at least one of each of the following conditionals:
-  - if block: if the condition is true console.log() "The statement is true".
-  - if/else: check if a number value is equal to a string value(i.e. 1 is equal to "1"). If true console.log() "The two variables are equivalent"
-  - ternary: Check if two variables are deeply equal, using a string literal/template console.log the result.
+- **Variable Declaration:**
+
+  - Declare at least one variable of each of the following types:
+    - `String`
+    - `Number`
+    - `Boolean`
+    - `undefined`
+    - `null`
+  - Declare a variable with no value
+
+- **Arithmetic Operations:**
+
+  - Implement the following arithmetic operations using the console log to display the results:
+    - **Sum:** Calculate the sum of two numbers.
+    - **Subtraction:** Calculate the difference between two numbers.
+    - **Division:** Calculate the result of dividing two numbers.
+    - **Multiplication:** Calculate the product of two numbers.
+    - **Combined Operations:** Create at least one problem that uses _three_ different arithmetic operators in the same expression. This will demonstrate your understanding of operator precedence.
+
+- **Conditional Statements:**
+  - **`if` Block:** Create an `if` block that checks the value of a boolean variable (`isHappy`) and, if the value is `true`, logs the message `"The statement is true"`.
+  - **`if/else` Block:** Create an `if/else` block that compares a number variable (`numberValue`) and a string variable (`stringValue`). If they are equal, log `"The two variables are equivalent"`. If they are _not_ equal, log `"The two variables are not equivalent"`
+  - **Ternary Operator:** Create a ternary operator that checks if the variable you created with out a value is deeply equal to the undefined variable. If they are equal, log `"The two variables are equivalent"`. If they are _not_ equal, log `"The two variables are not equivalent"`
+
+#### Assignment Criteria
+
+- **Variable Declaration (15%):** Correctly declared all required variables.
+- **Arithmetic Operations (30%):** All required arithmetic operations implemented correctly, and the results are logged to the console.
+- **Conditional Statements (30%):** Correct implementation of `if` block, `if/else` block, and ternary operator.
+- **Code Clarity & Comments (15%):**Code is well-formatted, readable, and commented appropriately.
 
 ### Extra Credit
 

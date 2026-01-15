@@ -69,7 +69,7 @@ It will then need to have code that meets the requirements of the assignment, wi
 1. Go through all 11 steps of building a simple webpage that uses h and p tags.
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 1.1.A.
+1. Submit this to the "text box" in canvas under lab 1.1.A.
 
 and
 
@@ -78,7 +78,7 @@ and
 1. Go through all 10 steps of debugging Camperbot's webpage
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 1.1.B.
+1. Submit this to the "text box" in canvas under lab 1.1.B.
 
 ## Day 2: Understanding HTML Boilerplate
 
@@ -103,7 +103,7 @@ and
 1. Go through all 5 steps of debugging the Pet Adoption Page.
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 1.2.A.
+1. Submit this to the "text box" in canvas lab 1.2.A.
 
 and
 
@@ -112,7 +112,7 @@ and
 1. Go through all 42 steps of this workshop.
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 1.2.A
+1. Submit this to the "text box" in canvas lab 1.2.A
 
 ## Day 3: HTML Fundamentals
 
@@ -140,7 +140,7 @@ and
 1. Go through all 21 steps of this lab.
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 1.3.A
+1. Submit this to the "text box" in canvas lab 1.3.A
 
 and
 
@@ -149,7 +149,7 @@ and
 1. Go through all 16 steps of this lab.
 1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
 1. Add appropriate comments to show understanding of the code.
-1. Submit this file to canvas under lab 1.3.B
+1. Submit this to the "text box" in canvas lab 1.3.B
 
 ## Day 4: HTML Fundamentals Quiz
 
@@ -157,7 +157,7 @@ and
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the: HTML Fundamentals Quiz
+  - Take the Week 2: HTML Fundamentals Quiz
 
 ## Assignment 1: Resume Website
 
