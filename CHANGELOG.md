@@ -81,3 +81,7 @@ Here are my thoughts:
    - week 20 basic JS functionality done
    - week 30 back end of server done (api routes etc) to manage data
    - week 40 front end done with React
+
+# Updated Syllabus
+
+I updated/created syllabuses for section 1-4. These will be referenced in teh Intro To `course` pages foreach section.

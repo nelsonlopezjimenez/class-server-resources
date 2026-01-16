@@ -21,12 +21,33 @@ Welcome to the CIS Fullstack web Development certificate program. This is a 12 m
 
 ## Day 1: Course Introduction
 
+Today you will be given a laptop. Make sure the following icons appear on your desktop:
+
+- MGL Launcher (currently v2.0): This is the class server and needs to be up and running anytime you wish to access class resources
+- fCC (Free Code Came): This is where the bulk of mandatory reading
+- VSCode: This is the main program that will be used to edit/create code files
+- Chrome: This is the default browser for this course
+- NUValidator: This is used to validate your HTML code.
+- Zeal: Resource for searching information across multiple websites
+- Video Viewer: Used to view Videos on your laptop.
+
 ### Mandatory Readings
 
-1. [Learning Tips](/websites/gcfglobal-learning-tips/tutrial.html)
-1. [🧠 Discover your learning style](/websites/gcfglobal-learning-tips/discover-your-learning-style/lesson.html)
-1. [🔄 The study cycle](/websites/gcfglobal-learning-tips/the-study-cycle/lesson.html)
-1. [Problem Solving And Decision Making](/websites/gcfglobal-problem-solving-and-decision-making/tutorial.html)
+[HTML and CSS Syllabus](/api/infomration/syllabus-quarter-1)
+[What Are the Basic Parts of a Computer?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-the-basic-parts-of-a-computer)
+[How Can You Effectively Work With Your Keyboard, Mouse, and Other Pointing Devices?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/how-to-effectively-work-with-your-keyboard-mouse-and-other-pointing-devices)
+[What Are the Different Types of Internet Service Providers?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-the-different-types-of-internet-service-providers)
+[What Are Safe Ways to Sign Into Your Computer?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-safe-ways-to-sign-into-your-computer)
+
+**Important** For the Following links to work click on the GCF button on the top menu bar of this site and download the following sections:
+
+1. learning-tips
+1. problem-solving-and-decision-making
+
+[Learning Tips](/websites/gcfglobal-learning-tips/tutrial.html)
+[🧠 Discover your learning style](/websites/gcfglobal-learning-tips/discover-your-learning-style/lesson.html)
+[🔄 The study cycle](/websites/gcfglobal-learning-tips/the-study-cycle/lesson.html)
+[Problem Solving And Decision Making](/websites/gcfglobal-problem-solving-and-decision-making/tutorial.html)
 
 ### Exercise 1.1: Set up folders
 
@@ -93,15 +114,10 @@ Welcome to the CIS Fullstack web Development certificate program. This is a 12 m
 
 ### Mandatory Readings
 
-[What Are the Basic Parts of a Computer?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-the-basic-parts-of-a-computer)
-[How Can You Effectively Work With Your Keyboard, Mouse, and Other Pointing Devices?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/how-to-effectively-work-with-your-keyboard-mouse-and-other-pointing-devices)
-[What Are the Different Types of Internet Service Providers?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-the-different-types-of-internet-service-providers)
-[What Are Safe Ways to Sign Into Your Computer?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-safe-ways-to-sign-into-your-computer)
 [What Are the Different Types of Tools Professional Developers Use?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-the-different-types-of-tools-professional-developers-use)
 [How Can You Use File Management Applications on Your Computer?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/how-can-you-use-file-management-applications-on-your-computer)
 [What Are Best Practices for Naming Files for Web Applications?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/what-are-best-practices-for-naming-files-for-web-applications)
 [What Are Best Practices for File/Folder Organization in Web Applications?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/what-are-best-practices-for-file-folder-organization-in-web-applications)
-[How Can You Create, Move, and Delete Files and Folders Using Explorer/Finder?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/how-to-create-move-and-delete-files-and-folders-using-explorer-finder)
 [How Can You Create, Move, and Delete Files and Folders Using Explorer/Finder?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/how-to-create-move-and-delete-files-and-folders-using-explorer-finder)
 [How Can You Search for Files and Folders on Your Computer?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/how-to-search-for-files-and-folders-on-your-computer)
 [What Are Some Common File Types You Will Work With in Web Applications?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/what-are-some-common-file-types-you-will-work-with-in-web-applications)
@@ -113,18 +129,25 @@ Welcome to the CIS Fullstack web Development certificate program. This is a 12 m
 
 ### Mandatory Readings
 
-1. [📄 Resume Writing](/websites/gcfglobal-resumewriting/tutorial.html)
-1. [🖼️ Resume Writing Gallery](/websites/gcfglobal-resumewriting/gallery-of-sample-resumes/lesson.html)
-1. [🤖 Automation impact](/websites/gcfglobal-thenow/how-will-automation-impact-our-lives/lesson.html)
-1. [Understanding login](/websites/gcfglobal-thenow/understanding-login-methods/lesson.html)
-1. [⚠️ What is plagiarism ](/websites/gcfglobal-usinginformationcorrectly/avoiding-plagiarism/lesson.html)
-1. [📸 Taking screenshots](/websites/gcfglobal-techsavvy/taking-screenshots/lesson.html)
-1. [📁 Finding your downloads](/websites/gcfglobal-techsavvy/finding-your-downloads/lesson.html)
-1. [🗜️ Working with zip files](/websites/gcfglobal-techsavvy/working-with-zip-files/lesson.html)
-1. [Common keyboard shortcuts](/websites/gcfglobal-techsavvy/keyboard-shortcuts/lesson.html)
-1. [⇥ tab key usage](/websites/gcfglobal-techsavvy/speed-up-your-workflow-with-the-tab-key/lesson.html)
-1. [🛒 Buying Computers](/websites/gcfglobal-buying-computers/computer-buying-guide/lesson.html)
-1. You can select any other tutorial among the ones presented or watch them all.
+**Important** For the Following links to work click on the GCF button on the top menu bar of this site and download the following sections:
+
+1. resumewriting
+1. thenow
+1. usinginformationcorrectly
+1. techsavvy
+
+[📄 Resume Writing](/websites/gcfglobal-resumewriting/tutorial.html)
+[🖼️ Resume Writing Gallery](/websites/gcfglobal-resumewriting/gallery-of-sample-resumes/lesson.html)
+[🤖 Automation impact](/websites/gcfglobal-thenow/how-will-automation-impact-our-lives/lesson.html)
+[Understanding login](/websites/gcfglobal-thenow/understanding-login-methods/lesson.html)
+[⚠️ What is plagiarism ](/websites/gcfglobal-usinginformationcorrectly/avoiding-plagiarism/lesson.html)
+[📸 Taking screenshots](/websites/gcfglobal-techsavvy/taking-screenshots/lesson.html)
+[📁 Finding your downloads](/websites/gcfglobal-techsavvy/finding-your-downloads/lesson.html)
+[🗜️ Working with zip files](/websites/gcfglobal-techsavvy/working-with-zip-files/lesson.html)
+[Common keyboard shortcuts](/websites/gcfglobal-techsavvy/keyboard-shortcuts/lesson.html)
+[⇥ tab key usage](/websites/gcfglobal-techsavvy/speed-up-your-workflow-with-the-tab-key/lesson.html)
+
+You can also download any other GCF sites you want to explore.
 
 ## Setting Up Your Environment
 
