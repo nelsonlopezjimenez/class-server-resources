@@ -25,7 +25,7 @@ One of the hardest aspects of learning any programming language is the syntax, a
 In order to begin working with the jsFUN-Basic project directory, you will need to follow the instructions below:
 
 1. Create a GiTea account
-1. Fork this repository [jsFUn](LINK_TO_COME)
+1. Fork this repository [jsFun-Basic](http://192.168.1.28:3000/CIS_Team_EDCC/jsFun-Basic)
 1. Download the repository from git hub into your section 2 folder.
 1. Right click on node_modules.7z file, select 7zip and extract here.
 1. Open a new terminal using the VS Code taskbar with `... > Terminal > New Terminal` or the keyboard shortcut ``Ctrl+Shift+`.
@@ -125,7 +125,7 @@ When asking for help you should be able to answer these questions:
 
 Congratulations, if you finished all 1-3 level test in the four files you are now ready to move on to more advanced functions that test your understand of advanced Object, and Array manipulation and iterating, as well as learning about scope, classes, and other concepts.
 
-Go to ###NEED GITEA LINK HERE## and fork your own copy of jsFun-Master.
+Go to [jsFUn-Master](http://192.168.1.28:3000/CIS_Team_EDCC/jsFun-Master) and fork your own copy of jsFun-Master.
 
 ## Day 2: More jsFun (Level 2)
 
@@ -151,4 +151,4 @@ Review all of the mandatory readings from day 4 of previous weeks.
 
 Ensure you have been making commits to your jsFun Fork.
 
-If you finish jsFun before the end of day 4 download jsFun-Master and work through those functions.
+If you finish jsFun before the end of day 4 download [jsFun-Master](http://192.168.1.28:3000/CIS_Team_EDCC/jsFun-Master) and work through those functions.

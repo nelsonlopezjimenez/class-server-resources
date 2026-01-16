@@ -21,59 +21,6 @@ Welcome to the CIS Fullstack web Development certificate program. This is a 12 m
 
 ## Day 1: Course Introduction
 
-### What You’ll Be Doing Each Day
-
-This week, we’ll be laying the groundwork for your full-stack journey! Each day, you’ll complete a set of readings from the freeCodeCamp (fCC) website – these are your _mandatory_ readings. We'll also provide a list of _optional_ readings to give you different perspectives on the same concepts.
-
-Here’s how we’ll approach our learning:
-
-- **freeCodeCamp (fCC):** fCC provides a great introduction to the core concepts.
-- **Mozilla Developer Network (MDN):** MDN offers a really detailed, technically-focused look at each topic. They're fantastic for understanding _why_ things work. You’ll find plenty of clear examples.
-- **w3Schools (w3):** w3Schools gives a broader overview of web development topics and is particularly helpful for those interested in design. They have fewer code examples than MDN.
-- **Note: The MDN Editor tools don’t currently work while w3's "try me" features do.**
-
-**Daily Lab Assignments:** You’ll also work through daily “Labs” – small coding exercises designed to help you solidify what you’ve learned. Many of these Labs come directly from freeCodeCamp.
-
-**Daily Journal**
-
-During this course, you will keep a journal of reflections on what you are learning. This will build your skills in engaging with and understanding content and in reflecting on what works best for you as a learner. This will help you organize your thoughts, learn key concepts and keep track of information.
-
-**Important:** We understand that fitting everything in while in class can be challenging. You’ll be expected to complete all mandatory readings and Labs _outside_ of class time. Don't worry, we'll provide the support you need!
-
-### What Your Be Doing Each Week
-
-Each week, we’ll have a short review section to help you consolidate your knowledge. After reading the review, you'll take a quiz. These quizzes primarily consist of multiple-choice questions, typically ranging from 10 to 20 questions, and they're based directly on the review material.
-
-Each week will have an assignment that is due the first day of the next week (typically a Monday). Each assignment will have a detailed list of criteria that must be meet to receive a full grade.
-
-### Assignment\Labs Expectations:
-
-When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a - followed by the lab or assignment.
-
-I.E. John Doe turning in a file for Lab 1.1 would name the file doej-lab1.1.html, for the week 1 assignment would be doej-assignment1.html. If uploading multiple files you need to zip the folder and follow same naming convention (doej-lab1.1.zip).
-
-### Midterm and Finals
-
-Each section will have two exams: a midterm and a final.
-
-These exams must be taken in class and are open book, allowing you to utilize websites, notes, and other resources. However, _you cannot_ ask other students, classroom assistants, or the instructor for answers. If you don’t understand a question, please ask the instructor or classroom assistants for clarification.
-
-### Grading Information
-
-#### ⭐ Grade Weights
-
-1.  Assignments: **30%**
-2.  Labs: **10%**
-3.  Quizzes: **10%**
-4.  Participation: **10%**
-5.  Midterm Exam: **10% or 20%**
-6.  Final Exam: **10% or 20%**
-7.  Attendance: **10%**
-8.  Extra Credit: **1%**
-
-- **Notes on Exams:**
-  Exams are designed to assess your understanding of the material, not to induce anxiety. To alleviate concerns, exams will be graded on a curve. This means that the overall distribution of grades will be adjusted so that most students receive at least a C- passing grade, while a few students will achieve B’s, and the top performers will receive A’s. The higher of the two exams (midterm or final) will contribute 20% to your final grade, while the lower one contributes 10%.
-
 ### Mandatory Readings
 
 1. [Learning Tips](/websites/gcfglobal-learning-tips/tutrial.html)
@@ -146,28 +93,28 @@ These exams must be taken in class and are open book, allowing you to utilize we
 
 ### Mandatory Readings
 
-1. [📄 Resume Writing](/websites/gcfglobal-resumewriting/tutorial.html)
-1. [🖼️ Resume Writing Gallery](/websites/gcfglobal-resumewriting/gallery-of-sample-resumes/lesson.html)
-1. [Windows 10 ⚙️](/websites/gcfglobal-windows10/tutorial.html)
-   1. [Windows 10 Features](/websites/gcfglobal-windows-10/windows-10-features/lesson.html)
-1. [Computer Basics](/websites/gcfglobal-computerbasics/tutorial.html)
-   1. [🖥️ Your First Computer](/websites/gcfglobal-basic-computer-skills/getting-started-with-your-first-computer/lesson.html)
-1. [Computer Basics](/websites/gcfglobal-computerbasics/tutorial.html)
-
-   1. [Computer Basics Parts](/websites/gcfglobal-computerbasics/basic-parts-of-a-computer/lesson.html)
-   1. [🌐 Connecting to the Internet](/websites/gcfglobal-computerbasics/connecting-to-the-internet/lesson.html)
-   1. [💾 The Operating System](/websites/gcfglobal-computerbasics/getting-to-know-the-os/lesson.html)
-   1. [📚 Learning a new program](/websites/gcfglobal-computerbasics/learning-a-new-program/lesson.html)
-
-1. [🌍 What is the internet](/websites/gcfglobal-internetbasics/what-is-the-internet/lesson.html)
-1. [🔍 Using a web browser](/websites/gcfglobal-internetbasics/using-a-web-browser/lesson.html)
-1. [Understanding URL](/websites/gcfglobal-internetbasics/understanding-urls/lesson.html)
-1. [What is gif](/websites/gcfglobal-internet-tips/what-is-an-animated-gif/lesson.html)
+[What Are the Basic Parts of a Computer?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-the-basic-parts-of-a-computer)
+[How Can You Effectively Work With Your Keyboard, Mouse, and Other Pointing Devices?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/how-to-effectively-work-with-your-keyboard-mouse-and-other-pointing-devices)
+[What Are the Different Types of Internet Service Providers?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-the-different-types-of-internet-service-providers)
+[What Are Safe Ways to Sign Into Your Computer?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-safe-ways-to-sign-into-your-computer)
+[What Are the Different Types of Tools Professional Developers Use?](http://localhost:8001/learn/responsive-web-design-v9/lecture-understanding-computer-internet-and-tooling-basics/what-are-the-different-types-of-tools-professional-developers-use)
+[How Can You Use File Management Applications on Your Computer?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/how-can-you-use-file-management-applications-on-your-computer)
+[What Are Best Practices for Naming Files for Web Applications?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/what-are-best-practices-for-naming-files-for-web-applications)
+[What Are Best Practices for File/Folder Organization in Web Applications?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/what-are-best-practices-for-file-folder-organization-in-web-applications)
+[How Can You Create, Move, and Delete Files and Folders Using Explorer/Finder?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/how-to-create-move-and-delete-files-and-folders-using-explorer-finder)
+[How Can You Create, Move, and Delete Files and Folders Using Explorer/Finder?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/how-to-create-move-and-delete-files-and-folders-using-explorer-finder)
+[How Can You Search for Files and Folders on Your Computer?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/how-to-search-for-files-and-folders-on-your-computer)
+[What Are Some Common File Types You Will Work With in Web Applications?](http://localhost:8001/learn/responsive-web-design-v9/lecture-working-with-file-systems/what-are-some-common-file-types-you-will-work-with-in-web-applications)
+[What Are Some of the Common Web Browsers Available Today and How Do You Install One?](http://localhost:8001/learn/responsive-web-design-v9/lecture-browsing-the-web-effectively/what-are-some-of-the-common-web-browsers-available-today)
+[What Is the Difference Between a Web Browser, a Website, and a Search Engine?](http://localhost:8001/learn/responsive-web-design-v9/lecture-browsing-the-web-effectively/what-is-the-difference-between-a-web-browser-a-website-and-a-search-engine)
+[How to Use a Search Engine Effectively to Achieve Optimal Results](http://localhost:8001/learn/responsive-web-design-v9/lecture-browsing-the-web-effectively/how-to-use-a-search-engine-effectively-to-achieve-optimal-results)
 
 ## Day 3: Automation, plagiarism, downloads, zip files
 
 ### Mandatory Readings
 
+1. [📄 Resume Writing](/websites/gcfglobal-resumewriting/tutorial.html)
+1. [🖼️ Resume Writing Gallery](/websites/gcfglobal-resumewriting/gallery-of-sample-resumes/lesson.html)
 1. [🤖 Automation impact](/websites/gcfglobal-thenow/how-will-automation-impact-our-lives/lesson.html)
 1. [Understanding login](/websites/gcfglobal-thenow/understanding-login-methods/lesson.html)
 1. [⚠️ What is plagiarism ](/websites/gcfglobal-usinginformationcorrectly/avoiding-plagiarism/lesson.html)

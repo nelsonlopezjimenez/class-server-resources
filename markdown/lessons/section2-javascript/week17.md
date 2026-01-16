@@ -167,8 +167,6 @@ AND
   - Take the Week 17: Object quiz
   - Take the Week 17: Loop quiz
 
-## Assignment 17: Grocery List
-
 ## Assignment 17: Recipe Manager
 
 For this assignment you will create a small application that stores recipes. Each recipe will be represented by an object, and you’ll use an array to hold multiple recipes and loops to iterate over the data.
