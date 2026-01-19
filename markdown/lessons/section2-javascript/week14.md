@@ -1,17 +1,12 @@
 ---
-title: "Gain an understanding of Boolean and Numbers"
-description: "Use Booleans to create conditional work flow and learn about various types of number methods"
+publishDate: 01-20-2026
+title: "Learn Boolean and Numbers"
+description: "Identify and work with Number data types, Write conditional statements to control program flow, Choose appropriate conditional structures for different scenarios, Combine multiple conditions using logical operators"
 week: 14
 section: 2
-prerequisites: ["Javascript Fundamentals", "Strings", "Data Types"]
-objectives:
-  - "Identify and work with Number data types"
-  - "Write conditional statements to control program flow"
-  - "Choose appropriate conditional structures for different scenarios"
-  - "Combine multiple conditions using logical operators"
 ---
 
-# Boolean and Numbers
+# Week 14: Boolean and Numbers
 
 ## Learning Objectives
 

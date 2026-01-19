@@ -3,11 +3,9 @@ title: "jsFun and JavaScript Midterm"
 description: "Download and use jsFun and take the Midterm"
 week: 18
 section: 2
-prerequisites: ["Weeks 13-17"]
-objectives: "- Finish levels 1-3 of jsFun, - Take Midterm Exam"
 ---
 
-# jsFun and Midterm Exam
+# Week 18: jsFun and Midterm Exam
 
 ## Day 1: Level 1 Test
 
@@ -24,7 +22,6 @@ One of the hardest aspects of learning any programming language is the syntax, a
 
 In order to begin working with the jsFUN-Basic project directory, you will need to follow the instructions below:
 
-1. Create a GiTea account
 1. Fork this repository [jsFun-Basic](http://192.168.1.28:3000/CIS_Team_EDCC/jsFun-Basic)
 1. Download the repository from git hub into your section 2 folder.
 1. Right click on node_modules.7z file, select 7zip and extract here.
@@ -149,6 +146,6 @@ Review all of the mandatory readings from day 4 of previous weeks.
 
 ## Assignment 18: Finish jsFun
 
-Ensure you have been making commits to your jsFun Fork.
+Ensure you have been making commits to your jsFun Fork. When you are ready to submit copy and paste a URL to your personal repo.
 
 If you finish jsFun before the end of day 4 download [jsFun-Master](http://192.168.1.28:3000/CIS_Team_EDCC/jsFun-Master) and work through those functions.

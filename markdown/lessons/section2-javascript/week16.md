@@ -1,13 +1,12 @@
 ---
+publishDate: 01-20-2026
 title: "Working with Arrays and Objects"
-description: "Learn how to use arrays and objects to store data"
+description: "Identify and work with arrays, Properly use array methods, Identify and work with Objects"
 week: 16
 section: 2
-prerequisites: ["Functions"]
-objectives: "Identify and work with arrays, Properly use array methods, Identify and work with Objects"
 ---
 
-# Arrays and Objects
+# Week 16: Arrays and Objects
 
 ## Learning Objectives
 

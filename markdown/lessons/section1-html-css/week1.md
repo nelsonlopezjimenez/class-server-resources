@@ -1,14 +1,12 @@
 ---
-publishDate: 2026-01-07
+publishDate: 01-20-2026
 title: "HTML Fundamentals - Attributes and Boilerplate"
 description: "Introduction to HTML syntax, elements, attributes, meta tags, and more."
 week: 1
 section: 1
-prerequisites: ["Resume Assignment"]
-objectives:
 ---
 
-# HTML Attributes
+# Week 1: HTML Attributes
 
 ### freeCodeCamp
 

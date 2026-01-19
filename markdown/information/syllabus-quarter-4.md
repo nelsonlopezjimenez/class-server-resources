@@ -78,8 +78,8 @@ This section will have 2 Exams. A Midterm and a Final Exam. These exams must be 
 
 ### Late Work
 
-**Labs:** Labs are due at the end of class on the date indicated in the Class Schedule.
-**Assignments:** Assignments are due at the start of class on the date indicated in the Class Schedule.
+**Labs:** Labs are due at the start of class on the date indicated in the Class Schedule. I.E. Lab 1.1 is due first thing day 2 of week 1.
+**Assignments:** Assignments are due at the start of the first day of the next week as indicated in the Class Schedule. I.E. Assignment for week 0 (Your Resume) is due first thing monday of week 1.
 
 If a lab or assignment is turned in later than the due date, but earlier than 1 week late, it will be marked 50% off of the final grade. After the being 1 week late the lab or assignment will receive a 0.
 

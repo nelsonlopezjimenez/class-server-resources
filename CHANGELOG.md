@@ -16,15 +16,15 @@ Week 1: Understanding HTML Attributes, HTML Boilerplate, HTML Fundamentals - Don
 Week 2: HTML SEO, Images, Links - Done
 Week 3: Semantic HTML, Nuanced Text and Time, Specialized Semantic Elements - Done
 Week 4: Working with Forms, Working with Tables, Working with DevTools and HTML Validators - Done
-Week 5: HTML Midterm Assignment (no CSS) and midterm Exam - Done
+Week 5: HTML Final Project (no CSS) and midterm Exam - Done
 
 Week 6-10( 12) CSS
 
-Week 6: Basic CSS, Design
-Week 7: Absolute and Relative Units, Pseudo Classes, Colors
-Week 8: Styling Forms, Box Model, Flexbox
-Week 9: Typography, Responsive Design, Grid
-Week 10: Peach Cobbler Responsive Website (day 1 mobile, day 2 tablet, day 3 desktop) and Final Exam
+Week 6: Basic CSS - Done
+Week 7: Units, Pseudo Classes, Colors - Done
+Week 8: Styling Forms, Box Model, Flexbox - Done
+Week 9: Typography, Grid, Responsive Design
+Week 10: CSS Final Project and Final Exam
 
 Week 13-22 (24) Javascript
 

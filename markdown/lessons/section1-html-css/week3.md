@@ -1,14 +1,12 @@
 ---
-publishDate: 2026-01-07
+publishDate: 01-20-2026
 title: "What are Semantic Elements"
-description: "Introduction to semantic elements, time, and specialized elements"
+description: "Learn how to structure your document using semantic tags, and how to work out the structure of a simple website."
 week: 3
 section: 1
-prerequisites: ["SEO, Images and Links"]
-objectives: "Learn how to structure your document using semantic tags, and how to work out the structure of a simple website."
 ---
 
-# Semantic Elements
+# Week 3: Semantic Elements
 
 ## Learning Objectives
 

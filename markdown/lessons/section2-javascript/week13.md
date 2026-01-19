@@ -1,13 +1,12 @@
 ---
+publishDate: 01-20-2026
 title: "JavaScript Fundamentals - Variables, Data Types, and Basic Operations"
 description: "Introduction to JavaScript syntax, variables, primitive data types, console.log(), and string methods."
 week: 13
 section: 2
-prerequisites: ["None"]
-objectives:
 ---
 
-# JavaScript Fundamentals and Strings
+# Week 13: JavaScript Fundamentals and Strings
 
 ## Learning Objectives
 

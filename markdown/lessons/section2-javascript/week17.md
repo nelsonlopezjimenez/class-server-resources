@@ -1,13 +1,12 @@
 ---
+publishDate: 01-20-2026
 title: "Working with Objects and Loops"
-description: "Learn how to use functions to generate code that can be reused."
+description: "Identify and work with Objects, Properly use object methods, Use loops to repeat code, Know when to us a Do, While, For, For Of, For In loop, Understand structure of a loop, increment/decrement and conditions."
 week: 17
 section: 2
-prerequisites: ["Booleans", "Numbers", "Conditionals", "Comparisons"]
-objectives: "Identify and work with Objects, Properly use object methods, Use loops to repeat code, Know when to us a Do, While, For, For Of, For In loop, Understand structure of a loop, increment/decrement and conditions."
 ---
 
-# Objects and Loops
+# Week 17: Objects and Loops
 
 ## Learning Objectives
 

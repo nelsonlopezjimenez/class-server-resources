@@ -1,9 +1,9 @@
 ---
 publishDate: 2026-01-07
-tags: ["Introduction", "Grading", "Expectations", "Resume", "Labs/Assignments"]
 description: "Introduction to CIS Web Developer Certification course work"
 title: "Welcome to Web Development!"
-week: 1
+week: 0
+section: 1
 ---
 
 # Getting Started with CIS Fullstack Web Development
@@ -58,6 +58,8 @@ Today you will be given a laptop. Make sure the following icons appear on your d
    - Labs - This is where your various daily labs will reside
    - Assignments - This is where the weekly assignment files/folders will be
    - Practice - This is where you can put files/folders that your using to practice the various skills you will be learning through out the section.
+
+- Examples - This is where you will store example files of HTML, CSS, so that you can view them and see the full code.
 
 ## Day 2: Web Technology Overview
 

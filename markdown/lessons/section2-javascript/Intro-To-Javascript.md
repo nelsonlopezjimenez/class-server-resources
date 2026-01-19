@@ -1,9 +1,9 @@
 ---
-publishDate: 2026-01-07
-tags: ["Introduction", "Grading", "Expectations", "Resume", "Labs/Assignments"]
+publishDate: 01-20-2026
 description: "Introduction to CIS Web Developer Certification course work"
 title: "Welcome to Javascript Programming"
-week: 1
+week: 0
+section: 2
 ---
 
 # Introduction to JavaScript Programming
@@ -65,3 +65,13 @@ var legacy = "Legacy Code";
 ### freeCodeCamp
 
 Make sure your freeCodeCamp server is up and running to be able to do the required readings, labs, and assignments.
+
+### Git and GiTea
+
+Let’s talk about a tool that’s incredibly common in web development: Git. Git is a version control system – think of it like a super-powered ‘undo’ for your code. It tracks every change you make to your files, allowing you to revert to previous versions, compare differences, and collaborate with others. Essentially, it's how we manage and organize our code, especially when we're building complex projects.
+
+Now, GitHub is a _platform_ built around Git. It’s a website where you can store your Git repositories (collections of code and its history) remotely. Think of it like a cloud-based storage space for your code. GitHub makes it super easy to share your code with your team, track progress, and work together on the same project. It's become the standard way developers share and manage their code.
+
+We have a version yf GitHub called [GiTea](http://192.168.1.28:3000/). You will need to create an account in order to be able to create your own repositories, fork other repositories, and begin keeping track of your code.
+
+To learn more on how to use Git read [w3Schools - Git Tutorial](http://localhost:22022/websites/w3schools.com/git/default6248.html)

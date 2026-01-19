@@ -1,14 +1,12 @@
 ---
-publishDate: 2026-01-07
+publishDate: 01-20-2026
 title: "How SEO effects HTML, Images and Links"
 description: "Introduction to Seo, Images and Links"
 week: 2
 section: 1
-prerequisites: ["HTML Attributes, Boilerplate and Fundamentals"]
-objectives:
 ---
 
-# SEO, Images and Links
+# Week 2: SEO, Images and Links
 
 ## Learning Objectives
 

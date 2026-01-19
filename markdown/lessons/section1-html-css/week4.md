@@ -1,14 +1,12 @@
 ---
-publishDate: 2026-01-07
+publishDate: 01-20-2026
 title: "How to use Form, Tables and HTML Tools"
-description: "Introduction to forms, tables and html validators, debuggers and DOM tools"
+description: "Learn how to properly set up a form, create tables and use HTML tools to build fully structured webpages"
 week: 4
 section: 1
-prerequisites: ["Semantic Elements"]
-objectives: "Learn how to properly set up a form, create tables and use HTML tools to build fully structured webpages"
 ---
 
-# Semantic Elements
+# Week 4: Semantic Elements
 
 ## Learning Objectives
 

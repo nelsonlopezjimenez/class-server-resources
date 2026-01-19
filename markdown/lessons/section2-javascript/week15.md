@@ -1,13 +1,12 @@
 ---
+publishDate: 01-20-2026
 title: "Working with Functions"
 description: "Learn how to use functions to generate code that can be reused."
 week: 15
 section: 2
-prerequisites: ["Booleans", "Numbers", "Conditionals", "Comparisons"]
-objectives:
 ---
 
-# Functions
+# Week 15: Functions
 
 ## Learning Objectives
 

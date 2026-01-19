@@ -1,102 +1,134 @@
 ---
-publishDate: 2026-01-07
+publishDate: 01-20-2026
 title: "HTML Midterm"
 description: "HTML Midterm Assignment and Exam"
-week: 6
+week: 5
 section: 1
-prerequisites: ["Semantic Elements"]
-objectives: "Finish the midterm Assignment and Exam"
 ---
 
-## Day 4: Midterm Exam
+# Week 5: HTML Finals Week
 
-### Mandatory Reading
+## Learning Objectives
 
-- [HTML Basics Review](http://localhost:8001/learn/responsive-web-design-v9/review-basic-html/basic-html-review)
-- [HTML Semantics](http://localhost:8001/learn/responsive-web-design-v9/review-semantic-html/review-semantic-html)
-- [Forms and Tables Review](http://localhost:8001/learn/responsive-web-design-v9/review-html-tables-and-forms/review-html-tables-and-forms)
+By the end of this week, you will be have:
 
-### Optional Reading
+- Chosen a Final Project
+- Created an HTML Framework for your Final Project
+- Taken the HTML Final Exam
 
-- Anything from MDN or w3 that you have previous gone over.
+## Day 1-3:
 
-### Exam:
-
-- Log into Canvas and navigate to this section's class page
-- Click on Quizzes
-  - Take the HTML Midterm Exam
-- **Note**: This is a timed exam and you can only take it once.
+**NOTE:** If you have not finished any previous weeks 1-4 Labs, Assignments or quizzes finish them now.
 
 # HTML Midterm Project – Website Blueprint
 
-**Note:** This assignment is not due today. It is due Monday (or the first day) of next week.
+You Will have 4 days of in class, and out of class time to work on this project. It is due before class ends on the last day of the week even if you have not finished all requirements. If you have not finished all requirements you are strongly encouraged to continue working on your project during the weekend/break. It may not effect your grade but you will continue to build on this project in later sections (adding CSS), in section 2 (adding JavaScript Functionality), in section 3 (add persistency of data and hosting of pages), and section 4 (adding a REACT frontend).
 
 **Objective:** This assignment tests your understanding of HTML fundamentals, semantic structure, and best practices. You will design and build the basic HTML structure for a website, demonstrating your ability to organize content, incorporate essential elements, and adhere to accessibility standards.
 
 **Project Choice:** Choose one of these options. In Later assignments you will build on this structure.
 
 1.  Recipe Storage Site (Like Allrecipes.com)
-2.  Library Check-Out System
+2.  Library Check-Out System (Washington State Library)
 3.  eCommerce Site (Like Amazon.com – simplified)
-4.  Movie Database System (Like IMDB.com – simplified)
+4.  Social Media Content (Like Facebook, X (Formerly Twitter), or Reddit)
 
 **Assignment Requirements:**
 
-1.  **Website Structure:** You must create HTML for the following 6 pages, reflecting the chosen project.
+1.  **Website Structure:** You must create HTML for the following 6 pages, reflecting the chosen project. Semantic tags should be used where ever possible but use of `div` tags are allowed if needed for structuring purpose.
 
-    - **Home/Main Page:** (Core content and navigation)
-      - Header Section:
-        - Navigation Bar: Include at least 5 internal links to other pages within the site. Use proper `<a>` tags and descriptive link text.
-      - Main Section:
-        - h1: Main Page Title
-        - Aside Menu: A section for filtering content (e.g., movie genres, recipe categories). This should be functional in a mock-up.
-        - Article Section: Display a minimum of 3 “articles” (e.g., recipe previews, movie listings) using `<div>` or `<article>` elements. Each article should include:
-          - A heading (`<h2>`, `<h3>`, etc.)
-          - Paragraph text (`<p>`)
-          - Image element (`<img>`) with `alt` text.
-          - Span elements for highlighting key information.
-      - Footer Section: Include copyright information, site creator details (name, year, contact), and ideally a link to your project's GitHub repository.
-    - **Login Page:** (Placeholder – focus on form structure)
-      - Login Form: Use a `form` element with appropriate input types (`text`, `password`, `submit`). Include the following input elements:
-        - `label` elements for all inputs.
-        - `input type="text"` (username) – `placeholder` attribute.
-        - `input type="password"` (password) – `required` attribute.
-        - `input type="submit"`
-      - **Important:** Do _not_ implement actual login functionality. This is a structure-only exercise.
-    - **Search Page:** (Placeholder – structure only)
-      - Search Text Bar: `input type="text"` with `placeholder="Search..."`.
-      - “Results” Section (Mock Data): Display 2-3 “results” (mock data) – this can be simple HTML or a structured data table.
-    - **Contact Page:** (Placeholder – focus on form structure)
-      - Contact Form: A `form` element with the following input elements:
-        - `label` for each field.
-        - `input type="email"` (User Email) – `type="email"` and `required` attributes.
-        - `input type="text"` (User Name) – `placeholder` attribute.
-        - `textarea` (Question/Concern) – `rows` and `cols` attributes.
-        - `input type="tel"` (Phone Number) – `required` attribute.
-    - **Product Page:** (Template Page) – This page should use a consistent layout that can be reused for multiple products.
+Each page should have the same Header with nav bar, and the same footer.
 
-2.  **HTML Boilerplate:** Every page _must_ include a standard HTML boilerplate:
+Above all have fun with this. Your finished site doesn't have to look exactly like the screenshots provided they are their to guide you.
 
-    - `<!DOCTYPE html>` declaration
-    - `<html>` element
-    - `<head>` element:
-      - `<title>` element (with the page’s title)
-      - `<meta charset="UTF-8">`
-      - `<meta name="viewport" content="width=device-width, initial-scale=1.0">` (Crucial for responsive design)
-    - `<body>` element
+- **Home/Main Page:** Users will want to see an aseptically pleasing homepage that is easy to navigate and gives all pertinent information about your site. Look at the screenshots below and add elements to your homepage to match those of the project you chose.
+  Some common elements are:
 
-3.  **Favicon:** Include a favicon (a small image) in the `<head>` section: `<link rel="icon" href="favicon.ico" type="image/x-icon">`
+  - Navigation Bar with:
 
-4.  **Semantic HTML:** Use semantic HTML5 elements wherever appropriate (e.g., `<header>`, `<nav>`, `<main>`, `<article>`, `<aside>`, `<footer>`, `<form>`, `<label>`, `<input>`, `<textarea>`, `<table>`, etc.). Don't just use `<div>` elements for everything.
+    - Home Icon (SVG): You can create your own or use the one bellow
+    - Include internal links to other pages within the site
+    - A search bar
 
-5.  **Text and Time:** Implement `time` elements to display dates/times where appropriate.
+    ```html
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      type="button"
+      class="chakra-button css-1qx6ib9"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path fill="none" d="M0 0h24v24H0z"></path>
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+    </svg>
+    ```
 
-6.  **Images:** Use `<img>` tags with the `alt` attribute for accessibility.
+- Side Menu: Contain links for filtering content (e.g., book genres, recipe categories, product categories). I.E. a Link for all "Horror" books etc
+- Item Section: Display a minimum of 3 "item" (e.g., recipe previews, book listings, etc) elements. Each "item" should include:
+  - A heading
+  - Paragraph element(s)
+  - Image element(s)
+  - Span element(s) for highlighting key information.
+- Footer Section: Include copyright information, site creator details (name, year, contact)
+  **Example of Homepages NEEDED**
+- **Single Item Page:** – Users will almost always want to view more than just a short description with an image before purchasing, checking out, or making a post. Create a template page that will be called anytime a single item is viewed.
+  Some common elements of an item page are:
+  - Name (Book Title, Product Name, Post Title, or Recipe Name)
+  - Description
+  - Author
+  - Ingredients
+  - Reviews or Comments
+  - Checkout, purchase, make post button
+  - Comment section (rating, text, star system etc)
+    **EXAMPLE OF SINGLE PRODUCT PAGE NEEDED**
+- **Login Page:** Users will need to be able to login/out to either post a new recipe, comment, checkout a book, or purchase an item.
+  A login form at a minimum requires these fields:
+  - Email or Username
+  - Password
+- **Register Page:** Users will need to be able to create accounts with your site.
+  A register form at a minimum requires these fields:
+  - Email and/or Username
+  - Password
+    **Example of Login and Register pages needed**
+- **Contact Page:** Users often want to be able to contact the website for a variety of things. Common contact forms include these elements:
+  - A drop down to select type of contact:
+    - Issue/Bug
+    - Return request
+    - Feedback (either positive or negative)
+  - Name
+  - Email
+  - Message
+    **Example of Contact pages needed**
+- **Search Page:** Users often want to be able to search for items, post etc. Common search pages include:
+  - Search Bar
+  - Search Results
+- **Checkout/Post Page** Users will need a way to purchase, checkout or post items. Common checkout pages include forms with fields:
+  - List of items with prices
+  - Billing Name (generally prepopulated from login data but able to be changed)
+  - Billing Address (generally prepopulated from login data but able to be changed)
+  - Shipping Name
+  - Shipping Address
+  - Shipping Cost
+  - Taxes
+  - Total Cost
+  - Confirm Purchase/Post button
 
-**Grading Criteria (100 points total):**
+## Day 4:
 
-- **HTML Structure & Boilerplate (5 points):** Correct HTML5 structure, proper boilerplate, correct doctype declaration.
-- **Semantic HTML Usage (30 points):** Appropriate use of semantic HTML5 elements.
-- **Form Elements and Validation (30 points):** Proper use of form elements, labels, input types, and `required` attributes.
-- **Code Quality & Formatting (30 points):** Clean, well-formatted code, proper indentation, comments.
-- **Accessibility (5 Points):** Correct use of `alt` attributes, labels, and consideration for accessibility.
+### Mandatory Reading
+
+Review all previous quizzes and review sections before taken the exam. The Exam will be made available after the bathroom break and is a timed, single take, exam. Do the best you can and remember all exams are graded on a curve and your best exam counts towards 20% of your final grade while your worse counts only 10%.
+
+### Exam:
+
+- Log into Canvas and navigate to this section's class page
+- Click on Quizzes
+  - Take the HTML Final Exam
+
+```
+
+```
