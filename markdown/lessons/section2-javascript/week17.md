@@ -127,7 +127,7 @@ AND
 
 AND
 
-- [Build a Chunky Monkey Algorithm](hhttp://localhost:8001/learn/javascript-v9/lab-chunky-monkey/implement-the-chunky-monkey-algorithm)
+- [Build a Chunky Monkey Algorithm](http://localhost:8001/learn/javascript-v9/lab-chunky-monkey/implement-the-chunky-monkey-algorithm)
 
 1. Go through all 7 steps to build this Chunky Monkey Algorithm.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.

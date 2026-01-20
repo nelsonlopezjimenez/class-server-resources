@@ -23,8 +23,8 @@ Week 6-10( 12) CSS
 Week 6: Basic CSS - Done
 Week 7: Units, Pseudo Classes, Colors - Done
 Week 8: Styling Forms, Box Model, Flexbox - Done
-Week 9: Typography, Grid, Responsive Design
-Week 10: CSS Final Project and Final Exam
+Week 9: Typography, Grid, Responsive Design - Done
+Week 10: CSS Final Project and Final Exam - Done
 
 Week 13-22 (24) Javascript
 
@@ -34,14 +34,14 @@ Week 15: Functions - Done
 Week 16: Arrays, Objects - Done
 Week 17: Objects, Loops, - Done
 Week 18: jsFun (Midterm Assignment) and Exam - Done
-Week 19: Higher order functions, callbacks, DOM Manipulation, Debugging,
-Week 20: Form Validation, Maps
-Week 21: CRUD, Recursion and Async
+Week 19: Higher order Functions and callbacks - Done
+Week 20: DOM Manipulation, Debugging - Done
+Week 21: Form Validation, Recursion Async
 Week 22: Final Assignment and Exam
 
 Week 25-34 (36) Back End Development and APIs
 
-Week 25: Node.js Core Libraries ,Node Package Manager, HTTP and the Web Standards Model
+Week 25: Node.js Core Libraries, Node Package Manager, HTTP and the Web Standards Model
 Week 26: REST API and Web Services,
 Week 27: Introduction to Express, Express Middleware, Express Error Handling
 Week 28: Data Management, MongoDB

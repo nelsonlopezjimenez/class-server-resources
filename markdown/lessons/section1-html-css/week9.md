@@ -142,9 +142,9 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 8: Typography Quiz
-  - Take the Week 8: Responsive Quiz
-  - Take the Week 8: Grid Quiz
+  - Take the Week 9: Typography Quiz
+  - Take the Week 9: Responsive Quiz
+  - Take the Week 9: Grid Quiz
 
 ## Assignment 9: About Me Mobile
 

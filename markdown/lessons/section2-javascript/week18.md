@@ -7,7 +7,7 @@ section: 2
 
 # Week 18: jsFun and Midterm Exam
 
-## Day 1: Level 1 Test
+## Day 1-3: Level 1 Test
 
 `jsFun` is inspired by Turing School of Software and Design's exercise of the same name, where you can have FUN working on your JavaScript FUNdamentals. This jsFUN-Basic test suite will challenge your ability to manipulate simple JavaScript data types.
 
@@ -123,14 +123,6 @@ When asking for help you should be able to answer these questions:
 Congratulations, if you finished all 1-3 level test in the four files you are now ready to move on to more advanced functions that test your understand of advanced Object, and Array manipulation and iterating, as well as learning about scope, classes, and other concepts.
 
 Go to [jsFUn-Master](http://192.168.1.28:3000/CIS_Team_EDCC/jsFun-Master) and fork your own copy of jsFun-Master.
-
-## Day 2: More jsFun (Level 2)
-
-Continue working on jsFun. If you have finished and passed all level 1 test, move on to level 2 and 3 test.
-
-### Day 3: Even More jsFun! (Level 3)
-
-Hopefully by now you are ready to move on to level 3 and 4 test. If not that is okay, while these are "basic" algorithms to test that does not mean they are easy to learn and understand. Ask for assistance!
 
 ## Day 4: Midterm Exam
 
