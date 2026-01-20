@@ -1,13 +1,12 @@
 ---
+publishDate: 01-20-2026
 title: "Working with Objects and Loops"
-description: "Learn how to use functions to generate code that can be reused."
+description: "Identify and work with Objects, Properly use object methods, Use loops to repeat code, Know when to us a Do, While, For, For Of, For In loop, Understand structure of a loop, increment/decrement and conditions."
 week: 17
 section: 2
-prerequisites: ["Booleans", "Numbers", "Conditionals", "Comparisons"]
-objectives: "Identify and work with Objects, Properly use object methods, Use loops to repeat code, Know when to us a Do, While, For, For Of, For In loop, Understand structure of a loop, increment/decrement and conditions."
 ---
 
-# Objects and Loops
+# Week 17: Objects and Loops
 
 ## Learning Objectives
 
@@ -128,7 +127,7 @@ AND
 
 AND
 
-- [Build a Chunky Monkey Algorithm](hhttp://localhost:8001/learn/javascript-v9/lab-chunky-monkey/implement-the-chunky-monkey-algorithm)
+- [Build a Chunky Monkey Algorithm](http://localhost:8001/learn/javascript-v9/lab-chunky-monkey/implement-the-chunky-monkey-algorithm)
 
 1. Go through all 7 steps to build this Chunky Monkey Algorithm.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
@@ -166,8 +165,6 @@ AND
 - Click on Quizzes
   - Take the Week 17: Object quiz
   - Take the Week 17: Loop quiz
-
-## Assignment 17: Grocery List
 
 ## Assignment 17: Recipe Manager
 
