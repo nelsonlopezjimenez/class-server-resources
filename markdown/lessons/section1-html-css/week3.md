@@ -98,7 +98,7 @@ By the end of this week, you will be able to:
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the: Week 4: HTML Semantic Quiz
+  - Take the: Week 3: HTML Semantic Quiz
 
 ## Assignment 3: About Me Website
 

@@ -155,7 +155,7 @@ and
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 2: HTML Fundamentals Quiz
+  - Take the Week 1: HTML Fundamentals Quiz
 
 ## Assignment 1: Resume Website
 

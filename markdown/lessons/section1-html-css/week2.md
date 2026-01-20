@@ -100,7 +100,7 @@ and Lab/Workshop [Build a Video Iframe](http://localhost:8001/learn/responsive-w
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 3: HTML Basics Quiz
+  - Take the Week 2: HTML Basics Quiz
 
 ## Assignment 2: About Me Website
 
