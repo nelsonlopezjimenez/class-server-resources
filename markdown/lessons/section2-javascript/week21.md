@@ -6,7 +6,7 @@ week: 21
 section: 2
 ---
 
-# Week 19: Form Validation, Recursion and Asynchronous calls
+# Week 21: Form Validation, Recursion and Asynchronous calls
 
 ## Learning Objectives
 
@@ -33,7 +33,7 @@ These section has many small sections to read. Between today and tomorrow work t
 - [MDN - DOM](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents.html)
 - [w3Schools - DOM](http://localhost:22022/websites/w3schools.com/js/js_htmldom.html) - Work through these lengthy tutorial
 
-### Lab 20.1
+### Lab 21.1
 
 - [Build a Calorie Counter](http://localhost:8001/learn/javascript-v9/workshop-calorie-counter/step-1)
 

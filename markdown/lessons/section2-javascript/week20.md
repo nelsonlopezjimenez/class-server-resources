@@ -6,7 +6,7 @@ week: 20
 section: 2
 ---
 
-# Week 19: DOM Manipulation and Debugging
+# Week 20: DOM Manipulation and Debugging
 
 ## Learning Objectives
 

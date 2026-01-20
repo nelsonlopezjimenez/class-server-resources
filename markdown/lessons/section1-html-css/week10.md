@@ -6,7 +6,7 @@ week: 7
 section: 1
 ---
 
-# Week 10: Typography, Grid and Responsive Design
+# Week 10: CSS Final Project and Exam
 
 ## Learning Objectives
 
