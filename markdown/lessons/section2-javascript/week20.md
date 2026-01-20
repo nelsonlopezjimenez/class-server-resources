@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "DOM Manipulation, Debugging, and Form Validation"
 description: "Learn how to interact with the DOM, Catch common errors, and validate form data."
 week: 20

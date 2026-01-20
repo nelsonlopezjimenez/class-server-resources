@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "Working with Arrays and Objects"
 description: "Identify and work with arrays, Properly use array methods, Identify and work with Objects"
 week: 16

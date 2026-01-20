@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "Form Validation, Recursion and Asynchronous calls"
 description: "Learn how to validate form data before sending it to the server, how to create recursive functions, and how to handle asynchronous calls."
 week: 21

@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-07
+publishDate: 2026-01-21
 description: "Introduction to CIS Web Developer Certification course work"
 title: "Welcome to Web Development!"
 week: 0

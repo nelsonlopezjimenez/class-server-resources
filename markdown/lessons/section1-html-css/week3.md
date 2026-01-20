@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "What are Semantic Elements"
 description: "Learn how to structure your document using semantic tags, and how to work out the structure of a simple website."
 week: 3

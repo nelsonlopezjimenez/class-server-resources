@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "Callback Functions"
 description: "Learn how to create callback functions, use .map, .filter, and other array/object methods."
 week: 19

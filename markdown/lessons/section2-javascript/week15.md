@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "Working with Functions"
 description: "Learn how to use functions to generate code that can be reused."
 week: 15

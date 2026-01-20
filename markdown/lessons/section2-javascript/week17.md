@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "Working with Objects and Loops"
 description: "Identify and work with Objects, Properly use object methods, Use loops to repeat code, Know when to us a Do, While, For, For Of, For In loop, Understand structure of a loop, increment/decrement and conditions."
 week: 17

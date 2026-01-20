@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "CSS Fundamentals"
 description: "Learn what is CSS, and understand UI Design"
 week: 6

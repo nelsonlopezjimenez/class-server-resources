@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "HTML Midterm"
 description: "HTML Midterm Assignment and Exam"
 week: 5

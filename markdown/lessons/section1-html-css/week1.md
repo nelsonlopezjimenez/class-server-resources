@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "HTML Fundamentals - Attributes and Boilerplate"
 description: "Introduction to HTML syntax, elements, attributes, meta tags, and more."
 week: 1

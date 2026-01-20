@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "Learn Boolean and Numbers"
 description: "Identify and work with Number data types, Write conditional statements to control program flow, Choose appropriate conditional structures for different scenarios, Combine multiple conditions using logical operators"
 week: 14

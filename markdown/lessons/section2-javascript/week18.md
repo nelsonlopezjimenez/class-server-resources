@@ -1,4 +1,5 @@
 ---
+publishDate: 2026-01-21
 title: "jsFun and JavaScript Midterm"
 description: "Download and use jsFun and take the Midterm"
 week: 18
