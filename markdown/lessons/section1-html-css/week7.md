@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "CSS Design, Units, Pseudo Classes"
 description: "Learn what is CSS, units, and understand UI Design"
 week: 7

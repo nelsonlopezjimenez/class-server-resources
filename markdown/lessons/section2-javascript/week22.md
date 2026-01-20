@@ -1,4 +1,5 @@
 ---
+publishDate: 2026-01-21
 title: "JavaScript Final Project and Exam"
 description: "JavaScript Final Project and Exam"
 week: 22

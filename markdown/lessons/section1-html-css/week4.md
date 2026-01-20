@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "How to use Form, Tables and HTML Tools"
 description: "Learn how to properly set up a form, create tables and use HTML tools to build fully structured webpages"
 week: 4

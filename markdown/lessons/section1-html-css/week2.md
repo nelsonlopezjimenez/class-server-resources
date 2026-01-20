@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "How SEO effects HTML, Images and Links"
 description: "Introduction to Seo, Images and Links"
 week: 2

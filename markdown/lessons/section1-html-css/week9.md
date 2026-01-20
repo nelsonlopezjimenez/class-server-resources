@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "Typography, Grid and Responsive Design"
 description: "Learn various Typography, how to use grid, and responsive design"
 week: 7

@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-01-21
 title: "CSS Final Project and Exam"
 description: "Add CSS to choosen Final Project"
 week: 7
