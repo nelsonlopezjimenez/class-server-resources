@@ -4,21 +4,11 @@ Brooks TODO - Jan. 21th, 2026
 
 1. Create quizzes
 
-   - 7: Pseudo
-   - 7: Color
-   - 8: Forms
-   - 8: Box Model
-   - 8: Flexbox
-   - 9: Typography
-   - 9: Responsive
-   - 9: Grid
-   - 10: CSS Final
-   - 19: Higher Function
-   - 20: DOM Manipulation
-   - 20: Debugging
-   - 21: Form Validation
-   - 21: Recursion
-   - 21: Asynchronous
+   - week 9: Responsive
+   - week 9: Grid
+
+   - week 21: Recursion
+   - week 21: Asynchronous
 
 1. Create Uploads for:
 
@@ -37,19 +27,35 @@ Brooks TODO - Jan. 21th, 2026
 
 1. Upload quizzes to Canvas
 
-   - Week 6: CSS Fundamentals
-   - Week 6: List, Links, Background, Border
-   - Week 7: Units
-   - Week 16: Arrays
-   - Week 17: Objects
-   - Week 17: Loops
+   - Week 7: Pseudo
+   - Week 7: Color
+   - week 8: Forms
+   - week 8: Box Model
+   - week 8: Flexbox
+   - week 9: Typography
+
+   - week 19: Higher Function
+   - week 20: DOM Manipulation
+   - week 20: Debugging
+   - week 21: Form Validation
 
 1. Verify Quizzes
 
    - Week 6: CSS Fundamentals
    - Week 6: List, Links, Background, Border
    - Week 7: Units
+   - Week 7: Pseudo
+   - Week 7: Color
+   - week 8: Forms
+   - week 8: Box Model
+   - week 8: Flexbox
+   - week 9: Typography
+
    - Week 15: Functions
    - Week 16: Arrays
    - Week 17: Objects
    - Week 17: Loops
+   - week 19: Higher Function
+   - week 20: DOM Manipulation
+   - week 20: Debugging
+   - week 21: Form Validation

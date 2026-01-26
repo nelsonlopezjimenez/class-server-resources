@@ -185,10 +185,10 @@ You will create a simple math application that demonstrates these concepts: rein
 - Create an HTML page with the following elements
   - textbox for num 1
   - select box for operation
-    - -
-    - -
+    - \+
+    - \-
     - /
-    - -
+    - \*
   - text box for num 2
   - button for submit
   - p for output
