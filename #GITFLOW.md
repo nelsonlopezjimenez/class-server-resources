@@ -4,7 +4,7 @@ This document outlines the standard process for making changes to the ClassServe
 
 **Important Note:** Don’t be afraid to ask for help! If you’re unsure about a step, please reach out to the team.
 
-## Branch Types:\*\*
+## Branch Types:
 
 - **`main`:** This is our stable, production-ready live branch. Only code that’s been thoroughly tested and approved will reside here. Only Dr.Lopez, Rocky Connor and John Brooks have permission to merge onto this branch.
 - **`development`:** This is where the _majority_ of our development work happens. It’s a staging environment for new features and improvements. Any one with proper permissions may merge onto this branch.
@@ -93,6 +93,7 @@ Before making _any_ changes, it's good practice to:
    ```sh
    git branch -d development
    ```
+
 ## How to create a bug-fix branch
 
 1. Open a git bash and navigate to the classResource file
@@ -138,7 +139,7 @@ Before making _any_ changes, it's good practice to:
 
 1. Open a git bash and navigate to the classResource file
 1. Switch to the main branch of not on it
-    ```sh
+   ```sh
    git checkout main
    ```
 1. Create a hotfix branch
@@ -150,28 +151,30 @@ Before making _any_ changes, it's good practice to:
 1. Verify issue is resolved
 1. After verifying no issues with other parts of repository
    switch to the main branch
-     ```sh
-     git checkout main
-     ```
+   ```sh
+   git checkout main
+   ```
    pull from server to make sure main is updated with current repo
-     ```sh
-     git pull origin main
-     ```
+   ```sh
+   git pull origin main
+   ```
    Merge the two branches
-     ```sh
-     git merge hotfix/issue-[ID]
-     ```
-     **Resolve any merge conflicts that may exist**
+   ```sh
+   git merge hotfix/issue-[ID]
+   ```
+   **Resolve any merge conflicts that may exist**
 1. After merge is complete
    Push the changes up to the origin
-     ```sh
-     git push origin main
-     ```
+   ```sh
+   git push origin main
+   ```
 1. Delete the patch branch
    ```sh
    git branch -d hotfix/issue-[ID]
    ```
+
 ## Git Flow
+
 **Highly recommended**
 
 Git Flow is a nifty feature built into Git that helps streamline your workflow saving time and allows for consistency across developers. If you plan on developing any of the projects in the CIS dev codebase, you should set up and use this feature.
@@ -182,6 +185,7 @@ Git Flow is a nifty feature built into Git that helps streamline your workflow s
 git flow init
 
 ```
+
 **Step 2:** Configure your branch prefixes. These should be the same across developers to ensure consistency.
 
 ```sh
@@ -192,6 +196,7 @@ Branch name for "next release" development: [develop] development # Specify deve
 ```
 
 And finally accept all other default options.
+
 ```sh
 How to name your supporting branch prefixes?
 Feature branches? [feature/]
@@ -203,14 +208,17 @@ Version tag prefix? []
 Hooks and filters directory? [C:/[path/to/repo]/.git /hooks]
 ```
 
-Now that Git Flow is initialized and ready to use, you can start using it to aide in your work flow. 
+Now that Git Flow is initialized and ready to use, you can start using it to aide in your work flow.
 
 Let's say we want to begin developing a new feature. We can use Git Flow in the following way:
+
 ```sh
 git flow feature start [branch-name]
 # Do not worry about the branch prefix, that's taken care of by git
 ```
+
 The console should print the following:
+
 ```sh
 Switched to a new branch 'feature/cool-new-feature'
 
@@ -224,6 +232,7 @@ Now, start committing on your feature. When done, use:
 ```
 
 Git Flow has created our branch based on our development branch and checked it out for us. Now we can hack and commit away. After we're done with our feature and we're ready to add it to our development branch, we run:
+
 ```sh
 git flow feature finish cool-new-feature # With or without branch name
 

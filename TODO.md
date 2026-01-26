@@ -1,6 +1,9 @@
 Brooks TODO - Jan. 26th, 2026
 
 1. Rework the cookie monster lab
+1. Update final project
+
+   - images upload
 
 1. Create quizzes
 
