@@ -139,9 +139,7 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 8: Forms Quiz
-  - Take the Week 8: Box Model Quiz
-  - Take the Week 8: Flexbox Quiz
+  - Take the Week 8 Quiz
 
 ## Assignment 8: About Me with Style!
 

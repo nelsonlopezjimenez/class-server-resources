@@ -139,9 +139,7 @@ If you finish all the mandatory readings for the week read about UI Design.
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 7: Units Quiz
-  - Take the Week 7: Pseudo Quiz
-  - Take the Week 7: Colors Quiz
+  - Take the Week 7 Quiz
 
 ## Assignment 7: Cookie Monster
 

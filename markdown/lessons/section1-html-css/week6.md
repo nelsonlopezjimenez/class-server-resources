@@ -138,8 +138,7 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the: Week 6: CSS Fundamentals Quiz
-  - Take the: Week 6: Lists, Links, CSS Background and Borders Quiz
+  - Take the: Week 6 Quiz
 
 ## Assignment 6: About Me Revisited
 

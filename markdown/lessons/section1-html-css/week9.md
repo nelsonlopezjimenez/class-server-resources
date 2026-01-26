@@ -76,7 +76,7 @@ AND
 1. Copy and paste the labs code into a new .html and .css file in your Piano folder
 1. Add appropriate comments to show understanding of the code.
 1. Zip the Piano folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 8.2.A
+1. Submit this in canvas under lab 9.2.A
 
 AND
 
@@ -87,7 +87,7 @@ AND
 1. Copy and paste the labs code into a new .html and .css file in your Technical Documentation folder
 1. Add appropriate comments to show understanding of the code.
 1. Zip the Technical Documentation folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 8.2.B
+1. Submit this in canvas under lab 9.2.B
 
 ## Day 3: Grid
 
@@ -142,9 +142,7 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 9: Typography Quiz
-  - Take the Week 9: Responsive Quiz
-  - Take the Week 9: Grid Quiz
+  - Take the Week 9 Quiz
 
 ## Assignment 9: About Me Mobile
 
