@@ -90,7 +90,7 @@ By the end of this week, you will be able to:
 
 ## Assignment 4: About Me with Interactivity
 
-Build upon your previous "About Me" webpage. This assignment requires you to add a new page featuring an interactive form and a dynamic table.
+Build upon your previous "About Me" webpage. This assignment requires you to add a new page featuring an interactive form and a dynamic table. No CSS is required for this assignment.
 
 **New Page Requirements:**
 
