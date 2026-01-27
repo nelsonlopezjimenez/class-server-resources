@@ -96,8 +96,7 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 20: DOM
-  - Take the Week 20: Debugging
+  - Take the Week 20: DOM and Debugging
 
 ## Assignment 20: To Do
 
