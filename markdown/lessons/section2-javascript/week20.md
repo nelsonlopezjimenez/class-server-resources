@@ -99,7 +99,7 @@ AND
   - Take the Week 20: DOM
   - Take the Week 20: Debugging
 
-## Assignment 20:
+## Assignment 20: To Do
 
 You will build a simple interactive to-do list application using the DOM, incorporating error handling and debugging practices. You create a basic to-do list application that allows users to add, delete, and view tasks. The application should be responsive and user-friendly, use proper HTML code and ascetically pleasing style choices.
 
