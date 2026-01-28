@@ -1,42 +1,40 @@
-# CIS Fullstack Web Development Capstone Project – HTML Focus
+# CIS Fullstack Web Development Capstone Project
 
 ## Overall Goal
 
-Before doing this portion of your Capstone Project make sure you finished the [HTML](http://localhost:22022/course-content/section/final-project/lesson/HTML) portion. You Will have 4 days of in class, and out of class time to work on this project. It is due before class ends on the last day of the week even if you have not finished all requirements. If you have not finished all requirements you are strongly encouraged to continue working on your project during the weekend/break. It may not effect your grade but you will continue to build on this project in later sections adding JavaScript Functionality, add persistency of data and hosting of pages, and adding a REACT frontend.
+Before starting this portion of your Capstone Project, make sure you’ve completed the [HTML](http://localhost:22022/course-content/section/final-project/lesson/HTML) portion. You’ll have 4 days of in-class and out-of-class time to work on this project. It’s due before the end of the week, even if you haven’t finished all the requirements. If you haven’t completed everything, you’re strongly encouraged to continue working on your project during the weekend or break. This won’t significantly impact your grade, but it will help you build on this project in later sections, adding JavaScript functionality, data persistence, webpage hosting, and eventually a React frontend.
 
 ## Objective:
 
-This assignment focuses on your mastery of CSS styling techniques. Building on the HTML structure you’ve already created, you will now implement comprehensive styling using proper selectors (including id and class), focusing on a mobile-first design approach with media queries. You’ll demonstrate an understanding of responsive design principles and best practices for creating visually appealing and adaptable stylesheets.
+This assignment focuses on your mastery of CSS styling techniques. Building on the HTML structure you’ve already created, you’ll implement comprehensive styling using proper CSS selectors (including `id` and `class` selectors), focusing on a mobile-first design approach with media queries. You’ll demonstrate an understanding of responsive design principles and best practices for creating visually appealing and adaptable stylesheets.
 
-**YOU DO NOT NEED TO MATCH THE LOOK, STYLE OR CONTENT ON THE SCREENSHOTS. THEY ARE THERE TO HELP YOU PLAN YOUR DESIGN**
+**IMPORTANT:** The screenshots provided are there to _guide_ your design, not to be perfectly replicated.
 
 ## Styling (Minimum Requirements):
 
-Each page should have a similar look and feel to it and be ascetically pleasing. Design for mobile first (less than 460 px), then when you have a good looking mobile site use media queries to add a look for desktop (1080 px and larger), finally a tablet (between those two).
+Each page should have a consistent look and feel and be aesthetically pleasing. Design for mobile first (less than 460px), then use media queries to add styles for desktop (1080px and larger) and tablets (between those two sizes).
 
-Pay attention to how the Mobile site looks versus the desktop version. The same content is on both, mobile is a single column, menu collapsed, and text size is appropriate to the smaller screen.
+Pay attention to the differences between the mobile and desktop versions. The content is the same on both, but the mobile site uses a single column, the menu is collapsed, and text sizes are appropriate for the smaller screen.
 
 ### Home:
 
-[All Recipe Homepage Desktop](/images/all-recipes/homepage-desktop.png) and [All Recipe Homepage Mobile](/images/all-recipes/homepage-mobile.png) - **Note:** All Recipes uses a Single Page Application (SPA) That means you would scroll down to see the full page.
+[All Recipes Homepage Desktop](/images/all-recipes/homepage-desktop.png) and [All Recipes Homepage Mobile](/images/all-recipes/homepage-mobile.png) – All Recipes uses a Single Page Application (SPA), meaning you scroll down to see the full page.
 
-[Reddit Homepage Desktop](/images/reddit/homepage-desktop.png) and [Reddit Homepage Mobile](/images/reddit/homepage-mobile.png) - **Note:** Reddit uses a Single Page Application (SPA) That means you would scroll down to see the full page. This is a cropped version of their homepage.
+[Reddit Homepage Desktop](/images/reddit/homepage-desktop.png) and [Reddit Homepage Mobile](/images/reddit/homepage-mobile.png) – Reddit also uses a Single Page Application (SPA); you’ll scroll down to see the full page.
 
 ### Single Item View:
 
-[Reddit Desktop Viewing a single "Joke" Thread](/images/reddit/single-desktop-joke.png) and [Reddit Desktop Viewing a single "How to learn..." Thread](/images/reddit/single-desktop-learn.png)
+[Reddit Single View - Joke Thread Desktop](/images/reddit/single-desktop-joke.png) and [Reddit Single View - Joke Thread Desktop](/images/reddit/single-desktop-learn.png)
 
-[Reddit Mobile Viewing a single "Joke" Thread](/images/reddit/single-mobile-joke.png) and [Reddit Mobile Viewing a single "How to learn..." Thread](/images/reddit/single-mobile-learn.png)
-
-**NEED SINGLE ITEM DESKTOP AND MOBILE FOR ALL RECIPE**
+[Reddit Single View - Joke Thread Mobile](/images/reddit/single-mobile-joke.png) and [Reddit Single View - Joke Thread Mobile](/images/reddit/single-mobile-learn.png)
 
 ### Create/Add Item View
 
-No screenshots as it requires you to log in so do your best to make it look like it fits in with the over all theme of your site. Ask if you need help
+No screenshots are provided, as this requires login. Please create a design that fits seamlessly with the overall theme of your site. Don't hesitate to ask for help!
 
 ### Edit Item View
 
-No screenshots as it requires you to log in so do your best to make it look like it fits in with the over all theme of your site. Ask if you need help
+No screenshots are provided, as this requires login. Please create a design that fits seamlessly with the overall theme of your site. Don’t hesitate to ask for help!
 
 ### Search Bar and Result
 
@@ -58,25 +56,24 @@ No screenshots as it requires you to log in so do your best to make it look like
 
 ### Create Item
 
-No screenshots as it requires you to log in so do your best to make it look like it fits in with the over all theme of your site. Ask if you need help
+No screenshots are provided, as this requires login. Please create a design that fits seamlessly with the overall theme of your site. Don’t hesitate to ask for help!
 
 ### Comment on Item
 
-No screenshots as it requires you to log in so do your best to make it look like it fits in with the over all theme of your site. Ask if you need help
+No screenshots are provided, as this requires login. Please create a design that fits seamlessly with the overall theme of your site. Don’t hesitate to ask for help!
 
 #### Additional Screenshots
 
-[Reddit ... Menu Mobile](/images/reddit/dot-mobile.png) and [Hamburger Menu Mobile](/images/reddit/hamburger-mobile.png)
+[Reddit … Menu Mobile](/images/reddit/dot-mobile.png) and [Hamburger Menu Mobile](/images/reddit/hamburger-mobile.png)
 
 **CSS Specifics & Instructions:**
 
-You must adhere to a mobile-first design approach, ensuring your website adapts seamlessly to different screen sizes and devices. This assignment focuses on applying CSS effectively to enhance the user experience and demonstrate an understanding of responsive design techniques.
+You **must** adhere to a mobile-first design approach, ensuring your website adapts seamlessly to different screen sizes and devices. This assignment focuses on applying CSS effectively to enhance the user experience and demonstrate an understanding of responsive design techniques.
 
-- **CSS Selectors:** Utilize CSS selectors effectively, prioritizing `id` and `class` selectors for precise targeting and styling.
+- **CSS Selectors:** Utilize CSS selectors effectively, prioritizing `id` and `class` selectors for precise targeting and styling. _Overuse of `id` when `class` selectors would be more appropriate is a common mistake._
 - **Media Queries:** Implement media queries to define responsive styles based on screen size. Focus on designing for mobile devices first – setting styles for smaller screens and then progressively enhancing them for larger screens.
 - **Box Model:** Master the CSS box model (margin, padding, border, content) and use it effectively to control spacing and layout.
-- **FlexBox** Use Flexbox where needed to aid in responsive design elements.
+- **Flexbox:** Use Flexbox where needed to aid in responsive design elements.
 - **Typography:** Apply CSS to control font families, sizes, weights, and line heights for optimal readability.
 - **Color Theory:** Apply color theory principles to create a harmonious and visually appealing color palette.
 - **Best Practices:** Follow CSS best practices – use consistent naming conventions, avoid inline styles, and utilize comments to document your code.
-- **id Usage:** Use `id` attribute _only_ when necessary for targeting single elements for design. Over use of id's when classes should be used will detract from final grade.
