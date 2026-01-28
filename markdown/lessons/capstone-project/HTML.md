@@ -1,24 +1,26 @@
 # CIS Fullstack Web Development Capstone Project
 
+## Overall Goal
+
+Through out the course you will gradually work on your capstone project. You Will have 4 days of in class, and out of class time to work on this project. It is due before class ends on the last day of the week even if you have not finished all requirements. If you have not finished all requirements you are strongly encouraged to continue working on your project during the weekend/break. It may not effect your grade but you will continue to build on this project in later sections adding CSS, adding JavaScript Functionality, add persistency of data and hosting of pages, and adding a REACT frontend.
+
 **Project Choices:**
 
-You can choose to build one of the following web applications:
+- **Recipe Application (Similar to All Recipes):** Allows users to search recipes, view recipes, add recipes, edit recipes, and make comments on recipes. Must include a register page, with the ability to login.
 
-**Recipe Application (Similar to All Recipes):** A web application allowing users to search, view, add, edit, and comment on recipes. This application _must_ include a register page with login functionality.
-
-**Social Media Application (Similar to Reddit):** A simplified version where users can search, submit posts, upvote/downvote, and comment on posts. This application _must_ include a register page with login functionality.
+- **Social Media Application (Similar to Reddit):** A simplified version where users can search post, submit posts, upvote/downvote, and comment on post. Must include a register page, with the ability to login.
 
 **Your Choice:** If you don't like either of these choices you may talk with the instructor about creating another website, eCommerce, Library page etc, that will still meet all requirements of not just the HTML portion of your capstone project but all other requirements as well.
 
 ## Objective:
 
-This project is designed to test your understanding of HTML fundamentals, semantic structure, and best practices. You will design and build the basic HTML structure for a website, demonstrating your ability to organize content, incorporate essential elements, and adhere to accessibility standards. Your focus will be on applying these concepts to create a well-structured and maintainable HTML foundation.
+This assignment tests your understanding of HTML fundamentals, semantic structure, and best practices. You will design and build the basic HTML structure for a website, demonstrating your ability to organize content, incorporate essential elements, and adhere to accessibility standards.
 
-**IMPORTANT:** The screenshots provided are for _reference only_. They are intended to guide your initial planning, but you are **not** expected to replicate their styling or content. Focus on building a solid, semantically correct HTML structure.
+**YOU DO NOT NEED TO MATCH THE LOOK, STYLE OR CONTENT ON THE SCREENSHOTS. THEY ARE THERE TO HELP YOU PLAN YOUR HTML ONLY AT THIS STAGE**
 
-## Pages & Structure (Minimum Requirements)
+## Pages (Minimum Requirements):
 
-Each page will share a consistent Header (with a navigation bar) and Footer.
+Each page should have the same Header with nav bar, and the same footer.
 
 ### Home:
 
@@ -26,7 +28,7 @@ A landing page that introduces the application and guides users to key sections.
 
 [All Recipe Homepage Desktop](/images/all-recipes/homepage-desktop.png) and [All Recipe Homepage Mobile](/images/all-recipes/homepage-mobile.png) - **Note:** All Recipes uses a Single Page Application (SPA) That means you would scroll down to see the full page.
 
-[Reddit Homepage Desktop](/images/reddit/homepage-desktop.png) and [Reddit Homepage Mobile](/images/reddit/homepage-mobile.png) - **Note:** Reddit uses a Single Page Application (SPA) That means you would scroll down to see the full page.
+[Reddit Homepage Desktop](/images/reddit/homepage-desktop.png) and [Reddit Homepage Mobile](/images/reddit/homepage-mobile.png) - **Note:** Reddit uses a Single Page Application (SPA) That means you would scroll down to see the full page. This is a cropped version of their homepage.
 
 ### Single Item View:
 
@@ -70,25 +72,28 @@ Enables new users to create accounts.
 
 [All Recipes Register Desktop](/images/All-Recipes/register-desktop.png) and [All Recipes Register Mobile](/images/All-Recipes/register-mobile.png)
 
+### Create Item
+
+Allows users to add new recipes or posts. No screenshots as it requires you to log in so do your best. Ask if you need help
+
+### Comment on Item
+
+Allows users to leave comments on a selected item. No screenshots as it requires you to log in so do your best. Ask if you need help
+
 #### Additional Screenshots
 
 [Reddit ... Menu Mobile](/images/reddit/dot-mobile.png) and [Hamburger Menu Mobile](/images/reddit/hamburger-mobile.png)
 
-## HTML Specifics & Instructions
-
-**Mandatory Semantics:**
-
-- **Semantic HTML is Essential:** You _must_ utilize the following semantic elements appropriately. Incorrect use will significantly impact your grade.
-  - `<a href="...">` (Links) – Properly nested and used to link to different pages.
-  - `<ol>` or `<ul>` (Lists) – For presenting structured data (recipe ingredients, Reddit post hierarchy, etc.). Choose the appropriate list type based on the data.
-  - `<header>` – For the main heading of a page.
-  - `<nav>` – For the main navigation menu.
-  - `<main>` – The primary content area of the page.
-  - `<article>` – For distinct content blocks (e.g., a single recipe).
-  - `<section>` – To group related content logically within an article.
-  - `<aside>` – For sidebars (e.g., a menu, related content).
-  - `<footer>` – For the footer of the page (Copyright, contact info).
-  - `<form>` – For user input (Login, Register, Create Item).
-- **`div` Usage:** Use `div` elements _only_ when absolutely necessary for layout or grouping content that doesn’t have a semantic element to represent. Overuse of `div` will detract from your final grade. Prioritize semantic HTML elements whenever possible.
-
-- **Validation:** Validate your HTML using an online validator (e.g., [https://validator.w3.org/](https://validator.w3.org/)) to ensure it meets web standards.
+- **HTML Specifics & Instructions:**
+  - **Semantic HTML is Mandatory:** Students _must_ utilize the following semantic elements appropriately:
+    - `<a>` (Links) – Properly nested and used to link to different pages.
+    - `<ol>` or `<ul>` (Lists) – For presenting structured data (recipe ingredients, Reddit post hierarchy, etc.).
+    - `<header>` – For the main heading of a page.
+    - `<nav>` – For the main navigation menu.
+    - `<main>` – The primary content area of the page.
+    - `<article>` – For distinct content blocks (e.g., a single recipe).
+    - `<section>` – To group related content logically within an article.
+    - `<aside>` – For sidebars (e.g., a menu, related content).
+    - `<footer>` – For the footer of the page (Copyright, contact info).
+    - `<form>` – For user input (Login, Register, Create Item).
+  - **`div` Usage:** Use `div` elements _only_ when absolutely necessary for layout or grouping content that doesn't have a semantic element to represent. Overuse of `div` will detract from final grade.
