@@ -102,7 +102,7 @@ By the end of this week, you will be able to:
 
 ## Assignment 3: About Me Website
 
-For this assignment you will create 3 HTML pages that showcases favorites of yours. Page 1 should be your favorite movies (2-3 movies or actors/actresses), page 2 should be your favorite music (2-3 genres or bands), page 3 should be your favorite books (2-3 books or authors).
+For this assignment you will create 3 HTML pages that showcases favorites of yours, no CSS is required for this assignment. Page 1 should be your favorite movies (2-3 movies or actors/actresses), page 2 should be your favorite music (2-3 genres or bands), page 3 should be your favorite books (2-3 books or authors).
 
 1. Create a .html file in your section 1 assignment folder.
 1. Add Code to meet the criteria below.

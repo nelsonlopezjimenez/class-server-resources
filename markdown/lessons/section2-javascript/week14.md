@@ -136,7 +136,7 @@ and
   - Take the Week 14: Math Quiz
   - Take the Week 14: Comparisons and Conditionals Quiz
 
-## Assignment 14: Math Operations - Enhanced\*\*
+## Assignment 14: Math Operations - Enhanced
 
 You will create a simple math application that demonstrates these concepts: reinforce understanding of JavaScript variables (string, number, boolean) and arithmetic operations while applying conditional statements.
 

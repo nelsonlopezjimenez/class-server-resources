@@ -89,7 +89,7 @@ AND
 
 ### Lab 21.3
 
-**NEED FETCH LAB THAT WORKS AS fCC's DOES NOT\***
+**NEED FETCH LAB THAT WORKS AS fCC's DOES NOT**
 
 ## Day 4: DOM and Debugging Quiz
 
@@ -102,9 +102,7 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 21: Form Validation
-  - Take the Week 21: Recursion
-  - Take the Week 21: Asynchronous
+  - Take the Week 21: Form Validation and Recursion and Asynchronous
 
 ## Assignment 21:
 

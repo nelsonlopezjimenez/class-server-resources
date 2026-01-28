@@ -104,7 +104,7 @@ and Lab/Workshop [Build a Video Iframe](http://localhost:8001/learn/responsive-w
 
 ## Assignment 2: About Me Website
 
-For this assignment you will create an HTML page that lets us know who you are!
+For this assignment you will create an HTML page that lets us know who you are! No CSS is required for this assignment.
 
 1. Create a .html file in your section 1 assignment folder.
 1. Add Code to meet the criteria below.

@@ -1,4 +1,4 @@
-# CIS Fullstack Web Development Capstone Project – HTML Focus
+# CIS Fullstack Web Development Capstone Project
 
 ## Overall Goal
 

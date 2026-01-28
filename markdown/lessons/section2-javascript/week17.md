@@ -38,9 +38,9 @@ By the end of this week, students will be able to:
 
 ### Lab 17.1
 
-- [Build a Recipe Tracker](http://localhost:8001/learn/javascript-v9/workshop-recipe-tracker/step-1)
+- [Build a Record Collection](http://localhost:8001/learn/javascript-v9/lab-record-collection/build-a-record-collection)
 
-1. Go through all 13 steps of to build a recipe tracker.
+1. Go through all 8 steps of to build a record collection.
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
 1. Submit this to the "text box" in canvas under under lab 17.1.A.
@@ -53,15 +53,6 @@ AND
 1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
 1. Add appropriate comments to show understanding of the code.
 1. Submit this to the "text box" in canvas under under lab 17.1.B.
-
-AND
-
-- [Build a Record Collection](http://localhost:8001/learn/javascript-v9/lab-record-collection/build-a-record-collection)
-
-1. Go through all 8 steps of to build a record collection.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 17.1.C.
 
 ## Day 2: Loops
 
@@ -163,8 +154,7 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 17: Object quiz
-  - Take the Week 17: Loop quiz
+  - Take the Week 17: Object and Loops
 
 ## Assignment 17: Recipe Manager
 

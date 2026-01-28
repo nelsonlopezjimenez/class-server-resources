@@ -12,11 +12,17 @@ section: 1
 
 By the end of this week, you will be have:
 
-- Chosen a Final Project
-- Created an HTML Framework for your Final Project
+- Chosen a Capstone Project
+- Created an HTML Framework for your Capstone Project
 - Taken the HTML Final Exam
 
 ## Day 1-3:
+
+## Overall Goal
+
+Through out the course you will gradually work on your capstone project. You Will have 4 days of in class, and out of class time to work on this portion of your project. It is due before class ends on the last day of the week even if you have not finished all requirements. If you have not finished all requirements you are strongly encouraged to continue working on your project during the weekend/break. It may not effect your grade but you will continue to build on this project in later sections adding CSS, JavaScript Functionality, persistency of data and hosting of pages, adding a REACT frontend.
+
+Read the [HTML Design Documenation](http://localhost:22022/course-content/section/capstone-project/lesson/HTML)
 
 ## Day 4:
 
@@ -29,7 +35,3 @@ Review all previous quizzes and review sections before taken the exam. The Exam 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
   - Take the HTML Final Exam
-
-```
-
-```
