@@ -2,7 +2,7 @@
 
 ## Overall Goal
 
-Through out the course you will gradually work on your capstone project. You Will have 4 days of in class, and out of class time to work on this project. It is due before class ends on the last day of the week even if you have not finished all requirements. If you have not finished all requirements you are strongly encouraged to continue working on your project during the weekend/break. It may not effect your grade but you will continue to build on this project in later sections (adding CSS), in section 2 (adding JavaScript Functionality), in section 3 (add persistency of data and hosting of pages), and section 4 (adding a REACT frontend).
+Through out the course you will gradually work on your capstone project. You Will have 4 days of in class, and out of class time to work on this project. It is due before class ends on the last day of the week even if you have not finished all requirements. If you have not finished all requirements you are strongly encouraged to continue working on your project during the weekend/break. It may not effect your grade but you will continue to build on this project in later sections adding CSS, adding JavaScript Functionality, add persistency of data and hosting of pages, and adding a REACT frontend.
 
 **Project Choices:**
 
@@ -19,8 +19,6 @@ This assignment tests your understanding of HTML fundamentals, semantic structur
 ## Pages (Minimum Requirements):
 
 Each page should have the same Header with nav bar, and the same footer.
-
-Above all have fun with this. Your finished site doesn't have to look exactly like the screenshots provided they are their to guide you.
 
 ### Home:
 
