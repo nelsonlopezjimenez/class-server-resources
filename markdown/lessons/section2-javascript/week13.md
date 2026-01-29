@@ -54,9 +54,6 @@ By the end of this week, you will be able to:
 - [Build a Greeting Bot](http://localhost:8001/learn/javascript-v9/workshop-greeting-bot/step-1):
 
 1. Go through all 15 steps of building a simple greeting bot that uses strings and console.log() to communicate.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 13.1.
 
 ## Day 2: Working with Data Types
 
@@ -84,20 +81,20 @@ By the end of this week, you will be able to:
 
 - [Build a Javascript Trivia Bot](http://localhost:8001/learn/javascript-v9/lab-javascript-trivia-bot/lab-javascript-trivia-bot)
 
+1.
+1. Go through all 15 steps of .
+
 and
 
 - [Build a Sentence Maker](http://localhost:8001/learn/javascript-v9/lab-sentence-maker/build-a-sentence-maker)
 
 1. Go through all steps of both of these labs.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under Lab 13.2.
 
 ## Day 3: Data Types - String Methods
 
 ### Mandatory Readings:
 
-- [What is ASCII?](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-character-methods/what-is-ascii-and-how-does-it-work-with-charcodeat-and-fromcharcode)
+- [What is ASCII?](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-character-methods/ywhat-is-ascii-and-how-does-it-work-with-charcodeat-and-fromcharcode)
 - [Using includes()](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-search-and-slice-methods/how-can-you-test-if-a-string-contains-a-substring)
 - [Using slice()](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-search-and-slice-methods/how-can-you-extract-a-substring-from-a-string)
 - [Changing Casing](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-formatting-methods/how-can-you-change-the-casing-for-a-string)

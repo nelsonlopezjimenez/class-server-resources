@@ -45,10 +45,7 @@ By the end of this week, students will be able to:
 
 - [Fixing Bugs with Numbers](http://localhost:8001/learn/javascript-v9/lab-debug-type-coercion-errors/debug-type-coercion-errors-in-a-buggy-app)
 
-1. Go through all 16 steps of of this buggy app and resolve all issues.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 14.1.
+1. Go through all 16 steps of of the Fixing Bugs with Numbers.
 
 ## Day 2: Boolean, Comparison, and Conditional Operators
 
@@ -73,10 +70,7 @@ By the end of this week, students will be able to:
 
 - [Debug Increment and Decrement Operator App](http://localhost:8001/learn/javascript-v9/lab-debug-increment-and-decrement-operator-errors/debug-increment-and-decrement-operator-errors-in-a-buggy-app)
 
-1. Go through all 8 steps of this buggy app and resolve all issues.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 14.2.
+1. Go through all 8 steps of the Debug Increment and Decrement Operator App.
 
 ### Day 3: Special Numbers, Converting Strings to Numbers, Null and Undefined
 
@@ -108,19 +102,13 @@ By the end of this week, students will be able to:
 
 - [Build a Mathbot](http://localhost:8001/learn/javascript-v9/workshop-mathbot/step-1)
 
-1. Go through all 14 steps to build this Mathbot.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 14.3.A.
+1. Go through all 14 steps to Build a Mathbot.
 
 and
 
 - [Build a Fortune Teller](http://localhost:8001/learn/javascript-v9/lab-fortune-teller/build-a-fortune-teller)
 
-1. Complete all 10 requirements to build this Fortune Teller application.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 14.3.B.
+1. Complete all 10 requirements to build a Fortune Teller application.
 
 ## Day 4:
 

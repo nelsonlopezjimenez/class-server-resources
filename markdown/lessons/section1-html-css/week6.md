@@ -49,11 +49,6 @@ By the end of this week, you will be able to:
 - [Build a Cafe Menu](http://localhost:8001/learn/responsive-web-design-v9/workshop-cafe-menu/step-1):
 
 1. Go through all 93 steps to build a and design a Cafe Menu.
-1. When you are finished create a "Cafe Menu" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Cafe Menu folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Cafe Menu folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 6.1
 
 ## Day 2: CSS Specificity and Inheritance
 
@@ -79,11 +74,6 @@ By the end of this week, you will be able to:
 - [Design a Business Card](http://localhost:8001/learn/responsive-web-design-v9/lab-business-card/design-a-business-card)
 
 1. Go through all 41 steps of Design a Business Card.
-1. When you are finished create a "Business Card" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Business Card folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Business Card folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 6.2
 
 ## Day 3: List, Links, Background, Borders
 
@@ -110,22 +100,12 @@ By the end of this week, you will be able to:
 - [Build a Stylized To-Do list](http://localhost:8001/learn/responsive-web-design-v9/lab-stylized-to-do-list/build-a-stylized-to-do-list)
 
 1. Go through all 18 steps of building a Stylized To-Do List.
-1. When you are finished create a "To-Do" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your To-Do folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the To-Do folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 6.3.A
 
 AND
 
 - [Design a Blog Post Card](http://localhost:8001/learn/responsive-web-design-v9/lab-blog-post-card/lab-blog-post-card)
 
 1. Go through all 22 steps of building a Blog Post Card.
-1. When you are finished create a "Blog" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Blog folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Blog folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 6.3.B
 
 ## Day 4: CSS Fundamentals, Links, List, Background and Border Quiz
 

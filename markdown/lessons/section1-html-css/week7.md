@@ -63,22 +63,12 @@ By the end of this week, you will be able to:
 - [Design a Greeting Card](http://localhost:8001/learn/responsive-web-design-v9/workshop-greeting-card/step-1)
 
 1. Go through all 27 steps of building a Design a Greeting Card.
-1. When you are finished create a "Greeting Card" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Greeting Card folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Greeting Card folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 7.2.A
 
 AND
 
 - [Build a Job Application Form](http://localhost:8001/learn/responsive-web-design-v9/lab-job-application-form/lab-job-application-form)
 
 1. Go through all 19 steps of building a Blog Post Card.
-1. When you are finished create a "Job App" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Job App folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Job App folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 7.2.B
 
 ## Day 3: Colors
 
@@ -102,22 +92,12 @@ AND
 - [CSS Color Markers](http://localhost:8001/learn/responsive-web-design-v9/workshop-colored-markers/step-1)
 
 1. Go through all 89 steps of building CSS Color Markers.
-1. When you are finished create a "Color Markers" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Color Markers folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Color Markers folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 7.3.A
 
 AND
 
 - [Design a Set of Colored Boxes](http://localhost:8001/learn/responsive-web-design-v9/lab-colored-boxes/set-of-colored-boxes)
 
 1. Go through all 19 steps of building a Blog Post Card.
-1. When you are finished create a "Color Boxes" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Color Boxes folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Color Boxes folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 7.3.B
 
 ## Day 4: Units, Pseudo, and Colors Quiz
 
@@ -140,35 +120,3 @@ If you finish all the mandatory readings for the week read about UI Design.
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
   - Take the Week 7 Quiz
-
-## Assignment 8: About Me with Style!
-
-By now you should have all of the CSS rules, selectors, colors, etc to make your site look like a professional site. Take your original About me Website (not the one from week 6) and add appropriate style.
-
-**New Site Requirements:**
-
-- `List`
-
-  - Should all have styling added to them appropriate to its content
-
-- `Links`
-
-  - All nav bar links should be styled the same across all pages
-
-- `Backgrounds`
-
-  - Use good styling techniques to have proper contrast between background and foreground text.
-
-- `Borders`
-
-  - Elements should have appropriate borders where needed to separate content (i.e. between articles/sections)
-
-- `id` and `classes`
-
-  - Use proper id and classes where necessary.
-
-## Assignment Criteria
-
-- **Style (50%)** - Correct style rules used to achieve an ascetically pleasing website.
-- **Selector Rules (25%)** - Correct CSS rules used to target elements
-- **Internal, External, and Inline (25%)** - Proper use of Inline, internal and external CSS rules to achieve an ascetically

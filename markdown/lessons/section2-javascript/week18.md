@@ -141,9 +141,3 @@ Review all of the mandatory readings from day 4 of previous weeks.
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
   - Take the Midterm: Javascript Exam
-
-## Assignment 18: Finish jsFun
-
-Ensure you have been making commits to your jsFun Fork. When you are ready to submit copy and paste a URL to your personal repo.
-
-If you finish jsFun before the end of day 4 download [jsFun-Master](http://192.168.1.28:3000/CIS_Team_EDCC/jsFun-Master) and work through those functions.

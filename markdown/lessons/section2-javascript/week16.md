@@ -38,19 +38,13 @@ By the end of this week, students will be able to:
 
 - [Build a Shopping List](http://localhost:8001/learn/javascript-v9/workshop-shopping-list/step-1)
 
-1. Go through all 20 steps of to build a shopping list.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 16.1.A.
+1. Go through all 20 steps of to Build a Shopping List.
 
 AND
 
 - [Build a Lunch Picker Program](http://localhost:8001/learn/javascript-v9/lab-lunch-picker-program/build-a-lunch-picker-program)
 
-1. Go through all 30 steps of to build a lunch picker.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 16.1.B.
+1. Go through all 30 steps to Build a Lunch Picker Program.
 
 ## Day 2: Array Methods
 
@@ -66,18 +60,12 @@ AND
 - [Build a Golf Score Translator](http://localhost:8001/learn/javascript-v9/lab-golf-score-translator/build-a-golf-score-translator)
 
 1. Go through all 24 steps to build a Golf Score Translator.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 16.2.A.
 
 And
 
 - [Build a String Inverter](http://localhost:8001/learn/javascript-v9/lab-reverse-a-string/build-a-string-inverter)
 
-1. Go through all 6 steps of lab.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 16.2.B.
+1. Go through all 6 steps to Build a String Inverter.
 
 ### Day 3: Objects
 
@@ -102,9 +90,6 @@ Object has a lot of "reading" to do. If you don't get through all of these today
 - [Build a Recipe Tracker](http://localhost:8001/learn/javascript-v9/workshop-recipe-tracker/step-1)
 
 1. Go through all 13 steps to build this Recipe Tracker.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 16.3.
 
 ## Day 4: Array Assignment and Quiz
 

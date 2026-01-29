@@ -36,22 +36,12 @@ By the end of this week, you will be able to:
 - [Build a Nutritional Label](http://localhost:8001/learn/responsive-web-design-v9/workshop-nutritional-label/step-1)
 
 1. Go through all 68 steps of Building a Nutritional Label.
-1. When you are finished create a "Nutrition Form" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Nutrition Form folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Nutrition Flyer folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 9.1.A
 
 AND
 
 - [Build a Newspaper Article](http://localhost:8001/learn/responsive-web-design-v9/lab-newspaper-article/build-a-newspaper-article)
 
 1. Go through all 30 steps of Building a Newspaper Article.
-1. When you are finished create a "Newspaper" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Newspaper folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Newspaper folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 9.1.B
 
 ## Day 2: Responsive Design
 
@@ -72,22 +62,12 @@ AND
 - [Design a Piano](http://localhost:8001/learn/responsive-web-design-v9/workshop-piano/step-1)
 
 1. Go through all 44 steps of Designing a Piano.
-1. When you are finished create a "Piano" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Piano folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Piano folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 9.2.A
 
 AND
 
 - [Build a Technical Documentation Page](http://localhost:8001/learn/responsive-web-design-v9/lab-technical-documentation-page/build-a-technical-documentation-page)
 
 1. Go through all 24 steps of building a Technical Documentation Page.
-1. When you are finished create a "Technical Documentation" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Technical Documentation folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Technical Documentation folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 9.2.B
 
 ## Day 3: Grid
 
@@ -111,22 +91,12 @@ AND
 - [Build a Magazine](http://localhost:8001/learn/responsive-web-design-v9/workshop-magazine/step-1)
 
 1. Go through all 22 steps of building a magazine.
-1. When you are finished create a "Magazine" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Magazine folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Magazine folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 9.3.A
 
 AND
 
 - [Design a Newspaper Layout](http://localhost:8001/learn/responsive-web-design-v9/lab-newspaper-layout/design-a-newspaper-layout)
 
 1. Go through all 27 steps of designing a Newspaper Layout.
-1. When you are finished create a "Newspaper" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Newspaper folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Newspaper folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 9.3.B
 
 ## Day 4: Typography, Grid and Responsive Design Quiz
 
@@ -143,15 +113,3 @@ AND
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
   - Take the Week 9 Quiz
-
-## Assignment 9: About Me Mobile
-
-For this assignment you will need to open the Chrome DevTools `shift+ctrl+i` and click on the top left icon (looks like a phone in front of a laptop) in the "device" dropdown select iPhone 14 Pro Max. This will force Chrome to render your webpage(s) as though it was being viewed on an iPhone.
-
-This assignment has no hard requirements being having two break points, one for mobile and one for laptop. Design your webpage to look good on both resolutions.
-
-## Assignment Criteria
-
-- **Responsive Mobile Design (50%)** - Correct style rules used to achieve an ascetically pleasing website on an iPhone 14 Pro Max.
-- **Media Select (25%)** - Correct CSS rules used to achieve desired break points.
-- **Responsive Desktop Design (25%)** - Correct style rules used to achieve an ascetically pleasing website on a laptop.

@@ -37,28 +37,19 @@ By the end of this week, students will be able to:
 
 - [Build a Calculator](http://localhost:8001/learn/javascript-v9/workshop-calculator/step-1)
 
-1. Go through all 19 steps of to build a basic calculator.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 15.1.A.
+1. Go through all 19 steps to Build a Calculator.
 
 And
 
 - [Boolean checker](http://localhost:8001/learn/javascript-v9/lab-boolean-check/build-a-boolean-check-function)
 
-1. Go through all 11 steps of to check boolean values.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 15.1.B.
+1. Go through all 11 steps to build Boolean checker.
 
 And
 
 - [Build an Email Masker](http://localhost:8001/learn/javascript-v9/lab-email-masker/build-an-email-masker)
 
-1. Go through all 10 steps of lab.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 15.1.C.
+1. Go through all 10 steps Build an Email Masker.
 
 ## Day 2: More Functions
 
@@ -71,9 +62,6 @@ And
 - [Loan Qualification Checker](http://localhost:8001/learn/javascript-v9/workshop-loan-qualification-checker/step-1)
 
 1. Go through all 10 steps of lab.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 15.2.A.
 
 And
 

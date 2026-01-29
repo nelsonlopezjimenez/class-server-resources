@@ -33,22 +33,12 @@ By the end of this week, you will be able to:
 - [Design a Contact Form](http://localhost:8001/learn/responsive-web-design-v9/lab-contact-form/design-a-contact-form)
 
 1. Go through all 24 steps of Design a Contact Form Page.
-1. When you are finished create a "Contact Form" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Contact Form folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Contact Form folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 8.1.A
 
 AND
 
 - [Design a Feature Selection Page](http://localhost:8001/learn/responsive-web-design-v9/lab-feature-selection/design-a-feature-selection-page)
 
 1. Go through all 24 steps of Design a Feature Selection Page.
-1. When you are finished create a "Feature Selection" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Feature Selection folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Feature Selection folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 8.1.B
 
 ## Day 2: Box Model
 
@@ -72,22 +62,12 @@ AND
 - [Design a Rothko Painting](http://localhost:8001/learn/responsive-web-design-v9/workshop-rothko-painting/step-1)
 
 1. Go through all 44 steps of building a Design a Rothko Painting.
-1. When you are finished create a "Rothko Painting" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Rothko Painting folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Rothko Painting folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 8.2.A
 
 AND
 
 - [Build a Confidential Email Page](http://localhost:8001/learn/responsive-web-design-v9/lab-confidential-email-page/build-a-confidential-email-page)
 
 1. Go through all 24 steps of building a Confidential Email page.
-1. When you are finished create a "Confidential Email" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Confidential Email folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Confidential Email folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 8.2.B
 
 ## Day 3: Flexbox
 
@@ -108,22 +88,12 @@ AND
 - [Build a Flexbox Photo Gallery](http://localhost:8001/learn/responsive-web-design-v9/workshop-flexbox-photo-gallery/step-1)
 
 1. Go through all 22 steps of building a flexbox photo gallery.
-1. When you are finished create a "Flex Photo" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Flex Photo folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Flex Photo folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 8.3.A
 
 AND
 
 - [Build a Page of Playing Cards](http://localhost:8001/learn/responsive-web-design-v9/lab-page-of-playing-cards/build-a-page-of-playing-cards)
 
 1. Go through all 19 steps of building a a playing card page.
-1. When you are finished create a "Playing Cards" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Playing Cards folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Playing Cards folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 8.3.B
 
 ## Day 4: Units, Pseudo, and Colors Quiz
 
@@ -141,7 +111,3 @@ AND
 - Click on Quizzes
 
   - Take the Week 8 Quiz
-
-## Assignment 8: Cookie Monster
-
-**NEED COOKIE MONSTER STUFF HERE**

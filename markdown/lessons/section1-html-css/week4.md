@@ -40,9 +40,6 @@ By the end of this week, you will be able to:
 - [Build a Hotel Feedback Form](http://localhost:8001/learn/responsive-web-design-v9/workshop-hotel-feedback-form/step-1):
 
 1. Go through all 33 steps to Build a Hotel Feedback Form.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 4.1
 
 ## Day 2: Working with Tables
 
@@ -61,9 +58,6 @@ By the end of this week, you will be able to:
 - [Build a Final Exams Table](http://localhost:8001/learn/responsive-web-design-v9/workshop-final-exams-table/step-1)
 
 1. Go through all 10 steps of building a Final Exams Table.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 4.2
 
 ## Day 3:
 
@@ -71,10 +65,7 @@ By the end of this week, you will be able to:
 
 - [Build a Book Catalog Table](http://localhost:8001/learn/responsive-web-design-v9/lab-book-catalog-table/build-a-book-catalog-table)
 
-1. Go through all 10 steps of building a Final Exams Table.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 4.3
+1. Go through all 10 steps of building a Book Catalog Table.
 
 ## Day 4: Forms, Tables, and Tools Quiz
 

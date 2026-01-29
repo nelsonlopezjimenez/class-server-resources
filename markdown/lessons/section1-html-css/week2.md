@@ -35,10 +35,7 @@ and its lab [Build an HTML Audio and Video Player](http://localhost:8001/learn/r
 
 - [Travel Agency Page](http://localhost:8001/learn/responsive-web-design-v9/lab-travel-agency-page/build-a-travel-agency-page):
 
-1. Go through all 32 steps of this lab.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 2.1
+1. Go through all 32 steps of Travel Agency Page.
 
 ## Day 2: Images
 
@@ -65,9 +62,6 @@ and Lab/Workshop [Build a Video Iframe](http://localhost:8001/learn/responsive-w
 - [Build a Heart Icon](http://localhost:8001/learn/responsive-web-design-v9/workshop-build-a-heart-icon/step-1)
 
 1. Go through all 6 steps of building a Heart Icon.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 2.2
 
 ## Day 3: Links
 

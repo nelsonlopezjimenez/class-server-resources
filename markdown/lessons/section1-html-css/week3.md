@@ -40,9 +40,6 @@ By the end of this week, you will be able to:
 - [List of Major Web Browsers](http://localhost:8001/learn/responsive-web-design-v9/workshop-major-browsers-list/step-1):
 
 1. Go through all 7 steps to Build a List of Major Websites.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 3.1
 
 ## Day 2: Working with Text and Time Semantic Elements
 
@@ -63,9 +60,6 @@ By the end of this week, you will be able to:
 - [Quincy's Job Tips](http://localhost:8001/learn/responsive-web-design-v9/workshop-quincys-job-tips/step-1)
 
 1. Go through all 13 steps of building Quincy's page.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 3.2
 
 ## Day 3: Specialized Semantic Elements
 
@@ -84,9 +78,6 @@ By the end of this week, you will be able to:
 - [Cat Blog](http://localhost:8001/learn/responsive-web-design-v9/workshop-blog-page/step-1)
 
 1. Go through all 19 steps of building a Cat Blog.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 3.3
 
 ## Day 4: Semantic HTML Quiz
 
