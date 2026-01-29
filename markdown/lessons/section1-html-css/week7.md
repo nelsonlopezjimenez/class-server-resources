@@ -141,6 +141,34 @@ If you finish all the mandatory readings for the week read about UI Design.
 - Click on Quizzes
   - Take the Week 7 Quiz
 
-## Assignment 7: Cookie Monster
+## Assignment 8: About Me with Style!
 
-**NEED COOKIE MONSTER STUFF HERE**
+By now you should have all of the CSS rules, selectors, colors, etc to make your site look like a professional site. Take your original About me Website (not the one from week 6) and add appropriate style.
+
+**New Site Requirements:**
+
+- `List`
+
+  - Should all have styling added to them appropriate to its content
+
+- `Links`
+
+  - All nav bar links should be styled the same across all pages
+
+- `Backgrounds`
+
+  - Use good styling techniques to have proper contrast between background and foreground text.
+
+- `Borders`
+
+  - Elements should have appropriate borders where needed to separate content (i.e. between articles/sections)
+
+- `id` and `classes`
+
+  - Use proper id and classes where necessary.
+
+## Assignment Criteria
+
+- **Style (50%)** - Correct style rules used to achieve an ascetically pleasing website.
+- **Selector Rules (25%)** - Correct CSS rules used to target elements
+- **Internal, External, and Inline (25%)** - Proper use of Inline, internal and external CSS rules to achieve an ascetically

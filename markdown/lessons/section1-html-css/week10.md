@@ -1,28 +1,27 @@
 ---
 publishDate: 2026-01-21
-title: "CSS Final Project and Exam"
-description: "Add CSS to choosen Final Project"
+title: "CSS Capstone Project and Exam"
+description: "Add CSS to choosen Capstone Project"
 week: 7
 section: 1
 ---
 
-# Week 10: CSS Final Project and Exam
+# Week 10: CSS Capstone Project and Exam
 
 ## Learning Objectives
 
 By the end of this week, you will be have:
 
-- Add CSS Style to your Final Project
+- Add CSS Style to your Capstone Project
 - Taken the CSS Final Exam
 
 ## Day 1-3:
 
-**NOTE:** If you have not finished any previous weeks 6-9 Labs, Assignments or quizzes finish them now.
+### Overall Goal
 
-This week you will be adding CSS Style and rules to your chosen Final Project.
-As a reminder here are screen shots of common webpage layouts and styles
+Before starting this portion of your Capstone Project, make sure you’ve completed the [HTML](/course-content/section/capstone-project/lesson/HTML) portion. You’ll have 4 days of in-class and out-of-class time to work on this project. It’s due before the end of the week, even if you haven’t finished all the requirements. If you haven’t completed everything, you’re strongly encouraged to continue working on your project during the weekend or break. This won’t significantly impact your grade, but it will help you build on this project in later sections, adding JavaScript functionality, data persistence, webpage hosting, and eventually a React frontend.
 
-**NEED LINKS FOR SCREENSHOTS**
+Read the [CSS Design Documentation](/course-content/section/capstone-project/lesson/CSS) for directions and requirements.
 
 ## Day 4: CSS Final Exam
 

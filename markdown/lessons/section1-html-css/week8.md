@@ -139,47 +139,9 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
+
   - Take the Week 8 Quiz
 
-## Assignment 8: About Me with Style!
+## Assignment 8: Cookie Monster
 
-By now you should have all of the CSS rules, selectors, colors, etc to make your site look like a professional site. Take your original About me Website (not the one from week 6) and add appropriate style.
-
-**New Site Requirements:**
-
-- `List`
-
-  - Should all have styling added to them appropriate to its content
-
-- `Links`
-
-  - All nav bar links should be styled the same across all pages
-
-- `Backgrounds`
-
-  - Use good styling techniques to have proper contrast between background and foreground text.
-
-- `Borders`
-
-  - Elements should have appropriate borders where needed to separate content (i.e. between articles/sections)
-
-- `Flexbox`
-
-  - Flexbox should be implemented on the `main` content to format sections and articles.
-
-- `ViewPort`
-
-  - Proper use of vh and vw to make page responsive to different resolutions
-
-- `id` and `classes`
-
-  - Use proper id and classes where necessary.
-
-- `form`
-  - Form inputs and form itself are properly styled
-
-## Assignment Criteria
-
-- **Style (50%)** - Correct style rules used to achieve an ascetically pleasing website.
-- **Selector Rules (25%)** - Correct CSS rules used to target elements
-- **Internal, External, and Inline (25%)** - Proper use of Inline, internal and external CSS rules to achieve an ascetically
+**NEED COOKIE MONSTER STUFF HERE**

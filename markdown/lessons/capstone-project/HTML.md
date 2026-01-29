@@ -26,9 +26,9 @@ Each page should have the same Header with nav bar, and the same footer.
 
 A landing page that introduces the application and guides users to key sections. (Must include a brief description and a clear navigation to other pages)
 
-[All Recipe Homepage Desktop](/images/all-recipes/homepage-desktop.png) and [All Recipe Homepage Mobile](/images/all-recipes/homepage-mobile.png) - **Note:** All Recipes uses a Single Page Application (SPA) That means you would scroll down to see the full page.
+[All Recipe Homepage Desktop](/images/all-recipes/homepage-desktop.png) and [All Recipe Homepage Mobile](/images/all-recipes/homepage-mobile.png)
 
-[Reddit Homepage Desktop](/images/reddit/homepage-desktop.png) and [Reddit Homepage Mobile](/images/reddit/homepage-mobile.png) - **Note:** Reddit uses a Single Page Application (SPA) That means you would scroll down to see the full page. This is a cropped version of their homepage.
+[Reddit Homepage Desktop](/images/reddit/homepage-desktop.png) and [Reddit Homepage Mobile](/images/reddit/homepage-mobile.png)
 
 ### Single Item View:
 
@@ -38,15 +38,13 @@ Displays detailed information for a single recipe or post.
 
 [Reddit Mobile Viewing a single "Joke" Thread](/images/reddit/single-mobile-joke.png) and [Reddit Mobile Viewing a single "How to learn..." Thread](/images/reddit/single-mobile-learn.png)
 
-**NEED SINGLE ITEM DESKTOP AND MOBILE FOR ALL RECIPE**
+### Create Item View
 
-### Create/Add Item View
-
-Create a form to add a post or recipe to the website. (Form does not have to work). No screenshots as it requires you to log in so do your best. Ask if you need help
+Create a form to add a post or recipe to the website. The form does not have to work, but all necessary fields to add an item must be present. No screenshots are available as it requires you to log in. Do your best. Ask if you need help
 
 ### Edit Item View
 
-Create a form to edit a post or recipe on the website. (Form does not have to work). No screenshots as it requires you to log in so do your best. Ask if you need help
+Create a form to edit a post or recipe to the website. The form does not have to work, but all necessary fields to edit an item must be present, and should pre populate with dummy data. No screenshots are available as it requires you to log in. Do your best. Ask if you need help
 
 ### Search Bar and Result
 
@@ -72,13 +70,9 @@ Enables new users to create accounts.
 
 [All Recipes Register Desktop](/images/All-Recipes/register-desktop.png) and [All Recipes Register Mobile](/images/All-Recipes/register-mobile.png)
 
-### Create Item
-
-Allows users to add new recipes or posts. No screenshots as it requires you to log in so do your best. Ask if you need help
-
 ### Comment on Item
 
-Allows users to leave comments on a selected item. No screenshots as it requires you to log in so do your best. Ask if you need help
+Create a elements to allow users to leave a comment on a post or recipe on the website. The elements do not have to work, but all necessary felids to add a comment must be present. No screenshots are available as it requires you to log in. Do your best. Ask if you need help
 
 #### Additional Screenshots
 

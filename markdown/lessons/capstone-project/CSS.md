@@ -1,9 +1,5 @@
 # CIS Fullstack Web Development Capstone Project
 
-## Overall Goal
-
-Before starting this portion of your Capstone Project, make sure you’ve completed the [HTML](http://localhost:22022/course-content/section/final-project/lesson/HTML) portion. You’ll have 4 days of in-class and out-of-class time to work on this project. It’s due before the end of the week, even if you haven’t finished all the requirements. If you haven’t completed everything, you’re strongly encouraged to continue working on your project during the weekend or break. This won’t significantly impact your grade, but it will help you build on this project in later sections, adding JavaScript functionality, data persistence, webpage hosting, and eventually a React frontend.
-
 ## Objective:
 
 This assignment focuses on your mastery of CSS styling techniques. Building on the HTML structure you’ve already created, you’ll implement comprehensive styling using proper CSS selectors (including `id` and `class` selectors), focusing on a mobile-first design approach with media queries. You’ll demonstrate an understanding of responsive design principles and best practices for creating visually appealing and adaptable stylesheets.
@@ -18,9 +14,9 @@ Pay attention to the differences between the mobile and desktop versions. The co
 
 ### Home:
 
-[All Recipes Homepage Desktop](/images/all-recipes/homepage-desktop.png) and [All Recipes Homepage Mobile](/images/all-recipes/homepage-mobile.png) – All Recipes uses a Single Page Application (SPA), meaning you scroll down to see the full page.
+[All Recipes Homepage Desktop](/images/all-recipes/homepage-desktop.png) and [All Recipes Homepage Mobile](/images/all-recipes/homepage-mobile.png)
 
-[Reddit Homepage Desktop](/images/reddit/homepage-desktop.png) and [Reddit Homepage Mobile](/images/reddit/homepage-mobile.png) – Reddit also uses a Single Page Application (SPA); you’ll scroll down to see the full page.
+[Reddit Homepage Desktop](/images/reddit/homepage-desktop.png) and [Reddit Homepage Mobile](/images/reddit/homepage-mobile.png)
 
 ### Single Item View:
 
