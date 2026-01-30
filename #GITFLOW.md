@@ -93,6 +93,18 @@ Before making _any_ changes, it's good practice to:
    ```sh
    git branch -d development
    ```
+1. Delete the development branch from the origin
+   ```sh
+   git push origin --delete development
+   ```
+1. Create a new development branch immediately
+   ```sh
+   git checkout -b development
+   ```
+1. Push new branch to origin
+   ```sh
+   git push origin development
+   ```
 
 ## How to create a bug-fix branch
 
