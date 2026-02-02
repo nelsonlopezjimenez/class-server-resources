@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "Working with Objects and Loops"
 description: "Identify and work with Objects, Properly use object methods, Use loops to repeat code, Know when to us a Do, While, For, For Of, For In loop, Understand structure of a loop, increment/decrement and conditions."
 week: 17
@@ -127,4 +127,4 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 17: Object and Loops
+  - Take the Week 17 Quiz

@@ -1,8 +1,8 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "CSS Capstone Project and Exam"
-description: "Add CSS to choosen Capstone Project"
-week: 7
+description: "Add CSS to chosen Capstone Project"
+week: 10
 section: 1
 ---
 
@@ -35,18 +35,3 @@ Review all previous quizzes and review sections before taken the exam. The Exam 
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 8: Typography Quiz
-  - Take the Week 8: Responsive Quiz
-  - Take the Week 8: Grid Quiz
-
-## Assignment 9: About Me Mobile
-
-For this assignment you will need to open the Chrome DevTools `shift+ctrl+i` and click on the top left icon (looks like a phone in front of a laptop) in the "device" dropdown select iPhone 14 Pro Max. This will force Chrome to render your webpage(s) as though it was being viewed on an iPhone.
-
-This assignment has no hard requirements being having two break points, one for mobile and one for laptop. Design your webpage to look good on both resolutions.
-
-## Assignment Criteria
-
-- **Responsive Mobile Design (50%)** - Correct style rules used to achieve an ascetically pleasing website on an iPhone 14 Pro Max.
-- **Media Select (25%)** - Correct CSS rules used to achieve desired break points.
-- **Responsive Desktop Design (25%)** - Correct style rules used to achieve an ascetically pleasing website on a laptop.

@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "CSS Forms, Box Model, and Flexbox"
 description: "Learn how to style forms, what is a box model, and how to use flexbox"
 week: 8

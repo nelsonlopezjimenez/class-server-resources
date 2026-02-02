@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "HTML Fundamentals - Attributes and Boilerplate"
 description: "Introduction to HTML syntax, elements, attributes, meta tags, and more."
 week: 1
@@ -143,40 +143,4 @@ and
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 1: HTML Fundamentals Quiz
-
-## Assignment 1: Resume Website
-
-For this assignment you will create an HTML page out of your resume document
-
-1. Create a .html file in your section 1 assignment folder.
-1. Open that file in VSCode.
-1. Add Code to meet the criteria below.
-1. Don't forget to properly comment your code/file.
-1. Submit the file to assignment 1.
-
-### Assignment Checklist
-
-- HTML needs to be structured properly (Use NU HTML Validator)
-- Must contain at least a h1 tag, a h2-3 tag and a h4-6 tag - with appropriate content
-- Must contain at least 3 paragraph tags - with appropriate content
-- Must contain at least 1 div tag - with appropriate content
-- Must display details for
-  - Contact Information
-  - Objective
-  - Experience
-  - Skills
-
-#### Assignment Criteria
-
-- **HTML (30%):** Correct use of fundamental HTML elements.
-- **Content & Formatting (30%):** Clarity of writing, appropriate use of HTML tags for text.
-- **h and p tags (20%):** Correct use of the `<h#>` and `<p>` tags with proper content
-- **Overall Structure & Presentation (20%):** Clean, readable HTML code, logical page structure.
-
-### Extra Credit:
-
-- You have not been taught about Semantic Tags yet. Use at least 3 different ones.
-- Often times when learning a new programming language, or when ask to complete a task at work you wont know how to do something. Where can you go to learn about it and how to use it?
-  - Tip freeCodeCamp, w3Schools, and MDN all have sections on Semantic Tags.
-  - main, nav, header, aside, footer, article are all Semantic Tags
+  - Take the Week 1 Quiz

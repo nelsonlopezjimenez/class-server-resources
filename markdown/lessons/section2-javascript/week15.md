@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "Working with Functions"
 description: "Learn how to use functions to generate code that can be reused."
 week: 15
@@ -124,44 +124,4 @@ and
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 15: Functions Quiz
-
-## Assignment 15: Function Frenzy
-
-This assignment focuses on designing and implementing a suite of standalone JavaScript functions. You'll explore various function parameters, return values, and conditional logic to manipulate data using string, number, and math methods.
-
-1. Create a .js file in your section 2 assignment folder.
-1. Open that file in VSCode.
-1. Create pseudocode for your application before you start coding.
-1. Add Code to meet the criteria below.
-1. Don't forget to properly comment your code/file.
-1. Submit the file to assignment 15.
-
-### Assignment Checklist
-
-- **Create the Following Functions**
-
-  - **Add Two Numbers:** This function should take two numbers as parameters. It should add the numbers together and return the sum.
-
-  - **Calculate Discount:** This function should take a price (number) and a discount percentage (number) as parameters. It should calculate the discounted price and return the result. The discount percentage should be between 0 and 100. If the discount percentage is invalid, return `null`.
-
-  - **Even Number:** This function should take a number as a parameter. It should return `true` if the number is even, and `false` if it’s odd.
-
-  - **Calculate Area of a Circle:** This function should take a radius as a parameter (a number). Calculate the area of a circle (π \* radius^2) and return the result, rounded to two decimal places.
-
-  - **Generate a Random Number Between Two Values:** This function should take two numbers and return a random number between them. I.E if 1 and 10 are given, then 6 would be an acceptable return.
-
-- **Calculate the Ceiling of a Number:** This function should take a decimal number and give return the ceiling of that number.
-
-- **Calculate the Floor of a Number:** This function should take a decimal number and return it's floor.
-
-- **Calculate the Square Root of a Number** This function should take a number and find the square root of that number rounded to 2 decimal places.
-
-- Each Function should be piped into a console log with appropriate content. This means the console.log() call must be outside the function not in.
-  - Example: If you are console logging the add two numbers the console log should read "The sum of 1 and 1 is 2"
-
-**Grading Rubric (100 Points)**
-
-- **Function Definitions (40%)** Correctly defines and utilizes the specified functions with the correct parameter lists.
-- **Data Manipulation & Logic (30%)** Accurate use of data types (strings, numbers), math methods, and conditional logic within the functions.
-- **Code Clarity & Comments (30%)** Code is well-organized, readable, and includes clear and helpful comments.
+  - Take the Week 15 Quiz

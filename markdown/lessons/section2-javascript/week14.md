@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "Learn Boolean and Numbers"
 description: "Identify and work with Number data types, Write conditional statements to control program flow, Choose appropriate conditional structures for different scenarios, Combine multiple conditions using logical operators"
 week: 14
@@ -121,63 +121,4 @@ and
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 14: Math Quiz
-  - Take the Week 14: Comparisons and Conditionals Quiz
-
-## Assignment 14: Math Operations - Enhanced
-
-You will create a simple math application that demonstrates these concepts: reinforce understanding of JavaScript variables (string, number, boolean) and arithmetic operations while applying conditional statements.
-
-1. Create a .js file in your section 2 assignment folder.
-1. Open that file in VSCode.
-1. Create pseudocode for your application before you start coding.
-1. Add Code to meet the criteria below.
-1. Don't forget to properly comment your code/file.
-1. Submit the file to assignment 14.
-
-**Requirements:**
-
-- **Variable Declaration:**
-
-  - Declare at least one variable of each of the following types:
-    - `String`
-    - `Number`
-    - `Boolean`
-    - `undefined`
-    - `null`
-  - Declare a variable with no value
-
-- **Arithmetic Operations:**
-
-  - Implement the following arithmetic operations using the console log to display the results:
-    - **Sum:** Calculate the sum of two numbers.
-    - **Subtraction:** Calculate the difference between two numbers.
-    - **Division:** Calculate the result of dividing two numbers.
-    - **Multiplication:** Calculate the product of two numbers.
-    - **Combined Operations:** Create at least one problem that uses _three_ different arithmetic operators in the same expression. This will demonstrate your understanding of operator precedence.
-
-- **Conditional Statements:**
-  - **`if` Block:** Create an `if` block that checks the value of a boolean variable (`isHappy`) and, if the value is `true`, logs the message `"The statement is true"`.
-  - **`if/else` Block:** Create an `if/else` block that compares a number variable (`numberValue`) and a string variable (`stringValue`). If they are equal, log `"The two variables are equivalent"`. If they are _not_ equal, log `"The two variables are not equivalent"`
-  - **Ternary Operator:** Create a ternary operator that checks if the variable you created with out a value is deeply equal to the undefined variable. If they are equal, log `"The two variables are equivalent"`. If they are _not_ equal, log `"The two variables are not equivalent"`
-
-#### Assignment Criteria
-
-- **Variable Declaration (15%):** Correctly declared all required variables.
-- **Arithmetic Operations (30%):** All required arithmetic operations implemented correctly, and the results are logged to the console.
-- **Conditional Statements (30%):** Correct implementation of `if` block, `if/else` block, and ternary operator.
-- **Code Clarity & Comments (15%):**Code is well-formatted, readable, and commented appropriately.
-
-### Extra Credit
-
-- Create an HTML page with the following elements
-  - textbox for num 1
-  - select box for operation
-    - \+
-    - \-
-    - /
-    - \*
-  - text box for num 2
-  - button for submit
-  - p for output
-- When 2 numbers are put in and an operation selected, clicking on submit should display the answer
+  - Take the Week 14 Quiz

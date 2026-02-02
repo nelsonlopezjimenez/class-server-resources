@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "DOM Manipulation, Debugging, and Form Validation"
 description: "Learn how to interact with the DOM, Catch common errors, and validate form data."
 week: 20
@@ -81,4 +81,4 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 20: DOM and Debugging
+  - Take the Week 20 Quiz

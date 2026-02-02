@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "HTML Midterm"
 description: "HTML Midterm Assignment and Exam"
 week: 5
@@ -34,4 +34,4 @@ Review all previous quizzes and review sections before taken the exam. The Exam 
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the HTML Final Exam
+  - Take the HTML Midterm Exam

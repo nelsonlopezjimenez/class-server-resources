@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "CSS Design, Units, Pseudo Classes"
 description: "Learn what is CSS, units, and understand UI Design"
 week: 7
@@ -35,11 +35,6 @@ By the end of this week, you will be able to:
 - [Build an Event Flyer Page](http://localhost:8001/learn/responsive-web-design-v9/lab-event-flyer-page/build-an-event-flyer-page)
 
 1. Go through all 17 steps of Design an Event Flyer Page.
-1. When you are finished create a "Event Flyer" folder in your section 1 labs folder
-1. Copy and paste the labs code into a new .html and .css file in your Event Flyer folder
-1. Add appropriate comments to show understanding of the code.
-1. Zip the Event Flyer folder and change the name to meet naming requirements.
-1. Submit this in canvas under lab 7.1
 
 ## Day 2: Pseudo Classes and Elements
 

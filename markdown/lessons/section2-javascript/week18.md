@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "jsFun and JavaScript Midterm"
 description: "Download and use jsFun and take the Midterm"
 week: 18
@@ -140,4 +140,4 @@ Review all of the mandatory readings from day 4 of previous weeks.
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Midterm: Javascript Exam
+  - Take the Javascript Midterm Exam

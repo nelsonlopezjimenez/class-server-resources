@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "CSS Fundamentals"
 description: "Learn what is CSS, and understand UI Design"
 week: 6
@@ -119,43 +119,3 @@ AND
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
   - Take the: Week 6 Quiz
-
-## Assignment 6: About Me Revisited
-
-Build upon your previous "About Me" webpages. This assignment requires you to add style to your pages. You will need to use a combination of inline, internal, and external styles sheets. Along with id's, classes, and other selectors to achieve these requirements.
-
-**New Site Requirements:**
-
-- `List`
-
-  - On at least one unordered list hide the bullets
-  - Change at least one ordered list to use lower case letters
-  - Change the spacing of every li on all pages to be double it's normal height
-
-- `Links`
-
-  - All Link text should have blue text
-  - The favorite movie page should have red text for link
-  - The first link on the Favorite music page nav bar should be green
-  - All links on hover should have a purple background
-
-- `Backgrounds`
-
-  - Each page should have Yellow background for the body
-  - The main element on each page should have a different color from the background and from each other
-  - The footer on your favorite book page should be black with white text
-
-- `Borders`
-
-  - Every non p element should have a black, 2px solid border
-  - The form element on your contact page should have a purple 10px dotted border
-
-**Notes:** Yes your page will look objectively _TERRIBLE_ after this assignment, that is okay your not being graded on how well your site looks but how well you use the CSS rules to modify your site.
-
-## Assignment Criteria
-
-- **Links (20%)** - Correct style rules used to achieve requirements
-- **List (20%)** - Correct style rules used to achieve requirements
-- **Backgrounds (20%)** - Correct style rules used to achieve requirements
-- **Borders (20%)** - Correct style rules used to achieve requirements
-- **CSS Rules (20%)** - Used proper inline, internal, and external style rules, as well as proper use of id, class, element selectors.

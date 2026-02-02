@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "Callback Functions"
 description: "Learn how to create callback functions, use .map, .filter, and other array/object methods."
 week: 19
@@ -116,4 +116,4 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 19: Higher Functions
+  - Take the Week 19 Quiz

@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "Form Validation, Recursion and Asynchronous calls"
 description: "Learn how to validate form data before sending it to the server, how to create recursive functions, and how to handle asynchronous calls."
 week: 21
@@ -90,4 +90,4 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 21: Form Validation and Recursion and Asynchronous
+  - Take the Week 21 Quiz
