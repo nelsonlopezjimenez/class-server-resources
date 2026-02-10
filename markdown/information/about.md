@@ -41,10 +41,21 @@ Burns has traveled extensively in the U.S. as well as overseas (Germany, Austria
 
 #### Rocky Connor
 
-Languages: JavaScript, TypeScript, Go, Python, Perl  
+Languages: JavaScript, TypeScript, Go, Python, Perl, Dart  
 Interests: Computer Science, Electronic Engineering, Sustainability.
 
-Growing up, Connor has always been fascinated by technology and computers. He was always getting in trouble tearing apart anything he could get his hands on. Old VCRs, cassette decks, toys, engines, it didn't matter. The drive to figure out how things worked was strong. After being sent to prison, the new found constraints did nothing to staunch his inquisitive nature. After taking the Web Dev certificate program at MCC/TRU, he has continued to teach himself programming languages and other more advanced topics.
+Rocky’s fascination with technology began as a child – a relentless
+curiosity that led him to take things apart, from VCRs and cassette decks
+to engines. He was driven by a genuine desire to understand how everything
+worked, and it wasn’t uncommon to find him dismantling electronics in
+pursuit of knowledge. This spirit of inquiry continued even during
+confinement, fueling a determination to master programming languages.
+Completing the Web Dev certificate program at MCC/TRU, he's continued 
+this journey of self-directed learning, driven by a deep interest in 
+Computer Science and Electronic Engineering – particularly how technology 
+can contribute to a
+more sustainable future.
+
 
 #### Jay Gray
 
