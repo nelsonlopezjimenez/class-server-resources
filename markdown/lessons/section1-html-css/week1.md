@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "HTML Fundamentals - Attributes and Boilerplate"
 description: "Introduction to HTML syntax, elements, attributes, meta tags, and more."
 week: 1
@@ -22,7 +22,13 @@ By the end of this week, you will be able to:
 - Understand HTML Fundamentals
 - Be able to debug common errors
 
-## Lab/Assignment Expectations
+## Expectations
+
+### Labs/Workshops
+
+For any workshop you are tasked with completing this section you will need to ensure that your page renders as the example provided. For labs you complete this section. I will provide you with a screenshot of the final version for comparisons. Your page must render the same other than the images.
+
+### Assignment Expectations
 
 Each html assignment you turn in this section needs to have your name and a brief description of what the page does at the top as a comment:
 
@@ -64,19 +70,13 @@ It will then need to have code that meets the requirements of the assignment, wi
 
 - [Build a Curriculum Outline](http://localhost:8001/learn/responsive-web-design-v9/workshop-curriculum-outline/step-1):
 
-1. Go through all 11 steps of building a simple webpage that uses h and p tags.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 1.1.A.
+1. Go through all 11 steps to Build a Curriculum Outline.
 
 and
 
 - [Debug Camperbot's Profile Page](http://localhost:8001/learn/responsive-web-design-v9/lab-debug-camperbots-profile-page/lab-debug-camperbots-profile-page):
 
-1. Go through all 10 steps of debugging Camperbot's webpage
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 1.1.B.
+1. Go through all 10 steps to Debug Camperbot's Profile Page
 
 ## Day 2: Understanding HTML Boilerplate
 
@@ -98,19 +98,13 @@ and
 
 - [Debug a Pet Adoption Page](http://localhost:8001/learn/responsive-web-design-v9/lab-debug-pet-adoption-page/lab-debug-pet-adoption-page)
 
-1. Go through all 5 steps of debugging the Pet Adoption Page.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas lab 1.2.A.
+1. Go through all 5 steps to Debug a Pet Adoption Page.
 
 and
 
-- [Build a Cat Photo App ](http://localhost:8001/learn/responsive-web-design-v9/workshop-cat-photo-app/step-1)
+- [Build a Cat Photo App](http://localhost:8001/learn/responsive-web-design-v9/workshop-cat-photo-app/step-1)
 
-1. Go through all 42 steps of this workshop.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas lab 1.2.A
+1. Go through all 42 steps to Build a Cat Photo App.
 
 ## Day 3: HTML Fundamentals
 
@@ -135,19 +129,13 @@ and
 
 - [Build a Recipe App](http://localhost:8001/learn/responsive-web-design-v9/lab-recipe-page/build-a-recipe-page)
 
-1. Go through all 21 steps of this lab.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas lab 1.3.A
+1. Go through all 21 steps to Build a Recipe App.
 
 and
 
 - [Build a Bookstore Page](http://localhost:8001/learn/responsive-web-design-v9/workshop-bookstore-page/step-1)
 
-1. Go through all 16 steps of this lab.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas lab 1.3.B
+1. Go through all 16 steps to Build a Bookstore Page.
 
 ## Day 4: HTML Fundamentals Quiz
 
@@ -155,40 +143,4 @@ and
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 1: HTML Fundamentals Quiz
-
-## Assignment 1: Resume Website
-
-For this assignment you will create an HTML page out of your resume document
-
-1. Create a .html file in your section 1 assignment folder.
-1. Open that file in VSCode.
-1. Add Code to meet the criteria below.
-1. Don't forget to properly comment your code/file.
-1. Submit the file to assignment 1.
-
-### Assignment Checklist
-
-- HTML needs to be structured properly (Use NU HTML Validator)
-- Must contain at least a h1 tag, a h2-3 tag and a h4-6 tag - with appropriate content
-- Must contain at least 3 paragraph tags - with appropriate content
-- Must contain at least 1 div tag - with appropriate content
-- Must display details for
-  - Contact Information
-  - Objective
-  - Experience
-  - Skills
-
-#### Assignment Criteria
-
-- **HTML (30%):** Correct use of fundamental HTML elements.
-- **Content & Formatting (30%):** Clarity of writing, appropriate use of HTML tags for text.
-- **h and p tags (20%):** Correct use of the `<h#>` and `<p>` tags with proper content
-- **Overall Structure & Presentation (20%):** Clean, readable HTML code, logical page structure.
-
-### Extra Credit:
-
-- You have not been taught about Semantic Tags yet. Use at least 3 different ones.
-- Often times when learning a new programming language, or when ask to complete a task at work you wont know how to do something. Where can you go to learn about it and how to use it?
-  - Tip freeCodeCamp, w3Schools, and MDN all have sections on Semantic Tags.
-  - main, nav, header, aside, footer, article are all Semantic Tags
+  - Take the Week 1 Quiz

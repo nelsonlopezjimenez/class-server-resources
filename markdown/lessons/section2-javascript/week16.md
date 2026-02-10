@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "Working with Arrays and Objects"
 description: "Identify and work with arrays, Properly use array methods, Identify and work with Objects"
 week: 16
@@ -38,19 +38,13 @@ By the end of this week, students will be able to:
 
 - [Build a Shopping List](http://localhost:8001/learn/javascript-v9/workshop-shopping-list/step-1)
 
-1. Go through all 20 steps of to build a shopping list.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 16.1.A.
+1. Go through all 20 steps of to Build a Shopping List.
 
 AND
 
 - [Build a Lunch Picker Program](http://localhost:8001/learn/javascript-v9/lab-lunch-picker-program/build-a-lunch-picker-program)
 
-1. Go through all 30 steps of to build a lunch picker.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 16.1.B.
+1. Go through all 30 steps to Build a Lunch Picker Program.
 
 ## Day 2: Array Methods
 
@@ -66,18 +60,12 @@ AND
 - [Build a Golf Score Translator](http://localhost:8001/learn/javascript-v9/lab-golf-score-translator/build-a-golf-score-translator)
 
 1. Go through all 24 steps to build a Golf Score Translator.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 16.2.A.
 
 And
 
 - [Build a String Inverter](http://localhost:8001/learn/javascript-v9/lab-reverse-a-string/build-a-string-inverter)
 
-1. Go through all 6 steps of lab.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 16.2.B.
+1. Go through all 6 steps to Build a String Inverter.
 
 ### Day 3: Objects
 
@@ -102,9 +90,6 @@ Object has a lot of "reading" to do. If you don't get through all of these today
 - [Build a Recipe Tracker](http://localhost:8001/learn/javascript-v9/workshop-recipe-tracker/step-1)
 
 1. Go through all 13 steps to build this Recipe Tracker.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 16.3.
 
 ## Day 4: Array Assignment and Quiz
 
@@ -116,73 +101,4 @@ Object has a lot of "reading" to do. If you don't get through all of these today
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 16: Array quiz
-
-## Assignment 16: Grocery List
-
-For this assignment you will need to build a grocery List. The user should be able to add items, view the list, and remove items through use of prompt() and console.logs()
-
-1. Create a new .js file in your section 2 Assignment folder.
-1. Open that file in VSCode.
-1. Create pseudocode for your application before you start coding.
-1. Add Code to meet the criteria below.
-1. Don't forget to properly comment your code/file.
-1. Submit the file to assignment 16.
-
-**Notes**: For this assignment, due to the fact you will be using prompt(), you wont be able to run your .js file through NodeJS' CLI (Command Line Interface) through the terminal. Instead open Google, the page doesn't matter, and open up the console log (`shift+ctr+i`) and paste your code into the console log.
-
-### Assignment Checklist
-
-**Code Template**
-
-```javascript
-// ** Create an add item function here **
-
-// ** Create a remove item function here **
-
-// ** Create a display item function here **
-
-// This is the main program loop. When the  code is executed this function will continuously show a prompt request
-// to the user asking them what they want to do:
-//
-// 1) Displays the current list of items in the groceries array
-// 2) Add an item to the groceries array
-// 3) Remove an item from the groceries array
-// 4) Exit the program (use a break statement to break out of the loop)
-// 5) If any thing is typed that is not 1-4 remind user of available options
-function main() {
-
-  // ** Declare groceries array variable here, outside the loop **
-
-  // You will read more about loops next week. So here is a simple template for a while loop
-  // Any code in the "loop" will run until the end condition is meet
-  // In this case the end condition is always true (an infinite loop) that we will use a "break" statement to get out
-  while (true) {
-
-    // ** Display the options available in the console log here **
-
-    // ** Prompts the user for a choice and store it in a variable here **
-
-    // ** Use a conditional statement here to call different functions from above depending on user input
-    // ** Don't forget to use the break; condition for option 4 to break out of the infinite loop
-
-  }
-
-  // runs the main function to start the program loop
-  main()
-```
-
-Take the code template above and update the functions, by adding array methods, and conditional statements to meet the following requirements:
-
-- Create the following functions:
-  - addItem: Take an array as a parameter, prompts user for an item to add, then add that item to the array as the last element, then returns the new array
-  - removeItem: Takes an array as a parameter, prompts the user for an item to remove, removes the item from the array, then returns the new array.
-    - Hint: This process will require at least 2 different array methods, one to find where in the array the item is, and a second to remove the element.
-    - If the prompt returns an item not in the array the console should print out "Item not found in list" and return the same array that was passed in
-  - displayList: Takes an array as a parameter, and prints to console all items in that array
-    - Hint: Look on w3Schools or MDN for the array method .forEach()
-
-### Extra Credit
-
-- Add error checking to your functions to ensure data types.
-- Example - If the variable "One" is passed to the sum two number function the return should be something like "'One' is not a number. Please provide a valid number."
+  - Take the Week 16 quiz

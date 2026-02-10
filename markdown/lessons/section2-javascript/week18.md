@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "jsFun and JavaScript Midterm"
 description: "Download and use jsFun and take the Midterm"
 week: 18
@@ -24,7 +24,12 @@ One of the hardest aspects of learning any programming language is the syntax, a
 In order to begin working with the jsFUN-Basic project directory, you will need to follow the instructions below:
 
 1. Fork this repository [jsFun-Basic](http://192.168.1.28:3000/CIS_Team_EDCC/jsFun-Basic)
-1. Download the repository from git hub into your section 2 folder.
+1. After the fork is made click on the blue `Code` button, then copy the URL in the text box
+1. In windows navigate to your section 2 folder
+1. Right click on section 2 (or if in section 2 folder any white space) and click `open git bash here`.
+1. In the terminal type `git clone` then hit `shift+insert` on your keyboard to copy the url
+1. Hit enter and clone the repo to your laptop.
+1. Open the jsFun-Basic repo folder in file explorer (it should now show up in your section 2 folder).
 1. Right click on node_modules.7z file, select 7zip and extract here.
 1. Open a new terminal using the VS Code taskbar with `... > Terminal > New Terminal` or the keyboard shortcut ``Ctrl+Shift+`.
 1. Run the command `npm start`. This will open the Vitest User Interface in your default browser, giving you a handy dashboard to view all the code challenges.
@@ -135,10 +140,4 @@ Review all of the mandatory readings from day 4 of previous weeks.
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Midterm: Javascript Exam
-
-## Assignment 18: Finish jsFun
-
-Ensure you have been making commits to your jsFun Fork. When you are ready to submit copy and paste a URL to your personal repo.
-
-If you finish jsFun before the end of day 4 download [jsFun-Master](http://192.168.1.28:3000/CIS_Team_EDCC/jsFun-Master) and work through those functions.
+  - Take the Javascript Midterm Exam

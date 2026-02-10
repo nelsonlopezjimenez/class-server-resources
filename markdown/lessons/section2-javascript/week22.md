@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "JavaScript Final Project and Exam"
 description: "JavaScript Final Project and Exam"
 week: 22
@@ -27,4 +27,4 @@ Review all of the mandatory readings from day 4 of previous weeks.
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 22: Final Javascript Exam
+  - Take the Javascript Finals Exam

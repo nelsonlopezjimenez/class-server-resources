@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "How SEO effects HTML, Images and Links"
 description: "Introduction to Seo, Images and Links"
 week: 2
@@ -35,10 +35,7 @@ and its lab [Build an HTML Audio and Video Player](http://localhost:8001/learn/r
 
 - [Travel Agency Page](http://localhost:8001/learn/responsive-web-design-v9/lab-travel-agency-page/build-a-travel-agency-page):
 
-1. Go through all 32 steps of this lab.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 2.1
+1. Go through all 32 steps of Travel Agency Page.
 
 ## Day 2: Images
 
@@ -65,9 +62,6 @@ and Lab/Workshop [Build a Video Iframe](http://localhost:8001/learn/responsive-w
 - [Build a Heart Icon](http://localhost:8001/learn/responsive-web-design-v9/workshop-build-a-heart-icon/step-1)
 
 1. Go through all 6 steps of building a Heart Icon.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 2.2
 
 ## Day 3: Links
 
@@ -100,52 +94,4 @@ and Lab/Workshop [Build a Video Iframe](http://localhost:8001/learn/responsive-w
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 2: HTML Basics Quiz
-
-## Assignment 2: About Me Website
-
-For this assignment you will create an HTML page that lets us know who you are!
-
-1. Create a .html file in your section 1 assignment folder.
-1. Add Code to meet the criteria below.
-1. Don't forget to properly comment your code/file.
-1. Submit the file to assignment 2.
-
-### Assignment Checklist
-
-- HTML needs to be structured properly (Use NU HTML Validator)
-- Must contain these elements with appropriate content
-  - description meta
-  - `<h>` elements
-  - `<p>` elements
-  - Nested elements (i.e a `h2`, `p`, and `a` element in a div)
-  - `<ul>`
-    - 3-5 `<li>`
-  - `<ol>`
-    - 3-5 `<li>`
-  - at least 1 external `<a>` to this page with the text `What I am Working on`
-  - at least 1 internal `<a>` to somewhere else on your page
-  - at least 1 internal `<a>` to a separate page on your server (it is okay if the page does not exist as long as the link is structured properly)
-  - at least 1 image link (the image does not need to be provided, but must be structured properly)
-- Must display details for
-
-  - Your Name
-  - A short Bio (1-2 paragraphs)
-  - Hobbies you enjoy
-  - Foods You enjoy in order of preference
-  - A list of special skills you have
-
-  #### Assignment Criteria
-
-- **HTML Elements (30%):** Correct use of HTML elements.
-- **Content & Formatting (30%):** Clarity of writing, appropriate use of HTML tags for text.
-- **List & Links (20%):** Correct use of the `<ul>`, `<ol>` and `<a>` tags, with descriptive `alt` text and relevant URLs.
-- **Overall Structure & Presentation (20%):** Clean, readable HTML code, logical page structure.
-
-#### Extra Credit:
-
-- Create a contact form (doesn't have to actually work but must be structured properly).
-- Form should include
-  - A name field
-  - An email field
-  - A message field
+  - Take the Week 2 Quiz

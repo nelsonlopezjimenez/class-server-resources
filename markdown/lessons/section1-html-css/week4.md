@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "How to use Form, Tables and HTML Tools"
 description: "Learn how to properly set up a form, create tables and use HTML tools to build fully structured webpages"
 week: 4
@@ -40,9 +40,6 @@ By the end of this week, you will be able to:
 - [Build a Hotel Feedback Form](http://localhost:8001/learn/responsive-web-design-v9/workshop-hotel-feedback-form/step-1):
 
 1. Go through all 33 steps to Build a Hotel Feedback Form.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 4.1
 
 ## Day 2: Working with Tables
 
@@ -61,9 +58,6 @@ By the end of this week, you will be able to:
 - [Build a Final Exams Table](http://localhost:8001/learn/responsive-web-design-v9/workshop-final-exams-table/step-1)
 
 1. Go through all 10 steps of building a Final Exams Table.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 4.2
 
 ## Day 3:
 
@@ -71,10 +65,7 @@ By the end of this week, you will be able to:
 
 - [Build a Book Catalog Table](http://localhost:8001/learn/responsive-web-design-v9/lab-book-catalog-table/build-a-book-catalog-table)
 
-1. Go through all 10 steps of building a Final Exams Table.
-1. When you are finished copy and paste the code into a new .html file in your section 1 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under lab 4.3
+1. Go through all 10 steps of building a Book Catalog Table.
 
 ## Day 4: Forms, Tables, and Tools Quiz
 
@@ -86,43 +77,4 @@ By the end of this week, you will be able to:
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the: Week 4: Forms and Tables quiz
-
-## Assignment 4: About Me with Interactivity
-
-Build upon your previous "About Me" webpage. This assignment requires you to add a new page featuring an interactive form and a dynamic table.
-
-**New Page Requirements:**
-
-- **Contact Form Page:** Create a new HTML page containing a form for user interaction.
-  - The form must include:
-    - `<label>` for: `Name` (input type: text)
-    - `<label>` for: `Email` (input type: email)
-    - `<label>` for: `Message` (input type: text area)
-    - `<button type="submit">` labeled "Send Message"
-- **Favorite Books Table Page:** Modify your existing “Favorite Books” page to display your book data in a table format.
-  - The table must have a clear header defining the data displayed.
-  - The table must have a minimum of 3 rows.
-  - Each row needs the following columns:
-    - `Book Title`
-    - `Book Author`
-    - `Book Genre`
-    - `Book Description`
-    - `Rating`
-
-## Assignment Criteria
-
-- **Semantic HTML & Structure (20%)** - Correct use of semantic elements, proper page structure, including the new form and table.
-- **Form Implementation (30%)** - Correct form structure, labeling, input types, and submission handling (although functionality doesn't need to work).
-- **Table Implementation (30%)** - Correct table structure, data display, appropriate column headers, and use of data tags.
-- **Content & Formatting (20%)** - Clarity of writing, appropriate use of HTML tags for text, data presented clearly within the table and form.
-
-### Extra Credit:
-
-- Using inline styling add basic CSS
-  - The `<body>`, `<main>` and `<article>` should all have different background colors
-  - Your text should use at least three different colors
-    - I.E. `<h1>` could be Green, a `<p>` could be purple, and a `<strong>`could be yellow.
-  - Use borders where appropriate to separate different sections of the webpage from each other
-
-**Note**: Your CSS at this time doesn't have to look good. If your background is Chartreuse and your text is Yellow that is okay. Grade is not based on "How well your site looks" but on using the stylings properly.
+  - Take the: Week 4 Quiz

@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-01-21
+publishDate: 2026-02-02
 title: "Form Validation, Recursion and Asynchronous calls"
 description: "Learn how to validate form data before sending it to the server, how to create recursive functions, and how to handle asynchronous calls."
 week: 21
@@ -38,18 +38,12 @@ These section has many small sections to read. Between today and tomorrow work t
 - [Build a Calorie Counter](http://localhost:8001/learn/javascript-v9/workshop-calorie-counter/step-1)
 
 1. Go through all 97 steps to Build a Calorie Counter.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 21.1.A.
 
 AND
 
 - [Build a Customer Complaint Form](http://localhost:8001/learn/javascript-v9/lab-customer-complaint-form/build-a-customer-complaint-form)
 
 1. Go through all 32 steps to Build a Real Time Counter.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 21.1.B.
 
 ### Day 2: Recursion
 
@@ -62,18 +56,12 @@ AND
 - [Build a Decimal to Binary Converter](http://localhost:8001/learn/javascript-v9/workshop-decimal-to-binary-converter/step-1)
 
 1. Go through all 7 steps to Build a Decimal to Binary Converter.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 21.2.A
 
 AND
 
 - [Build a Permutation Generator](http://localhost:8001/learn/javascript-v9/lab-permutation-generator/build-a-permutation-generator)
 
 1. Go through all 8 steps to Build a Permutation Generator.
-1. When you are finished copy and paste the code into a new .js file in your section 2 labs directory.
-1. Add appropriate comments to show understanding of the code.
-1. Submit this to the "text box" in canvas under under lab 21.2.B
 
 ### Day 2: Asynchronous JavaScript
 
@@ -89,7 +77,7 @@ AND
 
 ### Lab 21.3
 
-**NEED FETCH LAB THAT WORKS AS fCC's DOES NOT\***
+**NEED JSON PLACE LAB**
 
 ## Day 4: DOM and Debugging Quiz
 
@@ -102,10 +90,4 @@ AND
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the Week 21: Form Validation
-  - Take the Week 21: Recursion
-  - Take the Week 21: Asynchronous
-
-## Assignment 21:
-
-**Build an Assignment on using form validation, recursion and asynchronous function calls**
+  - Take the Week 21 Quiz
