@@ -32,7 +32,7 @@ Each page should have the same Header with nav bar, and the same footer.
 
 A landing page that introduces the application and guides users to key sections. (Must include a brief description and a clear navigation to other pages)
 
-[All Recipe Homepage Desktop](/images/all-recipes/homepage-desktop-v2.png) and [All Recipe Homepage Mobile](/images/all-recipes/homepage-mobile.png)
+[All Recipe Homepage Desktop](/images/all-recipes/homepage-desktop-v2.png) and [All Recipe Homepage Mobile](/images/all-recipes/homepage-mobile-v2.png)
 
 [Reddit Homepage Desktop](/images/reddit/homepage-desktop.png) and [Reddit Homepage Mobile](/images/reddit/homepage-mobile.png)
 
