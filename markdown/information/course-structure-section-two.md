@@ -43,21 +43,9 @@ If the lab/assignment is a text based submission either write in your answer, or
 
 ### Midterm and Finals
 
-This section will have 2 Exams. A Midterm and a Final Exam. These exams must be taken in class. Midterm myay be an open book exam, allowing you to utilize websites, notes, and other resources. However, _you cannot_ ask other students, classroom assistants, or the instructor for answers. If you don’t understand a question, please ask the instructor or classroom assistants for clarification.
+This section will have 2 Exams. A Midterm and a Final Exam. These exams must be taken in class. Midterm may be an open book exam, allowing you to utilize websites, notes, and other resources. However, _you cannot_ ask other students, classroom assistants, or the instructor for answers. If you don’t understand a question, please ask the instructor **ONLY** for clarification.
 Final exam may be replaced by a Final Project and it will be discussed during class during the second half of the quarter. 
 
-## Grading Information
-
-### ⭐ Grade Weights
-
-1.  Labs: **30%**
-1.  Quizzes: **10%**
-1.  Assignments: **10%**
-1.  Participation: **10%**
-1.  Midterm Exam: **15% **
-1.  Final Exam: **15% **
-1.  Attendance: **10%**
-1.  Extra Credit: **1%**
 
 - **Notes on Exams:**
   Exams are designed to assess your understanding of the material, not to induce anxiety. To alleviate concerns, exams will be graded on a curve. This means that the overall distribution of grades will be adjusted so that most students receive at least a C- passing grade, while a few students will achieve B’s, and the top performers will receive A’s. 
@@ -67,7 +55,7 @@ Final exam may be replaced by a Final Project and it will be discussed during cl
 **Labs** are due at the start of the first day of the next week as indicated in the Class Schedule. i.e. Assignment for week 0 (Your Resume) is due first thing monday of week 1.
 **Assignments** are due at the start of class on the date indicated in the Class Schedule. i.e. Lab 1.1 is due first thing day 2 of week 1.
 
-If a lab or assignment is turned in later than the due date, but earlier than 1 week late, it will be marked 50% off of the final grade. After the being 1 week late the lab or assignment will receive a 0. During the first two week on the first quarter this rule is not enforced. I will announce the time when the rule will be enforced.
+If a lab or assignment is turned in later than the due date, but earlier than 1 week late, it will be marked 50% off of the final grade. After being 1 week late the lab or assignment will receive a 0. During the first two week on the first quarter this rule is not enforced. I will announce the time when the rule will be enforced.
 
 **Quizzes** must be taken on the day indicated in Canvas. The highest grade received on that day will be the one accepted. Quizzes taken up to 1 week late will be marked 50% off of final grade. After being more than 1 week late a 0 will be received. Quizzes can be retaken as many times as you can and only the highest grade will be recorded, unless indicated otherwise. 
 
@@ -81,20 +69,16 @@ If a lab or assignment is turned in later than the due date, but earlier than 1 
 
 ## Course Weekly Breakdown:
 
-- **Week 0:** Introduction to the course. Syllabus content. Introduce Yourself.
-
-### Week 13-22 Javascript
-
-**Week 13:** Variables and Strings
-**Week 14:** Booleans and Numbers
-**Week 15:** Functions
-**Week 16:** Arrays, Objects
-**Week 17:** Objects, Loops,
-**Week 18:** jsFun (Midterm Assignment) and Exam
-**Week 19:** Higher order functions, callbacks, DOM Manipulation, Debugging
-**Week 20:** Form Validation, Maps
-**Week 21:** CRUD, Recursion and Async
-**Week 22:** Final Assignment and Exam
+**Week 1:** Introduction to the course. Syllabus content. Introduce Yourself.Introduction to JavaScript: brief history and syntax 
+**Week 2:** Variables and Data Types: Primitive/Object, Strings.Operators and Expressions
+**Week 3:** Conditionals, Arrays, Objects
+**Week 4:** Objects, Loops,
+**Week 5:** jsFun (Midterm Assignment) and Exam
+**Week 6:** Functions 
+**Week 9:** Higher order functions, callbacks, DOM Manipulation, Debugging
+**Week 10:** Form Validation, Maps
+**Week 11:** CRUD, Recursion and Async
+**Week 12:** Final Assignment and Exam
 
 ### Week 23-24
 
