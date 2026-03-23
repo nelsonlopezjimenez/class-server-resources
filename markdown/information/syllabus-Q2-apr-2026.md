@@ -42,7 +42,7 @@ SYLLABUS Q2 APR 2026
 
 ### **Course Materials**
 
-*   Textbook by Flavio Copes on [JavaScript Handbook](/courses/392419000000591/files/392419000063625?wrap=1 "js-handbook.pdf") 
+*   Textbook by Flavio Copes on [JavaScript Handbook](/courses/392419000000591/files/392419000063625?wrap=1 "js-handbook.pdf")(/images/week1/js-handbook-book-photo.jpg) 
 *   [![](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1542805888i/42902828.jpg)](/courses/392419000000591/files/392419000064043?wrap=1 "js-handbook-flavio-copes.html")
 *   Textbook
 

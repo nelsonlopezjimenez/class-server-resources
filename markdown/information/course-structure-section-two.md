@@ -80,9 +80,6 @@ If a lab or assignment is turned in later than the due date, but earlier than 1 
 **Week 9:** Intro to Web APIs
 **Week 10:** Final Assignment and Exam
 
-### Week 23-24
-
-Some Quarters have more than 10 weeks. On those instances more time will be given to work the jsFUN Assignment and Exam, As well as the Final Assignment and Exam.
 ### week 1: Intro to JS
 1. Introduction to JavaScript
 1. Introduction to Scripting
