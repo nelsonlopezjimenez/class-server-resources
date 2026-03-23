@@ -33,13 +33,13 @@ Each week, we’ll have a short review section to help you consolidate your know
 
 Each week will have a lab that is due the first day of the next week (typically a Monday). Each lab will have a detailed list of criteria that must be meet to receive a full grade. Each week will have one or more assignment (as a homework or in-class assignment). 
 
-### Assignment\Labs Expectations:
+### Assignment/Labs Expectations:
 
 When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a dash ("-") followed by the lab or assignment.
 
-Example:  "John Doe" turning in a file for Lab 1.1 would name the file doej-lab1.1.html, for the week 1 assignment would be doej-assignment1.html. If uploading multiple files you need to zip the folder and follow same naming convention (doej-lab1.1.zip), unless you are asked explicitly to submit one item at a time, for example an html file and two or three image files. NOTE: you can not submit a folder containing multiple items, unless it is compressed.
+Example:  **"John Doe"** turning in a file for Lab 1.1 would name the file **doej-lab1.1.html**, for the week 1 assignment would be doej-assignment1.html. If uploading multiple files you need to zip the folder and follow same naming convention (doej-lab1.1.zip), unless you are asked explicitly to submit one item at a time, for example an html file and two or three image files. NOTE: you can not submit a folder containing multiple items, unless it is compressed.
 
-If the lab/assignment is a text based submission either write in your answer, or copy/paste your code into the provided submission area. If you are submitting JavaScript as part of an html file, then no problem to submit on canvas. If you are submitting a file with "js" extension, then you should rename your file by adding a "txt" second extension and upload to canvas. Canvas has the ability to recognize the extension and disable the upload to prevent JavaScript possible execution on the server side. 
+If the lab/assignment is a text based submission either write in your answer, or copy/paste your code into the provided submission area. If you are submitting JavaScript as part of an html file, then no problem to submit the html file on canvas. If you are submitting a file with "js" extension, then you should rename your file by adding a "txt" second extension and upload to canvas. Canvas has the ability to recognize the extension and disable the upload to prevent JavaScript possible execution on the server side. You can copy/paste your code into the "text Entry" box. Make sure you select the "preformatted" option when entering/pasting the code as to keep the correct indentation. 
 
 ### Midterm and Finals
 
@@ -69,17 +69,126 @@ If a lab or assignment is turned in later than the due date, but earlier than 1 
 
 ## Course Weekly Breakdown:
 
-**Week 1:** Introduction to the course. Syllabus content. Introduce Yourself.Introduction to JavaScript: brief history and syntax 
+**Week 1:** Introduction to the course. Syllabus content. Introduction to JavaScript: brief history and syntax 
 **Week 2:** Variables and Data Types: Primitive/Object, Strings.Operators and Expressions
-**Week 3:** Conditionals, Arrays, Objects
-**Week 4:** Objects, Loops,
-**Week 5:** jsFun (Midterm Assignment) and Exam
-**Week 6:** Functions 
-**Week 9:** Higher order functions, callbacks, DOM Manipulation, Debugging
-**Week 10:** Form Validation, Maps
-**Week 11:** CRUD, Recursion and Async
-**Week 12:** Final Assignment and Exam
+**Week 3:** Functions and Debugging
+**Week 4:** Controling Program Flow, Arrays, Objects
+**Week 5:** Loops, DOM, more objects, DOM, midterm
+**Week 6:** More objects, DOM Manipulation.
+**Week 7:** Form Validation, Maps
+**Week 8:** JavaScript Libraries and Frameworks
+**Week 9:** Intro to Web APIs
+**Week 10:** Final Assignment and Exam
 
 ### Week 23-24
 
 Some Quarters have more than 10 weeks. On those instances more time will be given to work the jsFUN Assignment and Exam, As well as the Final Assignment and Exam.
+### week 1: Intro to JS
+1. Introduction to JavaScript
+1. Introduction to Scripting
+1. JavaScript Characteristics
+1. JavaScript and Common Programming Concepts
+1. JavaScript Flavors and Versions
+1. Technologies based on JavaScript
+1. Server-Side vs. Client-Side Applications
+1. Annotating Your Code with Comments
+1. Expanding the Role of JavaScript
+
+### Week 2: Working with Variables and Data in JavaScript
+
+*   Using JavaScript to Communicate with the User
+*   Tools for Debugging Code
+*   Using Data More Than Once: Variables
+*   JavaScript Operators
+*   JavaScript Expressions
+*   JavaScript Alerts and Prompts
+*   Simple User Events and Basic Event Handlers
+*   JavaScript Keywords and Reserved Words
+
+
+### Week 3: Functions and Debugging
+
+*   Introduction to Functions
+*   Defining a Function
+*   Calling a Function
+*   Methods as Functions
+*   Types of Functions
+*   User Events and JavaScript Event Handlers
+*   What Is Debugging?
+*   Tools for Debugging Code
+*   Testing Code in Various Browsers
+*   Debugging Logic Errors
+*   JavaScript and Mobile Devices
+
+
+### Week 4: Controlling Program Flow
+
+*   Controlling Decisional Program Flow
+*   The if...else Statement
+*   The while Statement
+*   The for Statement
+*   The break Statement
+*   The continue Statement
+*   The switch Statement
+
+### Week 5: More on loops, arrays, Document Object Model (DOM), midterm
+
+*   The JavaScript Document Object Model (DOM)
+*   The window Object
+*   The document Object
+*   The image Object
+*   The history Object
+*   The location Object
+*   The navigator Object
+*   The Virtual DOM
+
+### Week 6: Objects and DOM manipulation
+
+*   Introduction to JavaScript Language Objects
+*   The String Object
+*   Evaluating Strings
+*   JavaScript Regular Expressions
+*   The Array Object
+*   The forEach() Method
+*   The map() Method
+*   The Date Object
+*   Setting and Extracting Time Information
+*   The Math Object
+*   Changing HTML on the Fly
+*   Using the getElementById Method
+*   Using the getElementsByName Method
+*   Using the getElementsByTagName Method
+*   Using the getElementsByClassName Method
+*   Modifying Attributes within the DOM
+
+### Week 7: Developing Interactive Forms with JavaScript
+
+*   Interactive Forms
+*   Overview of Form Elements
+*   Referring to form Elements
+*   The form Object
+*   The input Elements and text Objects
+*   The textarea object
+*   The select Object and select Element
+*   Form Validation
+*   Common form Security Errors
+
+### Week 8: JavaScript Libraries and Frameworks
+
+*   Introduction to JavaScript Libraries and Frameworks
+*   Choosing a Code Library
+*   External and Pre-Made Scripts
+*   Loading Your First Library
+*   Using JavaScript Library Plug-ins
+*   Using Frameworks
+*   Best Practices with JavaScript Libraries and Frameworks
+*   Copyright Issues and JavaScript
+
+### Week 9: Introduction to Web APIs
+
+*   Web Application Programming Interface (API)
+*   The Web Storage API
+*   The Geolocation API
+*   The Canvas API 
+
+### Week10 : Final Project And/Or Final Exam
