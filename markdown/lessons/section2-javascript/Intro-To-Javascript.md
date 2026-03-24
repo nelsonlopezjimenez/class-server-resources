@@ -281,7 +281,7 @@ Let’s talk about a tool that’s incredibly common in web development: Git. Gi
 
 Now, GitHub is a _platform_ built around Git. It’s a website where you can store your Git repositories (collections of code and its history) remotely. Think of it like a cloud-based storage space for your code. GitHub makes it super easy to share your code with your team, track progress, and work together on the same project. It's become the standard way developers share and manage their code.
 
-We have a version yf GitHub called [GiTea](http://192.168.1.28:3000/). You will need to create an account in order to be able to create your own repositories, fork other repositories, and begin keeping track of your code.
+We have a version of GitHub called [GiTea](http://192.168.1.28:3000/). You will need to create an account in order to be able to create your own repositories, fork other repositories, and begin keeping track of your code.
 
 To learn more on how to use Git read [w3Schools - Git Tutorial](http://localhost:22022/websites/w3schools.com/git/default6248.html)
 
