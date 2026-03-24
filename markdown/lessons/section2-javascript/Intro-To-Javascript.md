@@ -79,6 +79,14 @@ var legacy = "Legacy Code";
 
 Used to create websites, web applications (client/server side), mobile applications, programs for microcontrollers and the internet of things, smartwatch apps.
 
+### What is scripting?
+1. A script is a **text file** with instructionsa computer follow in order, like a **recipe**.
+1. More advanced definition: A script is a source code intended to be interpreted at runtime rather than compiled to a standalone binary ahead of time. The runtime (shell, Python interpreter, browser engine) read and execute the source directly, trading startup performance and type-safety guarantees for **portability** and rapid iteration. 
+
+The line blurs significantly with modern engines. See Just-In-Time compilation (JIT) at the end of this chapter. 
+
+The concept of "scripting language" is largely historical. "Interpreted vs compiled" is about the runtime strategy, not the language itself.
+
 ### Main Characteristics
 
 - **high level**: it provides abstraction that allow to ignore details of the hardware where it is running
@@ -89,10 +97,183 @@ Used to create websites, web applications (client/server side), mobile applicati
 - **Multi-paradigm**: it can be either object-oriented or imperative or functional style
 - It has nothing to do with Java programming language.
 
+### A bit of history
+- Created in 1995 by Brendan Eich. It became an ECMA (European Computer Manufacturers Association) standard in 1997.
+- First scripting language natively supported by the web browser. 
+- In the beginning, it allowed animations and the marvel of Dynamic HTML: hide/show divs, moving elements after loading, changing styles on the fly, responding to mouse/keyboard events, basic animation (setTimeout loops)
+- Now it is used outside the browser: Node.js in the backend
+- it use extended to mobile apps, embedded apps, TV set and much more.
 
-### freeCodeCamp
+### Common Programming Concepts
 
-Make sure your freeCodeCamp server is up and running.
+- Data: variable, type, constant, array, objects
+- Logic and Control flow: conditionals, loop, function, recursion, exception handling
+- Paradigms: procedural, OOP, functional, declarative, event-driven
+- JS Advanced: concurrency, asynchronous, callback, promise/future, closure, higher order function
+
+See short definitions after glossary at the end of this chapter
+
+### JavaScript versions
+
+1. The current version is ES2025. The official name of the standard is ECMAScript. 
+1. The first ECMAScript versions were abbreviated by numbers: ES1, ES2, ES3, ES5, ES6
+1. From 2016, versions are named by year 
+1. Ref [JavaScript versions in W3S](https://www.w3schools.com/js/js_versions.asp)
+
+### Technolgies based on JavaScript
+
+#### Frontend
+| Technology | What it is |
+|---|---|
+| **React** | UI component library (Meta) |
+| **Vue** | Progressive UI framework |
+| **Angular** | Full frontend framework (Google) |
+| **Svelte** | Compiles to vanilla JS, no virtual DOM |
+| **HTMX** | HTML extensions, minimal JS |
+
+#### Backend
+| Technology | What it is |
+|---|---|
+| **Node.js** | JS runtime on the server |
+| **Deno** | Secure Node alternative (Ryan Dahl) |
+| **Bun** | Fast all-in-one JS runtime |
+| **Express** | Minimal Node web framework |
+| **Hono** | Lightweight, edge-ready framework |
+| **NestJS** | Opinionated Node framework |
+
+#### Mobile
+| Technology | What it is |
+|---|---|
+| **React Native** | Native mobile apps with React |
+| **Ionic** | Hybrid mobile apps |
+| **Expo** | React Native toolchain |
+
+#### Desktop
+| Technology | What it is |
+|---|---|
+| **Electron** | Desktop apps (VS Code, Slack, Discord) |
+| **Tauri** | Lighter Electron alternative (Rust core) |
+
+#### Full Stack / Meta-frameworks
+| Technology | What it is |
+|---|---|
+| **Next.js** | React + server-side rendering |
+| **Nuxt** | Vue equivalent of Next |
+| **SvelteKit** | Svelte's full-stack framework |
+| **Astro** | Content-focused, multi-framework |
+| **Remix** | Full stack React framework |
+
+#### Tooling
+| Technology | What it is |
+|---|---|
+| **Webpack** | Module bundler |
+| **Vite** | Fast dev build tool |
+| **ESBuild** | Extremely fast bundler/minifier |
+| **Babel** | JS transpiler |
+| **ESLint** | Linter |
+| **Jest / Vitest** | Testing frameworks |
+
+#### Superset Languages
+| Technology | What it is |
+|---|---|
+| **TypeScript** | Typed JavaScript (Microsoft) |
+| **JSX/TSX** | JS with embedded HTML syntax |
+
+#### Database / Data
+| Technology | What it is |
+|---|---|
+| **MongoDB** | JS-friendly document database |
+| **Mongoose** | MongoDB ODM for Node |
+| **Prisma** | Modern ORM for Node/TypeScript |
+| **GraphQL (Apollo)** | Query language, heavy JS ecosystem |
+
+#### Edge / Serverless
+| Technology | What it is |
+|---|---|
+| **Cloudflare Workers** | JS at the network edge |
+| **Vercel Functions** | Serverless JS functions |
+| **AWS Lambda (Node)** | Serverless Node runtime |
+
+---
+
+> JavaScript went from "toy language for button clicks" to running on servers, phones, desktops, databases, and network edges. The ecosystem is massive — arguably the largest of any language today.
+
+### Server/Client side Apps
+**Client-side** — work done *in the browser*, on the user's machine. Think of it as a **vending machine**: the product (HTML/CSS/JS) is already in front of you; you interact with it directly, no trip to the warehouse needed.
+
+**Server-side** — work done *on a remote machine* before anything reaches the browser. Like a **restaurant kitchen**: you order (request), the chef prepares it out of sight (processes data, queries DB), then serves the result (response).
+
+---
+
+**Quick comparison:**
+
+| | Client-side | Server-side |
+|---|---|---|
+| Runs on | Browser (user's device) | Web server (remote machine) |
+| Languages | HTML, CSS, JS | Node.js, Python, PHP, Java… |
+| Sees source code? | Yes (devtools) | No |
+| Needs internet? | After first load, maybe not | Yes, per request |
+| Example | Form validation, animations | Login auth, DB queries |
+
+---
+
+**Modern twist:** The line blurs with SSR (Next.js, Astro) — the *kitchen* pre-plates the dish, but the *vending machine* handles refills. That's the hybrid model most frameworks now use.
+
+### Comments
+Code tells the computer **what** to do. Comments tell humans **why**.
+
+---
+
+A function named `calculateTotal()` is self-explanatory. But *why* does it multiply by `1.0875` instead of `1.09`? Without a comment, the next developer (or you, 6 months later) has to **reverse-engineer intent** — which wastes time and invites bugs.
+
+```js
+// WA state tax rate for King County (updated 2023)
+const TAX_RATE = 1.0875;
+```
+
+**Three main uses:**
+1. **Explain why**, not what — the code already shows what
+2. **Warn** about non-obvious side effects or gotchas
+3. **TODO/FIXME** markers for unfinished work
+
+> Bad comment: `i++ // increment i`
+> Good comment: `i += 2 // skip header row, data starts at index 1`
+
+### Expanding the role of JS
+
+
+**Started** as a simple browser scripting tool (1995) — add a little interactivity to web pages. That was its entire job.
+
+---
+
+**The expansion trajectory:**
+
+| Era | New Territory |
+|---|---|
+| 2009 — Node.js | Servers. JS leaves the browser |
+| 2012–15 | Mobile (React Native), desktop (Electron) |
+| 2017+ | IoT, robotics (Johnny-Five), edge computing |
+| 2020+ | ML in-browser (TensorFlow.js), WebAssembly companion |
+| Now | AI tooling, CLI apps, serverless functions, game engines |
+
+The pattern: **wherever a runtime could be embedded, JS followed.**
+
+---
+
+**Near-future trajectory:**
+
+- **Edge computing** — JS functions running *between* server and user (Cloudflare Workers, Deno Deploy), near-zero latency
+- **AI integration** — JS as the glue layer for LLM APIs; browser-side inference getting real with WebGPU
+- **Full-stack consolidation** — one language, one team, from DB query to UI (Bun, Deno 2 pushing this hard)
+- **WebAssembly** — JS as the *orchestrator* of high-performance WASM modules (think Python or Rust logic called from JS)
+- **Offline-first / PWAs** — richer local apps blurring the browser/native line further
+
+---
+
+**The honest caveat:** JS expands partly by *necessity* (network effect, huge ecosystem) not always by being the *best* tool. TypeScript is correcting its weakest points, and runtimes like Bun are fixing its speed reputation.
+
+> Think of JS less as a language now and more as **the lingua franca of computing interfaces** — wherever humans interact with machines, JS tends to show up.
+
 
 ### Git and GiTea
 
@@ -103,3 +284,89 @@ Now, GitHub is a _platform_ built around Git. It’s a website where you can sto
 We have a version yf GitHub called [GiTea](http://192.168.1.28:3000/). You will need to create an account in order to be able to create your own repositories, fork other repositories, and begin keeping track of your code.
 
 To learn more on how to use Git read [w3Schools - Git Tutorial](http://localhost:22022/websites/w3schools.com/git/default6248.html)
+
+## Glossary
+
+1. **JIT (Just-In-Time)**: V8, SpiderMonkey: JavaScript engines don't just interpret line by line V8 for example:
+    1. Parses source  -> AST (Ahead-of-Time) -> bytecode (ignition interpreter runs immediately)
+    1. Profiles hot code paths at runtime
+    1. Compiles hot paths to optimize machine code
+    1. Deoptimize back if assumptions break.
+1. **AOT (Ahead-of-Time)**: 
+    1. C++: Source -> machine code (no need runtime, runs natively)
+    1. Java: Source -> bytecode -> JVM interprets or JIT compiles the bytecode at runtime. 
+1. Machine Code: it is the language the CPU understands: binary instructions that are architecture specific and map directly to hardware operations. Each instruction corresponds to a circular level operation the processor can execute in one or a few clock cycles. a
+    1. Example ``` C++:          a + b
+Assembly:     ADD EAX, EBX
+Machine code: 00000011 11000011   (binary)
+Hex:          03 C3 ```
+1. Assembly Language: it is just machine code with human-readable mnemonics.
+
+## Core Programming Concepts
+
+### Data
+| Concept | What it is |
+|---|---|
+| **Variable** | Named container for a value |
+| **Data type** | What kind of value (number, string, boolean) |
+| **Constant** | Variable that can't be reassigned |
+| **Array** | Ordered list of values |
+| **Object/Map** | Key-value pairs |
+
+### Logic & Flow
+| Concept | What it is |
+|---|---|
+| **Conditional** | Do this *if* something is true |
+| **Loop** | Repeat a block of code |
+| **Function** | Reusable named block of code |
+| **Recursion** | Function that calls itself |
+| **Exception handling** | Gracefully deal with errors |
+
+### Organization
+| Concept | What it is |
+|---|---|
+| **Scope** | Where a variable is visible/accessible |
+| **Namespace** | Grouping to avoid name collisions |
+| **Module** | Self-contained reusable file/unit |
+| **Library** | Collection of reusable modules |
+| **API** | Defined interface for interacting with code |
+
+### Memory
+| Concept | What it is |
+|---|---|
+| **Stack** | Memory for function calls, automatically managed |
+| **Heap** | Memory for dynamic data, manually or GC managed |
+| **Garbage collection** | Runtime reclaims unused memory automatically |
+| **Pointer/Reference** | Address pointing to a value in memory |
+
+### Paradigms
+| Concept | What it is |
+|---|---|
+| **Procedural** | Step-by-step instructions |
+| **OOP** | Code organized around objects and classes |
+| **Functional** | Code as pure functions, avoid shared state |
+| **Declarative** | Describe *what* not *how* (SQL, HTML) |
+| **Event-driven** | Code runs in response to events |
+
+### Advanced
+| Concept | What it is |
+|---|---|
+| **Concurrency** | Multiple tasks in overlapping time |
+| **Asynchronous** | Don't wait — continue and handle result later |
+| **Callback** | Function passed to run after something completes |
+| **Promise/Future** | Placeholder for a value not yet available |
+| **Closure** | Function that remembers its outer scope |
+| **Higher-order function** | Function that takes or returns another function |
+
+### Data Structures & Algorithms
+| Concept | What it is |
+|---|---|
+| **Stack** | Last in, first out (LIFO) |
+| **Queue** | First in, first out (FIFO) |
+| **Tree** | Hierarchical node structure |
+| **Graph** | Nodes connected by edges |
+| **Sorting** | Ordering data by a criteria |
+| **Searching** | Finding data efficiently |
+| **Complexity (Big O)** | How performance scales with input size |
+
+> Most programming arguments boil down to disagreements about which of these concepts to apply, when, and how.

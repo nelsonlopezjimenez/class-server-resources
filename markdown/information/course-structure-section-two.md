@@ -90,6 +90,7 @@ If a lab or assignment is turned in later than the due date, but earlier than 1 
 1. Server-Side vs. Client-Side Applications
 1. Annotating Your Code with Comments
 1. Expanding the Role of JavaScript
+1. Git version control: Github/Gitea
 
 ### Week 2: Working with Variables and Data in JavaScript
 
