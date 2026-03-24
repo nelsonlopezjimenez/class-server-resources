@@ -5,8 +5,21 @@ description: "Introduction to JavaScript syntax, variables, primitive data types
 week: 13
 section: 2
 ---
+<details>Variables and Data
+<pre>
+### Week 2: Working with Variables and Data in JavaScript
 
-# Week 13: JavaScript Fundamentals and Strings
+*   Using JavaScript to Communicate with the User
+*   Tools for Debugging Code
+*   Using Data More Than Once: Variables
+*   JavaScript Operators
+*   JavaScript Expressions
+*   JavaScript Alerts and Prompts
+*   Simple User Events and Basic Event Handlers
+*   JavaScript Keywords and Reserved Words
+</pre></details>
+
+# Week 2: Working with Variables and Data
 
 ## Learning Objectives
 
@@ -18,9 +31,165 @@ By the end of this week, you will be able to:
 - Create, display, and manipulate strings
 - Use browser developer tools to debug and test JavaScript code.
 
-## Day 1: Introduction to JavaScript and Learning How to Comment
+## Monday: Using JS to Communicate with the user
+
+**Communication is a two-way street. JS can tap you on the shoulder, or open a full conversation.**
+
+---
+
+**`alert()` — the megaphone**
+Loud, blunt, stops everything. No one likes it, but everyone hears it. Use sparingly — it's rude at a dinner party.
+
+---
+
+**`confirm()` — the bouncer**
+Blocks the door and asks: *yes or no?* Returns `true` or `false`. Nothing moves until you answer.
+
+---
+
+**`prompt()` — the sticky note slipped under the door**
+Asks for a typed response. Returns whatever the user wrote, or `null` if they walked away. Old-fashioned but occasionally useful.
+
+---
+
+**The DOM — the live stage**
+JS can rewrite any part of the page *while the audience is watching* — change text, swap images, show/hide elements. This is the main channel. Most real communication happens here.
+Example ["turn light on/off"](https://www.w3schools.com/js/js_intro.asp)
+The [DOM](https://www.w3schools.com/js/js_htmldom.asp)
+The [DOM](http://localhost:22022/websites/w3schools.com/js/js_htmldom.html)
+
+---
+
+**Events — the doorbell system**
+JS *listens* for user actions — clicks, keystrokes, scrolls, form submissions. When the doorbell rings, a function runs. The user leads, JS follows.
+
+---
+
+**Forms — the suggestion box**
+Structured input — text fields, dropdowns, checkboxes. The user fills it out, JS reads it, validates it, and decides what to do next.
+
+---
+
+**Notifications API — the push notification**
+JS can reach *outside* the browser tab and tap the user on the desktop. Requires permission first — like knocking before entering.
+
+---
+
+> **The arc:** JS went from shouting (`alert`) to *listening and responding in real time* (events + DOM). Modern JS barely uses the first three — the stage and the doorbell system do almost everything.
+
+### Tools for Debugging Code
+**Debugging is detective work.** Your code is the crime scene. These are your tools:
+
+---
+
+**`console.log()` — the sticky note**
+Slap it anywhere to leave yourself a message: *"I was here, and x was 42."* Simple, low-tech, surprisingly effective. Every developer still uses it.[Using console.log()](https://www.w3schools.com/js/js_output.asp) or [Using document.write()](https://www.w3schools.com/js/js_output.asp)
+[Using console.log()](https://www.w3schools.com/js/js_output.asp) or [Using document.write()](https://www.w3schools.com/js/js_output.asp)
+[JavaScript console.log()](http://localhost:22022/websites/w3schools.com/js/js_output.html)
+
+---
+
+**Browser DevTools (F12) — the X-ray machine**
+See through the page. Inspect HTML, CSS, network requests, memory, performance. Everything the browser *actually* sees, not what you *think* it sees.
+
+---
+
+**DevTools Debugger — the pause button on reality**
+Set a **breakpoint** and the program freezes mid-execution. You can look around, inspect every variable, then step forward *one line at a time* — like rewinding a crime scene in slow motion.
+
+---
+
+**The Console tab — a direct hotline to your page**
+Type JS directly into the running page. Like being able to *walk into the movie* and interact with the characters while it's playing.
+
+---
+
+**The Network tab — the mail tracking system**
+See every request your page sends and receives — what was asked for, what came back, how long it took, and whether it failed.
+
+---
+
+**ESLint — the strict teacher before class starts**
+Catches mistakes *before* you run anything. Doesn't wait for the crime — it spots suspicious behavior in advance.
+
+---
+
+> **Beginner priority:** `console.log` → DevTools Console → Debugger breakpoints. In that order. Most bugs surrender before you even need the rest.
+
+## Tuesday: Variables
+
+**1. For a complete beginner:**
+A variable is a **named box** that holds a value. You label it, put something in, and refer to it by name later.
+A container, a jar you can fill with water, oil, gelatine, etc. 
+
+```js
+let age = 25;
+```
+
+---
+
+**2. Slightly deeper:**
+A variable is a **binding** — a name attached to a value in memory. The name stays; the value can change (or not, with `const`).
+```js
+let score = 0;
+score = 10; // same box, new value
+```
+
+---
+<details><pre>
+**3. For someone thinking about how JS works:**
+A variable is a **reference to a location in memory.** For primitives (`number`, `string`) it stores the value directly. For objects and arrays it stores a *pointer* — the box holds a **map, not the treasure.**
+```js
+const user = { name: "Ana" };
+user.name = "Leo"; // const didn't protect the contents, only the pointer
+```
+
+---
+
+**4. Advanced — scope and lifecycle:**
+A variable is a **named binding scoped to a context**, with a defined lifecycle: declared, initialized, used, garbage collected when no longer reachable. `let`/`const` are block-scoped and have a temporal dead zone; `var` is function-scoped and hoisted — a design mistake JS carries for legacy reasons.
+```js
+function run() {
+  let x = 1;        // lives inside run()
+  if (true) {
+    let x = 2;      // different x — different block, different binding
+    console.log(x); // 2
+  }
+  console.log(x);   // 1
+}
+```
+</pre></details>
+---
+
+> **The through-line:** a label → a binding → a pointer → a scoped lifecycle. Same concept, increasing precision.
+
 
 ### Mandatory Reading:
+
+- [Introduction to JS](http://localhost:22022/websites/w3schools.com/js/js_intro.html)
+- [w3Schools - Comments](http://localhost:22022/websites/w3schools.com/js/js_comments.html)
+- [JavaScript Variables](https://www.w3schools.com/js/js_variables.asp)
+- [JavaScript Variables](http://localhost:22022/websites/w3schools.com/js/js_variables.html)
+
+<!-- <a href="http://localhost:22022/websites/w3schools.com/js/js_variables.html#w3-note" onclick="e.preventDefault(); scrollToClass('w3-note')">
+  Go to  w3-note
+</a> -->
+*   JavaScript Operators [operators](https://www.w3schools.com/js/js_operators.asp)
+- [JavaScript operators](http://localhost:22022/websites/w3schools.com/js/js_operators.html)
+*   JavaScript Expressions [expressions](https://www.w3schools.com/js/js_assignment.asp)
+- [JavaScript expressions](http://localhost:22022/websites/w3schools.com/js/js_assignment.html)
+*   JavaScript Alerts and Prompts [alert()](https://www.w3schools.com/jsref/met_win_alert.asp) and [prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp)
+- [JavaScript alert()](http://localhost:22022/websites/w3schools.com/jsref/met_win_alert.html)
+- [JavaScript prompt()](http://localhost:22022/websites/w3schools.com/jsref/met_win_prompt.html)
+* Simple User Events [events](https://www.w3schools.com/js/js_events.asp) and Basic Event Handlers
+- [JavaScript events](http://localhost:22022/websites/w3schools.com/js/js_events.html) **special attention to event listeners**
+* JavaScript Keywords and Reserved Words
+* [reserved words](https://www.w3schools.com/js/js_reserved.asp)
+- [JavaScript reserved words](http://localhost:22022/websites/w3schools.com/js/js_reserved.html)
+
+
+
+### Optional But Highly Recommended Reading:
 
 - [What is Javascript?](http://localhost:8001/learn/javascript-v9/#lecture-introduction-to-javascript):
 
@@ -45,19 +214,19 @@ By the end of this week, you will be able to:
 - [MDN - What is Javascript](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript.html)
 - [MDN - Comments](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript.html#comments)
 - [MDN - Variables](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables.html)
-- [w3Schools - Introduction to JS](http://localhost:22022/websites/w3schools.com/js/js_intro.html)
-- [w3Schools - Comments](http://localhost:22022/websites/w3schools.com/js/js_comments.html)
-- [w2Schools - Variables](http://localhost:22022/websites/w3schools.com/js/js_variables.html)
 
-### Lab 13.1:
+## Wednesday: Working with Data Types
 
-- [Build a Greeting Bot](http://localhost:8001/learn/javascript-v9/workshop-greeting-bot/step-1):
+### Mandatory Readings:
 
-1. Go through all 15 steps of building a simple greeting bot that uses strings and console.log() to communicate.
+- [MDN - Handling Strings](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings.html)
+- [MDN - String Templates](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals.html)
+- [w3Schools - Strings](http://localhost:22022/websites/w3schools.com/js/js_strings.html)
+- [w3Schools - String Templates](http://localhost:22022/websites/w3schools.com/js/js_string_templates.html)
 
-## Day 2: Working with Data Types
 
-### Mandatory Reading
+
+### Optional Reading (Highly Recommended)
 
 - [What is Dynamic Typing?](http://localhost:8001/learn/javascript-v9/lecture-working-with-data-types/what-is-dynamic-typing-in-javascript-and-how-does-it-differ-from-statically-typed-languages)
 - [How Does typeOf Operator Work?](http://localhost:8001/learn/javascript-v9/lecture-working-with-data-types/how-does-the-typeof-operator-work-and-what-is-the-typeof-null-bug-in-javascript)
@@ -74,21 +243,6 @@ By the end of this week, you will be able to:
 
 - [MDN - Handling Strings](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings.html)
 - [MDN - String Templates](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals.html)
-- [w3Schools - Strings](http://localhost:22022/websites/w3schools.com/js/js_strings.html)
-- [w3Schools - String Templates](http://localhost:22022/websites/w3schools.com/js/js_string_templates.html)
-
-### Lab 13.2:
-
-- [Build a Javascript Trivia Bot](http://localhost:8001/learn/javascript-v9/lab-javascript-trivia-bot/lab-javascript-trivia-bot)
-
-1.
-1. Go through all 15 steps of .
-
-and
-
-- [Build a Sentence Maker](http://localhost:8001/learn/javascript-v9/lab-sentence-maker/build-a-sentence-maker)
-
-1. Go through all steps of both of these labs.
 
 ## Day 3: Data Types - String Methods
 
@@ -104,20 +258,6 @@ and
 
 - [MDN - Useful String Methods](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods.html)
 - [w3Schools - String Methods](http://localhost:22022/websites/w3schools.com/js/js_string_methods.html)
-
-### Lab 13.3:
-
-- [Build a String Inspector](http://localhost:8001/learn/javascript-v9/workshop-string-inspector/step-1)
-
-and
-
-- [Build a Sentence Formatter](http://localhost:8001/learn/javascript-v9/workshop-string-formatter/step-1)
-
-and
-
-- [Build a String Transformer](http://localhost:8001/learn/javascript-v9/workshop-string-transformer/step-1)
-
-1. Go through all steps of all of these labs.
 
 ## Day 4: String Review and Quiz
 
