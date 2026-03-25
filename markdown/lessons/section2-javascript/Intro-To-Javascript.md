@@ -120,7 +120,7 @@ See short definitions after glossary at the end of this chapter
 1. From 2016, versions are named by year 
 1. Ref [JavaScript versions in W3S](https://www.w3schools.com/js/js_versions.asp)
 
-### Technolgies based on JavaScript
+### Technologies based on JavaScript
 
 #### Frontend
 | Technology | What it is |

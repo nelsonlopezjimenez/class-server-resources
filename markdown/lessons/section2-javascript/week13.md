@@ -31,7 +31,7 @@ By the end of this week, you will be able to:
 - Create, display, and manipulate strings
 - Use browser developer tools to debug and test JavaScript code.
 
-## Monday: Using JS to Communicate with the user
+## Day 1: Using JS to Communicate with the user
 
 **Communication is a two-way street. JS can tap you on the shoulder, or open a full conversation.**
 
@@ -77,7 +77,7 @@ JS can reach *outside* the browser tab and tap the user on the desktop. Requires
 
 > **The arc:** JS went from shouting (`alert`) to *listening and responding in real time* (events + DOM). Modern JS barely uses the first three — the stage and the doorbell system do almost everything.
 
-### Tools for Debugging Code
+## Day 1: Tools for Debugging Code
 **Debugging is detective work.** Your code is the crime scene. These are your tools:
 
 ---
@@ -116,7 +116,7 @@ Catches mistakes *before* you run anything. Doesn't wait for the crime — it sp
 
 > **Beginner priority:** `console.log` → DevTools Console → Debugger breakpoints. In that order. Most bugs surrender before you even need the rest.
 
-## Tuesday: Variables
+## Day 2: Variables
 
 **1. For a complete beginner:**
 A variable is a **named box** that holds a value. You label it, put something in, and refer to it by name later.
@@ -163,24 +163,51 @@ function run() {
 
 > **The through-line:** a label → a binding → a pointer → a scoped lifecycle. Same concept, increasing precision.
 
+## Day 2: JavaScript Datatypes
+1. String
+1. Number
+1. Bigint
+1. Boolean
+1. Object
+1. Undefined
+1. Null
+1. Symbol
+1. [reference](https://www.w3schools.com/js/js_types.asp) [localhost](http://localhost:22022/websites/w3schools.com/js/js_types.html)
+
+## Day 2: Expression And Operators
+
+An expression is a single unit of JS code that can be evaluated. Expression can vary in complexity. More advanced expressions involve objects, functions, and arrays. 
+
+1. Arithmetic: + - * ** / % ++ --
+1. Assignment = += -=
+1. Comparison: == === != !== > < >= <=
+1. Logical: && || !
+1 [reference](https://www.w3schools.com/js/js_operators.asp) [localhost](http://localhost:22022/websites/w3schools.com/js/js_operators.html)
 
 ### Mandatory Reading:
 
 - [Introduction to JS](http://localhost:22022/websites/w3schools.com/js/js_intro.html)
-- [w3Schools - Comments](http://localhost:22022/websites/w3schools.com/js/js_comments.html)
 - [JavaScript Variables](https://www.w3schools.com/js/js_variables.asp)
 - [JavaScript Variables](http://localhost:22022/websites/w3schools.com/js/js_variables.html)
-
-<!-- <a href="http://localhost:22022/websites/w3schools.com/js/js_variables.html#w3-note" onclick="e.preventDefault(); scrollToClass('w3-note')">
-  Go to  w3-note
-</a> -->
-*   JavaScript Operators [operators](https://www.w3schools.com/js/js_operators.asp)
+- [w3Schools - Strings](http://localhost:22022/websites/w3schools.com/js/js_strings.html)
+- [w3Schools - String Templates](http://localhost:22022/websites/w3schools.com/js/js_string_templates.html)
+- [w3Schools - Comments](http://localhost:22022/websites/w3schools.com/js/js_comments.html)
+* JavaScript Operators [operators](https://www.w3schools.com/js/js_operators.asp)
 - [JavaScript operators](http://localhost:22022/websites/w3schools.com/js/js_operators.html)
-*   JavaScript Expressions [expressions](https://www.w3schools.com/js/js_assignment.asp)
+* JavaScript Expressions [expressions](https://www.w3schools.com/js/js_assignment.asp)
 - [JavaScript expressions](http://localhost:22022/websites/w3schools.com/js/js_assignment.html)
-*   JavaScript Alerts and Prompts [alert()](https://www.w3schools.com/jsref/met_win_alert.asp) and [prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp)
-- [JavaScript alert()](http://localhost:22022/websites/w3schools.com/jsref/met_win_alert.html)
+- [w3Schools - String Methods](http://localhost:22022/websites/w3schools.com/js/js_string_methods.html)
+
+## Day 3: Alert, prompt, events
+The **alert()** method displays an alert box with a message and an OK button.
+
+### Mandatory Reading:
+
+* JavaScript Alerts [alert()](https://www.w3schools.com/jsref/met_win_alert.asp) 
+[localhost alert()](http://localhost:22022/websites/w3schools.com/jsref/met_win_alert.html)
 - [JavaScript prompt()](http://localhost:22022/websites/w3schools.com/jsref/met_win_prompt.html)
+[localhost prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp) 
+
 * Simple User Events [events](https://www.w3schools.com/js/js_events.asp) and Basic Event Handlers
 - [JavaScript events](http://localhost:22022/websites/w3schools.com/js/js_events.html) **special attention to event listeners**
 * JavaScript Keywords and Reserved Words
@@ -215,19 +242,6 @@ function run() {
 - [MDN - Comments](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript.html#comments)
 - [MDN - Variables](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables.html)
 
-## Wednesday: Working with Data Types
-
-### Mandatory Readings:
-
-- [MDN - Handling Strings](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings.html)
-- [MDN - String Templates](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals.html)
-- [w3Schools - Strings](http://localhost:22022/websites/w3schools.com/js/js_strings.html)
-- [w3Schools - String Templates](http://localhost:22022/websites/w3schools.com/js/js_string_templates.html)
-
-
-
-### Optional Reading (Highly Recommended)
-
 - [What is Dynamic Typing?](http://localhost:8001/learn/javascript-v9/lecture-working-with-data-types/what-is-dynamic-typing-in-javascript-and-how-does-it-differ-from-statically-typed-languages)
 - [How Does typeOf Operator Work?](http://localhost:8001/learn/javascript-v9/lecture-working-with-data-types/how-does-the-typeof-operator-work-and-what-is-the-typeof-null-bug-in-javascript)
 
@@ -239,14 +253,9 @@ function run() {
 - [Substrings](http://localhost:8001/learn/javascript-v9/lecture-working-with-strings-in-javascript/how-can-you-find-the-position-of-a-substring-in-a-string)
 - [prompt()](http://localhost:8001/learn/javascript-v9/lecture-working-with-strings-in-javascript/what-is-the-prompt-method-and-how-does-it-work)
 
-### Optional Readings:
-
 - [MDN - Handling Strings](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings.html)
 - [MDN - String Templates](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals.html)
 
-## Day 3: Data Types - String Methods
-
-### Mandatory Readings:
 
 - [What is ASCII?](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-character-methods/ywhat-is-ascii-and-how-does-it-work-with-charcodeat-and-fromcharcode)
 - [Using includes()](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-search-and-slice-methods/how-can-you-test-if-a-string-contains-a-substring)
@@ -254,12 +263,9 @@ function run() {
 - [Changing Casing](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-formatting-methods/how-can-you-change-the-casing-for-a-string)
 - [Remove WhiteSpace](http://localhost:8001/learn/javascript-v9/lecture-working-with-string-formatting-methods/how-can-you-trim-whitespace-from-a-string)
 
-### Optional Readings:
-
 - [MDN - Useful String Methods](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods.html)
-- [w3Schools - String Methods](http://localhost:22022/websites/w3schools.com/js/js_string_methods.html)
 
-## Day 4: String Review and Quiz
+## Day 4: Review and Quiz
 
 ### Mandatory Readings:
 
