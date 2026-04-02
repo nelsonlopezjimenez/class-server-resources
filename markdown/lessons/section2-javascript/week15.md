@@ -1,12 +1,12 @@
 ---
-publishDate: 2026-02-02
+publishDate: 2026-04-XX
 title: "Working with Functions"
-description: "Learn how to use functions to generate code that can be reused."
+description: "Definition, types, events, event handlers, debugging."
 week: 15
 section: 2
 ---
 
-# Week 15: Functions
+# Week 3: Functions
 
 ## Learning Objectives
 

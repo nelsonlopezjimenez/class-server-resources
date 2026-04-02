@@ -1,6 +1,6 @@
 ---
-publishDate: 2026-02-02
-title: "JavaScript Fundamentals - Variables, Data Types, and Basic Operations"
+publishDate: 2026-04-02
+title: "JavaScript Fundamentals - Variables, Data Types, alert, prompt methods"
 description: "Introduction to JavaScript syntax, variables, primitive data types, console.log(), and string methods."
 week: 14
 section: 2
@@ -54,9 +54,11 @@ Asks for a typed response. Returns whatever the user wrote, or `null` if they wa
 
 **The DOM — the live stage**
 JS can rewrite any part of the page *while the audience is watching* — change text, swap images, show/hide elements. This is the main channel. Most real communication happens here.
-Example ["turn light on/off"](https://www.w3schools.com/js/js_intro.asp)
-The [DOM](https://www.w3schools.com/js/js_htmldom.asp)
-The [DOM](http://localhost:22022/websites/w3schools.com/js/js_htmldom.html)
+Example ["turn light on/off" W3S](https://www.w3schools.com/js/js_intro.asp)
+and/or [localhost](http://localhost:22022/websites/w3schools.com/js/js_intro.html)
+
+The [DOM W3S](https://www.w3schools.com/js/js_htmldom.asp)
+The [DOM localhost](http://localhost:22022/websites/w3schools.com/js/js_htmldom.html)
 
 ---
 
@@ -83,9 +85,9 @@ JS can reach *outside* the browser tab and tap the user on the desktop. Requires
 ---
 
 **`console.log()` — the sticky note**
-Slap it anywhere to leave yourself a message: *"I was here, and x was 42."* Simple, low-tech, surprisingly effective. Every developer still uses it.[Using console.log()](https://www.w3schools.com/js/js_output.asp) or [Using document.write()](https://www.w3schools.com/js/js_output.asp)
-[Using console.log()](https://www.w3schools.com/js/js_output.asp) or [Using document.write()](https://www.w3schools.com/js/js_output.asp)
-[JavaScript console.log()](http://localhost:22022/websites/w3schools.com/js/js_output.html)
+Slap it anywhere to leave yourself a message: *"I was here, and x was 42."* Simple, low-tech, surprisingly effective. Every developer still uses it.[Using console.log()](https://www.w3schools.com/js/js_output.asp) and/or [Localhost W3S Template](http://localhost:22022/websites/w3schools.com/js/js_output.html)
+
+[Localhost W3S Template](http://localhost:22022/websites/w3schools.com/js/js_XXXXXXXX.html)
 
 ---
 
@@ -182,37 +184,32 @@ An expression is a single unit of JS code that can be evaluated. Expression can 
 1. Assignment = += -=
 1. Comparison: == === != !== > < >= <=
 1. Logical: && || !
-1 [reference](https://www.w3schools.com/js/js_operators.asp) [localhost](http://localhost:22022/websites/w3schools.com/js/js_operators.html)
+1 [reference W3S](https://www.w3schools.com/js/js_operators.asp) and/or [localhost](http://localhost:22022/websites/w3schools.com/js/js_operators.html)
 
 ### Mandatory Reading:
 
-- [Introduction to JS](http://localhost:22022/websites/w3schools.com/js/js_intro.html)
-- [JavaScript Variables](https://www.w3schools.com/js/js_variables.asp)
-- [JavaScript Variables](http://localhost:22022/websites/w3schools.com/js/js_variables.html)
-- [w3Schools - Strings](http://localhost:22022/websites/w3schools.com/js/js_strings.html)
-- [w3Schools - String Templates](http://localhost:22022/websites/w3schools.com/js/js_string_templates.html)
-- [w3Schools - Comments](http://localhost:22022/websites/w3schools.com/js/js_comments.html)
-* JavaScript Operators [operators](https://www.w3schools.com/js/js_operators.asp)
-- [JavaScript operators](http://localhost:22022/websites/w3schools.com/js/js_operators.html)
-* JavaScript Expressions [expressions](https://www.w3schools.com/js/js_assignment.asp)
-- [JavaScript expressions](http://localhost:22022/websites/w3schools.com/js/js_assignment.html)
-- [w3Schools - String Methods](http://localhost:22022/websites/w3schools.com/js/js_string_methods.html)
+- [Introduction to JS W3S](http://localhost:22022/websites/w3schools.com/js/js_intro.html) and/or [localhost](http://localhost:22022/websites/w3schools.com/js/js_intro.html)
+- [JavaScript Variables](https://www.w3schools.com/js/js_variables.asp) and/or [localhost](http://localhost:22022/websites/w3schools.com/js/js_variables.html)
+- [localhost W3S - Strings](http://localhost:22022/websites/w3schools.com/js/js_strings.html)
+- [Localhost W3S - String Templates](http://localhost:22022/websites/w3schools.com/js/js_string_templates.html)
+- [Localhost W3S - Comments](http://localhost:22022/websites/w3schools.com/js/js_comments.html)
+* [JavaScript Operators operators W3S](https://www.w3schools.com/js/js_operators.asp) and/or [Localhost](http://localhost:22022/websites/w3schools.com/js/js_operators.html)
+* [JavaScript Expressions expressions](https://www.w3schools.com/js/js_assignment.asp) and/or [Localhost](http://localhost:22022/websites/w3schools.com/js/js_assignment.html)
+- [Localhost W3S - String Methods](http://localhost:22022/websites/w3schools.com/js/js_string_methods.html)
 
 ## Day 3: Alert, prompt, events
 The **alert()** method displays an alert box with a message and an OK button.
 
 ### Mandatory Reading:
 
-* JavaScript Alerts [alert()](https://www.w3schools.com/jsref/met_win_alert.asp) 
-[localhost alert()](http://localhost:22022/websites/w3schools.com/jsref/met_win_alert.html)
-- [JavaScript prompt()](http://localhost:22022/websites/w3schools.com/jsref/met_win_prompt.html)
-[localhost prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp) 
+* [JavaScript Alerts alert()](https://www.w3schools.com/jsref/met_win_alert.asp) and/or [localhost alert()](http://localhost:22022/websites/w3schools.com/jsref/met_win_alert.html)
+[W3S prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp) and/or [Localhost](http://localhost:22022/websites/w3schools.com/jsref/met_win_prompt.html)
 
-* Simple User Events [events](https://www.w3schools.com/js/js_events.asp) and Basic Event Handlers
-- [JavaScript events](http://localhost:22022/websites/w3schools.com/js/js_events.html) **special attention to event listeners**
+* [Simple User Events events](https://www.w3schools.com/js/js_events.asp) and Basic Event Handlers and/or [Localhost](http://localhost:22022/websites/w3schools.com/js/js_events.html) 
+
+**special attention to event listeners**
 * JavaScript Keywords and Reserved Words
-* [reserved words](https://www.w3schools.com/js/js_reserved.asp)
-- [JavaScript reserved words](http://localhost:22022/websites/w3schools.com/js/js_reserved.html)
+* [reserved words](https://www.w3schools.com/js/js_reserved.asp) and/or [localhost](http://localhost:22022/websites/w3schools.com/js/js_reserved.html)
 
 
 

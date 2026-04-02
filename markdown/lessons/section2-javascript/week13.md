@@ -1,12 +1,12 @@
 ---
-publishDate: 2026-02-02
-description: "Introduction to JavaScript"
+publishDate: 2026-04-02
+description: "Introduction to JavaScript, scripting, history, comments, git"
 title: "Welcome to Javascript Programming"
 week: 13
 section: 2
 ---
 
-# Introduction to JavaScript, syllabus, some history
+# Week 01: Introduction to JavaScript, syllabus, some history
 
 <details>Content<pre>
 **Week 1:** Introduction to the course. Syllabus content. Introduction to JavaScript: brief history and syntax 
@@ -118,7 +118,7 @@ See short definitions after glossary at the end of this chapter
 1. The current version is ES2025. The official name of the standard is ECMAScript. 
 1. The first ECMAScript versions were abbreviated by numbers: ES1, ES2, ES3, ES5, ES6
 1. From 2016, versions are named by year 
-1. Ref [JavaScript versions in W3S](https://www.w3schools.com/js/js_versions.asp)
+1. Ref JavaScript versions in [W3S](https://www.w3schools.com/js/js_versions.asp) [localhost](http://localhost:22022/websites/w3schools.com/js/js_versions.html)
 
 ### Technologies based on JavaScript
 
@@ -283,7 +283,7 @@ Now, GitHub is a _platform_ built around Git. It’s a website where you can sto
 
 We have a version of GitHub called [GiTea](http://192.168.1.28:3000/). You will need to create an account in order to be able to create your own repositories, fork other repositories, and begin keeping track of your code.
 
-To learn more on how to use Git read [w3Schools - Git Tutorial](http://localhost:22022/websites/w3schools.com/git/default6248.html)
+To learn more on how to use Git read w3Schools - Git Tutorial [localhost](http://localhost:22022/websites/w3schools.com/git/default6248.html) and/or [w3Schools](https://www.w3schools.com/git/default.asp)
 
 ## Glossary
 
@@ -296,10 +296,12 @@ To learn more on how to use Git read [w3Schools - Git Tutorial](http://localhost
     1. C++: Source -> machine code (no need runtime, runs natively)
     1. Java: Source -> bytecode -> JVM interprets or JIT compiles the bytecode at runtime. 
 1. Machine Code: it is the language the CPU understands: binary instructions that are architecture specific and map directly to hardware operations. Each instruction corresponds to a circular level operation the processor can execute in one or a few clock cycles. a
-    1. Example ``` C++:          a + b
+    1. Example 
+``` C++:          a + b
 Assembly:     ADD EAX, EBX
 Machine code: 00000011 11000011   (binary)
-Hex:          03 C3 ```
+Hex:          03 C3 
+```
 1. Assembly Language: it is just machine code with human-readable mnemonics.
 
 ## Core Programming Concepts
