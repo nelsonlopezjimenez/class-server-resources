@@ -1,5 +1,5 @@
 ---
-publishDate: 01-20-2026
+publishDate: 2026-02-02
 description: "Introduction to JavaScript"
 title: "Welcome to Javascript Programming"
 week: 13

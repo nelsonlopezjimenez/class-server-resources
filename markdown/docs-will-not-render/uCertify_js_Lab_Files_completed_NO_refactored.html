@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 1-2</title>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+
+    <script type="text/javascript">
+        <!--
+        
+        document.write(navigator.appName);
+        document.write("<p>");
+        document.write(navigator.appVersion);
+        document.write("</p>"); 
+        
+        //-->
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 2-1</title>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <script type="text/javascript">
+        <!--
+        
+        /************************************************
+        Writing text directly on the webpage
+        ************************************************/
+
+        document.write("<b>Welcome to JavaScript!</b>");
+        //-->
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 2-2</title>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <script type="text/javascript">
+        <!--
+        
+        /***************************************************
+          A variable named userName is created and assigned 
+          the return value of a prompt() method
+        ***************************************************/
+
+        var userName = prompt("What is your name?");
+
+        /******************************************
+          The userName variable is used in document.write() statement.
+        ******************************************/
+
+        document.write("Welcome, " + userName + ".");
+
+        //-->
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 2-3</title>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <script type="text/javascript">
+        <!--
+        var a=5;
+        var b="5";
+        var c=10;
+        document.write("Values of variables: a = 5, b = &quot;5&quot;, and c = 10.<br /><br />");
+        document.write("Value of <b>a==b:</b> "+ (a==b));
+        document.write("<br />");
+        document.write("Value of <b>a===b: </b>" + (a===b));
+        document.write("<br />");
+        document.write("Value of <b>a!==c: </b>" + (a!==c));
+        document.write("<br />");
+        document.write("Value of <b>a+b: </b>" + (a+b));
+        document.write("<br />");
+        a+=c;
+        document.write("After a+=c, the value of <b>a</b> is: " + a);
+        //-->
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 2-4</title>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <script type="text/javascript">
+        <!--
+        
+        // Create an alert() method
+        alert("Hi there, welcome!");
+        
+        //-->
+    </script>
+    </head>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 2-5</title>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <script type="text/javascript">
+        <!--
+        
+        // Concatenate a prompt() into an alert() statement
+        
+        alert("Good morning, " + prompt("Please enter your name:") + ".");
+        
+        //-->
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 2-6</title>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <script type="text/javascript">
+        <!--
+        
+        /******************************************
+          The return value of a confirm() method 
+          concatenated into an alert() statement 
+        ******************************************/
+
+        alert("The confirm returned " + confirm("Do you want to proceed?") + ".");
+
+        //-->
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 2-7</title>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <script type="text/javascript">
+        <!--
+        
+        /***************************************************
+          2 variables named x and y are created 
+          and assigned the values 4 and 9 respectively
+        ***************************************************/
+
+        var x = 4;
+        var y = 9;
+
+
+        /******************************************
+          The variables x and y are added 
+          together in an alert() statement
+        
+          Parentheses operator used to force the Javascript 
+          interpreter to add x and y before they are 
+          concatenated into the alert() statement
+        **************************************************/
+
+        alert("4 + 9 = " + (x + y));
+
+        //-->
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 2-8</title>
+</head>
+
+<body onload="alert('Hi there. Welcome!');">
+
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 3-1</title>
+
+    <script type="text/javascript">
+        <!--
+        
+        /***********************************************
+        Creating a function
+        ***********************************************/
+
+        function myFunction() {
+            alert("The HTML page has loaded.");
+        }
+
+        //-->
+    </script>
+</head>
+
+<!-- Add an onload event handler to call the function -->
+
+<body onload="myFunction();">
+
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 3-2</title>
+
+    <script type="text/javascript">
+        <!--
+        
+        /******************************************************
+        Define a function that takes arguments on function call
+        ******************************************************/
+
+        function myFunction(arg) {
+            alert("The function has been called with an argument: " + arg);
+        }
+
+        /******************************************************
+        Define a function that takes returns a value
+        ******************************************************/
+
+        function myFunction1() {
+            return "Hi, this value is returned from a function.";
+        }
+        //-->
+    </script>
+
+</head>
+
+<body>
+
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+
+    <!-- Add an onclick event handler to call the function -->
+
+    <form name="myForm">
+        <input type="button" value="Call Function with arguments" onclick="myFunction('Welcome!');" /><br />
+        <input type="button" value="Call Function with return" onclick="alert(myFunction1());" />
+    </form>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 3-5</title>
+</head>
+
+<body onload="alert(Date());">
+
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 5-1</title>
+
+    <script type="text/javascript">
+        <!--
+        
+        /************************************************
+          The checkGrade() function checks a numerical
+          value and returns a corresponding letter grade.
+        ************************************************/
+
+        function checkGrade(form) {
+            var myGrade = form.mySelect.options[form.mySelect.selectedIndex].text;
+
+            /******************************************************
+              Create an if statement. Check the myGrade variable
+              for a value of 90 or greater. If the value is greater
+              than or equal to 90, ouput an alert that informs the 
+              user that their grade is an A.
+            ******************************************************/
+
+            if (myGrade >= 91) {
+                alert("Your grade is an A.");
+            }
+            else if (myGrade >= 81 && myGrade <= 90) {
+                alert("Your grade is a B.");
+            }
+            else {
+                alert("Your grade is a C or lower.");
+            }
+        }
+
+
+
+        //-->
+    </script>
+
+</head>
+
+<body>
+
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <form name="myForm">
+        select numerical grade value:
+        <select name="mySelect">
+            <option>100
+            <option>99
+            <option>98
+            <option>97
+            <option>96
+            <option>95
+            <option>94
+            <option>93
+            <option>92
+            <option>91
+            <option>90
+            <option>89
+            <option>88
+            <option>87
+            <option>86
+            <option>85
+            <option>84
+            <option>83
+            <option>82
+            <option>81
+            <option>80
+        </select>
+        <p>
+            <input type="button" value="Check Grade" onclick="checkGrade(this.form);" />
+    </form>
+    </p>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 5-2</title>
+
+    <script type="text/javascript">
+        <!--
+        
+        /************************************************
+          The checkGrade() function checks a numerical
+          value and returns a corresponding letter grade.
+        ************************************************/
+
+        function checkGrade(form) {
+            var myGrade = parseInt(form.myText.value);
+
+
+            /***********************************************
+              Create a while statement. In the conditional 
+              expression, use the isNaN function to test the
+              myGrade variable. If myGrade is not a number,
+              display a prompt asking the user to input a 
+              numerical value. The while loop will continue
+              until the user enters a number.
+            ***********************************************/
+
+            while (isNaN(myGrade)) {
+                myGrade = parseInt(prompt("Please enter a numerical grade value: ", ""));
+            }
+
+            if (myGrade >= 91) {
+                alert("Your grade is an A.");
+            }
+            else if (myGrade >= 81 && myGrade <= 90) {
+                alert("Your grade is a B.");
+            }
+            else {
+                alert("Your grade is a C or lower.");
+            }
+        }
+
+        //-->
+    </script>
+
+</head>
+
+<body>
+
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <form name="myForm">
+        Enter numerical grade value:
+        <input type="text" name="myText" size="10" />
+        <p>
+            <input type="button" value="Check Grade" onclick="checkGrade(this.form);" />
+        </p>
+    </form>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 5-2a</title>
+
+    <script type="text/javascript">
+        <!--
+        
+        /************************************************
+          The checkGrade() function checks a numerical
+          value and returns a corresponding letter grade.
+        ************************************************/
+
+        function checkGrade(form) {
+            var myGrade = parseFloat(form.myText.value);
+            var attempts = 1;
+
+            /*************************************************
+              Create a while statement. In the conditional 
+              expression, use the isNaN function to test the
+              myGrade variable. If myGrade is not a number,
+              and the value of the attempts variable is less
+              than 2, display a prompt asking the user to 
+              input a numerical value. The while loop will 
+              continue until the user enters a number or until
+              the attempts variable is greater than 2.
+            *************************************************/
+
+            while (isNaN(myGrade) && attempts <= 2) {
+                myGrade = parseFloat(prompt("Please enter a numerical grade value: ", ""));
+                attempts++;
+            }
+
+            if (isNaN(myGrade) && attempts == 3) return;
+
+            if (myGrade >= 91) {
+                alert("Your grade is an A.");
+            }
+            else if (myGrade >= 81 && myGrade <= 90) {
+                alert("Your grade is a B.");
+            }
+            else {
+                alert("Your grade is a C or lower.");
+            }
+        }
+
+        //-->
+    </script>
+
+</head>
+
+<body>
+
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <form name="myForm">
+        Enter numerical grade value:
+        <input type="text" name="myText" size="10" />
+        <p>
+            <input type="button" value="Check Grade" onclick="checkGrade(this.form);" />
+        </p>
+    </form>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 5-3</title>
+
+    <script type="text/javascript">
+        <!--
+        
+        
+        /************************************************
+          The checkGrade() function checks a numerical
+          value and returns a corresponding letter grade.
+        ************************************************/
+
+        function checkGrade(form) {
+            var myGrade = form.myselect.options[form.myselect.selectedIndex].text;
+            if (myGrade >= 91) {
+                alert("Your grade is an A.");
+            }
+            else if (myGrade >= 81 && myGrade <= 90) {
+                alert("Your grade is a B.");
+            }
+            else {
+                alert("Your grade is a C or lower.");
+            }
+        }
+
+
+
+        //-->
+    </script>
+
+</head>
+
+<body>
+
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <form name="myForm">
+        Select numerical grade value:
+        <select name="myselect">
+
+            <script type="text/javascript">
+                <!--
+                
+                /********************************************************
+                  Create a for statement. Create a variable named i
+                  for the loop counter variable. Assign an initial value 
+                  of 100 to i. The loop will continue as long as i is 
+                  greater than or equal to zero. Use the decrement 
+                  operator (--) to decrement i by one each time through 
+                  the loop. On each iteration of the loop, use a 
+                  document.write() statement to output an <option> tag 
+                  and the value of the loop counter variable i.
+                  ******************************************************/
+
+                for (var i = 100; i >= 0; i--) {
+                    document.write("<option>" + i + "\n");
+                }
+
+                //-->
+            </script>
+
+        </select>
+        <p>
+            <input type="button" value="Check Grade" onclick="checkGrade(this.form);" />
+        </p>
+    </form>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 5-4</title>
+
+    <script type="text/javascript">
+        <!--
+        
+        /*************************************************************
+          Add a one line if statement. Check myValue for a null value.
+          Invoke a break statement if myValue is null.
+          ***********************************************************/
+
+        function breakTest() {
+            var loopBoolean = true;
+            var myValue = "";
+            while (loopBoolean) {
+
+                myValue = prompt("Enter data", myValue);
+
+                if (myValue == null) break;
+
+                if (myValue) {
+                    loopBoolean = false;
+                    alert("Thank you, " + myValue + ".")
+                }
+            }
+        }
+
+        //-->
+    </script>
+
+</head>
+
+<body>
+
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <form name="myform">
+        <input type="button" value="Break Test" onclick="breakTest();" />
+    </form>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 5-5</title>
+</head>
+
+<body>
+
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+
+    <script type="text/javascript">
+        <!--
+        
+        /*********************************************************************
+          On each iteration of the loop, use a document.write() statement to 
+          output the value of the loop counter variable i only if it is evenly 
+          divisible by 7. 
+        
+          Hint: Use the modulus operator (%) and the continue statement
+          ********************************************************************/
+        for (var i = 1; i <= 100; i++) {
+            if (i % 7) continue;
+            document.write(i + "<br />");
+        }
+
+        //-->
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 5-6</title>
+
+    <script type="text/javascript">
+        function switchTest(SetOption) {
+            OptionsSelect = document.frmOne.SetOption.value
+
+            switch (OptionsSelect) {
+                case "1":
+                    alert("Arizona")
+                    break
+                case "2":
+                    alert("New Mexico")
+                    break
+                case "3":
+                    alert("California")
+                    break
+                default:
+                    alert("Cannot be determined")
+            }
+        }
+    </script>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <form name="frmOne">
+
+        <select name="SetOption" onchange="switchTest(this)">
+            <option value="0">Select a U.S. City - See the State!</option>
+            <option value="1">Phoenix</option>
+            <option value="2">Roswell</option>
+            <option value="3">Sacramento</option>
+            <option value="4">My city</option>
+            <option value="5">Your city</option>
+        </select>
+
+    </form>
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 10-1</title>
+
+    </script>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <form name="myForm" id="myForm">
+        <label><b>Name</b></label>
+        <input type="text" placeholder="FirstName" name="fname" required>
+        <input type="text" placeholder="LastName" name="lname" required> <br />
+        <label><b>EMail</b></label>
+        <input type="text" placeholder="Enter Email ID" name="email" required> <br />
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pwd" required maxLength="10"> <br />
+        <label><b>Gender</b></label>
+        <input type="radio" name="gen" value="male">Male
+        <input type="radio" name="gen" value="female">Female <br />
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
+===== 7-2 =====
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lab 7-2</title>
+
+<script type="text/Javascript">
+<!--
+
+function showUpper(checked) {
+    var showThis;
+  if (checked)  {
+    showThis = document.myForm.name.value.toUpperCase();
+  } else {
+    showThis = document.myForm.name.value.toLowerCase();
+  }
+    document.myForm.name.value = showThis;
+}
+
+function emailTest(form)  {
+ var goodemail = 0;
+ if (form.email_address.value.indexOf("@", 0) < 0) {
+  alert("This is not a valid e-mail address!");
+  goodemail = 1;
+ } else {
+  var strLength = document.myForm.email_address.value.length;
+  if(strLength < 6 ){ alert("This e-mail address is too short");
+  goodemail = 1;}
+ }
+ if(goodemail == 0){
+   alert("This e-mail address is valid and at least six characters long");
+  };
+}
+
+
+function showFirst2(form)  {
+  var first2Chars = form.phone_number.value.substring(0, 2);
+  alert(first2Chars);
+}
+
+
+//-->
+</script>
+</head>
+<body>
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+
+<form name="myForm" id="myForm">
+Name:<br />
+<input type="text" size="30" name="name" /> 
+
+<input type="checkbox" name="upperCheckbox" onclick="showUpper(this.checked);" /> 
+Convert string to uppercase or lowercase<br />
+
+E-mail address:<br />
+<input type="text" size="30" name="email_address" /> 
+
+<input type="checkbox" onclick="(this.checked) ? emailTest(this.form) : '';" />
+Test for e-mail address<br />
+
+Phone number:<br />
+<input type="text" size="30" name="phone_number" /><br />
+Fax number:<br />
+<input type="text" size="30" name="fax_number" />
+<p>
+
+<input type="button" value="First Two Characters of Phone Number" onclick=
+"showFirst2(this.form);" />
+</p>
+<p>
+<input type="button" value="Fax Number Length" onclick=' var strLength = document.myForm.fax_number.value.length; alert("That string is " + strLength + " characters long");' />
+</p>
+</form>
+</body>
+</html>
+===== 7-6 ====
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lab 7-6</title>
+
+<script type="text/javascript">
+<!--
+
+var num = [1,2,3,4,5];
+
+function fn() {
+ var sq = num.map(function(n) {
+ return n * n;
+});
+alert("The value stored in the array is: " + sq);
+}
+
+//-->
+</script>
+</head>
+<body>
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+<input type="button" value="Check result." onclick="fn()" />
+</body>
+</html>
+
+===== 8-1 =====
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lab 8-1: Employee Database</title>
+
+<script type="text/javascript">
+<!--
+    
+  function employeeObject(name,department,extension) {
+      this.name = name;
+      this.department = department;
+      this.extension = extension;
+      this.showEmployeeY = showEmployee;
+    }
+  
+    // Instantiate 3 instances of employeeObject
+    var employees = new Array();
+    employees[0] = "Select Employee";
+    employees[1] = new employeeObject("Mai Li", "Sales", 551);
+    employees[2] = new employeeObject("Maria Alvarez", "Human Resources", 441);
+    employees[3] = new employeeObject("Tom Smith", "Marketing", 331);
+  
+  var len = employees.length;
+  
+    function showEmployee() {
+      var info = "";
+    info += "Employee: " + this.name + "\n";
+      info += "Department: " + this.department +  "\n";
+    info += "Extension: " + this.extension;
+      alert(info);
+    }
+
+    function showAllEmployees() {
+      var info = "";
+    for (var i = 1; i < len; i++) {
+        info += "Employee: " + employees[i].name + "\n";
+        info += "Department: " + employees[i].department +  "\n";
+      info += "Extension: " + employees[i].extension + "\n\n";
+      }
+    
+    alert(info);
+    }
+
+//-->
+</script>
+</head>
+<body>
+<h3>Employee Database</h3>
+<hr />
+<form name="empForm" id="empForm">
+<strong>Select name to view information:</strong> 
+<select name="empName" onchange="showEmployee.call(employees[this.selectedIndex]); this.selectedIndex=0;">
+<script type="text/javascript">
+<!--
+
+  for (var i = 0; i < len; i++) {
+    if(i == 0)
+    document.write("<option>" + employees[i]) + "</option>";
+    else
+      document.write("<option>" + employees[i].name) + "</option>";
+  }
+
+//-->
+</script>
+</select>
+<p>
+<input type="button" value="Show All Employees" onclick="showAllEmployees();" />
+</p>
+</form>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 11-1a</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        <!--
+            // write out some introductory blurb and begin the table.
+        	
+            document.writeln('<h3>CIW JavaScript Specialist</h3><hr />');
+            
+            document.writeln('<table style="width:470px;margin:auto"><tr><td><p class="narrow">' +
+                             'The table below shows the principal properties of your ' +
+                             'browser, the name by which it identifies itself, and ' +
+                             'the plug-ins supported. The final part of the table ' +
+                             'lists all the document types for which a plug-in has ' +
+                             'been defined, together with the name of the plug-in ' +
+                             'that handles each type. Types for which no plug-in is ' +
+                             'available are not shown.<' + '/p><hr /><' + 
+                             '/td><' + '/tr><' + '/table>');
+        
+            document.writeln('<table cellpadding=2 cellspacing=1 border=0 ' +
+                             'style="width:470px;margin:auto"><tr>');
+            document.writeln('<th style="width:100px;text-align:left;background-color:#666699" class="small"' + 
+                             '>Property<' + '/th>');
+            document.writeln('<th style="width:100px;text-align:left;background-color:#666699" class="small"' + 
+                             '>Variable<' + '/th>');
+            document.writeln('<th style="width:100px;text-align:left;background-color:#666699" class="small"' + 
+                             '>Value<' + '/th><' + '/tr>');
+        
+            // set up the variables we need to test the first few properties
+        
+            var number_of_values_to_test = 4;
+            var name_array = new Array(number_of_values_to_test);
+            var properties = new Array(number_of_values_to_test);
+            name_array[0] = "Application Name";
+            properties[0] = "appName";
+            name_array[1] = "Code Name";
+            properties[1] = "appCodeName";
+            name_array[2] = "Version";
+            properties[2] = "appVersion";
+            name_array[3] = "User Agent";
+            properties[3] = "userAgent";
+            
+            // Loop through the properties, outputting one table row for each one.
+            
+            for (var index=0;index < number_of_values_to_test;index++) {
+                document.write('<tr><td style="background-color:#9999cc;text-align:left" class="small">' + 
+                               name_array[index] + '<' + '/td>');
+                document.write('<td style="background-color:#ccccff" class="small">' + properties[index] +
+                               '<' + '/td>');
+                document.write('<td style="background-color:#ccccff" class="small">' + 
+                               navigator[properties[index]] + '<' + '/td>');
+                document.writeln('<' + '/tr>');
+            }
+            
+            // Write out details about the user's installed plug-ins
+            
+            document.write('<tr><td style="background-color:#9999cc;text-align:left" class="small">Plug-Ins<' +
+                           '/td>');
+            document.write('<td style="background-color:#ccccff" class="small">plugins<' + '/td>');
+            document.writeln('<td style="background-color:#ccccff" class="small">');
+            if (navigator.plugins != null) {
+                for (var index=0;index < navigator.plugins.length; index++) {
+                    document.writeln(navigator.plugins[index].name + '<br />');
+                }
+            }
+            else {
+                document.writeln("Browser doesn't recognize " +
+                                 "'navigator.plugins' property.");
+            }
+            document.writeln('<' + '/td><' + '/tr>');
+            
+            // Do the same for the MIME types. This is more complex, because we need to
+            // build a subtable within our main table, showing the types, their names
+            // and extensions, and the plug-in assigned to them.
+            
+            document.write('<tr><td style="background-color:#9999cc;text-align:left" class="small">' + 
+                           'MIME Types<' + '/td>');
+            document.write('<td style="background-color:#ccccff" class="small">mimeTypes<' + '/td>');
+            document.writeln('<td style="background-color:#ccccff" class="small">');
+            if (navigator.mimeTypes != null) {
+                document.writeln('<table>');
+                
+                document.writeln('<tr style="background-color:#9999cc">' +
+                                 '<th class="small" style="text-align:left;background-color:#9999cc">' +
+                                 'mime type<' + '/th>' +
+                                 '<th class="small" style="text-align:left;background-color:#9999cc">' +
+                                 'identifier<' + '/th>' +
+                                 '<th class="small" style="text-align:left;background-color:#9999cc">' +
+                                 'extn.<' + '/th>' +
+                                 '<th class="small" style="text-align:left;background-color:#9999cc">' +
+                                 'plug-in<' + '/th><' + '/tr>');
+                for (var index=0;index < navigator.mimeTypes.length; index++) {
+                    console.log("yes",navigator.mimeTypes[index].enabledPlugin);
+                if (navigator.mimeTypes[index].enabledPlugin != null) {
+                    document.write('<tr><td class="small" style="vertical-align:top">' + 
+                                   navigator.mimeTypes[index].type +
+                                   '<' + '/td><td class="small" style="vertical-align:top">' + 
+                                   navigator.mimeTypes[index].description +
+                                   '<' + '/td><td class="small" style="vertical-align:top">' + 
+                                   navigator.mimeTypes[index].suffixes +
+                                   '<' + '/td><td class="small" style="vertical-align:top">' + 
+                                   navigator.mimeTypes[index].enabledPlugin.name +
+                                   '<' + '/td><' + '/tr>');
+                    }
+                }
+                document.writeln('<' + '/table>');
+            }
+            else {
+                document.writeln("Browser doesn't recognize " + 
+                                 "'navigator.mimeTypes' property.");
+            }
+            document.writeln('<' + '/td><' + '/tr>');
+            
+            // finish up the table.
+            
+            document.writeln('<' + '/table>');
+        // -->
+    </script>
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 11-2</title>
+
+    <script type="text/javascript">
+        <!--
+        
+        var i=0;
+        for (i=0;i<=5;i++)
+        {
+        alert("The number is " + i);
+        }
+        
+        //-->
+    </script>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    This page demonstrates repaired JavaScript code that will no longer loop infinitely.
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript">
+    </script>
+
+    <script src="script.js" type="text/javascript">
+    </script>
+
+    <title>Lab 12-1</title>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <h2>Resize your text with jQuery</h2>
+    <input type="button" value="Larger" id="large" />
+    <input type="button" value="Smaller" id="small" />
+    <p>You can enlarge or shrink the font size of text on your HTML page using this script, as long as the text is
+        within the paragraph tags.</p>
+    This text is outside the paragraph tags and will not change!
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css.css" type="text/css" />
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+    <meta charset="utf-8" />
+    <title>Lab 12-2</title>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+
+    <div id="slideshow">
+        <img src="pics1.jpeg" alt="flower1" class="active" />
+        <img src="pics2.jpeg" alt="flower2" />
+        <img src="pics3.jpeg" alt="flower3" />
+        <img src="pics4.jpeg" alt="flower4" />
+        <img src="pics5.jpeg" alt="flower5" />
+    </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="jquery.validate.js"></script>
+    <meta charset="utf-8" />
+    <title>Lab 12-3</title>
+    <script>
+        //initiate validator on load
+        $(function () {
+
+            // validate contact form on keyup and submit
+            $("#contactForm").validate({
+                //set the rules for the fild names
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true,
+                        minlength: 2
+                    },
+                },
+                //set messages to appear inline
+                messages: {
+                    name: "Please enter your name",
+                    email: "Please enter a valid e-mail address",
+                    message: "Please enter your comment"
+                }
+            });
+        });
+    </script>
+    <style type="text/css">
+        .error {
+            color: red;
+            font: 12pt verdana;
+            padding-left: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form id="contactForm" method="post">
+            <p>
+                <label for="name">Name </label>
+                <input id="name" name="name" />
+            </p>
+            <p>
+                <label for="email">E-Mail </label>
+                <input id="email" name="email" />
+            </p>
+            <p>
+                <label for="message">Your Comment </label>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea>
+            </p>
+            <p>
+                <input class="submit" type="submit" value="Submit" />
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 12-3</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="jquery.validate.js"></script>
+    <style type="text/css">
+        * {
+            font-family: Verdana;
+            font-size: 96%;
+        }
+
+        label {
+            width: 10em;
+            float: left;
+        }
+
+        label.error {
+            float: none;
+            color: red;
+            padding-left: .5em;
+            vertical-align: top;
+        }
+
+        p {
+            clear: both;
+        }
+
+        .submit {
+            margin-left: 12em;
+        }
+
+        em {
+            font-weight: bold;
+            padding-right: 1em;
+            vertical-align: top;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#commentForm").validate();
+        });
+    </script>
+</head>
+
+<body>
+    <form class="cmxform" id="commentForm" method="get">
+        <fieldset>
+            <legend>A simple comment form with submit validation and default messages</legend>
+            <p>
+                <label for="cfname">First Name</label>
+                <em>*</em>
+                <input id="cfname" name="fname" size="25" class="required" minlength="2" />
+            </p>
+            <p>
+                <label for="clname">Last Name</label>
+                <em>*</em>
+                <input id="clname" name="lname" size="25" class="required" minlength="2" />
+            </p>
+            <p>
+                <label for="cemail">E-Mail</label>
+                <em>*</em>
+                <input id="cemail" name="email" size="25" class="required email" />
+            </p>
+            <p>
+                <label for="curl">URL of Your Web Site</label>
+                <em> </em>
+                <input id="curl" name="url" size="25" class="url" value="" />
+            </p>
+            <p>
+                <label for="cnumber">Years Your Site Has Been in Business</label>
+                <em> </em>
+                <input id="cnumber" name="url" size="25" class="digits" value="" />
+            </p>
+            <p>
+                <label for="ccomment">Your Comment</label>
+                <em>*</em>
+                <textarea id="ccomment" name="comment" cols="22" class="required"></textarea>
+            </p>
+            <p>
+                <label for="ccheckbox">Please check this box to agree to our terms</label>
+                <em>*</em>
+                <input id="ccheckbox" type="checkbox" name="ccheckbox" class="required" />
+            </p>
+            <p>
+                <input class="submit" type="submit" value="Submit" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World</title>
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+</head>
+
+<body>
+    <div id="myDiv"></div>
+    <script type="text/jsx">
+
+        class Searching extends React.Component {
+constructor(props) {
+super(props);
+this.state = {
+filterString:''
+}
+}
+handleChange(e) {
+this.setState({filterString:e.target.value});
+}
+
+render() {
+var librariesExample = this.props.items,
+filterString = this.state.filterString.trim().toLowerCase();
+if(filterString.length > 0) {
+librariesExample = librariesExample.filter(function(l){
+return l.name.toLowerCase().match( filterString );
+});
+}
+return(
+<div>
+<input type="text" value={this.state.filterString} onChange={this.handleChange.bind(this)} placeholder="Type here" />
+<ul>
+{ librariesExample.map(function(l){
+return <li>{l.name} <br/><a href={l.url}>{l.url}</a></li>
+})}
+</ul>
+</div>
+);
+}
+}
+
+var librariesExample = [
+{ name: 'Backbone.js', url: 'https://backbonejs.org/'},
+{ name: 'AngularJS', url: 'https://angularjs.org/'},
+{ name: 'jQuery', url: 'http://jquery.com/'},
+{ name: 'Prototype', url: 'http://www.prototypejs.org/'},
+{ name: 'React', url: 'http://facebook.github.io/react/'},
+{ name: 'Ember', url: 'http://emberjs.com/'},
+{ name: 'Knockout.js', url: 'http://knockoutjs.com/'},
+{ name: 'Dojo', url: 'http://dojotoolkit.org/'},
+{ name: 'Mootools', url: 'http://mootools.net/'},
+{ name: 'Underscore', url: 'https://underscorejs.org/'},
+{ name: 'Lodash', url: 'http://lodash.com/'},
+{ name: 'Moment', url: 'http://momentjs.com/'},
+{ name: 'Express', url: 'http://expressjs.com/'},
+{ name: 'Koa', url: 'http://koajs.com/'},
+
+];
+
+// Render the Searching component on the page
+
+React.render(
+<Searching items={ librariesExample } />,
+document.getElementById('myDiv')
+);
+
+      </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $.noConflict();
+        jQuery(document).ready(function () {
+            jQuery("button").click(function () {
+                jQuery("div").fadeToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        .divBlock {
+            width: 100px;
+            height: 50px;
+
+            padding: 15px;
+            margin: 15px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="divBlock"></div>
+    <button>Test</button>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Example: Database and AJAX</title>
+</head>
+
+<body>
+    <h2>CIW JavaScript Specialist</h2>
+    <hr />
+    <script type="text/javascript">
+        function getXMLHttpRequest() {
+            if (window.XMLHttpRequest) {
+                return new window.XMLHttpRequest;
+
+            }
+            else {
+                try {
+                    return new ActiveXObject("MSXML2.XMLHTTP.3.0");
+                }
+                catch (ex) {
+                    return null;
+
+                }
+            }
+        }
+
+        http = getXMLHttpRequest();
+        function requestCustomerInfo() {
+            http.open("GET", "customer.xml", true);
+            http.onreadystatechange = function () {
+
+                if (http.readyState == 4) {
+                    document.getElementById('DCustomerInfo').innerHTML = http.responseXML.documentElement.getElementsByTagName("Customer")[document.getElementById('CustomerID').value].getElementsByTagName("FirstName")[0].firstChild.nodeValue;
+                }
+            }
+            http.send(null);
+        }
+    </script>
+    <p>Please enter Customer ID: <input type="text" id="CustomerID" value="" /></p>
+    <p><input type="button" value="Get Information" onclick="requestCustomerInfo()" /></p>
+    First Name:<div id="DCustomerInfo"></div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+
+<head>
+    <title>Lab 13-1</title>
+    <script language="JavaScript" src="ajax.js"></script>
+    <script type="text/javascript">
+        function ChangeData(str) {
+            document.getElementById('MyID').innerHTML = str;
+        }
+    </script>
+</head>
+
+<body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <h2>AJAX Button Clicker</h2>
+    <p>This script shows how to use multiple external scripts that load dynamically when you click a button.</p>
+    <input type="button" value="Button 1" onclick="loadScript('Data1.js')" />
+    <input type="button" value="Button 2" onclick="loadScript('Data2.js')" />
+    <input type="button" value="Button 3" onclick="loadScript('Data3.js')" />
+    <div id="MyID">&nbsp;</div>
+    <hr />
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 13-2</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="mainform">
+        <div class="innerdiv">
+            <!-- Required Div Starts Here -->
+            <h2>Form Validation Using AJAX</h2>
+            <form action="#" id="myForm" method='post' name="myForm">
+                <h3>Fill Your Information!</h3>
+                <table>
+                    <tr>
+                        <td>Username</td>
+                        <td><input id="username1" name="username" onblur="validate('username', this.value)" type="text">
+                        </td>
+                        <td>
+                            <div id="username"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input id="password1" name="password" onblur="validate('password', this.value)"
+                                type="password"></td>
+                        <td>
+                            <div id="password"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input id="email1" name="email" onblur="validate('email', this.value)" type="text"></td>
+                        <td>
+                            <div id="email"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td><input id="website1" name="website" onblur="validate('website', this.value)" type="text">
+                        </td>
+                        <td>
+                            <div id="website"></div>
+                        </td>
+                    </tr>
+                </table>
+                <input onclick="checkForm()" type="button" value="Submit" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+<html>
+
+<head>
+    <script>
+        function showResult(str) {
+            if (str.length == 0) {
+                document.getElementById("livesearch").innerHTML = "";
+                document.getElementById("livesearch").style.border = "0px";
+                return;
+            }
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else {  // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                console.log("correct");
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log("correct2");
+                    document.getElementById("livesearch").innerHTML = this.responseText;
+                    document.getElementById("livesearch").style.border = "1px solid #A5ACB2";
+                }
+            }
+            xmlhttp.open("GET", "https://www.ucertify.com/utils/livesearch.php?q=" + str, true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <h3>Search </h3>
+        <input type="text" size="30" onkeyup="showResult(this.value)">
+        <div id="livesearch" style="width:241px"></div>
+    </form>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 13-4_1</title>
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="demo"></DIV>
+    <h1>The XMLHttpRequest Object</h1>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+
+    <script>
+        function loadDoc() {
+            $.ajax({
+                type: "GET",
+                url: "https://s3.amazonaws.com/jigyaasa_content_static/1d0-735/example.txt", //This is the URL for the example.txt file
+                data: { x: "y" },
+                dataType: "text",
+                headers: { "Access-Control-Allow-Origin": "*" },
+                success: function (result) {
+                    document.getElementById("demo").innerHTML = result;
+                },
+                error: function (xhr) {
+                    document.getElementById("demo").innerHTML = xhr.statusText;
+                },
+                fail: function (msg) {
+                    document.getElementById("demo").innerHTML = msg;
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 13-4_2</title>
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="demo">
+        <h1>The XMLHttpRequest Object</h1>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+    <script>
+        function loadDoc() {
+            $.ajax({
+                type: "GET",
+                url: "https://s3.amazonaws.com/jigyaasa_content_static/1d0-735/example.json",
+                data: { x: "y" },
+                dataType: "json",
+                //headers: {"X-My-Custom-Header": "some value"},
+                //headers: {"Access-Control-Allow-Origin": "*"},
+                success: function (result) {
+                    document.getElementById("demo").innerHTML = result;
+                    // document.getElementById("demo").innerHTML = result.parent.child1;
+                },
+                error: function (xhr) {
+                    document.getElementById("demo").innerHTML = xhr.statusText;
+                },
+                fail: function (msg) {
+                    document.getElementById("demo").innerHTML = msg;
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 13-4_3</title>
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="demo">
+        <h1>The XMLHttpRequest Object</h1>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+    <script>
+        function loadDoc() {
+            $.ajax({
+                type: "POST",
+                url: "example1.txt", // There is no such file as example1.txt file.
+                data: { x: "y" },
+                dataType: "text",
+                success: function (result) {
+                    document.getElementById("demo").innerHTML = result;
+                },
+                error: function (xhr) {
+                    document.getElementById("demo").innerHTML = xhr.statusText;
+                },
+                fail: function (msg) {
+                    document.getElementById("demo").innerHTML = msg;
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 14-1</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        // Check if the localStorage object exists
+        if (localStorage) {
+            $(document).ready(function () {
+                $(".save").click(function () {
+                    // Get input name
+                    var firstName = $("#firstName").val();
+
+                    // Store data
+                    localStorage.setItem("first_name", firstName);
+                    alert("Your first name is saved.");
+                });
+                $(".access").click(function () {
+                    // Retrieve data
+                    alert("Hi, " + localStorage.getItem("first_name"));
+                });
+            });
+        } else {
+            alert("Sorry, your browser do not support local storage.");
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <label>First Name: <input type="text" id="firstName"></label>
+        <button type="button" class="save">Save Name</button>
+        <button type="button" class="access">Get Name</button>
+    </form>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 14-1</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        // Check if the localStorage object exists
+        if (localStorage) {
+            $(document).ready(function () {
+                $(".save").click(function () {
+                    // Get input name
+                    var lastName = $("#lastName").val();
+
+                    // Store data
+                    sessionStorage.setItem("last_name", lastName);
+                    alert("Your last name is saved.");
+                });
+                $(".access").click(function () {
+                    // Retrieve data
+                    alert("Hi, " + localStorage.getItem("first_name") + " " + sessionStorage.getItem("last_name"));
+                });
+            });
+        } else {
+            alert("Sorry, your browser do not support local storage.");
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <label>Last Name: <input type="text" id="lastName"></label>
+        <button type="button" class="save">Save Name</button>
+        <button type="button" class="access">Get Name</button>
+    </form>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 14-2</title>
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <h3>Geo Location Demo</h3>
+    <button type="button" style="float:left" onClick="getLocation()">Get Geo Location</button>
+
+    <table id="GeoResults" style="display:none;float:left;margin:0 auto;clear:both"></table>
+    <table id="WeatherResults" style="display:none;float:right"></table>
+    <script>
+
+        var lat = "";
+        var lon = "";
+        function getLocation() {
+            $.getJSON("http://ip-api.com/json/?callback=?", function (data) {
+                var table_body = "";
+                lat = data.lat;
+                lon = data.lon;
+                $.each(data, function (k, v) {
+                    table_body += "<tr><td>" + k + "</td><td><b>" + v + "</b></td></tr>";
+                });
+                $("#GeoResults").show();
+                $("#GeoResults").html(table_body);
+                var t_body = "";
+                $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric&apikey=0125b901b6827180ae5f0e1e23ad1827", function (data) {
+                    var t_body = "";
+                    console.log("data", data);
+                    t_body += "<tr><td>Weather</td><td><b>" + data.weather[0].description + "</b></td></tr>";
+                    t_body += "<tr><td>Humidity</td><td><b>" + data.main.humidity + "</b></td></tr>";
+                    t_body += "<tr><td>Temperature Max</td><td><b>" + data.main.temp_max + " deg</b></td></tr>";
+                    t_body += "<tr><td>Temperature Min</td><td><b>" + data.main.temp_min + " deg</b></td></tr>";
+                    t_body += "<tr><td>Wind Speed</td><td><b>" + data.wind.speed + " km/h</b></td></tr>";
+                    $("#WeatherResults").show();
+                    $("#WeatherResults").html(t_body);
+                })
+            });
+
+            console.log(lat, lon);
+
+        }
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 14-3</title>
+</head>
+
+<body>
+    <canvas height="500" width="500" id="myCanvas2" style="display:none">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <button type="button" name="animated_rainbow" id="animated_rainbow" onclick="start_rainbow()">Animated
+        Rainbow</button>
+
+    <script>
+        var myCanvas2 = document.getElementById("myCanvas2"),
+            context = myCanvas2.getContext('2d'),
+            set_time = null,
+            end_angle = 0,
+            start_angle = 0,
+            canvas_width = myCanvas2.width / 2,
+            canvas_height = myCanvas2.height / 2;
+        function start_rainbow() {
+            myCanvas2.style.display = "block";
+            clearInterval(set_time);
+            start_angle = 0;
+            end_angle = 0;
+            context.clearRect(0, 0, 500, 500);
+            set_time = setInterval(rainbow, 50);
+            return false;
+        }
+
+        function rainbow() {
+            var begin_rainbow = start_angle * Math.PI;
+            var end_rainbow = end_angle * Math.PI;
+            end_angle = end_angle - 0.01;
+            if (end_angle < -1) {
+                clearInterval(set_time);
+            }
+            animate_rainbow(begin_rainbow, end_rainbow, 130, 'violet');
+            animate_rainbow(begin_rainbow, end_rainbow - 0.13, 140, 'indigo');
+            animate_rainbow(begin_rainbow, end_rainbow - 0.26, 150, 'blue');
+            animate_rainbow(begin_rainbow, end_rainbow - 0.39, 160, 'green');
+            animate_rainbow(begin_rainbow, end_rainbow - 0.52, 170, 'yellow');
+            animate_rainbow(begin_rainbow, end_rainbow - 0.65, 180, 'orange');
+            animate_rainbow(begin_rainbow, end_rainbow - 0.78, 190, 'red');
+            context.clearRect(20, canvas_height - 4, 100, 150);
+        }
+
+        function animate_rainbow(begin_rainbow, end_rainbow, radius, rainbow_color) {
+            context.beginPath();
+            context.arc(canvas_width, canvas_height, radius, begin_rainbow, end_rainbow, true);
+            context.lineWidth = 11;
+            context.strokeStyle = rainbow_color;
+            context.stroke();
+        }
+    </script>
+</body>
+
+</html>

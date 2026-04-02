@@ -1,0 +1,1123 @@
+=== L010 Application Project Files/lesson10AppProject.htm ===
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lesson 10 Application Project</title>
+
+<script language="javascript">
+
+
+
+    function validate(form) {
+        // var x = document.forms["myForm"]["fname"].value;
+        var cardType = document.querySelector('input[name="ccard"]:checked').value;
+        var cardNumber = document.querySelector('input[name="number"]').value;
+        var e1 = document.getElementById("expMo");
+        var expMonth = e1.options[e1.selectedIndex].text;
+
+        var e2 = document.getElementById("expYr");
+        var expYr = e2.options[e2.selectedIndex].text;
+
+        
+            if (cardType == "visa") {
+                if(cardNumber.substring(0, 1) == 4 && cardNumber.length == 16){
+                    if(expMonth == "select" || expYr == "select" ){
+                        alert("Please select expiration date correctly");
+                    }else{
+                        alert("All entered details are  correct");
+                    }
+
+                }else {
+                    alert("Invalid Card Number");
+                }
+                
+            }else
+                if (cardType == "mc") {
+                    if(cardNumber.substring(0, 1) == 5 && cardNumber.length == 16){
+                        if(expMonth == "select" || expYr == "select" ){
+                        alert("Please select expiration date correctly");
+                    }else{
+                        alert("All entered details are correct.");
+                    }
+
+                    }else {
+                        alert("Invalid Card Number");
+                    }
+                    
+                } else {
+                    if (cardType == "amex") {
+                    if(cardNumber.substring(0, 1) == 3 && cardNumber.length == 15){
+                        if(expMonth == "select" || expYr == "select" ){
+                        alert("Please select expiration date correctly.");
+                    }else{
+                        alert("All entered details are correct.");
+                    }
+
+                    }else {
+                        alert("Invalid Card Number");
+                    }
+                    
+                }
+                }
+ 
+
+
+
+
+
+
+
+
+    }
+
+  
+
+
+</script>
+
+</head>
+
+<body>
+
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+<form name="ccForm">
+<p>
+<input type="radio" name="ccard" value="visa" />
+Visa
+</p>
+<p>
+<input type="radio" name="ccard" value="mc" />
+MasterCard
+</p>
+<p>
+<input type="radio" name="ccard" value="amex" />
+American Express
+</p>
+<p>
+Card # 
+<input type="text" name="number" />
+</p>
+<p>
+Exp Date: 
+<select name="expMo", id="expMo">
+<option value=00>select
+<option value=0>Jan
+<option value=1>Feb
+<option value=2>Mar
+<option value=3>Apr
+<option value=4>May
+<option value=5>Jun
+<option value=6>Jul
+<option value=7>Aug
+<option value=8>Sep
+<option value=9>Oct
+<option value=10>Nov
+<option value=11>Dec
+</select> 
+<select name="expYr", id = "expYr">
+<option value=00>select
+<option value=2021>2021
+<option value=2022>2022
+<option value=2023>2023
+<option value=2024>2024
+<option value=2025>2025
+<option value=2026>2026
+<option value=2027>2027
+<option value=2028>2028
+<option value=2029>2029
+<option value=2030>2030
+</select>
+</p>
+
+<input type="button", name="myForm" value="Check Form" onClick="validate(this.form);" />
+<input type="reset" value="Reset Form" />
+</form>
+
+</body>
+</html>
+=== L011 Application Project Files/lesson11AppProject.html ===
+<html>
+<head>
+    <script>
+    var today = new Date();
+    var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days
+
+    function setCookie(name, value)
+    {
+        document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
+    }
+    function putCookie(form)  //this should set the UserName cookie to the proper value;
+    {
+        if(form[0].userName.value.length ==0 ){
+            alert("Please enter some value")
+            return false;
+        }
+        else{
+            setCookie("userName", form[0].userName.value);
+            return true;
+        }
+    }
+  </script>
+</head>
+<body>
+<form>
+ <input type="text" value="" id="nameBox" name='userName'>
+ <input type="button" value="Submit Cookie" id="submit" onclick="putCookie(document.getElementsByTagName('form'));">
+ <input type="button" value="See the Cookie" id="submit2" onclick="location.href = './lesson11AppProject_GetCookie.html'; ">
+
+</form>
+</body>
+
+
+</html>=== L011 Application Project Files/lesson11AppProject_GetCookie.html ===
+<html>
+<head>
+    <script>
+    function getCookie(name) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
+}
+  </script>
+</head>
+<body>
+<script>
+    var cookieVal = getCookie("userName")
+    if(cookieVal != ""){
+        document.write("Cookie Name : userName <br> Cookie value : "+ cookieVal+"<br>")
+    }
+</script>
+</body>
+
+
+</html>=== L013 Application Project Files/lesson13AppProject.html ===
+<!DOCTYPE html>
+<html>
+<body>
+<h2>
+    Please Select the correct answer.
+</h2>
+
+<h4>
+    Is Delhi the capital of India?
+</h4>
+<button type="button" onclick="loadDocYes()">Yes</button>
+<button type="button" onclick="loadDocNo()">No</button>
+
+<h2 id="ans"></h2>
+<div id="demo"></div>
+
+<script>
+function loadDocYes() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+        document.getElementById("ans").innerHTML = "You are Right! <br>";
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "https://s3.amazonaws.com/jigyaasa_content_static/1d0-735/yes.txt", true);
+  xhttp.send();
+}
+
+function loadDocNo() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+        document.getElementById("ans").innerHTML = "Sorry! You are wrong <br>";
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "https://s3.amazonaws.com/jigyaasa_content_static/1d0-735/no.txt", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>=== L014 Application Project Files/lesson14AppProject_Current_Location.html ===
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>Geolocation API</title>  
+</head>  
+<body>  
+  <h1>Your Location</h1>  
+<button onclick="getlocation()">Show my Location</button>  
+<div id="location"></div>  
+<script>  
+    var x= document.getElementById("location");  
+    function getlocation() {  
+        if(navigator.geolocation){  
+            navigator.geolocation.getCurrentPosition(showPosition)  
+          }  
+        else  
+        {  
+             alert("Sorry! your browser is not supporting")  
+         } }  
+       
+     function showPosition(position){  
+       var x = "Your current location is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " +    position.coords.longitude + ")";  
+                document.getElementById("location").innerHTML = x;  
+     }  
+</script>  
+</body>  
+</html> === L014 Application Project Files/lesson14AppProject_Live_location_map.html ===
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+
+    <style>
+      #map {
+          height: 100%;
+        }
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        .custom-map-control-button {
+          appearance: button;
+          background-color: #fff;
+          border: 0;
+          border-radius: 2px;
+          box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+          cursor: pointer;
+          margin: 10px;
+          padding: 0 0.5em;
+          height: 40px;
+          font: 400 18px Roboto, Arial, sans-serif;
+          overflow: hidden;
+        }
+        .custom-map-control-button:hover {
+          background: #ebebeb;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+
+    <!-- You need to get an API from google Map servies tinorder to use this. -->
+    <script
+      src="http://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+    <script>
+      let map, infoWindow;
+
+        function initMap() {
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 25.4358, lng: 81.8463 },
+            zoom: 6,
+          });
+          infoWindow = new google.maps.InfoWindow();
+          const locationButton = document.createElement("button");
+          locationButton.textContent = "Pan to Current Location";
+          locationButton.classList.add("custom-map-control-button");
+          map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+          locationButton.addEventListener("click", () => {
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+              navigator.geolocation.watchPosition(
+                (position) => {
+                  const pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude,
+                  };
+                  infoWindow.setPosition(pos);
+                  infoWindow.setContent("Location found.");
+                  infoWindow.open(map);
+                  map.setCenter(pos);
+                },
+                () => {
+                  handleLocationError(true, infoWindow, map.getCenter());
+                }
+              );
+            } else {
+              // Browser doesn't support Geolocation
+              handleLocationError(false, infoWindow, map.getCenter());
+            }
+          });
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+          infoWindow.setPosition(pos);
+          infoWindow.setContent(
+            browserHasGeolocation
+              ? "Error: The Geolocation service failed."
+              : "Error: Your browser doesn't support geolocation."
+          );
+          infoWindow.open(map);
+        }
+    </script>
+  </body>
+</html>
+
+=== L02 Application Project Files/lesson2AppProj1.html ===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lesson 2</title>
+</head>
+<body>
+  <div id="output"></div>
+
+  <script>
+    const string1 = "start";
+    const string4 = "end";
+    let string2 = "";
+    let string3 = "";
+
+    const val = prompt("Please enter some text");
+    if (val !== null) string2 = val;
+
+    string3 = confirm("Press a button!"); // true or false
+
+    const finalString = `${string1} ${string2} ${string3} ${string4}`;
+
+    document.getElementById("output").innerHTML = `
+      <h3>Hello, World</h3>
+      <p>${finalString}</p>
+      <p>${string1}</p>
+      <p>${string2}</p>
+      <p>${string3}</p>
+      <p>${string4}</p>
+    `;
+  </script>
+</body>
+</html>
+
+=== L02 Application Project Files/lesson2AppProj2.html ===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chapter 2</title>
+</head>
+<body>
+  <div id="output"></div>
+
+  <script>
+    let number1 = 10; // You can change these values
+    let number2 = 20;
+    const lines = [];
+
+    lines.push(number1 === number2 ? "equals" : "Not Equals");
+
+    if (number1 > number2) {
+      lines.push("number1 is greater than number2");
+    } else if (number1 < number2) {
+      lines.push("number1 is lesser than number2");
+    } else {
+      lines.push("number1 is equal to number2");
+    }
+
+    lines.push(`Addition: ${number1 + number2}`);
+    lines.push(`Subtraction: ${number1 - number2}`);
+    lines.push(`Multiplication: ${number1 * number2}`);
+    lines.push(`Division: ${number1 / number2}`);
+    lines.push(`Incrementing number1 by 1: ${++number1}`);
+    lines.push(`Decrementing number2 by 1: ${--number2}`);
+
+    document.getElementById("output").innerHTML = lines.map(l => `<p>${l}</p>`).join('');
+  </script>
+</body>
+</html>
+
+
+=== L03 Application Project Files/lesson3AppProj.html ===
+<html>
+<head>
+    <title>Chapter 3</title>
+    <script>
+        function add(arg1,arg2){
+            return arg1 + arg2;
+        }
+        function subtract(arg1,arg2){
+            return arg1 - arg2;
+        }
+        function multiply(arg1,arg2){
+            return arg1 * arg2;
+        }
+        function divide(arg1,arg2){
+            return arg1 / arg2;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        document.write('<br> Addition of 5 and 10 is : '+ add(5,10));
+        document.write('<br> Subtraction of 5 from 10 is : '+ subtract(5,10));
+        document.write('<br> Multiplication of 5 and 10 is : '+ multiply(5,10));
+        document.write('<br> Division of 5 by 10 is : '+ divide(5,10));
+        
+    </script>
+    
+</body>
+</html>=== L04 Application Project Files/lesson4AppProj_logicError.html ===
+<html>
+<head>
+    <title>Chapter 3</title>
+    <script>
+        function divide(arg1,arg2){
+            var result = Math..ceil(arg1/arg2)
+            return result
+        }
+       
+    </script>
+</head>
+<body>
+    <script>
+        try{
+        // Here we are calling a function named divide and expecting the division. But inside the function there is actually multiplication going on. so syntactically we are good but logically our program is not good.
+        alert('Dividing 100 by 999 and getting only the ceil value : '+ divide(100,999))
+        }
+        catch{
+            //IF SOME ERROR ERROR OCCURS
+            alert('Some error occured');
+        }
+        
+    </script>
+    
+</body>
+</html>=== L04 Application Project Files/lesson4AppProj_normalProgram.html ===
+<html>
+<head>
+    <title>Chapter 3</title>
+    <script>
+        function divide(arg1,arg2){
+            var result = Math.ceil(arg1/arg2)
+            return result
+        }
+       
+    </script>
+</head>
+<body>
+    <script>
+        alert('Dividing 100 by 999 and getting only the ceil value : '+ divide(100,999))
+    </script>
+    
+</body>
+</html>=== L04 Application Project Files/lesson4AppProj_runtimeError.html ===
+<html>
+<head>
+    <title>Chapter 3</title>
+    <script>
+        function divide(arg1,arg2){
+            var result = Math.ceil(arg1/arg2)
+            return result
+        }
+       
+    </script>
+</head>
+<body>
+    <script>
+        // Hello is prompted but when control comes to divide2 this function doesnt exist so it shows a eroor on console saying "Uncaught ReferenceError" 
+        alert("Hello")
+        alert('Dividing 100 by 999 and getting only the ceil value : '+ divide2(100,999))
+    </script>
+    
+</body>
+</html>=== L04 Application Project Files/lesson4AppProj_syntaxError.html ===
+<html>
+<head>
+    <title>Chapter 3</title>
+    <script>
+        function divide(arg1,arg2){
+            // here if we put , at the place of . so, generating syntax error. Please note syntax error will be shown in the Console of the browser.
+            var result = Math,ceil(arg1/arg2)
+            return result
+        }
+       
+    </script>
+</head>
+<body>
+    <script>
+        alert('Dividing 100 by 999 and getting only the ceil value : '+ divide(100,999))
+    </script>
+    
+</body>
+</html>=== L05 Application Project Files/lesson5AppProj_project1.html ===
+<html>
+<head>
+    <title>Chapter 5</title>
+    <script>
+        function ifElseTest(){
+            var result = window.confirm("Are you sure you want to proceed further?")
+            if(result == true){
+                document.write("<br> You are proceeded further.")
+            }
+            else {
+                document.write("<br> You are not proceeded further.")
+            }
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <script>
+     window.onload(ifElseTest());
+    </script>
+    
+</body>
+</html>=== L05 Application Project Files/lesson5AppProj_project2.html ===
+<html>
+    <script>
+        var counterForInput = 0
+        var number = 7
+        var answer = 0
+        function whileTest(){
+            while (counterForInput <3) {
+                var answer = window.prompt("Guess a number between 1 to 10 ")
+                if (number == answer) {
+                    alert("Great! You made a right guess :)")
+                    counterForInput = 0
+                    number = 7
+                    break;
+                }else{
+                    if (counterForInput == 2) {
+                        alert("Better Luck Next Time!")
+                }}
+                number = number - 1
+                counterForInput = counterForInput+1
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+     whileTest()
+    </script>
+    
+</body>
+</html>=== L05 Application Project Files/lesson5AppProj_project3.html ===
+<html>
+<head>
+    <title>Chapter 5</title>
+    <script>
+        var counter = 1
+        for(counter=1; counter<=200; counter++){
+            document.write(counter)
+            if(counter%10 == 0 ){
+                document.write("<br>")  // line break
+            }
+            else{
+                document.write(" ")  // putting space
+            }
+        }
+
+        document.write("<br>Value of counter variable is : "+counter)  // putting space
+    </script>
+</head>
+<body>
+
+    
+</body>
+</html>=== L05 Application Project Files/lesson5AppProj_project4.html ===
+<html>
+<head>
+    <title>Chapter 5</title>
+    <script>
+        var color
+        color = prompt("Please enter the color name.: ")
+        if(color == null){
+            document.write("<br>Sorry, you are supposed to enter the color name.") 
+        }else{
+            color = color.toLowerCase()
+            switch(color) {
+            case "red":
+                document.write("<br>Color is : "+color) 
+                break;
+            case "white":
+                document.write("<br>Color is : "+color) 
+                break;
+            case "blue":
+                document.write("<br>Color is : "+color) 
+                break;
+            default:
+                document.write("<br> Sorry, you entered the wrong input.") 
+                break;
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>=== L06 Application Project Files/lesson6AppProj.htm ===
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Lesson 6 Application Project</title>
+</head>
+<script>
+    function display_image(selectedImage) {
+        var selectionName = selectedImage.options[selectedImage.selectedIndex].text;
+        var selection = selectedImage.options[selectedImage.selectedIndex].value;
+        console.log(selectedImage.value);
+        var winContent = '<html><head><title>Image Page</title></head><body style="background-color:powderblue;text-align: center;"><h3> '+ selectionName +'</h3> <img src="'+selection+'" alt="This is '+selection+' " width="150" height="150"> <br> <br> <button onclick="closeWin()">Close</button> <script> function closeWin() { window.close();}<\/script></body></html>';
+        var myWindow = window.open("", "_blank", "width=600,height=600");
+	    myWindow.document.write(winContent);
+    }    
+</script>
+<body>
+<h3>CIW JavaScript Specialist</h3>
+<hr/>
+<p>
+Select an image:
+</p>
+<select onchange="display_image(this)" name="images">
+    <option value="image_1.jpg">Image 1</option>
+    <option value="image_2.jpg">Image 2</option>
+</select>
+</body>
+</html>
+=== L07 Application Project Files/lesson7AppProject.htm ===
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lesson 7 Application Project A</title>
+
+<script type=text/javascript>
+
+    /***************************************************************************** 
+    The placeholders sub and string are used to pass as arguments the 
+    user's entry into the text box and the textarea.  The variable where 
+    is assigned the result of a method which returns the index (integer) 
+    of the first occurence of sub (the string the program is searching for).
+    Start the search at the beginning of string (the text that is being searched).
+    Since the string is zero based, add 1 is to get the correct position of sub.
+    *****************************************************************************/
+
+    function search(sub, string) {
+
+        var where = 0;
+        where = string.indexOf(sub);
+        if (where==-1) {
+            alert("Sub String not found")
+        }else{
+            alert("Sub String found at position: " + (where+1))
+        }
+    }
+
+</script>
+</head>
+<body>
+
+<h3>CIW JavaScript Specialist</h3>
+<hr/>
+
+<form name="myForm">
+<p>
+<strong>Look for:</strong>
+<input type="text" name="what" size="20" />
+</p>
+
+<p>
+<strong>in this string:</strong>
+<textarea name="toSearch" rows="4" cols="30" wrap="virtual">
+</textarea>
+</p>
+
+<p>
+<input type="button" value="Search"
+onclick="search(myForm.what.value, myForm.toSearch.value);" />
+</p>
+</form>
+
+</body>
+</html>
+=== L08 Application Project Files/lesson8AppProject.html ===
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+        var car =new Object();  
+        // Creating a new empty object and then creating properties and corresponding values
+        car.name='Fiat';  
+        car.model ="200"; 
+        car.weight = "850kg" 
+        car.color = "white" 
+        alert("Car object has properties - " + "Model Number : "+ car.model +" Name : "+car.name);
+    </script>    
+
+    <script>  
+    // Another script that creates an object and instanitiates its properties at the same time with some values
+    // And also using methods to change and get values from it
+    const person = {
+        firstName: 'Dan',
+        lastName: 'Brown',
+        contactNo: '+123456789',
+        age: 28,
+        // using function as a value
+        greet: function() {alert("Hello ",+ this.firstName) },
+        fullName : function() {
+            return this.firstName + " " + this.lastName;
+            }
+    }
+    </script> 
+
+    <script>
+        // You can also create objects using object a constructor 
+        function student(id,name,std){  
+            this.id=id;  
+            this.name=name;  
+            this.std=std;  
+        }     
+        //In order to create a new object of a student, you can use: 
+        var student1 =new student(103,"Sophia",10);
+        document.writeln("<br> Object created using constructor")
+        document.writeln("<br>Hi! I am "+student1.name+ " and my ID is: "+student1.id) 
+        
+        // Array of objects 
+
+        var studentsArray =[]
+        studentsArray.push(new student(105,"Jack",10))
+        studentsArray.push(new student(106,"Jones",11))
+        studentsArray.push(new student(107,"John",12))
+
+        document.writeln("<h3>Array of students</h3>")
+        document.writeln(studentsArray[0].name +", " + studentsArray[1].name+", "+ studentsArray[2].name)
+        document.writeln("<h3>Array of students</h3>")
+
+    </script>
+
+    <script>
+        function showFullName(){
+            document.writeln("<br>Hey! My full name is : "+person.fullName() )
+        }
+    </script>
+
+    <h3> Please click on this button to know my name </h3> <br>
+    <button type="button", onclick="showFullName()">Click Me!</button>
+
+</body>
+
+
+</html>=== L09 Application Project Files/lesson9AppProject_Hobby.html ===
+<html>
+    <head>
+      <title>Alicia's Hobby Page </title>
+      <style>
+            body {
+            background-color: Lavender;
+            text-align: center;
+            }
+            h1 {
+            color: blue;
+            border-style: dashed;
+            border-color: black;
+            font-family: harrington;
+            }
+            h2 {
+            }
+            h4 {
+            font-size: 30px;
+            color: red;
+            font-family: jokerman;
+            }
+            h5 {
+            font-size: 25px;
+            }
+            h6 {
+            font-size: 25px;
+            }
+            h7 {
+            font-size: 25px;
+            font-weight: bold; 
+            }
+            h8 {
+            text-align: right;
+            }
+            p{
+            font-style: italic;
+            font-size: 18px;
+            }
+      </style>
+    </head>
+    <body>
+      <h1>Hi, I am Alicia.</h1>
+      <h2> I would like to share my hobbies with you.</h2>
+      <h4>My Hobby is traveling because : </h4>
+      <p>
+        Traveling is enjoying life and gives you the opportunity to experience different cultures. It involves adventure, fun, excitement, food, history, different languages, photography and diversity in unity. and lots more. It even makes a person healthy physically, mentally and spirtually. It is oveerall an enthralling experience. 
+      </p>
+<p>Here are some more reasons why traveling is important to me:</p>
+        <ul style="list-style-type:none;">
+          <li>To learn</li>
+          <li>To experience adventures</li>
+          <li>To feel alive</li>
+          <li>To challenge myself</li>
+          <li>To experience culture</li>
+          <li>To do lot of shopping</li>
+          <li>To click more photos</li>
+          <li>To be anonymous</li>
+        </ul>
+
+As a hobby, traveling keeps us busy during leisure; it is the best method to utilize time. Until a person breaks from the dull routine, physically and mentally, he cannot find satisfaction; traveling helps us to achieve this break and rejuvenates us. One is curious to learn in a new place and eager to obtain information.
+
+      
+     <br> 
+     <p> Lets have a quick round of quiz to know what you have learned so far. </p> <br>
+     <button type="button", onclick="location.href = './lesson9AppProject_Quiz.html'">Start Quiz</button>
+     <p>   <h8>-Alicia</h8></p>
+      </body>
+    </html>=== L09 Application Project Files/lesson9AppProject_Quiz.html ===
+<html>
+    <head>
+      <title>Alicia's Hobby Page </title>
+      <style>
+        body{
+          font-size: 20px;
+          font-family: sans-serif;
+          color: #333;
+        }
+        .question{
+          font-weight: 600;
+        }
+        .answers {
+            margin-bottom: 20px;
+        }
+        #submit{
+          font-family: sans-serif;
+          font-size: 20px;
+          background-color: rgba(28, 101, 114, 0.781);
+          color: #fff;
+          border: 0px;
+          border-radius: 3px;
+          padding: 20px;
+          cursor: pointer;
+          margin-bottom: 20px;
+        }
+        #submit:hover{
+          background-color: #3a8;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Let's begin the quiz. </h1>
+
+      <h4>Quiz</h4>
+      <p>
+        Click the "Show Results" button to get your results.
+      </p>
+
+      <div id="quiz"></div>
+      <button id="submit">Show Results</button>
+      <div id="results"></div>
+
+     <br> <p>   <h8>-Alicia</h8></p>
+
+	 <script>
+		var myQuestions = [
+{
+   question: "According to Alicia, what is traveling?",
+   answers: {
+	   a: 'A useless thing',
+	   b: 'Time waste',
+	   c: 'Enjoying life'
+   },
+   correctAnswer: 'c'
+},
+{
+   question: "Does travelling make Alicia feel alive?",
+   answers: {
+	   a: 'Yes',
+	   b: 'No',
+	   c: 'Alicia is not sure about it.'
+   },
+   correctAnswer: 'a'
+},
+{
+   question: "Travelling makes a human body:",
+   answers: {
+	   a: 'Healthy',
+	   b: 'Diseased',
+	   c: 'No effect'
+   },
+   correctAnswer: 'a'
+},
+{
+   question: "Travelling makes Alicia experience different cultures.",
+   answers: {
+	   a: 'True',
+	   b: 'False',
+	   c: 'Travelling is useless.'
+   },
+   correctAnswer: 'a'
+},
+
+];
+
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
+var queCorrect = 0
+var totalMiss = 0
+
+
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+
+function showQuestions(questions, quizContainer){
+   // we'll need a place to store the output and the answer choices
+   var output = [];
+   var answers;
+
+   // for each question...
+   for(var i=0; i<questions.length; i++){
+	   
+	   // first reset the list of answers
+	   answers = [];
+
+	   // for each available answer...
+	   for(letter in questions[i].answers){
+
+		   // ...add an html radio button
+		   answers.push(
+			   '<label>'
+				   + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+				   + letter + ': '
+				   + questions[i].answers[letter]
+			   + '</label>'
+		   );
+	   }
+
+	   // add this question and its answers to the output
+	   output.push(
+		   '<div class="question">' + questions[i].question + '</div>'
+		   + '<div class="answers">' + answers.join('') + '</div>'
+	   );
+   }
+
+   // finally combine our output list into one string of html and put it on the page
+   quizContainer.innerHTML = output.join('');
+}
+
+
+function showResults(questions, quizContainer, resultsContainer){
+   localStorage.clear();   //Clears the local storage
+   // gather answer containers from our quiz
+   var answerContainers = quizContainer.querySelectorAll('.answers');
+   var userAnswer = '';
+   var numCorrect = 0;
+   var incorrect = 0;
+var queMissed = 0
+   // keep track of user's answers
+   
+
+   
+   // for each question...
+   for(var i=0; i<questions.length; i++){
+
+	   // find selected answer
+	   userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+	   
+	   // if answer is correct
+	   if(userAnswer===questions[i].correctAnswer){
+		   // add to the number of correct answers
+		   numCorrect++;
+		   
+		   // color the answers green
+		   answerContainers[i].style.color = 'lightgreen';
+   // queCorrect = queCorrect + 1
+
+	   }
+	   // if answer is wrong or blank
+	   else{
+		   // color the answers red
+		   answerContainers[i].style.color = 'red';
+   queMissed = queMissed+1;
+	   }
+ 
+   }
+
+   // show number of correct answers out of total
+   resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+queCorrect = numCorrect;
+totalMiss = queMissed
+}
+
+
+// show questions right away
+showQuestions(questions, quizContainer);
+
+// on submit, show results
+submitButton.onclick = function(){
+showResults(questions, quizContainer, resultsContainer);
+
+localStorage.setItem("queMissed",totalMiss);
+localStorage.setItem("queCorrect",queCorrect);
+   
+window.location.href = './lesson9AppProject_Result.html';
+}
+}
+</script>
+      </body>
+    </html>=== L09 Application Project Files/lesson9AppProject_Result.html ===
+<html>
+    <head>
+      <title>Alicia's Hobby Page </title>
+      <style>
+            body {
+            background-color: Peru;
+            text-align: center;
+            }
+            h1 {
+            color: Red;
+            border-style: dashed;
+            border-color: black;
+            font-family: harrington;
+            }
+            h2 {
+            }
+            h4 {
+            font-size: 30px;
+            color: red;
+            font-family: jokerman;
+            }
+            h5 {
+            font-size: 25px;
+            }
+            h6 {
+            font-size: 25px;
+            }
+            h7 {
+            font-size: 25px;
+            font-weight: bold; 
+            }
+            h8 {
+            text-align: right;
+            }
+            p{
+            font-style: italic;
+            font-size: 18px;
+            }
+      </style>
+    </head>
+    <body>
+      <script>
+        var correct = localStorage.getItem('queCorrect');
+        var missed = localStorage.getItem("queMissed");
+        var percent = (correct/4)*100;
+        document.write("<h1> Here's your Test Result: </h1><br>")
+        document.write("<h3>Total Questions : 4 </h3><br>")
+        document.write("<h3>Correct Answers : "+ correct+" </h3><br>")
+        document.write("<h3>Percentage : "+ percent+"%</h3><br>")
+      </script>
+      </body>
+    </html>

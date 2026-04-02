@@ -1,0 +1,807 @@
+=== Lab2-1/lab2-1_complete.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2-1</title>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+
+  <!-- Writing text directly on the webpage -->
+  <div id="output"></div>
+
+  <script>
+    document.getElementById("output").innerHTML = "<b>Welcome to JavaScript!</b>";
+  </script>
+</body>
+
+</html>
+=== Lab2-2/lab2-2_complete.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2-2</title>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <div id="output"></div>
+
+  <script>
+    /***************************************************
+      Create a variable named userName and assign it 
+      the return value of a prompt() method.
+    ***************************************************/
+    const userName = prompt("What is your name?");
+
+    /******************************************
+    // The userName variable is rendered into the page
+    /******************************************/
+    document.getElementById("output").textContent = `Welcome, ${userName}.`;
+  </script>
+</body>
+
+</html>
+=== Lab2-3/lab2-3_complete.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2-3</title>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <div id="output"></div>
+
+  <script>
+    let a = 5;
+    const b = "5";
+    const c = 10;
+
+    // Note: a==b is true (loose equality, type coercion)
+    //       a===b is false (strict equality, different types)
+    const lines = [
+      `Values of variables: a = 5, b = "5", and c = 10.<br><br>`,
+      `Value of <b>a==b:</b> ${a == b}<br>`,
+      `Value of <b>a===b:</b> ${a === b}<br>`,
+      `Value of <b>a!==c:</b> ${a !== c}<br>`,
+      `Value of <b>a+b:</b> ${a + b}<br>`
+    ];
+
+    a += c;
+    lines.push(`After a+=c, the value of <b>a</b> is: ${a}`);
+
+    document.getElementById("output").innerHTML = lines.join('');
+  </script>
+</body>
+
+</html>
+=== Lab2-4/lab2-4_complete.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2-4</title>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+
+  <script>
+    // Trigger an alert on page load
+    window.addEventListener('load', () => {
+      alert("Hi there, welcome!");
+    });
+  </script>
+</body>
+
+</html>
+=== Lab2-5/lab2-5_complete.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2-5</title>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+
+  <script>
+    // Concatenate a prompt() result into an alert() statement
+    window.addEventListener('load', () => {
+      const name = prompt("Please enter your name:");
+      alert(`Good morning, ${name}.`);
+    });
+  </script>
+</body>
+
+</html>
+=== Lab2-6/lab2-6_complete.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2-6</title>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+
+  <script>
+    /*
+      The return value of a confirm() method
+      concatenated into an alert() statement
+    */
+    window.addEventListener('load', () => {
+      const result = confirm("Do you want to proceed?");
+      alert(`The confirm returned ${result}.`);
+    });
+  </script>
+</body>
+
+</html>
+=== Lab2-7/lab2-7_complete.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2-7</title>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+
+  <script>
+    /*
+      Two variables x and y are created
+      and assigned the values 4 and 9 respectively.
+      Parentheses force addition before string concatenation.
+    */
+    const x = 4;
+    const y = 9;
+
+    window.addEventListener('load', () => {
+      alert(`4 + 9 = ${x + y}`);
+    });
+  </script>
+</body>
+
+</html>
+=== Lab2-8/lab2-8_complete.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2-8</title>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+
+  <script>
+    // onload attribute replaced with addEventListener
+    window.addEventListener('load', () => {
+      alert("Hi there. Welcome!");
+    });
+  </script>
+</body>
+
+</html>
+
+=== Lab3-1/lab3-1_complete.html ====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 3-1</title>
+  <script>
+    // Creating a function called on page load
+    function myFunction() {
+      alert("The HTML page has loaded.");
+    }
+
+    // onload attribute replaced with addEventListener
+    window.addEventListener('load', myFunction);
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+</body>
+
+</html>
+=== Lab3-2/lab3-2_complete.html ====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 3-2</title>
+  <script>
+    // Function that takes an argument on call
+    function myFunction(arg) {
+      alert("The function has been called with an argument: " + arg);
+    }
+
+    // Function that returns a value
+    function myFunction1() {
+      return "Hi, this value is returned from a function.";
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("btnArgs").addEventListener('click', () => myFunction('Welcome!'));
+      document.getElementById("btnReturn").addEventListener('click', () => alert(myFunction1()));
+    });
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <button type="button" id="btnArgs">Call Function with arguments</button><br><br>
+  <button type="button" id="btnReturn">Call Function with return</button>
+</body>
+
+</html>
+
+===== 3-4 =======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 3-4</title>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <div id="output"></div>
+
+  <script>
+    const lines = [];
+
+    // Anonymous function
+    const fn1 = function () {
+      return "This is an anonymous function."; // fixed typo: "anynymous"
+    };
+    lines.push(fn1());
+
+    // Constructor + prototype method
+    function Pen(penColor) {
+      this.penColor = penColor;
+    }
+    Pen.prototype.display = function () {
+      return this.penColor;
+    };
+    const lux = new Pen("Blue");
+    lines.push(lux.display());
+
+    // Closure
+    function display(name) {
+      const desig = "Your name is ";
+      const makeDesig = () => desig + name; // inner function as const, arrow for brevity
+      return makeDesig();
+    }
+    lines.push(display("Alex"));
+
+    // Arrow function
+    const add = (p, q) => p + q;  // renamed: 'a' was not descriptive
+    lines.push(add(10, 20));
+
+    // Spread operator
+    const x = [1, 2, 3];
+    const sample = (ar1, ar2, ar3) => `${ar1}-${ar2}-${ar3}`;
+    lines.push(sample(7, ...x, 9)); // spreads x — only ar1=1, ar2=2, ar3=3 are used; 7 and 9 are ignored
+
+    document.getElementById("output").innerHTML = lines.join("<br>");
+  </script>
+</body>
+
+</html>
+
+
+=== Lab3-5/lab3-5_complete.html ====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 3-5</title>
+  <script>
+    // Display current date/time on load
+    window.addEventListener('load', () => alert(Date()));
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+</body>
+
+</html>
+
+// ==== Lab3-3_complete ====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Optional Lab 3-3: Functions, Arguments and Return Values</title>
+  <script>
+    /*
+      addNumbers() receives two values, adds them,
+      and returns the result to the calling statement.
+    */
+    function addNumbers(arg1, arg2) {
+      return arg1 + arg2;
+    }
+
+    window.addEventListener('load', () => {
+      alert("Please enter a numerical value in each of the following prompt dialog boxes.\nThe two numbers will be added together.");
+
+      // parseFloat() converts string input to a number before passing to addNumbers()
+      const num1 = parseFloat(prompt("Please enter a numerical value.", ""));
+      const num2 = parseFloat(prompt("Please enter a numerical value.", ""));
+
+      document.getElementById("output").innerHTML =
+        `<p>The result of the addNumbers() function is: <strong>${addNumbers(num1, num2)}</strong></p>`;
+    });
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <div id="output"></div>
+</body>
+
+</html>
+
+==== 5.1 =======
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 5-2</title>
+  <script>
+    /*
+      checkGrade() validates that the input is a number,
+      prompting again via while loop until it is.
+    */
+    function checkGrade() {
+      let myGrade = parseInt(document.getElementById("myText").value);
+
+      while (isNaN(myGrade)) {
+        myGrade = parseInt(prompt("Please enter a numerical grade value:", ""));
+      }
+
+      if (myGrade >= 91) alert("Your grade is an A.");
+      else if (myGrade >= 81 && myGrade <= 90) alert("Your grade is a B.");
+      else alert("Your grade is a C or lower.");
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("checkBtn").addEventListener('click', checkGrade);
+    });
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <form id="myForm">
+    <label for="myText">Enter numerical grade value:</label>
+    <input type="number" id="myText" size="10">
+    <p><button type="button" id="checkBtn">Check Grade</button></p>
+  </form>
+</body>
+
+</html>
+
+===== 5.2 =====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 5-2a</title>
+  <script>
+    /*
+      checkGrade() limits re-prompting to 2 attempts.
+      Silently exits if user never enters a valid number.
+    */
+    function checkGrade() {
+      let myGrade = parseFloat(document.getElementById("myText").value);
+      let attempts = 1;
+
+      while (isNaN(myGrade) && attempts <= 2) {
+        myGrade = parseFloat(prompt("Please enter a numerical grade value:", ""));
+        attempts++;
+      }
+
+      if (isNaN(myGrade)) return; // gave up after 2 attempts
+
+      if (myGrade >= 91) alert("Your grade is an A.");
+      else if (myGrade >= 81 && myGrade <= 90) alert("Your grade is a B.");
+      else alert("Your grade is a C or lower.");
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("checkBtn").addEventListener('click', checkGrade);
+    });
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <form id="myForm">
+    <label for="myText">Enter numerical grade value:</label>
+    <input type="number" id="myText" size="10">
+    <p><button type="button" id="checkBtn">Check Grade</button></p>
+  </form>
+</body>
+
+</html>
+
+==== 5-3 =====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 5-3</title>
+  <script>
+    /*
+      Generates <option> elements with JS instead of document.write(),
+      then wires up the grade check.
+    */
+    function checkGrade() {
+      const select = document.getElementById("mySelect");
+      const myGrade = parseInt(select.options[select.selectedIndex].text);
+      if (myGrade >= 91) alert("Your grade is an A.");
+      else if (myGrade >= 81 && myGrade <= 90) alert("Your grade is a B.");
+      else alert("Your grade is a C or lower.");
+    }
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      // this runs AFTER the entire DOM is parsed
+      // button exists here — safe to select it
+      const select = document.getElementById("mySelect");
+
+      // Build options 100–0 without document.write()
+      for (let i = 100; i >= 0; i--) {
+        const opt = document.createElement("option");
+        opt.textContent = i;
+        select.appendChild(opt);
+      }
+
+      document.getElementById("checkBtn").addEventListener('click', checkGrade);
+    });
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <form id="myForm">
+    <label for="mySelect">Select numerical grade value:</label>
+    <select id="mySelect"></select>
+    <p><button type="button" id="checkBtn">Check Grade</button></p>
+  </form>
+</body>
+
+</html>
+
+====== 5-4 =====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 5-4</title>
+  <script>
+    function breakTest() {
+      let myValue = "";
+
+      while (true) {
+        myValue = prompt("Enter data", myValue);
+        if (myValue === null) break;      // user cancelled — exit loop
+        if (myValue.trim() !== "") {
+          alert(`Thank you, ${myValue}.`);
+          break;
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("breakBtn").addEventListener('click', breakTest);
+    });
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <button type="button" id="breakBtn">Break Test</button>
+</body>
+
+</html>
+
+==== 5-5 =====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 5-5</title>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <div id="output"></div>
+
+  <script>
+    // Output numbers 1–100 divisible by 7; skip others with continue
+    const lines = [];
+    for (let i = 1; i <= 100; i++) {
+      if (i % 7) continue;
+      lines.push(i);
+    }
+    document.getElementById("output").innerHTML = lines.join("<br>");
+  </script>
+</body>
+
+</html>
+
+===== 5-6 =====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 5-6</title>
+  <script>
+    function switchTest(selectEl) {
+      switch (selectEl.value) {
+        case "1": alert("Arizona"); break;
+        case "2": alert("New Mexico"); break;
+        case "3": alert("California"); break;
+        default: alert("Cannot be determined");
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("setOption").addEventListener('change', function () {
+        switchTest(this);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <form id="frmOne"n >
+    <select id="setOption">
+      <option value="0">Select a U.S. City - See the State!</option>
+      <option value="1">Phoenix</option>
+      <option value="2">Roswell</option>
+      <option value="3">Sacramento</option>
+      <option value="4">My city</option>
+      <option value="5">Your city</option>
+    </select>
+  </form>
+</body>
+
+</html>
+
+====== 7-2 ======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 7-2</title>
+  <script>
+    function showUpper(checked) {
+      const nameField = document.getElementById("name");
+      nameField.value = checked
+        ? nameField.value.toUpperCase()
+        : nameField.value.toLowerCase();
+    }
+
+    function emailTest() {
+      const email = document.getElementById("email_address").value;
+
+      if (email.indexOf("@") < 0) {
+        alert("This is not a valid e-mail address!");
+      } else if (email.length < 6) {
+        alert("This e-mail address is too short");
+      } else {
+        alert("This e-mail address is valid and at least six characters long");
+      }
+
+      // uncheck the checkbox after test runs
+      document.getElementById("emailCheckbox").checked = false;
+    }
+
+    function showFirst2() {
+      const first2 = document.getElementById("phone_number").value.substring(0, 2);
+      alert(first2);
+    }
+
+    function showFaxLength() {
+      const len = document.getElementById("fax_number").value.length;
+      alert(`That string is ${len} characters long`);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("upperCheckbox").addEventListener('change', function () {
+        showUpper(this.checked);
+      });
+
+      document.getElementById("emailCheckbox").addEventListener('change', function () {
+        if (this.checked) emailTest();
+      });
+
+      document.getElementById("phoneBtn").addEventListener('click', showFirst2);
+      document.getElementById("faxBtn").addEventListener('click', showFaxLength);
+    });
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <form id="myForm">
+    <label for="name">Name:</label><br>
+    <input type="text" size="30" id="name" name="name">
+    <input type="checkbox" id="upperCheckbox">
+    Convert string to uppercase or lowercase<br><br>
+
+    <label for="email_address">E-mail address:</label><br>
+    <input type="text" size="30" id="email_address" name="email_address">
+    <input type="checkbox" id="emailCheckbox">
+    Test for e-mail address<br><br>
+
+    <label for="phone_number">Phone number:</label><br>
+    <input type="text" size="30" id="phone_number" name="phone_number"><br><br>
+
+    <label for="fax_number">Fax number:</label><br>
+    <input type="text" size="30" id="fax_number" name="fax_number">
+
+    <p><button type="button" id="phoneBtn">First Two Characters of Phone Number</button></p>
+    <p><button type="button" id="faxBtn">Fax Number Length</button></p>
+  </form>
+</body>
+
+</html>
+
+==== 7-6 ====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 7-6</title>
+  <script>
+    const num = [1, 2, 3, 4, 5];
+
+    function fn() {
+      const sq = num.map(n => n * n);
+      alert("The values stored in the array are: " + sq);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("checkBtn").addEventListener('click', fn);
+    });
+  </script>
+</head>
+
+<body>
+  <h3>CIW JavaScript Specialist</h3>
+  <hr>
+  <button type="button" id="checkBtn">Check result.</button>
+</body>
+
+</html>
+
+===== 8-1 ====
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 8-1: Employee Database</title>
+  <script>
+    // ES6 class replaces constructor function + prototype method
+    class Employee {
+      constructor(name, department, extension) {
+        this.name = name;
+        this.department = department;
+        this.extension = extension;
+      }
+
+      show() {
+        alert(`Employee:   ${this.name}\nDepartment: ${this.department}\nExtension:  ${this.extension}`);
+      }
+    }
+
+    const employees = [
+      null, // index 0 reserved for "Select Employee" placeholder
+      new Employee("Mai Li", "Sales", 551),
+      new Employee("Maria Alvarez", "Human Resources", 441),
+      new Employee("Tom Smith", "Marketing", 331)
+    ];
+
+    function showAllEmployees() {
+      const info = employees
+        .slice(1) // skip null placeholder
+        .map(e => `Employee:   ${e.name}\nDepartment: ${e.department}\nExtension:  ${e.extension}`)
+        .join("\n\n");
+      alert(info);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const select = document.getElementById("empSelect");
+
+      // Build options without document.write()
+      select.appendChild(new Option("Select Employee", "0"));
+      employees.slice(1).forEach((e, i) => {
+        select.appendChild(new Option(e.name, i + 1));
+      });
+
+      select.addEventListener('change', function () {
+        const idx = parseInt(this.value);
+        if (idx > 0) employees[idx].show();
+        this.value = "0"; // reset to placeholder
+      });
+
+      document.getElementById("showAllBtn").addEventListener('click', showAllEmployees);
+    });
+  </script>
+</head>
+
+<body>
+  <h3>Employee Database</h3>
+  <hr>
+  <form id="empForm">
+    <strong>Select name to view information:</strong>
+    <select id="empSelect"></select>
+    <p>
+      <button type="button" id="showAllBtn">Show All Employees</button>
+    </p>
+  </form>
+</body>
+
+</html>
