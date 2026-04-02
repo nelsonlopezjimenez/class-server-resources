@@ -2,7 +2,7 @@
 publishDate: 2026-02-02
 title: "JavaScript Fundamentals - Variables, Data Types, and Basic Operations"
 description: "Introduction to JavaScript syntax, variables, primitive data types, console.log(), and string methods."
-week: 14
+week: 13
 section: 2
 ---
 <details>Variables and Data
@@ -276,4 +276,4 @@ The **alert()** method displays an alert box with a message and an OK button.
 
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
-  - Take the quiz
+  - Take the Week 13 Quiz
