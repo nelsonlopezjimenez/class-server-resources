@@ -118,7 +118,7 @@ See short definitions after glossary at the end of this chapter
 1. The current version is ES2025. The official name of the standard is ECMAScript. 
 1. The first ECMAScript versions were abbreviated by numbers: ES1, ES2, ES3, ES5, ES6
 1. From 2016, versions are named by year 
-1. Ref JavaScript versions in [W3S](https://www.w3schools.com/js/js_versions.asp) [localhost](http://localhost:22022/websites/w3schools.com/js/js_versions.html)
+1. Ref [JavaScript versions W3S](https://www.w3schools.com/js/js_versions.asp) and/or [localhost](http://localhost:22022/websites/w3schools.com/js/js_versions.html)
 
 ### Technologies based on JavaScript
 

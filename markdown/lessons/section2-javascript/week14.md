@@ -85,7 +85,7 @@ JS can reach *outside* the browser tab and tap the user on the desktop. Requires
 ---
 
 **`console.log()` — the sticky note**
-Slap it anywhere to leave yourself a message: *"I was here, and x was 42."* Simple, low-tech, surprisingly effective. Every developer still uses it.[Using console.log()](https://www.w3schools.com/js/js_output.asp) and/or [Localhost W3S Template](http://localhost:22022/websites/w3schools.com/js/js_output.html)
+Slap it anywhere to leave yourself a message: *"I was here, and x was 42."* Simple, low-tech, surprisingly effective. Every developer still uses it.[Using console.log()](https://www.w3schools.com/js/js_output.asp) and/or [Localhost](http://localhost:22022/websites/w3schools.com/js/js_output.html)
 
 [Localhost W3S Template](http://localhost:22022/websites/w3schools.com/js/js_XXXXXXXX.html)
 
@@ -174,7 +174,7 @@ function run() {
 1. Undefined
 1. Null
 1. Symbol
-1. [reference](https://www.w3schools.com/js/js_types.asp) [localhost](http://localhost:22022/websites/w3schools.com/js/js_types.html)
+1. [JavaScript Datatypes](https://www.w3schools.com/js/js_types.asp) and/or [localhost](http://localhost:22022/websites/w3schools.com/js/js_types.html)
 
 ## Day 2: Expression And Operators
 
@@ -184,7 +184,7 @@ An expression is a single unit of JS code that can be evaluated. Expression can 
 1. Assignment = += -=
 1. Comparison: == === != !== > < >= <=
 1. Logical: && || !
-1 [reference W3S](https://www.w3schools.com/js/js_operators.asp) and/or [localhost](http://localhost:22022/websites/w3schools.com/js/js_operators.html)
+1 [JavaScript Operators W3S](https://www.w3schools.com/js/js_operators.asp) and/or [localhost](http://localhost:22022/websites/w3schools.com/js/js_operators.html)
 
 ### Mandatory Reading:
 
@@ -202,10 +202,11 @@ The **alert()** method displays an alert box with a message and an OK button.
 
 ### Mandatory Reading:
 
-* [JavaScript Alerts alert()](https://www.w3schools.com/jsref/met_win_alert.asp) and/or [localhost alert()](http://localhost:22022/websites/w3schools.com/jsref/met_win_alert.html)
-[W3S prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp) and/or [Localhost](http://localhost:22022/websites/w3schools.com/jsref/met_win_prompt.html)
+* [JavaScript alert()](https://www.w3schools.com/jsref/met_win_alert.asp) and/or [Localhost](http://localhost:22022/websites/w3schools.com/jsref/met_win_alert.html)
 
-* [Simple User Events events](https://www.w3schools.com/js/js_events.asp) and Basic Event Handlers and/or [Localhost](http://localhost:22022/websites/w3schools.com/js/js_events.html) 
+* [W3S prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp) and/or [Localhost](http://localhost:22022/websites/w3schools.com/jsref/met_win_prompt.html)
+
+* [Simple User Events](https://www.w3schools.com/js/js_events.asp) and Basic Event Handlers and/or [Localhost](http://localhost:22022/websites/w3schools.com/js/js_events.html) 
 
 **special attention to event listeners**
 * JavaScript Keywords and Reserved Words
