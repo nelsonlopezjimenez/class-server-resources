@@ -36,7 +36,8 @@ Open lab1-1_complete.htm
 
 to show other navigator object properties as
 shown. Remember to show your name and date.
-***navigator.properties*** in red, values in black using document.write()
+**_navigator.properties_** in red, values in black using document.write()
+
 ```htm
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -65,6 +66,7 @@ document.write("</p>");
 document.write("<p> <span style='color:red'> navigator.appCodeName : </span>
 <br/>");
 ```
+
 ### Challenge 2: Modify lab1-1_complete.htm to add a Show Geolocation button.
 
 **HINT**
@@ -171,12 +173,12 @@ Date();document.getElementById('demo').innerHTML
 - myDate.getDate() + . . .
   Reference: https://www.w3schools.com/js/js_date_methods.asp
 
-### Challenge 4: Add another button “Display Full time”. 
+### Challenge 4: Add another button “Display Full time”.
+
 Click the button
-***It displays the full time in XX:XX:XX hour:min:sec format
+\*\*\*It displays the full time in XX:XX:XX hour:min:sec format
 
 =====
-
 
 ## Week 2: 2019-Winter, 1/9/2019, Wednesday, 6:00 PM-8:40 PM
 
@@ -263,12 +265,24 @@ Modify optionalLab2-2.htm to calculate the monthly payment with Term (in months)
 **HINT**
 
 ```html
-Hint: Modify function calcpayment(). function calcpayment() { var amt =
-document.frm.amt.value; var ir = document.frm.ir.value / 1200; var term; if
-(document.frm.term.value !=="" && document.frm.termMonth.value !=="" ) {
-alert("Enter term in either years or months"); return false; } if
-(document.frm.term.value !=="") { term = document.frm.term.value * 12; } else {
-. . . } . . .
+<script>
+  //Hint: Modify
+  function calcpayment(). function calcpayment() {
+    var amt =document.frm.amt.value;
+    var ir = document.frm.ir.value / 1200;
+    var term;
+
+    if (document.frm.term.value !=="" && document.frm.termMonth.value !=="" ) {
+      alert("Enter term in either years or months");
+      return false;
+      }
+
+    if (document.frm.term.value !=="") {
+        term = document.frm.term.value * 12;
+    } else {
+
+   }
+</script>
 <tr>
   <td>Term (in years):</td>
   <td><input type="text" name="term" /></td>
