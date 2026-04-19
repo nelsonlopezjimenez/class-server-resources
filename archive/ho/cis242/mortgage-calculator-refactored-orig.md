@@ -4,6 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>Optional Lab 2-2: Mortgage Calculator</title>
+  <style>
+    .calculator {
+      display: table;
+      margin: 0 auto;
+      border: 2px solid black;
+      padding: 2px;
+      background-color: black;
+    }
+    .calculator table {
+      background-color: wheat;
+      border-spacing: 10px;
+    }
+  </style>
 </head>
 <body>
   <h1 style="text-align:center; color:blue">CIW JavaScript Specialist</h1>

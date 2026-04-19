@@ -19,7 +19,7 @@ section: 2
 *   JavaScript Keywords and Reserved Words
 </pre></details>
 
-# Week 2: Working with Variables and Data
+# Item 1 - Week 2: Working with Variables and Data April 13
 
 ## Learning Objectives
 
@@ -275,3 +275,73 @@ The **alert()** method displays an alert box with a message and an OK button.
 - Log into Canvas and navigate to this section's class page
 - Click on Quizzes
   - Take the quiz
+
+# Item 2 - Introduction to week 2
+Introduction to Week 2 [w15.2]
+Introduction to Week 2 April 13-17
+Did you take screenshots of your laptop quiz assignment? If so, go to the Assignments section, find the assignment aw3.1 and submit. If not, your will have the first hour to do so. During class time, you can submit using the classroom canvas.
+Did you complete your w3schools quizzes on JavaScript? Make note of the sections you finished and submit to assignment aw3.2.
+Did you watch any video on JavaScript found in a location with a path: C:\Users\Public\Videos\RAW-VIDEOS? If so, please list the videos in aw3.3
+What chapters of the textbook on JavaScript have you completed? Please list them in assignment aw3.3, as well.
+Have you found any other resource related to current class that you found interesting? Please list it in the assignment aw3.3
+Week at a Glance
+This week's goals:
+Test the access to freeCodeCamp offline website
+Take/retake week 3 quizzes
+Complete week 3 assignments
+To help you achieve the Week 3.3 learning outcomes, you will complete the following activities this week:
+
+READ/WATCH/EXPLORE
+Read handout of JavaScript by Flavio Copes (link here) Download link here)
+Read the AIRBNB JavaScript style guide. The file is a zip file. Download file is a zip file.
+Watch the series of videos on JavaScript for beginners from Microsoft found in the following path:
+C:\Users\Public\Videos\RAW-VIDEOS\MSjavascriptforbeginners
+COMPLETE
+Assignment aw3.1
+Assignment aw3.2
+Assignment aw3.3 add the fizzbuzz, triangle, and chess board exercises
+REVIEW
+From the JavaScript book handout review the following 
+JavaScript history
+JavaScript syntax
+Variable definition
+Variable types
+Expressions
+Operators
+Precedence rules
+Conditionals
+Arrays
+Tips for Success
+Include the material from the "Foundations" in Odin Project.
+
+Read about motivation (Links to an external site.) and here (Links to an external site.) 
+What to do if/when you're stuck (Links to an external site.)
+Manage your study time optimall (Links to an external site.)y
+Rabbit hole (Links to an external site.)s
+
+# Item 3 - Wee2 Readings and Other Materials
+Week 2 Readings & Other Materials
+Week 2 Readings & Other Materials
+Read
+Make sure you read the following resources. Write notes in your notebook of important aspects. Make note of unfamiliar terms or concepts. Ask questions to yourself, classmates or instructor.
+
+Read: "The JS Handbook"  Download The JS Handbook"by Flavio Copes from section 1 (Introduction and history) through 14 (Arrays).
+Read "Eloquent JavaScript" (Links to an external site.), 3d edition by Marijn Haverbeke,  introduction as well as chapter 1. The summary of the chapter is on page 20. 
+Read Odin Project JavaScript Foundations variables and operators. (Links to an external site.)
+Watch
+The following videos are located in C:\Users\Public\Videos\RAW-VIDEOS\MSjavascriptforbeginners
+
+This is a list of some videos you can watch (if you haven't done so yet) from the series 'Tutorial For Beginners" by Bucky Roberts:
+
+Getting started.
+What is JavaScript.
+Runnin JavaScript.
+Creating your first app.
+Comments.
+More comments.
+QUESTIONS
+What is JavaScript
+What is a variable
+How many data types are in JS
+
+# Item 

@@ -6,7 +6,7 @@ week: 15
 section: 2
 ---
 
-# Week 3: Functions
+# Week 3: Functions April 20
 
 ## Learning Objectives
 
@@ -21,17 +21,18 @@ By the end of this week, students will be able to:
 
 ### Mandatory Reading:
 
-- [What Is the Purpose of Functions, and How Do They Work?](http://localhost:8001/learn/javascript-v9/lecture-working-with-functions/what-is-the-purpose-of-functions-and-how-do-they-work)
-- [What Are Arrow Functions, and How Do They Work?](http://localhost:8001/learn/javascript-v9/lecture-working-with-functions/what-are-arrow-functions-and-how-do-they-work)
-- [What Is Scope in Programming, and How Does Global, Local, and Block Scope Work?](http://localhost:8001/learn/javascript-v9/lecture-working-with-functions/what-is-scope-in-programming-and-how-does-global-local-and-block-scope-work)
-
-### Optional Readings:
-
-- [MDN - Functions](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions.html)
-- [MDN- Returns](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values.html)
 - [w3Schools - Functions](http://localhost:22022/websites/w3schools.com/js/js_functions.html)
 - [w3Schools - Arrow Functions](http://localhost:22022/websites/w3schools.com/js/js_arrow_function.html)
 - [w3Schools - Scope](http://localhost:22022/websites/w3schools.com/js/js_scope.html)
+
+### Optional Readings:
+- [What Is the Purpose of Functions, and How Do They Work?](http://localhost:8001/learn/javascript-v9/lecture-working-with-functions/what-is-the-purpose-of-functions-and-how-do-they-work)
+- [What Are Arrow Functions, and How Do They Work?](http://localhost:8001/learn/javascript-v9/lecture-working-with-functions/what-are-arrow-functions-and-how-do-they-work)
+- [What Is Scope in Programming, and How Does Global, Local, and Block Scope Work?](http://localhost:8001/learn/javascript-v9/lecture-working-with-functions/what-is-scope-in-programming-and-how-does-global-local-and-block-scope-work)
+- [MDN - Functions](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions.html)
+- [MDN- Returns](http://localhost:22022/websites/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values.html)
+
+
 
 ### Lab 15.1
 

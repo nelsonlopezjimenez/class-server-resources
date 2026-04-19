@@ -6,7 +6,8 @@ week: 13
 section: 2
 ---
 
-# Week 01: Introduction to JavaScript, syllabus, some history
+# Item 2 - Week 1: Introduction to JavaScript, syllabus, some history
+## April 6 to 10 2026
 
 <details>Content<pre>
 **Week 1:** Introduction to the course. Syllabus content. Introduction to JavaScript: brief history and syntax 
@@ -372,3 +373,397 @@ Hex:          03 C3
 | **Complexity (Big O)** | How performance scales with input size |
 
 > Most programming arguments boil down to disagreements about which of these concepts to apply, when, and how.
+
+# Item 3 - Why Web Development ==================
+## Is Web Development a Good Career?
+
+Development, whether in web, software, app, or games is a good place to be in the modern world.
+
+
+## How is one normal day for a developer?
+Busy, full of collaborations with designers, content creators and clients.
+Constant problem solving at all levels.
+Providing simple, elegant solutions to problems that people face.
+## Is it exciting? rewarding? stimulating? all at once?
+The answer is YES
+
+## What is the major satisfaction of working as a Web Developer?
+
+The satisfaction of seeing a web site to go live after countless hours of work.
+
+ 
+
+## Answer to yourself the following questions (and be honest!!!)
+Is web development Dying because of AI and automation?
+Have you build a web site? have you thought about building a web site?
+For yourself? for someone in your family? for a client?
+is web development about coding?
+or is it about bridging the gaps between where clients are and where they want to be?
+is Web development hard?
+
+# Item 4 - Introduction to Week 1 ============================
+## Week at a glance
+
+To help you achieve the Week One learning outcomes, you will complete the following activities this week:
+
+## READ/WATCH/EXPLORE
+- Watch Colt's Camp Day 1 here (Links to an external site.)
+- Introduction to JavaScript ppt ch1 here Download here
+- JavaScript_Specialist_Slideshow_v2.0.ppt here Download here
+- How Developer solve problems?.
+- Solving Fizz Buzz.
+- Read Become top success story (Links to an external site.) Download success story
+
+## COMPLETE
+- Lab1 : Click to display Date and Time Lab, display year only, display month only,
+- Check video on 492 pages week-01-closing-remarks just before the 1hr video on gimp
+- Lab2: using document.write() and show navigator objects properties also in red as a challenge, geolocation challenge
+- There is video instructions lab2 too.
+- Try the project rock-paper-scissors.Links to an external site.
+
+## DISCUSS
+The following questions are an opportunity to reflect on key topics in this lesson. If you can’t answer a question, click on it to review the material, but keep in mind you are not expected to memorize or master this knowledge.
+
+- What are the three stages in the problem solving process?Links to an external site.
+- Why is it important to clearly understand the problem first?Links to an external site.
+- What can you do to help get a clearer understanding of the problem?Links to an external site.
+- What are some of the things you should do in the planning stage of the problem solving process?Links to an external site.
+- What is an algorithm?Links to an external site.
+- What is pseudocode?Links to an external site.
+- What are the advantages of breaking a problem down and solving the smaller problems?Links to an external site.
+## REVIEW
+
+1.1: Identify characteristics of JavaScript and common programming practices.
+
+Lesson 1: Introduction to JavaScript
+
+-       JavaScript Characteristics
+
+-       JavaScript Flavors and Versions
+
+Lesson 1: Introduction to JavaScript
+
+-     Server-Side vs. Client-Side Applications
+
+ 
+
+1.2: Work with variables and data in JavaScript.
+
+Lesson 2: Working with Variables and Data in JavaScript
+
+-       Using JavaScript to Communicate with the User
+
+-       Lab 2-1: Using the JavaScript document.write() method
+
+Lesson 2: Working with Variables and Data in JavaScript
+
+-     Using Data More Than Once: Variables
+
+Lesson 2: Working with Variables and Data in JavaScript
+
+-     JavaScript Keywords and Reserved Words
+
+Lesson 2: Working with Variables and Data in JavaScript
+
+-       Using Data More Than Once: Variables
+
+-       Lab 2-2: Storing user data in a JavaScript variable
+
+-       Operators
+
+-       Lab 2-3: Demonstrate and compare operators
+
+-       JavaScript Alerts and Prompts
+
+-       Lab 2-4: Using the JavaScript alert() method
+
+-       Lab 2-5: Using the JavaScript prompt() method
+
+-       Lab 2-6: Using the JavaScript confirm() method
+
+-       Lab 2-7: Assigning and adding variables in JavaScript
+
+## Tips for Success
+For every hour you spend in classroom you should spend at least 3 hours outside the classroom.
+
+- Note taking: be brief, precise, systematic.
+- Watch the videos linked in each module
+- Search for more videos in the following laptop file location:
+- c:\Users\Public\Videos\
+
+# Item 5 - Assign1-1:  Web Development II. ==================================
+Welcome to CIS 242 - Web Development II: JavaScript. Follow the steps to complete the assignments.
+
+If you have not created a folder structure for this section 2 (or quarter 2) now it is time to do so. The default location for the course materials is the Desktop location in you laptop.
+
+In your quarter2/labs folder create a file assign1-1.html. Using VS Code either create or copy an HTML template and write the content to match the following content:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section2 Assign1-1</title>
+</head>
+<body>
+    <h1>Javascript My First Script</h1>
+    <script>
+        document.write(navigator.userAgent);
+        document.write("<p>");
+        document.write(navigator.language);
+        document.write("</p>");
+    </script>
+</body>
+</html>
+```
+
+2026-04-04 17.20.05  7d14dcf6cb28.png.
+
+##############    Challenge 1: ########################
+Modify assign1-1.html to show other navigator object properties as show below. Remember to show your name and date.
+
+navigator.userAgent
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+navigator.language
+en-US
+navigator.languages
+en-US, en
+navigator.onLine
+true
+navigator.cookieEnabled
+true
+navigator.hardwareConcurrency
+4
+navigator.platform(deprecated)
+Win32
+navigator.appName(deprecated)
+Netscape
+navigator.appVersion(deprecated)
+5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+#############       SUBMIT screenshot number 1 ###########
+
+HINT: reference https://www.w3schools.com/jsref/obj_navigator.asp (Links to an external site.)
+and/or http://localhost:22022/websites/w3schools.com/jsref/obj_navigator.html (Links to an external site.)
+
+document.write("<p><span style="color:red"> navigator.appName : </span> <br />");
+document.write(navigator.appName); document.write("</p>"); 
+document.write("<p><span style="color:red"> navigator.appVersion : </span> <br />");
+document.write(navigator.appVersion); document.write("</p>"); 
+document.write("<p><span style="color:red"> navigator.appCodeName : </span> <br />"); 
+   . . .
+  Replace . . . by your own code!!!
+</p>
+############# Challenge 2 ###############
+Modify assign1-1.html to add **Show Geolocation** button
+
+In the body add a button element
+<p id="demo"></p>
+<button id="btn-geo">Show Geolocation</button>
+    ..........
+Inside the script element add the following code:
+      document.getElementById("btn-geo").addEventListener("click", getLocation);
+      function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position) {
+            document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude + ", longitude:  " + position.coords.longitude  ;
+        }
+.geolocation button
+
+#########     SUBMIT screenshot number 2    ##############
+#####   Extra Credit: submit your screenshots individually   ######
+You will get extra credit if your output matches the display shown in the following images
+
+navigator properties
+
+# Item 6 - Lab1-1: Folder structure ===============================
+Lab1-1: Course Folder Location
+Every week you will have a new lab assignment.
+
+You will navigate to your Desktop. You will create a series of folders: "QUARTER-1",  "QUARTER-2",  "QUARTER-3", and  "QUARTER-4" where you are going to keep all the materials related to each quarter. Inside each folder you are going to create the following structure: 
+
+C:\Users\LOCALS999999\DESKTOP>tree
+Folder PATH listing
+Volume serial number is AA58-195E
+C:.
+├───QUARTER-1
+│   ├───exercises
+│   ├───final-project
+│   ├───Labs
+│   │   ├───Cookie_Monster_Lab
+│   │   │   ├───css
+│   │   │   ├───html
+│   │   │   └───images
+│   │   ├───Lab1
+│   │   └───Peach_Recipe_Website
+│   │       ├───css
+│   │       └───INSTRUCTIONS
+│   └───projects
+└───QUARTER-4
+    ├───final-project
+    │   ├───css
+    │   ├───html
+    │   ├───images
+    │   └───videos
+    └───Labs
+        ├───Lab1
+        ├───Lab2
+        └───Lab3
+The list of items do not match necessarily with the items here, this is just a guide. Make sure your note the naming conventions on each assignment. Follow the naming conventions as close as possible. It is important. Pay attentiong to the item "README.md" file. It means literally what the name entails. It is the first file to read when visiting the folders for the first time. I will explain more details during  class. 
+
+What to submit:
+Once you create the folder structure, use the command "tree" in the command line, copy/paste the output in the text entry when you are ready to submit.  MAKE SURE TO SELECT "PREFORMATTED" FOR BETTER VIEW.
+
+# Item 7: What are your learning expectations
+# Item 8 - Meet your classmates discussion
+# Item 9 - User denied location
+# Item 10 - check location permission
+
+# Item 1 = Course Structure section 2 ===================================
+course-structure-section-two
+Course Structure Section 2
+This course is structured to maximize learning potential, as well as for self paced learning. The pace can seem overwhelming
+
+Daily Expectations
+Each day, you’ll complete a set of readings: some are mandatory, some are optional but highly recommended.
+
+Here’s how we’ll approach our learning:
+
+-MANDATORY: w3Schools (w3): w3Schools gives a broader overview of web development topics and is particularly helpful for those interested in design. They have fewer code examples than MDN. -OPTIONAL (highly recommended): freeCodeCamp (fCC): fCC provides a great introduction to the core concepts.
+
+OPTIONAL: Mozilla Developer Network (MDN): MDN offers a really detailed, technically-focused look at each topic. They're fantastic for understanding why things work. You’ll find plenty of clear examples.
+Note: The MDN Editor tools don’t currently work while w3's "try me" features do.
+Daily Lab Assignments: You’ll also work through daily “Labs” – coding exercises designed to help you solidify what you’ve learned.
+
+Daily Journal: During this course, you will keep a journal of reflections on what you are learning. This will build your skills in engaging with and understanding content and in reflecting on what works best for you as a learner. This will help you organize your thoughts, learn key concepts and keep track of information.
+
+Important: We understand that fitting everything in while in class can be challenging. You’ll be expected to complete all mandatory readings and Labs outside of class time. Don't worry, we'll provide the support you need!
+
+Weekly Expectations
+Each week, we’ll have a short review section to help you consolidate your knowledge. After reading the review, you'll take a quiz. These quizzes primarily consist of multiple-choice questions, typically 10 questions from a pool of 20 to 30 question banks.
+
+Each week will have a lab that is due the first day of the next week (typically a Monday). Each lab will have a detailed list of criteria that must be meet to receive a full grade. Each week will have one or more assignment (as a homework or in-class assignment).
+
+Assignment/Labs Expectations:
+When uploading files to canvas (either labs or assignments), the file name needs to be your last name first initial and a dash ("-") followed by the lab or assignment.
+
+Example: "John Doe" turning in a file for Lab 1.1 would name the file doej-lab1.1.html, for the week 1 assignment would be doej-assignment1.html. If uploading multiple files you need to zip the folder and follow same naming convention (doej-lab1.1.zip), unless you are asked explicitly to submit one item at a time, for example an html file and two or three image files. NOTE: you can not submit a folder containing multiple items, unless it is compressed.
+
+If the lab/assignment is a text based submission either write in your answer, or copy/paste your code into the provided submission area. If you are submitting JavaScript as part of an html file, then no problem to submit the html file on canvas. If you are submitting a file with "js" extension, then you should rename your file by adding a "txt" second extension and upload to canvas. Canvas has the ability to recognize the extension and disable the upload to prevent JavaScript possible execution on the server side. You can copy/paste your code into the "text Entry" box. Make sure you select the "preformatted" option when entering/pasting the code as to keep the correct indentation.
+
+Midterm and Finals
+This section will have 2 Exams. A Midterm and a Final Exam. These exams must be taken in class. Midterm may be an open book exam, allowing you to utilize websites, notes, and other resources. However, you cannot ask other students, classroom assistants, or the instructor for answers. If you don’t understand a question, please ask the instructor ONLY for clarification. Final exam may be replaced by a Final Project and it will be discussed during class during the second half of the quarter.
+
+Notes on Exams: Exams are designed to assess your understanding of the material, not to induce anxiety. To alleviate concerns, exams will be graded on a curve. This means that the overall distribution of grades will be adjusted so that most students receive at least a C- passing grade, while a few students will achieve B’s, and the top performers will receive A’s.
+Late Work
+Labs are due at the start of the first day of the next week as indicated in the Class Schedule. i.e. Assignment for week 0 (Your Resume) is due first thing Monday of week 1. Assignments are due at the start of class on the date indicated in the Class Schedule. i.e. Lab 1.1 is due first thing day 2 of week 1.
+
+If a lab or assignment is turned in later than the due date, but earlier than 1 week late, it will be marked 50% off of the final grade. After being 1 week late the lab or assignment will receive a 0. During the first two week on the first quarter this rule is not enforced. I will announce the time when the rule will be enforced.
+
+Quizzes must be taken on the day indicated in Canvas. The highest grade received on that day will be the one accepted. Quizzes taken up to 1 week late will be marked 50% off of final grade. After being more than 1 week late a 0 will be received. Quizzes can be retaken as many times as you can and only the highest grade will be recorded, unless indicated otherwise.
+
+Final Assignment and Exams: The final project, Midterm Exam, and Final Exam must be taken on the scheduled date unless major reason prevent you from doing so. Among others, you are on a medical trip, you went to segregation, etc. If you know of another possible reason before hand you must communicate it to me to arrange a new date but only under extraordinary circumstances.
+
+IMPORTANT: No make-up exams will be given unless prearranged. Prearranged is defined as: notifying the instructor of the inability to take the exam before the scheduled time of the exam. You can retake a quiz only if you took the quiz for the first time on the date indicated in the schedule.
+
+Failing Grades Anything below 70%, is a failing grade. Failing a the course means you may be removed from class and have to retake it before moving on to the next section.
+
+Course Weekly Breakdown:
+Week 1: Introduction to the course. Syllabus content. Introduction to JavaScript: brief history and syntax Week 2: Variables and Data Types: Primitive/Object, Strings. Operators and Expressions Week 3: Functions and Debugging Week 4: Controling Program Flow, Arrays, Objects Week 5: Loops, DOM, more objects, DOM, midterm Week 6: More objects, DOM Manipulation. Week 7: Form Validation, Maps Week 8: JavaScript Libraries and Frameworks Week 9: Intro to Web APIs Week 10: Final Assignment and Exam
+
+## week 1: Intro to JS
+Introduction to JavaScript
+Introduction to Scripting
+JavaScript Characteristics
+JavaScript and Common Programming Concepts
+JavaScript Flavors and Versions
+Technologies based on JavaScript
+Server-Side vs. Client-Side Applications
+Annotating Your Code with Comments
+Expanding the Role of JavaScript
+## Week 2: Working with Variables and Data in JavaScript
+Using JavaScript to Communicate with the User
+Tools for Debugging Code
+Using Data More Than Once: Variables
+JavaScript Operators
+JavaScript Expressions
+JavaScript Alerts and Prompts
+Simple User Events and Basic Event Handlers
+JavaScript Keywords and Reserved Words
+## Week 3: Functions and Debugging
+Introduction to Functions
+Defining a Function
+Calling a Function
+Methods as Functions
+Types of Functions
+User Events and JavaScript Event Handlers
+What Is Debugging?
+Tools for Debugging Code
+Testing Code in Various Browsers
+Debugging Logic Errors
+JavaScript and Mobile Devices
+## Week 4: Controlling Program Flow
+Controlling Decisional Program Flow
+The if...else Statement
+The while Statement
+The for Statement
+The break Statement
+The continue Statement
+The switch Statement
+Week 5: More on loops, arrays, Document Object Model (DOM), midterm
+The JavaScript Document Object Model (DOM)
+The window Object
+The document Object
+The image Object
+The history Object
+The location Object
+The navigator Object
+The Virtual DOM
+Week 6: Objects and DOM manipulation
+Introduction to JavaScript Language Objects
+The String Object
+Evaluating Strings
+JavaScript Regular Expressions
+The Array Object
+The forEach() Method
+The map() Method
+The Date Object
+Setting and Extracting Time Information
+The Math Object
+Changing HTML on the Fly
+Using the getElementById Method
+Using the getElementsByName Method
+Using the getElementsByTagName Method
+Using the getElementsByClassName Method
+Modifying Attributes within the DOM
+Week 7: Developing Interactive Forms with JavaScript
+Interactive Forms
+Overview of Form Elements
+Referring to form Elements
+The form Object
+The input Elements and text Objects
+The textarea object
+The select Object and select Element
+Form Validation
+Common form Security Errors
+Week 8: JavaScript Libraries and Frameworks
+Introduction to JavaScript Libraries and Frameworks
+Choosing a Code Library
+External and Pre-Made Scripts
+Loading Your First Library
+Using JavaScript Library Plug-ins
+Using Frameworks
+Best Practices with JavaScript Libraries and Frameworks
+Copyright Issues and JavaScript
+Week 9: Introduction to Web APIs
+Web Application Programming Interface (API)
+The Web Storage API
+The Geolocation API
+The Canvas API
+Week10 : Final Project And/Or Final Exam
+
+
