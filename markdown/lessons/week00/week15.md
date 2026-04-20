@@ -1850,7 +1850,7 @@ HINT
  See also [https://www.w3schools.com/js/js\_switch.asp](https://www.w3schools.com/js/js_switch.asp)
 
 # Item-3
-# Assign3-1: Controlling Program Flow
+# Lab3-1: Controlling Program Flow
 
 ## Week 3 : April 20
 
