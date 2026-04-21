@@ -1980,3 +1980,222 @@ will be replaced with a real database. You will learn:
 Everything you built this week — the route structure, middleware, error
 handling, env variables — carries forward unchanged. The only thing that
 changes is where the data lives.
+
+# Week 3 Day 1 — Lab Solutions
+
+---
+
+## Beginner — Three GET Routes
+
+Three routes: root, current date, random number.
+
+```js
+// server.js
+
+const express = require('express');
+const app     = express();
+const PORT    = 3000;
+
+// GET / — responds with your name
+app.get('/', (req, res) => {
+  res.send('Nelson Lopez');
+});
+
+// GET /date — responds with current date and time
+// new Date().toLocaleString() formats it as a readable string
+app.get('/date', (req, res) => {
+  res.json({ date: new Date().toLocaleString() });
+});
+
+// GET /random — random integer between 1 and 100
+// Math.random() → 0 to 0.999...
+// * 100 → 0 to 99.9...
+// Math.floor() → 0 to 99
+// + 1 → 1 to 100
+app.get('/random', (req, res) => {
+  const number = Math.floor(Math.random() * 100) + 1;
+  res.json({ number });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+**Test it:**
+```bash
+curl http://localhost:3000/
+curl http://localhost:3000/date
+curl http://localhost:3000/random
+```
+
+---
+
+## Intermediate — Request Logging Middleware
+
+Log every request in the format: `[METHOD] /path — 200 OK`
+
+The trick: status code is only available **after** the response is sent,
+so we use `res.on('finish')` to log it at the right moment.
+
+```js
+// server.js
+
+const express = require('express');
+const app     = express();
+const PORT    = 3000;
+
+// ── MIDDLEWARE ─────────────────────────────────────────────────
+// runs for every request — registered with app.use() before routes
+function logger(req, res, next) {
+  // 'finish' fires after res.send() / res.json() completes
+  res.on('finish', () => {
+    console.log(`[${req.method}] ${req.url} — ${res.statusCode}`);
+  });
+  next(); // must call next() or request hangs
+}
+
+app.use(logger); // register before routes
+
+// ── ROUTES ────────────────────────────────────────────────────
+app.get('/', (req, res) => {
+  res.send('Nelson Lopez');
+});
+
+app.get('/date', (req, res) => {
+  res.json({ date: new Date().toLocaleString() });
+});
+
+app.get('/random', (req, res) => {
+  const number = Math.floor(Math.random() * 100) + 1;
+  res.json({ number });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+**Console output when routes are hit:**
+```
+[GET] / — 200
+[GET] /date — 200
+[GET] /random — 200
+[GET] /nonexistent — 404
+```
+
+---
+
+## Advanced — Error Handling Middleware and next(error)
+
+### What is the difference between `next()` and `next(error)`?
+
+```
+next()         → move to the next middleware or route handler (normal flow)
+next(someError) → skip all normal middleware and jump to the ERROR HANDLER
+```
+
+Express identifies an error handler by its **4 parameters**: `(err, req, res, next)`.
+It only runs when `next(error)` is called.
+
+```js
+// server.js
+
+const express = require('express');
+const app     = express();
+const PORT    = 3000;
+
+// ── MIDDLEWARE ─────────────────────────────────────────────────
+function logger(req, res, next) {
+  res.on('finish', () => {
+    console.log(`[${req.method}] ${req.url} — ${res.statusCode}`);
+  });
+  next();
+}
+
+app.use(logger);
+
+// ── ROUTES ────────────────────────────────────────────────────
+app.get('/', (req, res) => {
+  res.send('Nelson Lopez');
+});
+
+app.get('/date', (req, res) => {
+  res.json({ date: new Date().toLocaleString() });
+});
+
+app.get('/random', (req, res) => {
+  const number = Math.floor(Math.random() * 100) + 1;
+  res.json({ number });
+});
+
+// route that deliberately triggers the error handler
+// visit /boom to see error handling in action
+app.get('/boom', (req, res, next) => {
+  const err = new Error('Something exploded on purpose!');
+  err.statusCode = 500;
+  next(err); // skips all normal middleware, goes straight to errorHandler
+});
+
+// route that throws a 404 manually
+app.get('/secret', (req, res, next) => {
+  const err = new Error('You are not allowed to see this');
+  err.statusCode = 403;
+  next(err);
+});
+
+// ── 404 CATCH-ALL ─────────────────────────────────────────────
+// any route not matched above hits this
+app.use((req, res, next) => {
+  const err = new Error(`Route not found: ${req.url}`);
+  err.statusCode = 404;
+  next(err); // pass to error handler below
+});
+
+// ── ERROR HANDLER ─────────────────────────────────────────────
+// MUST have exactly 4 parameters — Express detects error handlers by arity
+// MUST be last — after all routes and middleware
+app.use((err, req, res, next) => {
+  // log the full error on the server (console, not the client)
+  console.error(`ERROR: ${err.message}`);
+
+  // send a clean JSON response to the client
+  const statusCode = err.statusCode || 500;
+  res.status(statusCode).json({
+    error:  err.message,
+    status: statusCode
+  });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+**Test the error routes:**
+```bash
+# triggers 500 error
+curl http://localhost:3000/boom
+
+# triggers 403 error
+curl http://localhost:3000/secret
+
+# triggers 404 catch-all
+curl http://localhost:3000/doesnotexist
+```
+
+**Expected responses:**
+```json
+// GET /boom
+{ "error": "Something exploded on purpose!", "status": 500 }
+
+// GET /secret
+{ "error": "You are not allowed to see this", "status": 403 }
+
+// GET /doesnotexist
+{ "error": "Route not found: /doesnotexist", "status": 404 }
+```
+
+**Key rule:** if the error handler only had 3 parameters `(err, req, res)`
+Express would not recognize it as an error handler — it would be treated as
+regular middleware and `err` would be interpreted as `req`. Always use all 4.
