@@ -1424,7 +1424,91 @@ async function checkLocationPermission() {
 </html>
 ```
 
-# item-12
+# item-12: Number() vs parseInt() or parseFloat
+
+Neither is universally better — they serve different purposes. But your example has a typo worth addressing first:
+
+---
+
+## What your examples actually produce
+
+
+Assuming you meant `Number("10")` vs `parseInt("10")`:
+
+```javascript
+Number("10")     // 10
+parseInt("10")  // 10
+```
+
+---
+
+## The real difference
+
+```javascript
+// parseInt stops at the first non-numeric character
+parseInt("42px")      // 42   ← useful for CSS values
+parseInt("3.9")       // 3    ← truncates, does not round
+parseInt("10", 2)     // 2    ← second argument is the BASE (binary here)
+parseInt("")          // NaN
+
+// Number converts the whole string — all or nothing
+Number("42px")        // NaN  ← strict, no partial parsing
+Number("3.9")         // 3.9  ← keeps decimals
+Number("")            // 0    ← gotcha — empty string becomes 0
+Number(true)          // 1
+Number(false)         // 0
+Number(null)          // 0    ← another gotcha
+Number(undefined)     // NaN
+```
+
+---
+
+## The empty string gotcha is the most dangerous
+
+```javascript
+// user clears the input field
+const input = document.querySelector("input").value; // ""
+
+Number(input)    // 0  ← silently wrong, no error
+parseInt(input)  // NaN ← at least honest about the failure
+```
+
+---
+
+## Current best practice
+
+For input values specifically — use `Number()` with an explicit check:
+
+```javascript
+const val = Number(input.value);
+if (isNaN(val)) {
+  // handle bad input
+}
+```
+
+Or the modern way with numeric conversion and validation together:
+
+```javascript
+// most explicit — best for teaching
+const val = parseInt(input.value, 10);  // always pass the base
+if (isNaN(val) || val < 1 || val > 12) {
+  // handle invalid
+}
+```
+
+---
+
+## Rule of thumb
+
+| Situation | Use |
+|---|---|
+| Integer from user input | `parseInt(val, 10)` |
+| Decimal from user input | `parseFloat(val)` |
+| Converting known-safe values | `Number(val)` |
+| CSS values like `"42px"` | `parseInt(val, 10)` |
+| Empty string is a valid 0 | `Number(val)` — but document why |
+
+> Always pass the base `10` to `parseInt` — without it, older browsers guessed the base from the string format, and `parseInt("010")` returned `8` (octal). Modern browsers fixed this but the habit protects you.
 
 
 

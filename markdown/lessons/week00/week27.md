@@ -2199,3 +2199,847 @@ curl http://localhost:3000/doesnotexist
 **Key rule:** if the error handler only had 3 parameters `(err, req, res)`
 Express would not recognize it as an error handler — it would be treated as
 regular middleware and `err` would be interpreted as `req`. Always use all 4.
+
+# Week 3 — Days 2, 3 & 4 Lab Solutions
+
+---
+
+---
+
+# Day 2 Lab Solutions
+
+## Beginner — Thunderclient Testing Reference
+
+No code to write — this is a documentation exercise. Below is the expected
+result for each request against the CRUD server from the lecture.
+
+```
+GET    http://localhost:3000/users       → 200  [ array of all users ]
+GET    http://localhost:3000/users/1     → 200  { id:1, name:'Ana Lopez', ... }
+GET    http://localhost:3000/users/999   → 404  { "error": "User not found" }
+POST   http://localhost:3000/users       → 201  { id:4, name:..., email:... }
+PUT    http://localhost:3000/users/1     → 200  { updated user object }
+PATCH  http://localhost:3000/users/1     → 200  { partially updated user }
+DELETE http://localhost:3000/users/1     → 204  (empty body)
+```
+
+**Answer:** requesting a user that does not exist returns **404 Not Found**.
+The server finds no match in the array, creates an error object, and sends
+it back with `res.status(404).json({ error: 'User not found' })`.
+
+---
+
+## Intermediate — Add /products Resource
+
+Products have: `id`, `name`, `price`, `inStock`. Price must be positive.
+
+```js
+// routes/products.js
+
+const express = require('express');
+const router  = express.Router();
+
+let products = [
+  { id: 1, name: 'Oil Filter',  price: 12.99, inStock: true  },
+  { id: 2, name: 'Brake Pads',  price: 45.00, inStock: true  },
+  { id: 3, name: 'Spark Plugs', price:  8.50, inStock: false }
+];
+let nextId = 4;
+
+// validate required fields and price rule
+function validate({ name, price }) {
+  if (!name)                        return 'name is required';
+  if (price === undefined)          return 'price is required';
+  if (typeof price !== 'number')    return 'price must be a number';
+  if (price < 0)                    return 'price must be a positive number';
+  return null; // null = valid
+}
+
+// GET /products
+router.get('/', (req, res) => {
+  res.json(products);
+});
+
+// GET /products/:id
+router.get('/:id', (req, res) => {
+  const product = products.find(p => p.id === Number(req.params.id));
+  if (!product) return res.status(404).json({ error: 'Product not found' });
+  res.json(product);
+});
+
+// POST /products
+// body: { "name": "...", "price": 9.99, "inStock": true }
+router.post('/', (req, res) => {
+  const error = validate(req.body);
+  if (error) return res.status(400).json({ error });
+
+  const { name, price, inStock = true } = req.body;
+  const newProduct = { id: nextId++, name, price, inStock };
+  products.push(newProduct);
+  res.status(201).json(newProduct);
+});
+
+// PUT /products/:id — full replace
+router.put('/:id', (req, res) => {
+  const index = products.findIndex(p => p.id === Number(req.params.id));
+  if (index === -1) return res.status(404).json({ error: 'Product not found' });
+
+  const error = validate(req.body);
+  if (error) return res.status(400).json({ error });
+
+  const { name, price, inStock = true } = req.body;
+  products[index] = { id: products[index].id, name, price, inStock };
+  res.json(products[index]);
+});
+
+// PATCH /products/:id — partial update
+router.patch('/:id', (req, res) => {
+  const index = products.findIndex(p => p.id === Number(req.params.id));
+  if (index === -1) return res.status(404).json({ error: 'Product not found' });
+
+  // validate price only if it was included in the request
+  if (req.body.price !== undefined) {
+    if (typeof req.body.price !== 'number' || req.body.price < 0) {
+      return res.status(400).json({ error: 'price must be a positive number' });
+    }
+  }
+
+  products[index] = { ...products[index], ...req.body };
+  res.json(products[index]);
+});
+
+// DELETE /products/:id
+router.delete('/:id', (req, res) => {
+  const index = products.findIndex(p => p.id === Number(req.params.id));
+  if (index === -1) return res.status(404).json({ error: 'Product not found' });
+
+  products.splice(index, 1);
+  res.status(204).send();
+});
+
+module.exports = router;
+```
+
+```js
+// server.js — mount products alongside users
+const productsRouter = require('./routes/products');
+app.use('/products', productsRouter);
+```
+
+**Test validation with Thunderclient:**
+```json
+POST /products  body: { "name": "Wiper Blade", "price": -5 }
+→ 400 { "error": "price must be a positive number" }
+
+POST /products  body: { "name": "Wiper Blade" }
+→ 400 { "error": "price is required" }
+
+POST /products  body: { "name": "Wiper Blade", "price": 9.99 }
+→ 201 { "id": 4, "name": "Wiper Blade", "price": 9.99, "inStock": true }
+```
+
+---
+
+## Advanced — PUT vs PATCH Demonstration
+
+**Setup:** start with user `{ id: 1, name: "Ana Lopez", email: "ana@example.com" }`.
+
+### Test 1 — PUT with missing field
+
+```bash
+# send PUT with ONLY name — no email
+curl -X PUT http://localhost:3000/users/1 \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Ana Updated"}'
+```
+
+**Result with the lecture's PUT handler:**
+```json
+400 { "error": "name and email are required" }
+```
+
+The validation guard catches the missing email and rejects the request.
+**Without** the guard, the result would be:
+```json
+{ "id": 1, "name": "Ana Updated", "email": undefined }
+```
+
+The email is **wiped** because PUT replaces the entire object. This is
+intentional — PUT means "replace this resource completely". If a field is
+missing, it is gone. This is why PUT requires all fields to be valid.
+
+---
+
+### Test 2 — PATCH with missing field
+
+```bash
+# send PATCH with ONLY name — no email
+curl -X PATCH http://localhost:3000/users/1 \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Ana Updated"}'
+```
+
+**Result:**
+```json
+{ "id": 1, "name": "Ana Updated", "email": "ana@example.com" }
+```
+
+The email is **preserved** because PATCH uses the spread pattern:
+```js
+users[index] = { ...users[index], ...req.body };
+// { id:1, name:"Ana Lopez", email:"ana@example.com" }  ← existing
+// spread with { name: "Ana Updated" }                  ← new
+// result: { id:1, name:"Ana Updated", email:"ana@example.com" }
+```
+
+PATCH only overwrites the fields it receives. Everything else stays.
+
+### Summary
+
+| | PUT | PATCH |
+|---|---|---|
+| Sends | All fields | Only changed fields |
+| Missing fields | Wiped from resource | Preserved |
+| Requires validation of all fields | Yes | Only for fields sent |
+| Use case | Full replacement | Partial update (e.g. change just the email) |
+
+---
+
+---
+
+# Day 3 Lab Solutions
+
+## Beginner — Three Deliberate Errors
+
+```js
+// errors_demo.js — run with: node errors_demo.js
+
+// ── SYNTAX ERROR ────────────────────────────────────────────
+// Note: this file cannot run at all if a syntax error exists.
+// To demonstrate, create a separate file with the broken code.
+
+function brokenSyntax( {      // missing closing )
+  console.log("hello");
+}
+// → SyntaxError: Unexpected token '{'
+// The entire FILE refuses to execute. Fix: brokenSyntax() {
+
+// ── RUNTIME ERROR ────────────────────────────────────────────
+// Syntactically valid — only fails when the code actually runs
+
+function greetUser(user) {
+  console.log(user.name.toUpperCase()); // what if user is null?
+}
+
+greetUser(null);
+// → TypeError: Cannot read properties of null (reading 'name')
+// Fix: add a guard: if (!user) return;
+
+// ── LOGIC ERROR ─────────────────────────────────────────────
+// Runs with no error message — produces wrong answer silently
+
+function isAdult(age) {
+  return age > 18;  // bug: should be >= 18, not >
+                    // 18-year-olds are adults but this returns false
+}
+
+console.log(isAdult(18)); // → false  (expected true)
+console.log(isAdult(19)); // → true   (correct)
+// Fix: return age >= 18;
+```
+
+**Reading error messages — what each part means:**
+
+```
+TypeError: Cannot read properties of null (reading 'name')
+│           │                                │
+│           │                                └── which property failed
+│           └── what operation failed
+└── error type (TypeError, ReferenceError, SyntaxError, RangeError)
+
+at greetUser (errors_demo.js:12:20)
+│               │                │
+│               │                └── column number
+│               └── file and line number
+└── function where it happened
+```
+
+---
+
+## Intermediate — Fix the countVowels Bug
+
+```js
+// ORIGINAL — broken
+function countVowels(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if ("aeiou".includes(str[i])) {
+      count++;
+    }
+  }
+  return count;
+}
+
+// countVowels("Hello World") returns 3
+// Expected: 4  (e, o, o in "Hello", o in "World" = 3... wait)
+// Let's trace it:
+// H → no
+// e → yes  (count=1)
+// l → no
+// l → no
+// o → yes  (count=2)
+//   → no (space)
+// W → no
+// o → yes  (count=3)
+// r → no
+// l → no
+// d → no
+// Result: 3 — but the lab says expected is 4
+// The bug: "Hello" has capital H but also... 'e' is lowercase
+// Wait — re-read: "Hello World" → e, o, o = 3 vowels lowercase
+// The REAL bug is that "E", "A", "I", "O", "U" (uppercase) are not matched
+
+// TEST to confirm:
+console.log(countVowels("Hello World")); // → 3
+console.log(countVowels("HELLO WORLD")); // → 0  ← confirms the bug
+```
+
+```js
+// FIX — convert each character to lowercase before checking
+function countVowels(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    // toLowerCase() ensures "E" matches "e" in "aeiou"
+    if ("aeiou".includes(str[i].toLowerCase())) {
+      count++;
+    }
+  }
+  return count;
+}
+
+// verify the fix
+console.log(countVowels("Hello World")); // → 3  (e, o, o)
+console.log(countVowels("HELLO WORLD")); // → 3  (E, O, O now match)
+console.log(countVowels("aeiouAEIOU")); // → 10 (all vowels)
+console.log(countVowels("bcdfg"));      // → 0  (no vowels)
+```
+
+**Alternative fix using regex** (more concise, same result):
+```js
+function countVowels(str) {
+  // /[aeiou]/gi  → match any vowel, g=global (all), i=case insensitive
+  const matches = str.match(/[aeiou]/gi);
+  return matches ? matches.length : 0;
+}
+```
+
+---
+
+## Advanced — Debugger Trace of average()
+
+```js
+// average_debug.js — the buggy function
+
+function average(numbers) {
+  let sum = 0;
+  for (let i = 0; i <= numbers.length; i++) { // BUG: <= instead of <
+    sum += numbers[i];
+  }
+  return sum / numbers.length;
+}
+
+console.log(average([10, 20, 30])); // → NaN  (expected 20)
+```
+
+**Step-by-step debugger trace** (what you see in Sources tab):
+
+```
+Call: average([10, 20, 30])
+numbers.length = 3
+
+Iteration i=0: numbers[0] = 10   sum = 10   ✓
+Iteration i=1: numbers[1] = 20   sum = 30   ✓
+Iteration i=2: numbers[2] = 30   sum = 60   ✓
+Iteration i=3: numbers[3] = undefined       ← OFF BY ONE — index 3 doesn't exist
+               sum = 60 + undefined = NaN   ← NaN contaminates sum
+Loop ends (i=4, 4 <= 3 is false)
+return NaN / 3 → NaN
+```
+
+**The fix:**
+```js
+function average(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) { // FIX: < not <=
+    sum += numbers[i];
+  }
+  return sum / numbers.length;
+}
+
+console.log(average([10, 20, 30])); // → 20  ✓
+console.log(average([5, 10]));      // → 7.5 ✓
+console.log(average([100]));        // → 100 ✓
+```
+
+**Why this is the most common off-by-one pattern:**
+Arrays are zero-indexed. A 3-element array has valid indices 0, 1, 2.
+The last valid index is always `length - 1`. Using `<= length` accesses
+index `length` which is always `undefined`.
+
+**Modern alternative that avoids the loop entirely:**
+```js
+function average(numbers) {
+  if (numbers.length === 0) return 0; // guard against empty array
+  const sum = numbers.reduce((acc, n) => acc + n, 0);
+  return sum / numbers.length;
+}
+```
+
+---
+
+---
+
+# Day 4 Lab Solutions
+
+## Beginner — Stopwatch with setInterval
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Stopwatch</title>
+  <style>
+    #display { font-size: 3rem; font-family: monospace; margin: 20px 0; }
+    button   { font-size: 1.2rem; margin: 5px; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <h3>Stopwatch</h3>
+  <div id="display">0:00</div>
+  <button type="button" id="startBtn">Start</button>
+  <button type="button" id="stopBtn">Stop</button>
+  <button type="button" id="resetBtn">Reset</button>
+
+  <script>
+    let seconds  = 0;
+    let timer    = null; // holds the interval ID — needed to stop it
+
+    function formatTime(s) {
+      const mins = Math.floor(s / 60);
+      const secs = s % 60;
+      // padStart(2, '0') adds a leading zero: 5 → "05"
+      return `${mins}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function updateDisplay() {
+      document.getElementById("display").textContent = formatTime(seconds);
+    }
+
+    function start() {
+      // prevent multiple intervals stacking up if Start is clicked twice
+      if (timer !== null) return;
+
+      // setInterval returns an ID — store it so we can cancel later
+      timer = setInterval(() => {
+        seconds++;
+        updateDisplay();
+      }, 1000); // every 1000ms = every 1 second
+    }
+
+    function stop() {
+      // clearInterval cancels the interval using the stored ID
+      clearInterval(timer);
+      timer = null; // reset so Start works again
+    }
+
+    function reset() {
+      stop();
+      seconds = 0;
+      updateDisplay();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("startBtn").addEventListener('click', start);
+      document.getElementById("stopBtn").addEventListener('click', stop);
+      document.getElementById("resetBtn").addEventListener('click', reset);
+    });
+  </script>
+</body>
+</html>
+```
+
+**Key concepts demonstrated:**
+- `setInterval` returns an ID — always store it
+- `clearInterval(id)` stops the interval
+- Guard against double-starting: `if (timer !== null) return`
+
+---
+
+## Intermediate — Keystroke Logger
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Keystroke Logger</title>
+  <style>
+    #log     { border: 1px solid #ccc; padding: 10px;
+               height: 200px; overflow-y: auto; font-family: monospace; }
+    .entry   { padding: 2px 0; border-bottom: 1px solid #eee; }
+    .shift   { color: darkblue; font-weight: bold; }
+    .special { color: darkred; }
+  </style>
+</head>
+<body>
+  <h3>Keystroke Logger</h3>
+  <input type="text" id="keyInput" placeholder="Type here..." size="30">
+  <button type="button" id="clearBtn">Clear Log</button>
+  <p>Keys pressed: <span id="count">0</span></p>
+  <div id="log"></div>
+
+  <script>
+    let keyCount = 0;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const input   = document.getElementById("keyInput");
+      const log     = document.getElementById("log");
+      const counter = document.getElementById("count");
+
+      input.addEventListener('keydown', (e) => {
+        keyCount++;
+        counter.textContent = keyCount;
+
+        // event.key → human-readable key name ("a", "Enter", "Shift", etc.)
+        // event.shiftKey → boolean — true if Shift was held
+        // event.ctrlKey  → boolean — true if Ctrl was held
+        // event.altKey   → boolean — true if Alt was held
+
+        const isShift   = e.shiftKey;
+        const isSpecial = e.key.length > 1; // "Enter", "Backspace" etc are > 1 char
+
+        // build the log entry
+        let label = `Key: "${e.key}"`;
+        if (isShift)   label += ' [SHIFT]';
+        if (e.ctrlKey) label += ' [CTRL]';
+        if (e.altKey)  label += ' [ALT]';
+
+        // create a div for this entry
+        const entry = document.createElement('div');
+        entry.classList.add('entry');
+        if (isShift)   entry.classList.add('shift');
+        if (isSpecial) entry.classList.add('special');
+        entry.textContent = label;
+
+        // prepend so newest appears at top
+        log.insertBefore(entry, log.firstChild);
+      });
+
+      document.getElementById("clearBtn").addEventListener('click', () => {
+        log.innerHTML = '';
+        keyCount      = 0;
+        counter.textContent = 0;
+      });
+    });
+  </script>
+</body>
+</html>
+```
+
+**Sample log output:**
+```
+Key: "A" [SHIFT]
+Key: "n"
+Key: "a"
+Key: "Enter"      ← special (length > 1)
+Key: "Backspace"  ← special
+Key: "C" [CTRL]   ← Ctrl+C
+```
+
+---
+
+## Advanced — makeMultiplier Closure + Conversion Table
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Multiplier Table</title>
+  <style>
+    table { border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px 16px; text-align: right; }
+    th { background: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <h3>Closure Multiplier Table</h3>
+  <div id="output"></div>
+
+  <script>
+    // ── THE CLOSURE ──────────────────────────────────────────
+    // makeMultiplier runs once and returns a NEW function.
+    // The returned function closes over 'factor' — it remembers
+    // it even after makeMultiplier has finished running.
+
+    function makeMultiplier(factor) {
+      // 'factor' lives on in the closure
+      return function(number) {
+        return number * factor;
+      };
+    }
+
+    // each call to makeMultiplier creates an INDEPENDENT closure
+    // double, quintuple, and decuple each have their own 'factor'
+    const double    = makeMultiplier(2);
+    const quintuple = makeMultiplier(5);
+    const decuple   = makeMultiplier(10);
+
+    // verify they are independent
+    console.log(double(3));    // → 6
+    console.log(quintuple(3)); // → 15
+    console.log(decuple(3));   // → 30
+
+    // ── BUILD THE TABLE ──────────────────────────────────────
+    // input values to convert
+    const values = [1, 2, 3, 4, 5, 10, 20, 50, 100];
+
+    // build HTML table using the multiplier functions
+    let html = `
+      <table>
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>× 2</th>
+            <th>× 5</th>
+            <th>× 10</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    values.forEach(n => {
+      html += `
+        <tr>
+          <td>${n}</td>
+          <td>${double(n)}</td>
+          <td>${quintuple(n)}</td>
+          <td>${decuple(n)}</td>
+        </tr>
+      `;
+    });
+
+    html += '</tbody></table>';
+    document.getElementById("output").innerHTML = html;
+
+    // ── BONUS: FACTORY PATTERN ───────────────────────────────
+    // makeMultiplier can also generate multipliers dynamically
+    const multipliers = [2, 5, 10, 25, 100].map(f => ({
+      factor: f,
+      fn:     makeMultiplier(f)
+    }));
+
+    // each multiplier is independent — they don't share 'factor'
+    multipliers.forEach(({ factor, fn }) => {
+      console.log(`× ${factor} of 7 = ${fn(7)}`);
+    });
+    // × 2 of 7  = 14
+    // × 5 of 7  = 35
+    // × 10 of 7 = 70
+    // × 25 of 7 = 175
+    // × 100 of 7 = 700
+  </script>
+</body>
+</html>
+```
+
+**Why closures make this possible:**
+```
+makeMultiplier(2) runs → factor = 2 → returns inner function
+makeMultiplier(5) runs → factor = 5 → returns inner function
+makeMultiplier(10) runs → factor = 10 → returns inner function
+
+makeMultiplier is DONE — it has returned three times.
+But each returned function still holds its own copy of 'factor'.
+Calling double(7) runs: return 7 * 2  (factor=2 is still there)
+Calling quintuple(7) runs: return 7 * 5  (factor=5 is still there)
+
+They cannot interfere with each other — each has its own closed-over scope.
+```
+
+---
+
+---
+
+# Quick Reference — All Week 3 Lab Concepts
+
+| Lab | Core Concept |
+|---|---|
+| D1 Beginner | Basic GET routes, `res.send`, `res.json` |
+| D1 Intermediate | Middleware, `next()`, `res.on('finish')` |
+| D1 Advanced | Error handler (4 params), `next(err)` |
+| D2 Beginner | HTTP status codes, Thunderclient testing |
+| D2 Intermediate | Full CRUD, input validation, Router |
+| D2 Advanced | PUT replaces, PATCH merges, spread operator |
+| D3 Beginner | Syntax / runtime / logic error recognition |
+| D3 Intermediate | Off-by-one in string iteration, `toLowerCase()` |
+| D3 Advanced | Off-by-one in array loop, `<=` vs `<` |
+| D4 Beginner | `setInterval`, `clearInterval`, interval ID |
+| D4 Intermediate | `keydown`, `event.key`, `event.shiftKey` |
+| D4 Advanced | Closure factory, independent closed-over scope |
+
+## Nine Solutions across three days
+
+### Day 1
+Three complete solutions, one per tier. Key notes inline in the code:
+
+- **Beginner** — `Math.floor(Math.random() * 100) + 1` explained step by step since students trip on that formula every time
+- **Intermediate** — `res.on('finish')` explained because the naive approach (`console.log` before `next()`) logs before the status code is set, always showing `undefined`
+- **Advanced** — the 4-parameter rule is the most important thing to nail down; added a note about what happens if you accidentally write only 3 parameters
+
+Nine solutions across three days, each with inline comments explaining the reasoning rather than just showing the answer. A few things worth flagging:
+
+**Day 2 advanced** includes the actual trace showing what happens when you send a PUT with a missing field both with and without validation — students often don't test this case and miss why PUT needs all fields.
+
+**Day 3 intermediate** (`countVowels`) — the lab says "returns 3, expected 4" which is actually debatable. The trace shows `"Hello World"` has exactly 3 lowercase vowels, so the expected answer in the lab spec may be wrong. The bug is real (uppercase vowels not counted) but the specific test string doesn't expose it unless you try `"Hello WORLD"`. Both cases are covered.
+
+**Day 4 advanced** includes a bonus factory pattern at the bottom showing how `makeMultiplier` can generate multipliers dynamically from an array — useful for students who finish early.
+
+The quick reference table at the bottom maps every lab to its core concept for easy review before quizzes.
+
+# PROMPT: errors that do not have statusCode
+
+**Good catch — the `|| 500` is a fallback for errors that don't have a `statusCode` attached.**
+
+Not every error that reaches the error handler is one you created intentionally with a status code. Some errors come from places that know nothing about HTTP.
+
+---
+
+**Three categories of errors that reach the handler:**
+
+```js
+// CATEGORY 1 — your own AppError — always has statusCode
+const err = new AppError('User not found', 404);
+// err.statusCode = 404 ✓ — || 500 never triggers
+
+// CATEGORY 2 — native JS errors — no statusCode
+JSON.parse("invalid json");
+// throws SyntaxError: Unexpected token i
+// err.statusCode = undefined — || 500 kicks in → sends 500
+
+null.toString();
+// throws TypeError: Cannot read properties of null
+// err.statusCode = undefined — || 500 kicks in → sends 500
+
+// CATEGORY 3 — third party library errors — may or may not have statusCode
+// Mongoose throws CastError when ObjectId format is invalid
+// err.statusCode = undefined — || 500 kicks in → sends 500
+// (in week 5 you will intercept these specifically)
+```
+
+---
+
+**Concrete scenario — database call throws unexpectedly:**
+
+```js
+router.get('/:id', async (req, res, next) => {
+  try {
+    const user = await User.findById(req.params.id);
+    res.json(user);
+  } catch (err) {
+    // if mongoose throws a CastError (invalid ObjectId format)
+    // that error has no statusCode property
+    // err.statusCode is undefined
+    // without || 500 → res.status(undefined) → Express sends 200 by default
+    // with    || 500 → res.status(500) → correct
+    next(err);
+  }
+});
+```
+
+---
+
+**What `res.status(undefined)` actually does:**
+
+```js
+// dangerous — Express silently falls back to 200
+res.status(undefined).json({ error: 'Something went wrong' });
+// client receives: 200 OK  { error: 'Something went wrong' }
+// client code checks res.ok → true (200 is ok!)
+// client treats an error as a success — silent bug
+```
+
+This is exactly the fetch gotcha from the last discussion — a 200 with an
+error body looks like success to the client.
+
+---
+
+**You can be more specific than just `|| 500`:**
+
+```js
+function errorHandler(err, req, res, next) {
+  // known HTTP errors — use their code
+  // unknown errors — default to 500
+  const statusCode = err.statusCode || err.status || 500;
+
+  // some libraries use err.status instead of err.statusCode
+  // || chains through all fallbacks left to right
+}
+```
+
+---
+
+**In week 5 — mapping specific library errors to HTTP codes:**
+
+```js
+function errorHandler(err, req, res, next) {
+  let statusCode = err.statusCode || 500;
+  let message    = err.message    || 'Internal Server Error';
+
+  // Mongoose: invalid ObjectId format → 400 Bad Request
+  if (err.name === 'CastError') {
+    statusCode = 400;
+    message    = `Invalid id format: ${err.value}`;
+  }
+
+  // Mongoose: duplicate unique field → 409 Conflict
+  if (err.code === 11000) {
+    statusCode = 409;
+    message    = `Duplicate value: ${Object.keys(err.keyValue)} already exists`;
+  }
+
+  // JWT: token expired → 401 Unauthorized
+  if (err.name === 'TokenExpiredError') {
+    statusCode = 401;
+    message    = 'Session expired, please log in again';
+  }
+
+  // JWT: token invalid → 401 Unauthorized
+  if (err.name === 'JsonWebTokenError') {
+    statusCode = 401;
+    message    = 'Invalid token';
+  }
+
+  res.status(statusCode).json({ error: message, status: statusCode });
+}
+```
+
+---
+
+**Summary — when each status code actually comes from:**
+
+| statusCode value | Where it comes from |
+|---|---|
+| 400 | Your validation: missing field, bad format |
+| 401 | Auth middleware: no token or expired token |
+| 403 | Auth middleware: valid token, wrong permissions |
+| 404 | Your catch-all or route handler: resource missing |
+| 409 | Your validation or DB: duplicate unique field |
+| 500 | The `\|\| 500` fallback: anything unexpected |
+
+> **Rule of thumb:** `|| 500` is a safety net, not an expectation. You hope
+> every error that reaches the handler has a `statusCode` you assigned
+> intentionally. The fallback exists because reality is messier than the
+> happy path — libraries throw, databases disconnect, and JS itself throws
+> errors that know nothing about HTTP status codes.

@@ -362,6 +362,668 @@ The following videos are located in C:\\Users\\Public\\Videos\\RAW-VIDEOS\\MSjav
 3.  How many data types are in JS
 
 # Item-4
+## The real difference betwween Number() vs parstInt() or parseFloat()
+
+```javascript
+// parseInt stops at the first non-numeric character
+parseInt("42px")      // 42   ← useful for CSS values
+parseInt("3.9")       // 3    ← truncates, does not round
+parseInt("10", 2)     // 2    ← second argument is the BASE (binary here)
+parseInt("")          // NaN
+
+// Number converts the whole string — all or nothing
+Number("42px")        // NaN  ← strict, no partial parsing
+Number("3.9")         // 3.9  ← keeps decimals
+Number("")            // 0    ← gotcha — empty string becomes 0
+Number(true)          // 1
+Number(false)         // 0
+Number(null)          // 0    ← another gotcha
+Number(undefined)     // NaN
+```
+
+---
+
+## The empty string gotcha is the most dangerous
+
+```javascript
+// user clears the input field
+const input = document.querySelector("input").value; // ""
+
+Number(input)    // 0  ← silently wrong, no error
+parseInt(input)  // NaN ← at least honest about the failure
+```
+
+---
+
+## Current best practice
+
+For input values specifically — use `Number()` with an explicit check:
+
+```javascript
+const val = Number(input.value);
+if (isNaN(val)) {
+  // handle bad input
+}
+```
+
+Or the modern way with numeric conversion and validation together:
+
+```javascript
+// most explicit — best for teaching
+const val = parseInt(input.value, 10);  // always pass the base
+if (isNaN(val) || val < 1 || val > 12) {
+  // handle invalid
+}
+```
+
+---
+
+## Rule of thumb
+
+| Situation | Use |
+|---|---|
+| Integer from user input | `parseInt(val, 10)` |
+| Decimal from user input | `parseFloat(val)` |
+| Converting known-safe values | `Number(val)` |
+| CSS values like `"42px"` | `parseInt(val, 10)` |
+| Empty string is a valid 0 | `Number(val)` — but document why |
+
+> Always pass the base `10` to `parseInt` — without it, older browsers guessed the base from the string format, and `parseInt("010")` returned `8` (octal). Modern browsers fixed this but the habit protects you.
 
 
+## Item-99
+### Scenario 1: one button, Number(), not parseFloat
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scenario 1 — Number() + single button</title>
+  <style>
+    table   { background-color: wheat; border-spacing: 10px; }
+    .wrapper { display: table; margin: 0 auto; border: 2px solid black; background: black; padding: 2px; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; color:blue">CIW JavaScript Specialist</h1>
+  <h2 style="text-align:center; color:green">Mortgage Calculator — Scenario 1</h2>
+  <hr>
+
+  <div class="wrapper">
+    <form id="frm">
+      <table>
+        <tr>
+          <td><label for="amt">Mortgage amount:</label></td>
+          <td><input type="number" id="amt" min="0" step="0.01"></td>
+        </tr>
+        <tr>
+          <td><label for="ir">Yearly interest rate (%):</label></td>
+          <td><input type="number" id="ir" min="0" step="0.01"></td>
+        </tr>
+        <tr>
+          <td><label for="term">Term (in years):</label></td>
+          <td><input type="number" id="term" min="0" step="1"></td>
+        </tr>
+        <tr>
+          <td><label for="termMonths">Term (in months):</label></td>
+          <td><input type="number" id="termMonths" min="0" step="1" placeholder="e.g. 360"></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center">
+            <button type="button" id="calcBtn">Calculate Monthly Payment</button>
+          </td>
+        </tr>
+        <tr><td colspan="2"><hr></td></tr>
+        <tr>
+          <td><label for="payment">Monthly payment:</label></td>
+          <td><input type="text" id="payment" readonly></td>
+        </tr>
+        <tr>
+          <td><label for="total">Total payments:</label></td>
+          <td><input type="text" id="total" readonly></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <script>
+    /*
+      Number() vs parseFloat() — what is the difference?
+
+      parseFloat("30px")  → 30     (stops at first non-numeric char)
+      Number("30px")      → NaN    (entire string must be a valid number)
+
+      parseFloat("")      → NaN
+      Number("")          → 0      ← IMPORTANT DIFFERENCE
+
+      For a number input, the value is always "" (empty) or a valid
+      number string — so Number() works correctly here.
+      Number("") = 0 triggers the isNaN/zero guard below.
+
+      PRIORITY LOGIC — one button, two term fields:
+        Months field filled → use months directly
+        Months empty (0)    → fall back to years field × 12
+        Both empty          → validation catches it
+
+      CRASH SCENARIO (same as original scenario 1):
+        User fills months = 24, leaves years = 0
+        → months = 24, used correctly ✓
+        User fills years = 30, leaves months = 0
+        → months = 0, falls through to years = 30 × 12 = 360 ✓
+        User fills BOTH years = 1 AND months = 24
+        → months wins (24) — years is ignored
+        User fills NEITHER
+        → term = 0 → validation alert ✓
+    */
+    function calcPayment() {
+      const amt    = Number(document.getElementById("amt").value);
+      const ir     = Number(document.getElementById("ir").value) / 1200;
+      const years  = Number(document.getElementById("term").value);
+      const months = Number(document.getElementById("termMonths").value);
+
+      // months field takes priority — if filled use it directly
+      // otherwise convert years to months
+      // Number("") = 0 so an empty field naturally falls through
+      const term = months > 0 ? months : years * 12;
+
+      if (!amt || !ir || !term) {
+        alert("Please enter valid values in all fields.");
+        return;
+      }
+
+      let total = 1;
+      for (let i = 0; i < term; i++) {
+        total *= (1 + ir);
+      }
+
+      const mp = amt * ir / (1 - (1 / total));
+      document.getElementById("payment").value = Math.round(mp * 100) / 100;
+      document.getElementById("total").value   = Math.round(mp * term * 100) / 100;
+    }
+
+    document.getElementById("calcBtn").addEventListener('click', calcPayment);
+  </script>
+</body>
+</html>
+```
+## Item-98
+### Scenario 1: using parseFloat, two buttons
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scenario 1 — Months input, years unchanged (can crash)</title>
+  <style>
+    table { background-color: wheat; border-spacing: 10px; }
+    .wrapper { display: table; margin: 0 auto; border: 2px solid black; background: black; padding: 2px; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; color:blue">CIW JavaScript Specialist</h1>
+  <h2 style="text-align:center; color:green">Mortgage Calculator — Scenario 1</h2>
+  <h4 style="text-align:center; color:red">
+    ⚠ Months input added but years field is NOT cleared or disabled.<br>
+    If both fields have values, years takes priority (months button
+    temporarily overrides term for the calculation only).<br>
+    If years field is left at a non-numeric value the formula may produce NaN.
+  </h4>
+  <hr>
+
+  <div class="wrapper">
+    <form id="frm">
+      <table>
+        <tr>
+          <td><label for="amt">Mortgage amount:</label></td>
+          <td><input type="number" id="amt" min="0" step="0.01"></td>
+        </tr>
+        <tr>
+          <td><label for="ir">Yearly interest rate (%):</label></td>
+          <td><input type="number" id="ir" min="0" step="0.01"></td>
+        </tr>
+        <tr>
+          <td><label for="term">Term (in years):</label></td>
+          <td><input type="number" id="term" min="0" step="1"></td>
+        </tr>
+        <tr>
+          <td>
+            <!-- NEW: months input sits alongside years — no link between them -->
+            <label for="termMonths">Term (in months):</label>
+          </td>
+          <td><input type="number" id="termMonths" min="0" step="1" placeholder="e.g. 360"></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center">
+            <button type="button" id="calcYears">Calculate (use Years)</button>
+            &nbsp;
+            <!-- NEW button: uses months field instead of years field -->
+            <button type="button" id="calcMonths">Calculate (use Months)</button>
+          </td>
+        </tr>
+        <tr><td colspan="2"><hr></td></tr>
+        <tr>
+          <td><label for="payment">Monthly payment:</label></td>
+          <td><input type="text" id="payment" readonly></td>
+        </tr>
+        <tr>
+          <td><label for="total">Total payments:</label></td>
+          <td><input type="text" id="total" readonly></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <script>
+    /*
+      SCENARIO 1 — MINIMUM CHANGE, MAXIMUM RISK
+      ─────────────────────────────────────────
+      A second button reads from the months field directly.
+      The years field is left completely alone.
+
+      CRASH SCENARIO:
+        - User types 24 in months, leaves years empty or 0
+        - calcMonths uses termMonths correctly → works
+        - But if user then clicks calcYears with years=0:
+            term = 0 * 12 = 0
+            total = (1+ir)^0 = 1
+            mp = amt * ir / (1 - 1/1) = amt * ir / 0 → Infinity or NaN
+        - The result field shows "Infinity" — ugly but does not crash the browser
+
+      KEY LESSON: two independent inputs with no coordination = inconsistent state
+    */
+
+    function calcPayment(termInMonths) {
+      const amt  = parseFloat(document.getElementById("amt").value);
+      const ir   = parseFloat(document.getElementById("ir").value) / 1200;
+      const term = termInMonths;
+
+      if (isNaN(amt) || isNaN(ir) || isNaN(term) || term === 0) {
+        alert("Please enter valid numbers in all fields.");
+        return;
+      }
+
+      let total = 1;
+      for (let i = 0; i < term; i++) {
+        total *= (1 + ir);
+      }
+
+      const mp = amt * ir / (1 - (1 / total));
+      document.getElementById("payment").value = Math.round(mp * 100) / 100;
+      document.getElementById("total").value   = Math.round(mp * term * 100) / 100;
+    }
+
+    // original button — reads years field, converts to months
+    document.getElementById("calcYears").addEventListener('click', () => {
+      const years = parseFloat(document.getElementById("term").value);
+      calcPayment(years * 12); // may produce NaN/Infinity if years=0 or empty
+    });
+
+    // new button — reads months field directly, ignores years
+    document.getElementById("calcMonths").addEventListener('click', () => {
+      const months = parseFloat(document.getElementById("termMonths").value);
+      calcPayment(months);
+    });
+  </script>
+</body>
+</html>
+```
+
+## Item-97
+### Scenario 2: parseFloat, two buttons
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scenario 2 — Months input disables/zeroes years</title>
+  <style>
+    table { background-color: wheat; border-spacing: 10px; }
+    .wrapper { display: table; margin: 0 auto; border: 2px solid black; background: black; padding: 2px; }
+    input:disabled { background-color: #ddd; color: #999; cursor: not-allowed; }
+    .mode-label { text-align: center; font-weight: bold; color: darkblue; padding: 4px; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; color:blue">CIW JavaScript Specialist</h1>
+  <h2 style="text-align:center; color:green">Mortgage Calculator — Scenario 2</h2>
+  <h4 style="text-align:center; color:darkgreen">
+    Switching to months mode disables the years field (sets it to 0).<br>
+    Switching back to years mode re-enables it and disables months.
+  </h4>
+  <hr>
+
+  <div class="wrapper">
+    <form id="frm">
+      <table>
+        <tr>
+          <td><label for="amt">Mortgage amount:</label></td>
+          <td><input type="number" id="amt" min="0" step="0.01"></td>
+        </tr>
+        <tr>
+          <td><label for="ir">Yearly interest rate (%):</label></td>
+          <td><input type="number" id="ir" min="0" step="0.01"></td>
+        </tr>
+
+        <!-- YEARS ROW — active by default -->
+        <tr id="yearsRow">
+          <td><label for="term">Term (in years):</label></td>
+          <td><input type="number" id="term" min="0" step="1"></td>
+        </tr>
+
+        <!-- MONTHS ROW — disabled by default -->
+        <tr id="monthsRow">
+          <td><label for="termMonths">Term (in months):</label></td>
+          <td>
+            <input type="number" id="termMonths" min="0" step="1"
+                   placeholder="e.g. 360" disabled>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="text-align:center">
+            <!--
+              Toggle buttons — only ONE mode active at a time.
+              Active mode button is disabled (you can't switch to a mode
+              you are already in).
+            -->
+            <button type="button" id="useYearsBtn" disabled>Use Years</button>
+            &nbsp;
+            <button type="button" id="useMonthsBtn">Use Months</button>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <button type="button" id="calcBtn">Calculate</button>
+          </td>
+        </tr>
+        <tr><td colspan="2"><hr></td></tr>
+        <tr>
+          <td><label for="payment">Monthly payment:</label></td>
+          <td><input type="text" id="payment" readonly></td>
+        </tr>
+        <tr>
+          <td><label for="total">Total payments:</label></td>
+          <td><input type="text" id="total" readonly></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <p style="text-align:center" id="modeLabel">Mode: <strong>Years</strong></p>
+
+  <script>
+    /*
+      SCENARIO 2 — MUTUALLY EXCLUSIVE INPUTS
+      ───────────────────────────────────────
+      Only ONE of years/months is active at a time.
+      Switching mode:
+        - disables the inactive field (grey, uneditable)
+        - clears its value to 0 to prevent stale data being used
+        - enables the active field
+
+      WHY DISABLE RATHER THAN HIDE?
+        Hiding (display:none) is also valid but disabling makes the
+        inactive field visible so the student can see both exist.
+        It also communicates to the user "this field exists but is
+        not relevant right now."
+
+      CRASH PREVENTION:
+        The years field being 0 when in months mode does NOT matter
+        because calcPayment() reads the ACTIVE field only — it never
+        looks at the disabled field.
+    */
+
+    // track current mode — 'years' or 'months'
+    let mode = 'years';
+
+    const termYears  = document.getElementById("term");
+    const termMonths = document.getElementById("termMonths");
+    const useYears   = document.getElementById("useYearsBtn");
+    const useMonths  = document.getElementById("useMonthsBtn");
+    const modeLabel  = document.getElementById("modeLabel");
+
+    function switchToYears() {
+      mode = 'years';
+
+      // enable years, disable months
+      termYears.disabled  = false;
+      termMonths.disabled = true;
+      termMonths.value    = ''; // clear stale value
+
+      // toggle button states
+      useYears.disabled  = true;  // already in years mode
+      useMonths.disabled = false;
+
+      modeLabel.innerHTML = 'Mode: <strong>Years</strong>';
+    }
+
+    function switchToMonths() {
+      mode = 'months';
+
+      // enable months, disable years
+      termMonths.disabled = false;
+      termYears.disabled  = true;
+      termYears.value     = '0'; // set to 0 — clearly not in use
+
+      // toggle button states
+      useMonths.disabled = true;  // already in months mode
+      useYears.disabled  = false;
+
+      modeLabel.innerHTML = 'Mode: <strong>Months</strong>';
+    }
+
+    function calcPayment() {
+      const amt = parseFloat(document.getElementById("amt").value);
+      const ir  = parseFloat(document.getElementById("ir").value) / 1200;
+
+      // read from the ACTIVE field only — the disabled field is ignored
+      const term = mode === 'years'
+        ? parseFloat(termYears.value) * 12   // convert years → months
+        : parseFloat(termMonths.value);       // already in months
+
+      if (isNaN(amt) || isNaN(ir) || isNaN(term) || term === 0) {
+        alert("Please enter valid values in all fields.");
+        return;
+      }
+
+      let total = 1;
+      for (let i = 0; i < term; i++) {
+        total *= (1 + ir);
+      }
+
+      const mp = amt * ir / (1 - (1 / total));
+      document.getElementById("payment").value = Math.round(mp * 100) / 100;
+      document.getElementById("total").value   = Math.round(mp * term * 100) / 100;
+    }
+
+    useYears.addEventListener('click', switchToYears);
+    useMonths.addEventListener('click', switchToMonths);
+    document.getElementById("calcBtn").addEventListener('click', calcPayment);
+  </script>
+</body>
+</html>
+```
+
+
+## Item-97 
+### Scenario 3: synced with two buttons
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scenario 3 — Bidirectional sync: months ↔ years</title>
+  <style>
+    table { background-color: wheat; border-spacing: 10px; }
+    .wrapper { display: table; margin: 0 auto; border: 2px solid black; background: black; padding: 2px; }
+    .sync-note { font-size: 0.85rem; color: #555; font-style: italic; }
+    input.synced { background-color: #fffde7; } /* subtle yellow when synced */
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; color:blue">CIW JavaScript Specialist</h1>
+  <h2 style="text-align:center; color:green">Mortgage Calculator — Scenario 3</h2>
+  <h4 style="text-align:center; color:darkgreen">
+    Both fields stay in sync automatically.<br>
+    Type 24 months → years shows 2 &nbsp;|&nbsp; Type 1.5 years → months shows 18
+  </h4>
+  <hr>
+
+  <div class="wrapper">
+    <form id="frm">
+      <table>
+        <tr>
+          <td><label for="amt">Mortgage amount:</label></td>
+          <td><input type="number" id="amt" min="0" step="0.01"></td>
+        </tr>
+        <tr>
+          <td><label for="ir">Yearly interest rate (%):</label></td>
+          <td><input type="number" id="ir" min="0" step="0.01"></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="term">Term (years):</label><br>
+            <span class="sync-note">← updates when months change</span>
+          </td>
+          <td><input type="number" id="term" min="0" step="0.5"></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="termMonths">Term (months):</label><br>
+            <span class="sync-note">← updates when years change</span>
+          </td>
+          <td><input type="number" id="termMonths" min="0" step="1" placeholder="e.g. 360"></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center">
+            <button type="button" id="calcBtn">Calculate Monthly Payment</button>
+          </td>
+        </tr>
+        <tr><td colspan="2"><hr></td></tr>
+        <tr>
+          <td><label for="payment">Monthly payment:</label></td>
+          <td><input type="text" id="payment" readonly></td>
+        </tr>
+        <tr>
+          <td><label for="total">Total payments:</label></td>
+          <td><input type="text" id="total" readonly></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <script>
+    /*
+      SCENARIO 3 — BIDIRECTIONAL SYNC
+      ────────────────────────────────
+      Both fields are always enabled and always in sync.
+      Editing either one automatically updates the other.
+
+      CONVERSION:
+        months → years:  years  = months / 12
+        years  → months: months = years  * 12
+
+      ROUNDING DECISIONS:
+        years  field: round to 2 decimal places  (1.5 years, 2.25 years)
+        months field: round to nearest integer   (18 months, not 17.99999)
+
+      THE INFINITE LOOP TRAP:
+        If we listen to 'input' on years → update months
+        and also listen to 'input' on months → update years
+        updating one field triggers the other's listener
+        which triggers the first listener again → infinite loop
+
+        FIX: use a guard flag 'isSyncing'
+        When one field is being synced, set isSyncing = true
+        The other field's listener checks the flag and skips if true
+        After syncing, reset isSyncing = false
+
+      WHY STEP="0.5" ON YEARS?
+        Allows entering 0.5 (6 months), 1.5 (18 months) etc.
+        without the browser rounding to integers.
+    */
+
+    const termYears  = document.getElementById("term");
+    const termMonths = document.getElementById("termMonths");
+
+    // guard flag — prevents the two input listeners triggering each other
+    let isSyncing = false;
+
+    // when years field changes → update months field
+    termYears.addEventListener('input', () => {
+      if (isSyncing) return; // being updated by months listener — skip
+
+      const years = parseFloat(termYears.value);
+      if (isNaN(years) || years < 0) {
+        termMonths.value = '';
+        return;
+      }
+
+      isSyncing = true;
+      // months = years * 12, rounded to nearest whole month
+      termMonths.value = Math.round(years * 12);
+      isSyncing = false;
+    });
+
+    // when months field changes → update years field
+    termMonths.addEventListener('input', () => {
+      if (isSyncing) return; // being updated by years listener — skip
+
+      const months = parseFloat(termMonths.value);
+      if (isNaN(months) || months < 0) {
+        termYears.value = '';
+        return;
+      }
+
+      isSyncing = true;
+      // years = months / 12, rounded to 2 decimal places
+      // toFixed(2) returns a string — parseFloat removes trailing zeros
+      termYears.value = parseFloat((months / 12).toFixed(2));
+      isSyncing = false;
+    });
+
+    // ── EXAMPLES OF SYNC BEHAVIOR ────────────────────────────
+    // User types 24 in months → years = 24/12 = 2        → shows "2"
+    // User types 30 in months → years = 30/12 = 2.5      → shows "2.5"
+    // User types 18 in months → years = 18/12 = 1.5      → shows "1.5"
+    // User types  7 in months → years = 7/12  = 0.58333  → shows "0.58"
+    //   → then years syncs back: 0.58 * 12 = 6.96 → rounds to 7 ✓
+    //
+    // User types 2   in years → months = 2   * 12 = 24   → shows "24"
+    // User types 1.5 in years → months = 1.5 * 12 = 18   → shows "18"
+    // User types 0.5 in years → months = 0.5 * 12 = 6    → shows "6"
+    // User types 1.3 in years → months = 1.3 * 12 = 15.6 → rounds to "16"
+
+    function calcPayment() {
+      const amt = parseFloat(document.getElementById("amt").value);
+      const ir  = parseFloat(document.getElementById("ir").value) / 1200;
+
+      // both fields are synced — either one gives the same result
+      // we prefer months because the formula uses months directly
+      // fall back to years if months is empty
+      let term = parseFloat(termMonths.value);
+      if (isNaN(term)) {
+        const years = parseFloat(termYears.value);
+        term = isNaN(years) ? NaN : Math.round(years * 12);
+      }
+
+      if (isNaN(amt) || isNaN(ir) || isNaN(term) || term === 0) {
+        alert("Please enter valid values in all fields.");
+        return;
+      }
+
+      let total = 1;
+      for (let i = 0; i < term; i++) {
+        total *= (1 + ir);
+      }
+
+      const mp = amt * ir / (1 - (1 / total));
+      document.getElementById("payment").value = Math.round(mp * 100) / 100;
+      document.getElementById("total").value   = Math.round(mp * term * 100) / 100;
+    }
+
+    document.getElementById("calcBtn").addEventListener('click', calcPayment);
+  </script>
+</body>
+</html>
+```
 
